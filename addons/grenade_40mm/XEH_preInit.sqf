@@ -1,0 +1,21 @@
+#include "script_component.hpp"
+ADDON = false;
+PREP_RECOMPILE_START;
+PREP(init);
+PREP(handle);
+PREP(relay);
+PREP(sparcs);
+PREP(gluas);
+PREP(emp);
+PREP(msmoke);
+PREP(decoy);
+PREP(ugs);
+PREP(desig);
+PREP(jammer);
+PREP(enemiesNear);
+PREP(notify);
+PREP(uavClass);
+PREP(terminal);
+PREP(jamUAV);
+PREP_RECOMPILE_END;
+ADDON = true;

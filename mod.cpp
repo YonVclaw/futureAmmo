@@ -1,0 +1,11 @@
+name = "futureAmmo";
+picture = "";
+description = "Ghosts of Battle Future Ammunition Mod";
+logo = "";
+logoOver = "";
+tooltip = "futureAmmo";
+tooltipOwned = "futureAmmo";
+overview = "Ghosts of Battle Future Ammunition Mod";
+author = "YonV";
+overviewPicture = "";
+dir = "@futureAmmo";
