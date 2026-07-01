@@ -17,4 +17,4 @@ params [
     ["_modes", ["MOVE","TARGET","AUTOTARGET"],   [[]]]
 ];
 { _uav disableAI _x } forEach _modes;
-_uav setVariable ["futureAmmo_grenade_40mm_jammed", true];
+_uav setVariable ["ghostfa_grenade_40mm_jammed", true];

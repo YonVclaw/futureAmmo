@@ -36,7 +36,7 @@ _entry params [
     _args set [6, getPosATL _proj];
     private _trigger = switch (_mode) do {
         case "APEX": { (velocity _proj # 2) <= 0 };
-        default:     { (getPosATL _proj # 2) <= 1 };
+        default      { (getPosATL _proj # 2) <= 1 };
     };
     if (_trigger) exitWith {
         private _p = getPosATL _proj;

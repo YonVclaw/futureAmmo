@@ -38,7 +38,7 @@ _s setObjectScale 0.4;
     private _mk = [];
     {
         private _m = createMarker [format ["ugs_%1", netId _x], getPosVisual _x];
-        _m setMarkerType "mil_dot"; _m setMarkerColor "ColorOrange"; _m setMarkerSize [0.6, 0.6];
+        _m setMarkerTypeLocal "mil_dot"; _m setMarkerColorLocal "ColorOrange"; _m setMarkerSize [0.6, 0.6];
         _mk pushBack _m;
     } forEach ([getPos _s, _radius, _side] call FUNC(enemiesNear));
     _s setVariable ["mk", _mk];

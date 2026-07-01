@@ -19,7 +19,10 @@ params [
     ["_ammo", "",      [""]]
 ];
 
-(GVAR(AD_params) getOrDefault [_ammo, [8, 6, 1.0]]) params ["_prox", "_lethal", "_dmg"];
+(GVAR(AD_params) getOrDefault [_ammo, [4, 3, 0.5]]) params ["_prox", "_lethal", "_dmg"];
+_prox = _prox * GVAR(triggerRadiusMultiplier);
+_lethal = _lethal * GVAR(lethalRadiusMultiplier);
+_dmg = _dmg * GVAR(damageMultiplier);
 
 [{
     params ["_args", "_h"];

@@ -21,7 +21,7 @@ params [
     ["_radius", 400,     [0]]
 ];
 private _side  = side group _unit;
-private _ltCls = if (_side == east) then { "LaserTargetE" } else { "LaserTargetW" };
+private _ltCls = ["LaserTargetW", "LaserTargetE"] select (_side == east);
 private _post  = createVehicle ["Land_Laserdesignator_01_back_F", _pos, [], 0, "CAN_COLLIDE"];
 
 [{

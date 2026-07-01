@@ -3,7 +3,7 @@
     Fast Recompiling via function
 **/
 // #define DISABLE_COMPILE_CACHE
-// To Use: [] call FUTUREAMMO_PREP_RECOMPILE;
+// To Use: [] call ghostfa_PREP_RECOMPILE;
 
 #ifdef DISABLE_COMPILE_CACHE
     #define LINKFUNC(x) {_this call FUNC(x)}

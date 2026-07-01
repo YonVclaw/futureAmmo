@@ -13,65 +13,65 @@
  * Public: No
  */
 
-private _p556  = [7,  5, 1.0];
-private _p762  = [8,  6, 1.0];
-private _p300  = [7,  5, 1.0];
-private _p40mm = [12, 9, 1.0];
-private _p50   = [10, 7, 1.0];
-private _p65   = [7,  5, 1.0];
-private _p338  = [9,  6, 1.0];
+private _p556  = [3.5, 2.5, 0.5];
+private _p762  = [4,   3,   0.5];
+private _p300  = [3.5, 2.5, 0.5];
+private _p40mm = [6,   4.5, 0.5];
+private _p50   = [5,   3.5, 0.5];
+private _p65   = [3.5, 2.5, 0.5];
+private _p338  = [4.5, 3,   0.5];
 
 GVAR(AD_params) = createHashMapFromArray [
     // 5.56 Mk361
-    ["futureAmmo_556_Mk361_PAB",          _p556],
-    ["futureAmmo_556_Mk361_PAB_T_Red",    _p556],
-    ["futureAmmo_556_Mk361_PAB_T_Yellow", _p556],
-    ["futureAmmo_556_Mk361_PAB_T_Green",  _p556],
-    ["futureAmmo_556_Mk361_PAB_T_White",  _p556],
-    ["futureAmmo_556_Mk361_PAB_T_Blue",   _p556],
-    ["futureAmmo_556_Mk361_PAB_T_Orange", _p556],
+    ["FA_556_Mk361_PAB",          _p556],
+    ["FA_556_Mk361_PAB_T_Red",    _p556],
+    ["FA_556_Mk361_PAB_T_Yellow", _p556],
+    ["FA_556_Mk361_PAB_T_Green",  _p556],
+    ["FA_556_Mk361_PAB_T_White",  _p556],
+    ["FA_556_Mk361_PAB_T_Blue",   _p556],
+    ["FA_556_Mk361_PAB_T_Orange", _p556],
     // 7.62 Mk362
-    ["futureAmmo_762_Mk362_PAB",          _p762],
-    ["futureAmmo_762_Mk362_PAB_T_Red",    _p762],
-    ["futureAmmo_762_Mk362_PAB_T_Yellow", _p762],
-    ["futureAmmo_762_Mk362_PAB_T_Green",  _p762],
-    ["futureAmmo_762_Mk362_PAB_T_White",  _p762],
-    ["futureAmmo_762_Mk362_PAB_T_Blue",   _p762],
-    ["futureAmmo_762_Mk362_PAB_T_Orange", _p762],
+    ["FA_762_Mk362_PAB",          _p762],
+    ["FA_762_Mk362_PAB_T_Red",    _p762],
+    ["FA_762_Mk362_PAB_T_Yellow", _p762],
+    ["FA_762_Mk362_PAB_T_Green",  _p762],
+    ["FA_762_Mk362_PAB_T_White",  _p762],
+    ["FA_762_Mk362_PAB_T_Blue",   _p762],
+    ["FA_762_Mk362_PAB_T_Orange", _p762],
     // .300 BLK Mk363
-    ["futureAmmo_300_Mk363_PAB",          _p300],
-    ["futureAmmo_300_Mk363_PAB_T_Red",    _p300],
-    ["futureAmmo_300_Mk363_PAB_T_Yellow", _p300],
-    ["futureAmmo_300_Mk363_PAB_T_Green",  _p300],
-    ["futureAmmo_300_Mk363_PAB_T_White",  _p300],
-    ["futureAmmo_300_Mk363_PAB_T_Blue",   _p300],
-    ["futureAmmo_300_Mk363_PAB_T_Orange", _p300],
+    ["FA_300_Mk363_PAB",          _p300],
+    ["FA_300_Mk363_PAB_T_Red",    _p300],
+    ["FA_300_Mk363_PAB_T_Yellow", _p300],
+    ["FA_300_Mk363_PAB_T_Green",  _p300],
+    ["FA_300_Mk363_PAB_T_White",  _p300],
+    ["FA_300_Mk363_PAB_T_Blue",   _p300],
+    ["FA_300_Mk363_PAB_T_Orange", _p300],
     // 40mm Mk364 (no tracer variants)
-    ["futureAmmo_40mm_Mk364_PAB",         _p40mm],
+    ["FA_40mm_Mk364_PAB",         _p40mm],
     // .50 Mk366
-    ["futureAmmo_127_Mk366_PAB",          _p50],
-    ["futureAmmo_127_Mk366_PAB_T_Red",    _p50],
-    ["futureAmmo_127_Mk366_PAB_T_Yellow", _p50],
-    ["futureAmmo_127_Mk366_PAB_T_Green",  _p50],
-    ["futureAmmo_127_Mk366_PAB_T_White",  _p50],
-    ["futureAmmo_127_Mk366_PAB_T_Blue",   _p50],
-    ["futureAmmo_127_Mk366_PAB_T_Orange", _p50],
+    ["FA_127_Mk366_PAB",          _p50],
+    ["FA_127_Mk366_PAB_T_Red",    _p50],
+    ["FA_127_Mk366_PAB_T_Yellow", _p50],
+    ["FA_127_Mk366_PAB_T_Green",  _p50],
+    ["FA_127_Mk366_PAB_T_White",  _p50],
+    ["FA_127_Mk366_PAB_T_Blue",   _p50],
+    ["FA_127_Mk366_PAB_T_Orange", _p50],
     // 6.5 caseless Mk367
-    ["futureAmmo_65_Mk367_PAB",          _p65],
-    ["futureAmmo_65_Mk367_PAB_T_Red",    _p65],
-    ["futureAmmo_65_Mk367_PAB_T_Yellow", _p65],
-    ["futureAmmo_65_Mk367_PAB_T_Green",  _p65],
-    ["futureAmmo_65_Mk367_PAB_T_White",  _p65],
-    ["futureAmmo_65_Mk367_PAB_T_Blue",   _p65],
-    ["futureAmmo_65_Mk367_PAB_T_Orange", _p65],
+    ["FA_65_Mk367_PAB",          _p65],
+    ["FA_65_Mk367_PAB_T_Red",    _p65],
+    ["FA_65_Mk367_PAB_T_Yellow", _p65],
+    ["FA_65_Mk367_PAB_T_Green",  _p65],
+    ["FA_65_Mk367_PAB_T_White",  _p65],
+    ["FA_65_Mk367_PAB_T_Blue",   _p65],
+    ["FA_65_Mk367_PAB_T_Orange", _p65],
     // .338 Mk373
-    ["futureAmmo_338_Mk373_PAB",          _p338],
-    ["futureAmmo_338_Mk373_PAB_T_Red",    _p338],
-    ["futureAmmo_338_Mk373_PAB_T_Yellow", _p338],
-    ["futureAmmo_338_Mk373_PAB_T_Green",  _p338],
-    ["futureAmmo_338_Mk373_PAB_T_White",  _p338],
-    ["futureAmmo_338_Mk373_PAB_T_Blue",   _p338],
-    ["futureAmmo_338_Mk373_PAB_T_Orange", _p338]
+    ["FA_338_Mk373_PAB",          _p338],
+    ["FA_338_Mk373_PAB_T_Red",    _p338],
+    ["FA_338_Mk373_PAB_T_Yellow", _p338],
+    ["FA_338_Mk373_PAB_T_Green",  _p338],
+    ["FA_338_Mk373_PAB_T_White",  _p338],
+    ["FA_338_Mk373_PAB_T_Blue",   _p338],
+    ["FA_338_Mk373_PAB_T_Orange", _p338]
 ];
 
 ["CAManBase", "fired", {

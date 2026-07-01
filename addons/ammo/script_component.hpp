@@ -1,6 +1,6 @@
 #define COMPONENT ammo
 #define COMPONENT_BEAUTIFIED Future Ammunition
-#include "\z\futureAmmo\addons\main\script_mod.hpp"
+#include "\z\ghostfa\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL
 // #define DISABLE_COMPILE_CACHE
@@ -12,4 +12,4 @@
     #define DEBUG_SETTINGS DEBUG_SETTINGS_AMMO
 #endif
 
-#include "\z\futureAmmo\addons\main\script_macros.hpp"
+#include "\z\ghostfa\addons\main\script_macros.hpp"

@@ -45,7 +45,7 @@ _chute attachTo [_cap, [0,0,2.2]];
     private _mk = [];
     {
         private _m = createMarker [format ["sparcs_%1", netId _x], getPosVisual _x];
-        _m setMarkerType "o_inf"; _m setMarkerColor "ColorRed"; _m setMarkerSize [0.7, 0.7];
+        _m setMarkerTypeLocal "o_inf"; _m setMarkerColorLocal "ColorRed"; _m setMarkerSize [0.7, 0.7];
         _mk pushBack _m;
     } forEach ([getPosVisual _cap, _radius, _side] call FUNC(enemiesNear));
     _cap setVariable ["mk", _mk];

@@ -7,7 +7,7 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "futureAmmo_ammo",
+            "ghostfa_ammo",
             "EF_Main",
             "EF_Addons"
         };
@@ -16,21 +16,27 @@ class CfgPatches {
         VERSION_CONFIG;
         magazines[] = {
             // EF 30Rnd coyote tracer variants
-            "futureAmmo_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_Red",
-            "futureAmmo_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_Yellow",
-            "futureAmmo_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_Green",
-            "futureAmmo_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_White",
-            "futureAmmo_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_Blue",
-            "futureAmmo_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_Orange",
+            "FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_Red",
+            "FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_Yellow",
+            "FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_Green",
+            "FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_White",
+            "FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_Blue",
+            "FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_Orange",
+            "FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_IR",
             // EF 100Rnd coyote tracer variants
-            "futureAmmo_EF_100Rnd_65x39_caseless_coy_mag_T_Red",
-            "futureAmmo_EF_100Rnd_65x39_caseless_coy_mag_T_Yellow",
-            "futureAmmo_EF_100Rnd_65x39_caseless_coy_mag_T_Green",
-            "futureAmmo_EF_100Rnd_65x39_caseless_coy_mag_T_White",
-            "futureAmmo_EF_100Rnd_65x39_caseless_coy_mag_T_Blue",
-            "futureAmmo_EF_100Rnd_65x39_caseless_coy_mag_T_Orange"
+            "FA_EF_100Rnd_65x39_caseless_coy_mag_T_Red",
+            "FA_EF_100Rnd_65x39_caseless_coy_mag_T_Yellow",
+            "FA_EF_100Rnd_65x39_caseless_coy_mag_T_Green",
+            "FA_EF_100Rnd_65x39_caseless_coy_mag_T_White",
+            "FA_EF_100Rnd_65x39_caseless_coy_mag_T_Blue",
+            "FA_EF_100Rnd_65x39_caseless_coy_mag_T_Orange",
+            "FA_EF_100Rnd_65x39_caseless_coy_mag_T_IR",
+            // EPR non-tracer coyote
+            "FA_EF_30Rnd_65x39_caseless_coy_mag",
+            "FA_EF_100Rnd_65x39_caseless_coy_mag"
         };
     };
 };
 
 #include "CfgMagazines.hpp"
+#include "CfgMagazinewells.hpp"

@@ -22,7 +22,7 @@ params [
     ["_radius", 5000,    [0]]
 ];
 private _obj = createVehicle ["Land_TripodScreen_01_dual_v1_F", _pos, [], 0, "CAN_COLLIDE"];
-_obj setVariable ["futureAmmo_grenade_40mm_relay", true, true];
+_obj setVariable ["ghostfa_grenade_40mm_relay", true, true];
 GVAR(relays) pushBack _obj;
 
 // HOOK: spawn TFAR repeater here

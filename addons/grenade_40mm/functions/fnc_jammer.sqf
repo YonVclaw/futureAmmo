@@ -23,7 +23,7 @@ params [
 ];
 private _side = side group _unit;
 private _j = createVehicle ["Land_PortableLongRangeAntenna_01_sand_F", _pos, [], 0, "CAN_COLLIDE"];
-_j setVariable ["futureAmmo_grenade_40mm_jammer", true, true];
+_j setVariable ["ghostfa_grenade_40mm_jammer", true, true];
 
 [{
     params ["_args", "_h"];
@@ -35,10 +35,11 @@ _j setVariable ["futureAmmo_grenade_40mm_jammer", true, true];
     {
         if (unitIsUAV _x && {[_side, side group _x] call BIS_fnc_sideIsEnemy}) then {
             if (local _x) then {
-                { _x disableAI _y } forEach ["MOVE", "TARGET", "AUTOTARGET"];
-                _x setVariable ["futureAmmo_grenade_40mm_jammed", true];
+                private _uav = _x;
+                { _uav disableAI _x } forEach ["MOVE", "TARGET", "AUTOTARGET"];
+                _x setVariable ["ghostfa_grenade_40mm_jammed", true];
             } else {
-                [_x, ["MOVE","TARGET","AUTOTARGET"]] remoteExec ["futureAmmo_grenade_40mm_fnc_jamUAV", _x];
+                [_x, ["MOVE","TARGET","AUTOTARGET"]] remoteExec ["ghostfa_grenade_40mm_fnc_jamUAV", _x];
             };
         };
     } forEach (getPos _j nearEntities [["Air","UAV"], _radius]);

@@ -14,6 +14,20 @@ class CfgPatches {
     };
 };
 
+class CfgMods {
+    class ghostfa {
+        dir = "@ghostfa";
+        name = "FA";
+        author = "Ghosts of Battle";
+        logo = "\z\ghostfa\addons\main\data\logo_256.paa";
+        logoOver = "\z\ghostfa\addons\main\data\logo_256.paa";
+        logoSmall = "\z\ghostfa\addons\main\data\logo_256.paa";
+        action = "";
+        description = "Advanced munitions for Ghost of Battle operations.";
+        VERSION_CONFIG;
+    };
+};
+
 #include "CfgEden.hpp"
 #include "CfgModuleCategories.hpp"
 #include "DisplayEden.hpp"

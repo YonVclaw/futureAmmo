@@ -23,10 +23,11 @@ params [
 private _side = side group _unit;
 private _alt  = 120;
 private _sp   = [_pos # 0, _pos # 1, _alt];
+private _grp  = createGroup [_side, true];
 private _uav  = createVehicle [[_side] call FUNC(uavClass), _sp, [], 0, "FLY"];
 createVehicleCrew _uav;
 _uav setPosATL _sp;
-(group _uav) setSide _side;
+{ _x joinSilent _grp } forEach crew _uav;
 
 if (local _unit) then {
     private _term = [_side] call FUNC(terminal);

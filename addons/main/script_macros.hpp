@@ -29,7 +29,7 @@
 #define EXT_LOG "Ghosts of Battle_mods_log"
 
 // GHOST Debug macros
-#include "\z\futureAmmo\addons\main\script_debug.hpp"
+#include "\z\ghostfa\addons\main\script_debug.hpp"
 
 // Items
 #define ITEMS_2(var) QUOTE(var), QUOTE(var)

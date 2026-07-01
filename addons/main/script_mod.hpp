@@ -1,10 +1,10 @@
 #define MAINPREFIX z
-#define PREFIX futureAmmo
-#define QPREFIX "futureAmmo"
+#define PREFIX ghostfa
+#define QPREFIX "ghostfa"
 
 #define AUTHOR Ghost
 #define QAUTHOR QUOTE(AUTHOR)
-#define LOGO_PATH QUOTE(z\futureAmmo\addons\media\images\logo_256.paa)
+#define LOGO_PATH QUOTE(z\ghostfa\addons\media\images\logo_256.paa)
 #define URL "https://www.ghostsofbattle.com/"
 
 #include "script_version.hpp"

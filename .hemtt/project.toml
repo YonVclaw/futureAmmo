@@ -1,6 +1,6 @@
-name = "futureAmmo"
+name = "ghostfa"
 mainprefix = "z"
-prefix = "futureAmmo"
+prefix = "ghostfa"
 
 [files]
 include = [
