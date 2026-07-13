@@ -7,6 +7,7 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
+            "ace_ballistics",
             "ghostfa_main",
             "ghostfa_ammo",
             "lot_aaf_m1014",
@@ -14,6 +15,7 @@ class CfgPatches {
         };
         author = QAUTHOR;
         VERSION_CONFIG;
+        skipWhenMissingDependencies = 1;
         ammo[] = {};
         magazines[] = {
             "FA_6Rnd_12G_Mk350_TBS",

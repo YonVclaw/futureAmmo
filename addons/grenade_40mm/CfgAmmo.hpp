@@ -10,12 +10,9 @@ class CfgAmmo {
     };
 
     class FA_40mm_Mk380_NRP:    FA_40mm_Carrier_Base {};
-    class FA_40mm_Mk381_SPARCS: FA_40mm_Carrier_Base {};
-    class FA_40mm_Mk382_GLUAS:  FA_40mm_Carrier_Base {};
     class FA_40mm_Mk383_EMP:    FA_40mm_Carrier_Base {};
     class FA_40mm_Mk384_MSmoke: FA_40mm_Carrier_Base {};
     class FA_40mm_Mk385_Decoy:  FA_40mm_Carrier_Base {};
     class FA_40mm_Mk386_UGS:    FA_40mm_Carrier_Base {};
-    class FA_40mm_Mk387_Desig:  FA_40mm_Carrier_Base {};
     class FA_40mm_Mk388_Jammer: FA_40mm_Carrier_Base {};
 };

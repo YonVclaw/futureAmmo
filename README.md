@@ -6,7 +6,8 @@ A lore-driven projection of where small-arms ammunition goes next for Arma 3 + A
 Built on the real M193 → M855A1+ / M80 → M80A1 / 6.8 Fury curves and run forward to
 ~2040, the rounds sit *beside* vanilla and RHS ammo on the same ballistic curve
 instead of breaking it. The pack also adds a layered counter-drone (C-UAS) round
-family and a smart 40mm ISR/EW support suite.
+family, 2040 round families for the MAAWS (Carl Gustaf M4), Vorona, RPG-32 and
+RPG-7, and a smart 40mm ISR/EW support suite.
 
 Everything dated past 2026 is **fiction** — a plausible projection tuned for gameplay,
 not a claim about real ammunition. The historical rounds use real, public figures.
@@ -19,6 +20,9 @@ not a claim about real ammunition. The historical rounds use real, public figure
 |---|---|---|
 | **Core ammo** | `ammo` | Next-gen 5.56 / 7.62 / .300 BLK / 6.5 caseless / .338 rounds (CfgAmmo + CfgMagazines), plus breaching shotgun loads. |
 | **Counter-UAS** | `antidrone` | Mk-series PAB proximity-airburst rounds + scripted proximity fuze. |
+| **MAAWS 2040** | `maaws` | Eight 84mm rounds for the vanilla MAAWS Mk4 — top-attack HEAT, programmable HE-AB, laser-guided, three C-UAS natures and a VSHORAD missile. |
+| **Vorona 2040** | `vorona` | Three missiles for the vanilla Vorona — tandem SACLOS AT, thermobaric airburst, and an IR anti-air/anti-drone seeker. |
+| **RPG 2040** | `rpg` | Six rounds for the vanilla RPG-32 and RPG-7 — tandem HEAT, thermobaric and counter-drone airburst per launcher. |
 | **40mm support** | `grenade_40mm` | Mk380 block — 9 smart 40mm ISR/EW rounds + the shared deployment framework. |
 | **Core / framework** | `main` | CfgPatches root, Eden module categories, version & macros. |
 | **Weapon-mod compat** | `sps` `jca` `ef` `rhs` `aegis` `atlas` `lot` | Register FA magazines into third-party weapon mods' magazine wells. |
@@ -62,7 +66,7 @@ airburst rounds near a UAV.
 | Mk360 AD | 12 ga | shotgun | Dense spread — **config only**, no script |
 | Mk361 PAB | 5.56 | rifle | Proximity airburst (script) |
 | Mk362 PAB | 7.62 | rifle / MG | Proximity airburst (script) |
-| Mk364 PAB | 40mm UGL | grenade launcher | Programmable airburst + HE on impact |
+| Mk364 PAB | 40mm UGL | grenade launcher | Programmable airburst (ACE menu / CBA keybind sets burst range) + HE on impact |
 | Mk366 PAB | .50 / 12.7×99 | HMG | Heavy proximity airburst |
 | Mk371 PAB | .338 | precision rifle | Precision proximity airburst |
 
@@ -70,27 +74,74 @@ Targets UAVs only by default (`unitIsUAV`) — manned aircraft are ignored — w
 MP-safe damage handling (local if the drone is local, otherwise routed to its owner
 via `remoteExec`). If the script isn't loaded, PAB rounds fly as normal ball.
 
-## 3. 40mm ISR / EW support — Mk380 block
+## 3. MAAWS — Carl Gustaf M4, 2040 family
+
+Eight 84mm natures that feed the **vanilla MAAWS Mk4** (all camo and rail
+variants) through a new magazine well. The three vanilla rounds stay untouched;
+these sit beside them. The launcher is patched to allow lock-on, but only the
+seeker rounds carry lock parameters — with vanilla or unguided rounds loaded it
+behaves exactly as before.
+
+| Round | Role | Guidance | Reach |
+|---|---|---|---|
+| HEAT 758 TT | Primary anti-tank, top-attack | Fire-and-forget (Direct / TopDown) | 1200 m · ~850mm RHA |
+| HEAT 665 CS | Heavy AT, confined-space | Unguided | 500 m · ~650mm RHA |
+| HE 448 AB | Anti-personnel / anti-materiel | Unguided, programmable airburst | 1500 m |
+| GM 841 | Precision vs movers / bunkers | Semi-active laser homing | 2000 m |
+| ADM 484 PROX | C-UAS, single drone | Unguided, proximity fuze (script) | 600 m |
+| ADM 486 CAN | C-UAS, close swarm | Tungsten flechette canister (config only) | 150 m |
+| ADM 487 SEEK | C-UAS, fire-and-forget | IR seeker vs a locked drone | 1000 m |
+| AAM 517 SR | VSHORAD — helos, low/slow air | IR lock-on | 1750 m (half the Titan envelope, by design) |
+
+HE 448 AB shares the Mk364 programmable-airburst dial (ACE self-menu / CBA
+keybind); ADM 484 registers into the same scripted proximity fuze as the PAB
+bullets. Everything past 2026 is fiction — the baselines are the real Carl
+Gustaf M4 public figures.
+
+### Lower tiers — Vorona, RPG-32, RPG-7
+
+Scaled-down companions to the MAAWS set, tiered **RPG-7 < RPG-32 < Vorona <
+MAAWS**. The Vorona keeps its native SACLOS manual guidance and gains lock-on
+only for the Osa (its built-in Titan lock tones do the searching/locked beep);
+both RPGs stay unguided and feed straight from the vanilla `RPG32` / `RPG7`
+magazine wells — no launcher changes at all.
+
+| Round | Launcher | Role | Reach |
+|---|---|---|---|
+| 9M135M Grom | Vorona | Tandem SACLOS anti-tank | 1800 m · ~800mm RHA |
+| 9M135F-2 Oskol | Vorona | Thermobaric + prefrag, programmable airburst | 1600 m |
+| 9M135PVO Osa | Vorona | IR lock-on — helos, low/slow air, drones | 1200 m |
+| PG-32V-2 | RPG-32 | Tandem HEAT | 500 m · ~700mm RHA |
+| TBG-32V-2 | RPG-32 | Thermobaric | 400 m |
+| AB-32 PROX | RPG-32 | C-UAS proximity airburst (script) | 300 m |
+| PG-7VR-2 | RPG-7 | Tandem HEAT — cheapest tandem in the set | 330 m · ~550mm RHA |
+| TBG-7V-2 | RPG-7 | Thermobaric room-clearer | 200 m |
+| AB-7 PROX | RPG-7 | C-UAS proximity airburst (script) | 200 m |
+
+The Oskol shares the Mk364 airburst dial; the AB rounds register into the PAB
+scripted proximity fuze.
+
+## 4. 40mm ISR / EW support — Mk380 block
 
 Nine smart 40mm rounds fired from any UGL. The shells are inert carriers; a shared
 deployment framework matches the fired round against a registry, then deploys the
 payload at **apex** (air assets) or on **landing** (everything else).
 
+All Mk380-block rounds are non-explosive: they pop a HuntIR-style parachute at
+apex and float the payload down, deploying the effect where it lands.
+
 | Round | Deploy | What it does |
 |---|---|---|
-| Mk380 NR-P | ground | Network relay; extends the squad data-link |
-| Mk381 SPARCS-II | apex | Descending recon cam; auto-marks contacts ~60 s |
-| Mk382 GLUAS-H | apex | Real loitering micro-UAV, hands the feed to the firer ~30 min |
-| Mk383 EMP-M | ground | Soft-kill EW burst — downs drones, white-outs optics, jams comms |
-| Mk384 M-SMK | ground | Multispectral (visual + thermal) smoke screen |
-| Mk385 DCOY | ground | IR/RF decoy that baits loitering munitions |
-| Mk386 UGS | ground | Unattended ground sensor; persistent contact picket |
-| Mk387 DESIG | ground | Deployable designator; lases targets for guided munitions |
-| Mk388 JAM | ground | Area comms/GNSS jammer; denies enemy drones in a bubble |
+| Mk380 NR-P | chute | Network relay; extends the squad data-link |
+| Mk383 EMP-M | chute | Soft-kill EW burst — downs drones, white-outs optics, jams comms |
+| Mk384 M-SMK | chute | Multispectral (visual + thermal) smoke screen |
+| Mk385 DCOY | chute | IR/RF decoy that baits loitering munitions |
+| Mk386 UGS | chute | Unattended ground sensor; persistent contact picket |
+| Mk388 JAM | chute | Area comms/GNSS jammer; denies enemy drones in a bubble |
 
 EMP-M (soft-kill) and the PAB rounds (hard-kill) give a layered counter-drone
-doctrine; DESIG closes the find → mark → kill loop with the recon rounds. Tuning
-(deploy mode, effect, lifetime, radius) lives in a single registry table per round.
+doctrine. Tuning (deploy mode, effect, lifetime, radius) lives in a single
+registry table per round.
 
 ---
 
@@ -137,6 +188,10 @@ macros and the version live in [addons/main/](addons/main/).
   can occasionally be clipped past before the bubble registers (bump the radius if so).
 - **Some 40mm support rounds** use stock map props as placeholder models, and the
   relay/jammer RF behaviour is abstracted unless a comms/EW mod is loaded.
+- **MAAWS seeker rounds** approximate their seekers with the Titan lock system
+  (the launcher base class is patched to `canLock = 2`). The IR seekers can't
+  filter drone-vs-manned targets the way the PAB script does, and very small
+  drones may not produce enough IR signature to lock at all.
 
 ## Realism disclaimer
 

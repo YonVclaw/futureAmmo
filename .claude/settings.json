@@ -1,7 +1,27 @@
 {
   "permissions": {
     "allow": [
-      "Bash(awk '/class AK_762x39 \\\\{/,/\\\\};/' CfgMagazinewells.hpp)"
+      "Bash(awk '/class AK_762x39 \\\\{/,/\\\\};/' CfgMagazinewells.hpp)",
+      "Bash(python -c ' *)",
+      "Bash(cd \"O:/GIT/ACE3\"; find . -ipath \"*frag*\" -iname \"*.cpp\" -o -ipath \"*frag*\" -iname \"*.hpp\" | head -50)",
+      "Read(//o/GIT/ACE3/**)",
+      "Bash(xargs -I{} echo {})",
+      "Read(//o/GIT/ACE3/addons/frag/**)",
+      "Bash(cd \"O:/GIT/ACE3/addons/common\"; find . -iname \"*addExplosionEventHandler*\")",
+      "Read(//o/GIT/ACE3/addons/common/**)",
+      "Read(//o/GIT/ACE3/addons/common/functions/**)",
+      "Read(//o/GIT/ACE3/addons/frag/functions/**)",
+      "Bash(cd \"O:/GIT/ACE3/addons/frag\"; grep -rn \"frag_eh\\\\|QGVAR\\(frago\\)\\\\|createFrag\\\\|fnc_frago\" . | head -30)",
+      "Bash(cd \"O:/GIT/ACE3\"; grep -rin \"m57\" --include=\"*.hpp\" --include=\"*.cpp\" --include=\"*.sqf\" . | head -30)",
+      "Bash(cd \"O:/GIT/ACE3\"; grep -n -B5 -A15 \"ace_m57.p3d\" addons/explosives/CfgWeapons.hpp)",
+      "Bash(cd \"O:/GIT/ACE3/addons/frag\"; grep -n -B2 -A10 \"class B_30mm_MP\" CfgAmmoFragParameters.hpp)",
+      "Bash(which hemtt *)",
+      "Bash(hemtt --version)",
+      "Bash(echo \"exit:$?\")",
+      "Bash(ls *.toml .hemtt)",
+      "Bash(ls hemtt*)",
+      "Bash(grep -rni \"cookoff\" /o/GIT/2035/ 2>/dev/null | head -30; echo \"---P---\"; grep -rni \"cookoff\" /c/Users/jwise/play/ 2>/dev/null | head -30)",
+      "Read(//o/GIT/2035//**)"
     ]
   }
 }

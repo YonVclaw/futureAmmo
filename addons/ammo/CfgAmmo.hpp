@@ -21,21 +21,22 @@ class CfgAmmo {
 
     // Release 1 (~2033) — Mk327 Mod 0 EPR-HV, hybrid case, ~83 kpsi, 70gr tungsten
     class FA_556_Mk327_HV: B_556x45_Ball {
-        hit = 11;
+        hit = 8;
         caliber = 2.4;
-        typicalSpeed = 1000;
-        airFriction = -0.00092;
-        deflecting = 18;
+        typicalSpeed = 960;
+        airFriction = -0.00126;
+        deflecting = 15;
         tracerScale = 0.6;
-        ACE_caliber = 0.224;
-        ACE_bulletLength = 0.95;
-        ACE_bulletMass = 70;
-        ACE_ballisticCoefficients[] = {0.205};
+        ACE_caliber = 5.69;
+        ACE_bulletLength = 23.0;
+        ACE_bulletMass = 4.0;
+        ACE_muzzleVelocityVariationSD = 0.18;
+        ACE_ballisticCoefficients[] = {0.151};
         ACE_velocityBoundaries[] = {};
         ACE_standardAtmosphere = "ICAO";
         ACE_dragModel = 7;
-        ACE_muzzleVelocities[] = {925, 965, 1000, 1020};
-        ACE_barrelLengths[] = {368, 406, 508, 610};
+        ACE_muzzleVelocities[] = {900, 960, 1000};
+        ACE_barrelLengths[] = {254, 368, 508};
     };
     class FA_556_Mk327_HV_T_Red: FA_556_Mk327_HV { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
     class FA_556_Mk327_HV_T_Yellow: FA_556_Mk327_HV { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
@@ -47,21 +48,22 @@ class CfgAmmo {
 
     // Release 2 (~2039) — XM891 CTEP, cased-telescoped composite, ~85 kpsi, 68gr 2-stage tungsten
     class FA_556_XM891_CTEP: B_556x45_Ball {
-        hit = 12;
+        hit = 8;
         caliber = 2.6;
-        typicalSpeed = 1015;
-        airFriction = -0.00086;
-        deflecting = 16;
+        typicalSpeed = 980;
+        airFriction = -0.00120;
+        deflecting = 14;
         tracerScale = 0.6;
-        ACE_caliber = 0.224;
-        ACE_bulletLength = 0.93;
-        ACE_bulletMass = 68;
-        ACE_ballisticCoefficients[] = {0.218};
+        ACE_caliber = 5.69;
+        ACE_bulletLength = 24.0;
+        ACE_bulletMass = 4.0;
+        ACE_muzzleVelocityVariationSD = 0.16;
+        ACE_ballisticCoefficients[] = {0.162};
         ACE_velocityBoundaries[] = {};
         ACE_standardAtmosphere = "ICAO";
         ACE_dragModel = 7;
-        ACE_muzzleVelocities[] = {945, 985, 1015, 1040};
-        ACE_barrelLengths[] = {368, 406, 508, 610};
+        ACE_muzzleVelocities[] = {915, 980, 1020};
+        ACE_barrelLengths[] = {254, 368, 508};
     };
     class FA_556_XM891_CTEP_T_Red: FA_556_XM891_CTEP { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
     class FA_556_XM891_CTEP_T_Yellow: FA_556_XM891_CTEP { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
@@ -70,6 +72,21 @@ class CfgAmmo {
     class FA_556_XM891_CTEP_T_Blue: FA_556_XM891_CTEP { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
     class FA_556_XM891_CTEP_T_Orange: FA_556_XM891_CTEP { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
     class FA_556_XM891_CTEP_T_IR: FA_556_XM891_CTEP { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
+
+    // Mk332 AP — caseless-era 5.56 tungsten armor-piercing (metric, 2040)
+    class FA_556_Mk332_AP: B_556x45_Ball {
+        hit = 8; caliber = 3.0; typicalSpeed = 940; airFriction = -0.00118; deflecting = 12; tracerScale = 0.6;
+        ACE_caliber = 5.69; ACE_bulletLength = 24.5; ACE_bulletMass = 4.2; ACE_muzzleVelocityVariationSD = 0.15;
+        ACE_ballisticCoefficients[] = {0.170}; ACE_velocityBoundaries[] = {}; ACE_standardAtmosphere = "ICAO"; ACE_dragModel = 7;
+        ACE_muzzleVelocities[] = {880, 940, 980}; ACE_barrelLengths[] = {254, 368, 508};
+    };
+    class FA_556_Mk332_AP_T_Red: FA_556_Mk332_AP { tracer = 1; tracerColor[] = {1.0,0.0,0.0,1.0}; };
+    class FA_556_Mk332_AP_T_Yellow: FA_556_Mk332_AP { tracer = 1; tracerColor[] = {1.0,1.0,0.0,1.0}; };
+    class FA_556_Mk332_AP_T_Green: FA_556_Mk332_AP { tracer = 1; tracerColor[] = {0.0,1.0,0.0,1.0}; };
+    class FA_556_Mk332_AP_T_White: FA_556_Mk332_AP { tracer = 1; tracerColor[] = {1.0,1.0,1.0,1.0}; };
+    class FA_556_Mk332_AP_T_Blue: FA_556_Mk332_AP { tracer = 1; tracerColor[] = {0.0,0.3,1.0,1.0}; };
+    class FA_556_Mk332_AP_T_Orange: FA_556_Mk332_AP { tracer = 1; tracerColor[] = {1.0,0.4,0.0,1.0}; };
+    class FA_556_Mk332_AP_T_IR: FA_556_Mk332_AP { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2,1.0,0.2,1.0}; };
 
     // =========================================================
     // 7.62x51mm
@@ -83,9 +100,9 @@ class CfgAmmo {
         airFriction = -0.00082;
         deflecting = 15;
         tracerScale = 0.8;
-        ACE_caliber = 0.308;
-        ACE_bulletLength = 1.15;
-        ACE_bulletMass = 135;
+        ACE_caliber = 7.82;
+        ACE_bulletLength = 29.21;
+        ACE_bulletMass = 8.75;
         ACE_ballisticCoefficients[] = {0.228};
         ACE_velocityBoundaries[] = {};
         ACE_standardAtmosphere = "ICAO";
@@ -109,9 +126,9 @@ class CfgAmmo {
         airFriction = -0.00078;
         deflecting = 14;
         tracerScale = 0.8;
-        ACE_caliber = 0.308;
-        ACE_bulletLength = 1.20;
-        ACE_bulletMass = 140;
+        ACE_caliber = 7.82;
+        ACE_bulletLength = 30.48;
+        ACE_bulletMass = 9.07;
         ACE_ballisticCoefficients[] = {0.245};
         ACE_velocityBoundaries[] = {};
         ACE_standardAtmosphere = "ICAO";
@@ -140,9 +157,9 @@ class CfgAmmo {
         airFriction = -0.00080;
         deflecting = 12;
         tracerScale = 0.8;
-        ACE_caliber = 0.308;
-        ACE_bulletLength = 1.50;
-        ACE_bulletMass = 220;
+        ACE_caliber = 7.82;
+        ACE_bulletLength = 38.1;
+        ACE_bulletMass = 14.26;
         ACE_ballisticCoefficients[] = {0.330};
         ACE_velocityBoundaries[] = {};
         ACE_standardAtmosphere = "ICAO";
@@ -166,9 +183,9 @@ class CfgAmmo {
         airFriction = -0.00090;
         deflecting = 13;
         tracerScale = 0.8;
-        ACE_caliber = 0.308;
-        ACE_bulletLength = 1.30;
-        ACE_bulletMass = 190;
+        ACE_caliber = 7.82;
+        ACE_bulletLength = 33.02;
+        ACE_bulletMass = 12.31;
         ACE_ballisticCoefficients[] = {0.275};
         ACE_velocityBoundaries[] = {};
         ACE_standardAtmosphere = "ICAO";
@@ -196,9 +213,9 @@ class CfgAmmo {
         airFriction = -0.00055;
         deflecting = 14;
         tracerScale = 0.7;
-        ACE_caliber = 0.308;
-        ACE_bulletLength = 1.36;
-        ACE_bulletMass = 210;
+        ACE_caliber = 7.82;
+        ACE_bulletLength = 34.54;
+        ACE_bulletMass = 13.61;
         ACE_ballisticCoefficients[] = {0.290};
         ACE_velocityBoundaries[] = {};
         ACE_standardAtmosphere = "ICAO";
@@ -222,9 +239,9 @@ class CfgAmmo {
         airFriction = -0.00052;
         deflecting = 13;
         tracerScale = 0.7;
-        ACE_caliber = 0.308;
-        ACE_bulletLength = 1.40;
-        ACE_bulletMass = 220;
+        ACE_caliber = 7.82;
+        ACE_bulletLength = 35.56;
+        ACE_bulletMass = 14.26;
         ACE_ballisticCoefficients[] = {0.310};
         ACE_velocityBoundaries[] = {};
         ACE_standardAtmosphere = "ICAO";
@@ -253,9 +270,9 @@ class CfgAmmo {
         airFriction = -0.00055;
         deflecting = 12;
         tracerScale = 1.0;
-        ACE_caliber = 0.338;
-        ACE_bulletLength = 1.457;
-        ACE_bulletMass = 250;
+        ACE_caliber = 8.59;
+        ACE_bulletLength = 37.01;
+        ACE_bulletMass = 16.2;
         ACE_ballisticCoefficients[] = {0.322};
         ACE_velocityBoundaries[] = {};
         ACE_standardAtmosphere = "ICAO";
@@ -279,9 +296,9 @@ class CfgAmmo {
         airFriction = -0.00050;
         deflecting = 11;
         tracerScale = 1.0;
-        ACE_caliber = 0.338;
-        ACE_bulletLength = 1.64;
-        ACE_bulletMass = 285;
+        ACE_caliber = 8.59;
+        ACE_bulletLength = 41.66;
+        ACE_bulletMass = 18.47;
         ACE_ballisticCoefficients[] = {0.380};
         ACE_velocityBoundaries[] = {};
         ACE_standardAtmosphere = "ICAO";
@@ -305,9 +322,9 @@ class CfgAmmo {
         airFriction = -0.00046;
         deflecting = 10;
         tracerScale = 1.0;
-        ACE_caliber = 0.338;
-        ACE_bulletLength = 1.72;
-        ACE_bulletMass = 300;
+        ACE_caliber = 8.59;
+        ACE_bulletLength = 43.69;
+        ACE_bulletMass = 19.44;
         ACE_ballisticCoefficients[] = {0.400};
         ACE_velocityBoundaries[] = {};
         ACE_standardAtmosphere = "ICAO";
@@ -336,9 +353,9 @@ class CfgAmmo {
         airFriction = -0.00170;
         deflecting = 20;
         tracerScale = 0.7;
-        ACE_caliber = 0.308;
-        ACE_bulletLength = 0.98;
-        ACE_bulletMass = 110;
+        ACE_caliber = 7.82;
+        ACE_bulletLength = 24.89;
+        ACE_bulletMass = 7.13;
         ACE_ballisticCoefficients[] = {0.130};
         ACE_velocityBoundaries[] = {};
         ACE_standardAtmosphere = "ICAO";
@@ -362,9 +379,9 @@ class CfgAmmo {
         airFriction = -0.00150;
         deflecting = 18;
         tracerScale = 0.7;
-        ACE_caliber = 0.308;
-        ACE_bulletLength = 1.05;
-        ACE_bulletMass = 125;
+        ACE_caliber = 7.82;
+        ACE_bulletLength = 26.67;
+        ACE_bulletMass = 8.1;
         ACE_ballisticCoefficients[] = {0.160};
         ACE_velocityBoundaries[] = {};
         ACE_standardAtmosphere = "ICAO";
@@ -388,9 +405,9 @@ class CfgAmmo {
         airFriction = -0.00140;
         deflecting = 17;
         tracerScale = 0.7;
-        ACE_caliber = 0.308;
-        ACE_bulletLength = 1.10;
-        ACE_bulletMass = 150;
+        ACE_caliber = 7.82;
+        ACE_bulletLength = 27.94;
+        ACE_bulletMass = 9.72;
         ACE_ballisticCoefficients[] = {0.180};
         ACE_velocityBoundaries[] = {};
         ACE_standardAtmosphere = "ICAO";
@@ -419,9 +436,9 @@ class CfgAmmo {
         airFriction = -0.00060;
         deflecting = 15;
         tracerScale = 0.7;
-        ACE_caliber = 0.308;
-        ACE_bulletLength = 1.28;
-        ACE_bulletMass = 190;
+        ACE_caliber = 7.82;
+        ACE_bulletLength = 32.51;
+        ACE_bulletMass = 12.31;
         ACE_ballisticCoefficients[] = {0.250};
         ACE_velocityBoundaries[] = {};
         ACE_standardAtmosphere = "ICAO";
@@ -445,9 +462,9 @@ class CfgAmmo {
         airFriction = -0.00055;
         deflecting = 14;
         tracerScale = 0.7;
-        ACE_caliber = 0.308;
-        ACE_bulletLength = 1.36;
-        ACE_bulletMass = 220;
+        ACE_caliber = 7.82;
+        ACE_bulletLength = 34.54;
+        ACE_bulletMass = 14.26;
         ACE_ballisticCoefficients[] = {0.300};
         ACE_velocityBoundaries[] = {};
         ACE_standardAtmosphere = "ICAO";
@@ -477,9 +494,9 @@ class CfgAmmo {
         airFriction = -0.00046;
         deflecting = 10;
         tracerScale = 1.0;
-        ACE_caliber = 0.338;
-        ACE_bulletLength = 1.72;
-        ACE_bulletMass = 300;
+        ACE_caliber = 8.59;
+        ACE_bulletLength = 43.69;
+        ACE_bulletMass = 19.44;
         ACE_ballisticCoefficients[] = {0.400};
         ACE_velocityBoundaries[] = {};
         ACE_standardAtmosphere = "ICAO";
@@ -513,9 +530,9 @@ class CfgAmmo {
         airFriction = -0.00095;
         deflecting = 18;
         tracerScale = 0.6;
-        ACE_caliber = 0.228;
-        ACE_bulletLength = 0.89;
-        ACE_bulletMass = 64;
+        ACE_caliber = 5.79;
+        ACE_bulletLength = 22.61;
+        ACE_bulletMass = 4.15;
         ACE_ballisticCoefficients[] = {0.200};
         ACE_velocityBoundaries[] = {};
         ACE_standardAtmosphere = "ICAO";
@@ -544,9 +561,9 @@ class CfgAmmo {
         airFriction = -0.00078;
         deflecting = 15;
         tracerScale = 0.8;
-        ACE_caliber = 0.312;
-        ACE_bulletLength = 1.22;
-        ACE_bulletMass = 145;
+        ACE_caliber = 7.92;
+        ACE_bulletLength = 30.99;
+        ACE_bulletMass = 9.4;
         ACE_ballisticCoefficients[] = {0.231};
         ACE_velocityBoundaries[] = {};
         ACE_standardAtmosphere = "ICAO";
@@ -569,21 +586,23 @@ class CfgAmmo {
 
     // 6.5mm Caseless EPR (~2035) — caseless, ~75 kpsi (fictional), 120gr tungsten
     class FA_65_EPR: B_65x39_Caseless {
-        hit = 12;
-        caliber = 2.4;
-        typicalSpeed = 820;
-        airFriction = -0.00075;
-        deflecting = 16;
+        displayName = "Mk330 EPR";
+        hit = 8;
+        caliber = 2.8;
+        typicalSpeed = 855;
+        airFriction = -0.00095;
+        deflecting = 12;
         tracerScale = 0.7;
-        ACE_caliber = 0.264;
-        ACE_bulletLength = 1.20;
-        ACE_bulletMass = 120;
-        ACE_ballisticCoefficients[] = {0.263};
+        ACE_caliber = 6.71;
+        ACE_bulletLength = 30.0;
+        ACE_bulletMass = 8.0;
+        ACE_muzzleVelocityVariationSD = 0.15;
+        ACE_ballisticCoefficients[] = {0.290};
         ACE_velocityBoundaries[] = {};
         ACE_standardAtmosphere = "ICAO";
         ACE_dragModel = 7;
-        ACE_muzzleVelocities[] = {780, 810, 820, 835};
-        ACE_barrelLengths[] = {406, 457, 508, 559};
+        ACE_muzzleVelocities[] = {815, 855, 880};
+        ACE_barrelLengths[] = {330, 407, 508};
     };
     class FA_65_EPR_T_Red: FA_65_EPR { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
     class FA_65_EPR_T_Yellow: FA_65_EPR { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
@@ -592,6 +611,50 @@ class CfgAmmo {
     class FA_65_EPR_T_Blue: FA_65_EPR { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
     class FA_65_EPR_T_Orange: FA_65_EPR { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
     class FA_65_EPR_T_IR: FA_65_EPR { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
+    // Mk331 AP — caseless tungsten armor-piercing (metric, 2040)
+    class FA_65_Mk331_AP: B_65x39_Caseless { hit=8; caliber=3.4; typicalSpeed=840; airFriction=-0.00090; deflecting=10; displayName="Mk331 AP"; ACE_caliber=6.71; ACE_bulletLength=30.5; ACE_bulletMass=8.4; ACE_muzzleVelocityVariationSD=0.14; ACE_ballisticCoefficients[]={0.300}; ACE_velocityBoundaries[]={}; ACE_standardAtmosphere="ICAO"; ACE_dragModel=7; ACE_muzzleVelocities[]={800,840,865}; ACE_barrelLengths[]={330,407,508}; };
+    class FA_65_Mk331_AP_T_Red: FA_65_Mk331_AP { tracer=1; tracerColor[]={1,0,0,1}; };
+    class FA_65_Mk331_AP_T_Yellow: FA_65_Mk331_AP { tracer=1; tracerColor[]={1,1,0,1}; };
+    class FA_65_Mk331_AP_T_Green: FA_65_Mk331_AP { tracer=1; tracerColor[]={0,1,0,1}; };
+    class FA_65_Mk331_AP_T_White: FA_65_Mk331_AP { tracer=1; tracerColor[]={1,1,1,1}; };
+    class FA_65_Mk331_AP_T_Blue: FA_65_Mk331_AP { tracer=1; tracerColor[]={0,0.3,1,1}; };
+    class FA_65_Mk331_AP_T_Orange: FA_65_Mk331_AP { tracer=1; tracerColor[]={1,0.4,0,1}; };
+    class FA_65_Mk331_AP_T_IR: FA_65_Mk331_AP { tracer=1; nvgOnly=1; tracerColor[]={0.2,1,0.2,1}; };
+
+    // ===== 6.5x39 caseless extra loads (Mk328/XM892/Mk329/XM893) =====
+    class FA_ammo_65g_Mk328: B_65x39_Caseless { displayName = "Mk328 HV"; caliber = 2.4; hit = 11; typicalSpeed = 810; airFriction = -0.00055; ACE_caliber = 6.71; ACE_bulletLength = 33.0; ACE_bulletMass = 8.0; ACE_dragModel = 7; ACE_ballisticCoefficients[] = {0.28}; ACE_muzzleVelocities[] = {810}; ACE_barrelLengths[] = {508}; };
+    class FA_ammo_65g_XM892: B_65x39_Caseless { displayName = "XM892 CTEP"; caliber = 4.2; hit = 12; typicalSpeed = 830; airFriction = -0.00050; ACE_caliber = 6.71; ACE_bulletLength = 34.0; ACE_bulletMass = 7.8; ACE_dragModel = 7; ACE_ballisticCoefficients[] = {0.29}; ACE_muzzleVelocities[] = {830}; ACE_barrelLengths[] = {508}; };
+    class FA_ammo_65cm_Mk329: B_65x39_Caseless { displayName = "Mk329 LR"; caliber = 2.6; hit = 13; typicalSpeed = 860; airFriction = -0.00045; ACE_caliber = 6.71; ACE_bulletLength = 36.0; ACE_bulletMass = 9.07; ACE_dragModel = 7; ACE_ballisticCoefficients[] = {0.32}; ACE_muzzleVelocities[] = {860}; ACE_barrelLengths[] = {610}; };
+    class FA_ammo_65cm_XM893: B_65x39_Caseless { displayName = "XM893 CTEP"; caliber = 4.6; hit = 13; typicalSpeed = 880; airFriction = -0.00042; ACE_caliber = 6.71; ACE_bulletLength = 37.0; ACE_bulletMass = 8.9; ACE_dragModel = 7; ACE_ballisticCoefficients[] = {0.34}; ACE_muzzleVelocities[] = {880}; ACE_barrelLengths[] = {610}; };
+// 6.5 tracer ammo variants for the 4 caseless rifle loads (generated)
+    class FA_ammo_65g_Mk328_T_Red: FA_ammo_65g_Mk328 { tracer=1; tracerColor[]={1,0,0,1}; };
+    class FA_ammo_65g_Mk328_T_Yellow: FA_ammo_65g_Mk328 { tracer=1; tracerColor[]={1,1,0,1}; };
+    class FA_ammo_65g_Mk328_T_Green: FA_ammo_65g_Mk328 { tracer=1; tracerColor[]={0,1,0,1}; };
+    class FA_ammo_65g_Mk328_T_White: FA_ammo_65g_Mk328 { tracer=1; tracerColor[]={1,1,1,1}; };
+    class FA_ammo_65g_Mk328_T_Blue: FA_ammo_65g_Mk328 { tracer=1; tracerColor[]={0,0.3,1,1}; };
+    class FA_ammo_65g_Mk328_T_Orange: FA_ammo_65g_Mk328 { tracer=1; tracerColor[]={1,0.4,0,1}; };
+    class FA_ammo_65g_Mk328_T_IR: FA_ammo_65g_Mk328 { tracer=1; nvgOnly=1; tracerColor[]={0.2,1,0.2,1}; };
+    class FA_ammo_65g_XM892_T_Red: FA_ammo_65g_XM892 { tracer=1; tracerColor[]={1,0,0,1}; };
+    class FA_ammo_65g_XM892_T_Yellow: FA_ammo_65g_XM892 { tracer=1; tracerColor[]={1,1,0,1}; };
+    class FA_ammo_65g_XM892_T_Green: FA_ammo_65g_XM892 { tracer=1; tracerColor[]={0,1,0,1}; };
+    class FA_ammo_65g_XM892_T_White: FA_ammo_65g_XM892 { tracer=1; tracerColor[]={1,1,1,1}; };
+    class FA_ammo_65g_XM892_T_Blue: FA_ammo_65g_XM892 { tracer=1; tracerColor[]={0,0.3,1,1}; };
+    class FA_ammo_65g_XM892_T_Orange: FA_ammo_65g_XM892 { tracer=1; tracerColor[]={1,0.4,0,1}; };
+    class FA_ammo_65g_XM892_T_IR: FA_ammo_65g_XM892 { tracer=1; nvgOnly=1; tracerColor[]={0.2,1,0.2,1}; };
+    class FA_ammo_65cm_Mk329_T_Red: FA_ammo_65cm_Mk329 { tracer=1; tracerColor[]={1,0,0,1}; };
+    class FA_ammo_65cm_Mk329_T_Yellow: FA_ammo_65cm_Mk329 { tracer=1; tracerColor[]={1,1,0,1}; };
+    class FA_ammo_65cm_Mk329_T_Green: FA_ammo_65cm_Mk329 { tracer=1; tracerColor[]={0,1,0,1}; };
+    class FA_ammo_65cm_Mk329_T_White: FA_ammo_65cm_Mk329 { tracer=1; tracerColor[]={1,1,1,1}; };
+    class FA_ammo_65cm_Mk329_T_Blue: FA_ammo_65cm_Mk329 { tracer=1; tracerColor[]={0,0.3,1,1}; };
+    class FA_ammo_65cm_Mk329_T_Orange: FA_ammo_65cm_Mk329 { tracer=1; tracerColor[]={1,0.4,0,1}; };
+    class FA_ammo_65cm_Mk329_T_IR: FA_ammo_65cm_Mk329 { tracer=1; nvgOnly=1; tracerColor[]={0.2,1,0.2,1}; };
+    class FA_ammo_65cm_XM893_T_Red: FA_ammo_65cm_XM893 { tracer=1; tracerColor[]={1,0,0,1}; };
+    class FA_ammo_65cm_XM893_T_Yellow: FA_ammo_65cm_XM893 { tracer=1; tracerColor[]={1,1,0,1}; };
+    class FA_ammo_65cm_XM893_T_Green: FA_ammo_65cm_XM893 { tracer=1; tracerColor[]={0,1,0,1}; };
+    class FA_ammo_65cm_XM893_T_White: FA_ammo_65cm_XM893 { tracer=1; tracerColor[]={1,1,1,1}; };
+    class FA_ammo_65cm_XM893_T_Blue: FA_ammo_65cm_XM893 { tracer=1; tracerColor[]={0,0.3,1,1}; };
+    class FA_ammo_65cm_XM893_T_Orange: FA_ammo_65cm_XM893 { tracer=1; tracerColor[]={1,0.4,0,1}; };
+    class FA_ammo_65cm_XM893_T_IR: FA_ammo_65cm_XM893 { tracer=1; nvgOnly=1; tracerColor[]={0.2,1,0.2,1}; };
 
     // =========================================================
     // 7.62x39mm (AK family — AK-12, RPK-12)
@@ -606,9 +669,9 @@ class CfgAmmo {
         airFriction = -0.00130;
         deflecting = 16;
         tracerScale = 0.7;
-        ACE_caliber = 0.311;
-        ACE_bulletLength = 1.02;
-        ACE_bulletMass = 116;
+        ACE_caliber = 7.9;
+        ACE_bulletLength = 25.91;
+        ACE_bulletMass = 7.52;
         ACE_ballisticCoefficients[] = {0.150};
         ACE_velocityBoundaries[] = {};
         ACE_standardAtmosphere = "ICAO";
@@ -633,9 +696,9 @@ class CfgAmmo {
         airFriction = -0.00120;
         deflecting = 15;
         tracerScale = 0.7;
-        ACE_caliber = 0.311;
-        ACE_bulletLength = 1.06;
-        ACE_bulletMass = 118;
+        ACE_caliber = 7.9;
+        ACE_bulletLength = 26.92;
+        ACE_bulletMass = 7.65;
         ACE_ballisticCoefficients[] = {0.165};
         ACE_velocityBoundaries[] = {};
         ACE_standardAtmosphere = "ICAO";
@@ -660,9 +723,9 @@ class CfgAmmo {
         airFriction = -0.00060;
         deflecting = 13;
         tracerScale = 0.5;
-        ACE_caliber = 0.311;
-        ACE_bulletLength = 1.34;
-        ACE_bulletMass = 210;
+        ACE_caliber = 7.9;
+        ACE_bulletLength = 34.04;
+        ACE_bulletMass = 13.61;
         ACE_ballisticCoefficients[] = {0.180};
         ACE_velocityBoundaries[] = {};
         ACE_standardAtmosphere = "ICAO";
@@ -691,9 +754,9 @@ class CfgAmmo {
         airFriction = -0.00125;
         deflecting = 17;
         tracerScale = 0.8;
-        ACE_caliber = 0.2205;
-        ACE_bulletLength = 1.00;
-        ACE_bulletMass = 56;
+        ACE_caliber = 5.6;
+        ACE_bulletLength = 25.4;
+        ACE_bulletMass = 3.63;
         ACE_ballisticCoefficients[] = {0.130};
         ACE_velocityBoundaries[] = {};
         ACE_standardAtmosphere = "ICAO";
@@ -717,9 +780,9 @@ class CfgAmmo {
         airFriction = -0.00118;
         deflecting = 16;
         tracerScale = 0.8;
-        ACE_caliber = 0.2205;
-        ACE_bulletLength = 1.04;
-        ACE_bulletMass = 57;
+        ACE_caliber = 5.6;
+        ACE_bulletLength = 26.42;
+        ACE_bulletMass = 3.69;
         ACE_ballisticCoefficients[] = {0.150};
         ACE_velocityBoundaries[] = {};
         ACE_standardAtmosphere = "ICAO";
@@ -743,9 +806,9 @@ class CfgAmmo {
         airFriction = -0.00075;
         deflecting = 14;
         tracerScale = 0.8;
-        ACE_caliber = 0.2205;
-        ACE_bulletLength = 1.30;
-        ACE_bulletMass = 85;
+        ACE_caliber = 5.6;
+        ACE_bulletLength = 33.02;
+        ACE_bulletMass = 5.51;
         ACE_ballisticCoefficients[] = {0.120};
         ACE_velocityBoundaries[] = {};
         ACE_standardAtmosphere = "ICAO";
@@ -771,9 +834,9 @@ class CfgAmmo {
         airFriction = -0.00075;
         deflecting = 8;
         tracerScale = 0.7;
-        ACE_caliber = 0.365;
-        ACE_bulletLength = 1.50;
-        ACE_bulletMass = 270;
+        ACE_caliber = 9.27;
+        ACE_bulletLength = 38.1;
+        ACE_bulletMass = 17.5;
         ACE_ballisticCoefficients[] = {0.300};
         ACE_velocityBoundaries[] = {};
         ACE_standardAtmosphere = "ICAO";
@@ -799,9 +862,9 @@ class CfgAmmo {
         airFriction = -0.00050;
         deflecting = 7;
         tracerScale = 0.7;
-        ACE_caliber = 0.408;
-        ACE_bulletLength = 1.97;
-        ACE_bulletMass = 340;
+        ACE_caliber = 10.36;
+        ACE_bulletLength = 50.04;
+        ACE_bulletMass = 22.03;
         ACE_ballisticCoefficients[] = {0.420};
         ACE_velocityBoundaries[] = {};
         ACE_standardAtmosphere = "ICAO";
@@ -827,9 +890,9 @@ class CfgAmmo {
         airFriction = -0.00044;
         deflecting = 7;
         tracerScale = 0.7;
-        ACE_caliber = 0.408;
-        ACE_bulletLength = 2.10;
-        ACE_bulletMass = 419;
+        ACE_caliber = 10.36;
+        ACE_bulletLength = 53.34;
+        ACE_bulletMass = 27.15;
         ACE_ballisticCoefficients[] = {0.460};
         ACE_velocityBoundaries[] = {};
         ACE_standardAtmosphere = "ICAO";
@@ -855,9 +918,9 @@ class CfgAmmo {
         airFriction = -0.00060;
         deflecting = 7;
         tracerScale = 0.7;
-        ACE_caliber = 0.408;
-        ACE_bulletLength = 1.78;
-        ACE_bulletMass = 305;
+        ACE_caliber = 10.36;
+        ACE_bulletLength = 45.21;
+        ACE_bulletMass = 19.76;
         ACE_ballisticCoefficients[] = {0.350};
         ACE_velocityBoundaries[] = {};
         ACE_standardAtmosphere = "ICAO";
@@ -883,9 +946,9 @@ class CfgAmmo {
         airFriction = -0.00052;
         deflecting = 6;
         tracerScale = 0.7;
-        ACE_caliber = 0.408;
-        ACE_bulletLength = 1.90;
-        ACE_bulletMass = 324;
+        ACE_caliber = 10.36;
+        ACE_bulletLength = 48.26;
+        ACE_bulletMass = 20.99;
         ACE_ballisticCoefficients[] = {0.400};
         ACE_velocityBoundaries[] = {};
         ACE_standardAtmosphere = "ICAO";
@@ -911,9 +974,9 @@ class CfgAmmo {
         airFriction = -0.00045;
         deflecting = 6;
         tracerScale = 0.8;
-        ACE_caliber = 0.510;
-        ACE_bulletLength = 2.28;
-        ACE_bulletMass = 740;
+        ACE_caliber = 12.95;
+        ACE_bulletLength = 57.91;
+        ACE_bulletMass = 47.95;
         ACE_ballisticCoefficients[] = {0.370};
         ACE_velocityBoundaries[] = {};
         ACE_standardAtmosphere = "ICAO";
@@ -939,9 +1002,9 @@ class CfgAmmo {
         airFriction = -0.00040;
         deflecting = 5;
         tracerScale = 0.8;
-        ACE_caliber = 0.510;
-        ACE_bulletLength = 2.36;
-        ACE_bulletMass = 680;
+        ACE_caliber = 12.95;
+        ACE_bulletLength = 59.94;
+        ACE_bulletMass = 44.06;
         ACE_ballisticCoefficients[] = {0.330};
         ACE_velocityBoundaries[] = {};
         ACE_standardAtmosphere = "ICAO";
@@ -967,9 +1030,9 @@ class CfgAmmo {
         airFriction = -0.00044;
         deflecting = 6;
         tracerScale = 0.8;
-        ACE_caliber = 0.510;
-        ACE_bulletLength = 2.30;
-        ACE_bulletMass = 750;
+        ACE_caliber = 12.95;
+        ACE_bulletLength = 58.42;
+        ACE_bulletMass = 48.6;
         ACE_ballisticCoefficients[] = {0.380};
         ACE_velocityBoundaries[] = {};
         ACE_standardAtmosphere = "ICAO";
@@ -995,9 +1058,9 @@ class CfgAmmo {
         airFriction = -0.00040;
         deflecting = 5;
         tracerScale = 0.8;
-        ACE_caliber = 0.510;
-        ACE_bulletLength = 2.31;
-        ACE_bulletMass = 671;
+        ACE_caliber = 12.95;
+        ACE_bulletLength = 58.67;
+        ACE_bulletMass = 43.48;
         ACE_ballisticCoefficients[] = {0.330};
         ACE_velocityBoundaries[] = {};
         ACE_standardAtmosphere = "ICAO";
@@ -1023,9 +1086,9 @@ class CfgAmmo {
         airFriction = -0.00090;
         deflecting = 22;
         tracerScale = 0.5;
-        ACE_caliber = 0.452;
-        ACE_bulletLength = 0.681;
-        ACE_bulletMass = 232;
+        ACE_caliber = 11.48;
+        ACE_bulletLength = 17.3;
+        ACE_bulletMass = 15.03;
         ACE_ballisticCoefficients[] = {0.195};
         ACE_velocityBoundaries[] = {};
         ACE_standardAtmosphere = "ICAO";
@@ -1128,8 +1191,12 @@ class CfgAmmo {
     // ---- Mk363 PABS — Proximity Airburst Slug (script-driven) ----
     // Flies as a slug; proximity script detonates it near a UAV
     // for anti-drone reach the shot pattern can't achieve.
-    // Hook: add ["FA_12G_Mk363_PABS", [6, 4, 1.0]] to the
-    // antidrone AD_params table.
+    // Registered in the antidrone AD_params table (ghostfa_antidrone,
+    // fnc_initAntiDrone) so the fired EH installs proximity tracking.
+    // ACE frag: fabricated sleeve, no real charge — the detonation is
+    // scripted (fnc_detonateAD). Sized as the slug's share of the 40mm HE
+    // warhead: 12.22% of 40mm mass (right.json percent_of_40mm_mass) ->
+    // metal 200 g x12.22% = 24.4 g, charge 32 g x12.22% = 3.9 g.
     class FA_12G_Mk363_PABS: B_12Gauge_Slug {
         displayName = "12g Mk363 Proximity Airburst";
         hit = 4;
@@ -1137,6 +1204,12 @@ class CfgAmmo {
         airFriction = -0.0050;
         typicalSpeed = 430;
         airLock = 1;
+        indirectHitRange = 1.6;
+        ace_frag_metal = 24.4;
+        ace_frag_charge = 3.9;
+        ace_frag_gurney_c = 2700;
+        ace_frag_gurney_k = 0.5;
+        ace_frag_classes[] = {"ace_frag_tiny_HD", "ace_frag_small_HD"};
         ACE_barrelLengths[] = {470, 508};
         ACE_muzzleVelocities[] = {420, 430};
     };

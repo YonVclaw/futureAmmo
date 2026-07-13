@@ -21,7 +21,7 @@ params [
     ["_dur",    8,       [0]],
     ["_radius", 60,      [0]]
 ];
-"SmallSecondary" createVehicle _pos;
+// Soft-kill EW burst — no kinetic explosion; the round is delivered by chute.
 
 {
     if (unitIsUAV _x) then {

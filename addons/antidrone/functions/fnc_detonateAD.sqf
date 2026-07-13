@@ -4,6 +4,13 @@
  * Applies proximity-burst effect and distance-scaled damage to all UAVs within
  * the lethal radius. Routes damage via remoteExec for non-local drones.
  *
+ * These PAB rounds have no real explosive charge — the engine never fires a
+ * native "Explode" event for them, so ACE's frag system (which only listens
+ * for that event) would otherwise never trigger. If ACE_frag is present, its
+ * fragmentation is invoked directly here at the scripted detonation point,
+ * using the ammo class's ace_frag_* CfgAmmo values (a fabricated frag sleeve,
+ * see CfgAmmo.hpp). If ACE_frag isn't loaded, this event dispatch is a no-op.
+ *
  * Arguments:
  * 0: Projectile <OBJECT>
  * 1: Lethal radius in metres <NUMBER>
@@ -23,6 +30,10 @@ params [
 
 private _bpos = getPosVisual _proj;
 "SmallSecondary" createVehicle _bpos;
+
+if (missionNamespace getVariable ["ace_frag_enabled", true]) then {
+    ["ace_frag_frag_eh", [_bpos, typeOf _proj]] call CBA_fnc_serverEvent;
+};
 
 {
     private _f = 1 - ((_x distance _proj) / _lethal);

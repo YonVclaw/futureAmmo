@@ -4,6 +4,9 @@ class CfgMagazines {
     class 30Rnd_556x45_Stanag;
     class 200Rnd_556x45_Box_F;
     class 20Rnd_762x51_Mag;
+    // Vehicle coax / HMG belt bases (Marshall coax, Rhino coax + commander HMG)
+    class 200Rnd_762x51_Belt_T_Red;
+    class 200Rnd_127x99_mag_Tracer_Red;
     class 200Rnd_338_Mag;
     class 130Rnd_338_Mag;
     class 150Rnd_762x54_Box;
@@ -56,7 +59,7 @@ class CfgMagazines {
     // 6.5x39 Caseless base mags
     class 30Rnd_65x39_caseless_mag;
     class 30Rnd_65x39_caseless_black_mag;
-    class 30Rnd_65x39_caseless_green;
+    class 30Rnd_65x39_caseless_khaki_mag;
     class 30Rnd_65x39_caseless_msbs_mag;
     
     // =========================================================
@@ -134,6 +137,82 @@ class CfgMagazines {
     class FA_20Rnd_762_XM751_CTEP_T_Blue: FA_20Rnd_762_XM751_CTEP { ammo = "FA_762_XM751_CTEP_T_Blue"; displayName = "[Ghost] 20Rnd 7.62 XM751 CTEP (Blue Tracer)"; tracersEvery = 4; };
     class FA_20Rnd_762_XM751_CTEP_T_Orange: FA_20Rnd_762_XM751_CTEP { ammo = "FA_762_XM751_CTEP_T_Orange"; displayName = "[Ghost] 20Rnd 7.62 XM751 CTEP (Orange Tracer)"; tracersEvery = 4; };
     class FA_20Rnd_762_XM751_CTEP_T_IR: FA_20Rnd_762_XM751_CTEP { ammo = "FA_762_XM751_CTEP_T_IR"; displayName = "[Ghost] 20Rnd 7.62 XM751 CTEP (IR Tracer)"; tracersEvery = 4; };
+
+    // =========================================================
+    // 7.62x51mm — M80A2 HV — 200Rnd belt (Rhino coax et al.)
+    // =========================================================
+    class FA_200Rnd_762_M80A2_HV: 200Rnd_762x51_Belt_T_Red {
+        author = QAUTHOR;
+        displayName = "[Ghost] 200Rnd 7.62 M80A2 HV Belt";
+        descriptionShort = "7.62x51 M80A2 HV-EPR (2032)<br/>Hybrid case, 135gr tungsten - coax belt";
+        ammo = "FA_762_M80A2_HV";
+        initSpeed = 940;
+        tracersEvery = 0;
+    };
+    class FA_200Rnd_762_M80A2_HV_T_Red: FA_200Rnd_762_M80A2_HV { ammo = "FA_762_M80A2_HV_T_Red"; displayName = "[Ghost] 200Rnd 7.62 M80A2 HV Belt (Red Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_762_M80A2_HV_T_Yellow: FA_200Rnd_762_M80A2_HV { ammo = "FA_762_M80A2_HV_T_Yellow"; displayName = "[Ghost] 200Rnd 7.62 M80A2 HV Belt (Yellow Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_762_M80A2_HV_T_Green: FA_200Rnd_762_M80A2_HV { ammo = "FA_762_M80A2_HV_T_Green"; displayName = "[Ghost] 200Rnd 7.62 M80A2 HV Belt (Green Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_762_M80A2_HV_T_White: FA_200Rnd_762_M80A2_HV { ammo = "FA_762_M80A2_HV_T_White"; displayName = "[Ghost] 200Rnd 7.62 M80A2 HV Belt (White Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_762_M80A2_HV_T_Blue: FA_200Rnd_762_M80A2_HV { ammo = "FA_762_M80A2_HV_T_Blue"; displayName = "[Ghost] 200Rnd 7.62 M80A2 HV Belt (Blue Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_762_M80A2_HV_T_Orange: FA_200Rnd_762_M80A2_HV { ammo = "FA_762_M80A2_HV_T_Orange"; displayName = "[Ghost] 200Rnd 7.62 M80A2 HV Belt (Orange Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_762_M80A2_HV_T_IR: FA_200Rnd_762_M80A2_HV { ammo = "FA_762_M80A2_HV_T_IR"; displayName = "[Ghost] 200Rnd 7.62 M80A2 HV Belt (IR Tracer)"; tracersEvery = 4; };
+
+    // =========================================================
+    // 7.62x51mm — XM751 CTEP — 200Rnd belt (Rhino coax et al.)
+    // =========================================================
+    class FA_200Rnd_762_XM751_CTEP: 200Rnd_762x51_Belt_T_Red {
+        author = QAUTHOR;
+        displayName = "[Ghost] 200Rnd 7.62 XM751 CTEP Belt";
+        descriptionShort = "7.62x51 XM751 CTEP (2039)<br/>Cased-telescoped, 140gr 2-stage tungsten - coax belt";
+        ammo = "FA_762_XM751_CTEP";
+        initSpeed = 960;
+        tracersEvery = 0;
+    };
+    class FA_200Rnd_762_XM751_CTEP_T_Red: FA_200Rnd_762_XM751_CTEP { ammo = "FA_762_XM751_CTEP_T_Red"; displayName = "[Ghost] 200Rnd 7.62 XM751 CTEP Belt (Red Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_762_XM751_CTEP_T_Yellow: FA_200Rnd_762_XM751_CTEP { ammo = "FA_762_XM751_CTEP_T_Yellow"; displayName = "[Ghost] 200Rnd 7.62 XM751 CTEP Belt (Yellow Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_762_XM751_CTEP_T_Green: FA_200Rnd_762_XM751_CTEP { ammo = "FA_762_XM751_CTEP_T_Green"; displayName = "[Ghost] 200Rnd 7.62 XM751 CTEP Belt (Green Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_762_XM751_CTEP_T_White: FA_200Rnd_762_XM751_CTEP { ammo = "FA_762_XM751_CTEP_T_White"; displayName = "[Ghost] 200Rnd 7.62 XM751 CTEP Belt (White Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_762_XM751_CTEP_T_Blue: FA_200Rnd_762_XM751_CTEP { ammo = "FA_762_XM751_CTEP_T_Blue"; displayName = "[Ghost] 200Rnd 7.62 XM751 CTEP Belt (Blue Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_762_XM751_CTEP_T_Orange: FA_200Rnd_762_XM751_CTEP { ammo = "FA_762_XM751_CTEP_T_Orange"; displayName = "[Ghost] 200Rnd 7.62 XM751 CTEP Belt (Orange Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_762_XM751_CTEP_T_IR: FA_200Rnd_762_XM751_CTEP { ammo = "FA_762_XM751_CTEP_T_IR"; displayName = "[Ghost] 200Rnd 7.62 XM751 CTEP Belt (IR Tracer)"; tracersEvery = 4; };
+
+    // =========================================================
+    // 12.7x99 (.50 BMG) — Mk211 Mod 0 HEIAP — 200Rnd belt (M2/RWS, coax .50)
+    // =========================================================
+    class FA_200Rnd_127_Mk211Mod0: 200Rnd_127x99_mag_Tracer_Red {
+        author = QAUTHOR;
+        displayName = "[Ghost] 200Rnd .50 Mk211 Mod 0 Belt";
+        descriptionShort = "12.7x99 Mk211 Mod 0 HEIAP (2033)<br/>Raufoss multipurpose - vehicle belt";
+        ammo = "FA_127x99_Mk211Mod0_AP";
+        initSpeed = 890;
+        tracersEvery = 0;
+    };
+    class FA_200Rnd_127_Mk211Mod0_T_Red: FA_200Rnd_127_Mk211Mod0 { ammo = "FA_127x99_Mk211Mod0_AP_T_Red"; displayName = "[Ghost] 200Rnd .50 Mk211 Mod 0 Belt (Red Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_127_Mk211Mod0_T_Yellow: FA_200Rnd_127_Mk211Mod0 { ammo = "FA_127x99_Mk211Mod0_AP_T_Yellow"; displayName = "[Ghost] 200Rnd .50 Mk211 Mod 0 Belt (Yellow Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_127_Mk211Mod0_T_Green: FA_200Rnd_127_Mk211Mod0 { ammo = "FA_127x99_Mk211Mod0_AP_T_Green"; displayName = "[Ghost] 200Rnd .50 Mk211 Mod 0 Belt (Green Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_127_Mk211Mod0_T_White: FA_200Rnd_127_Mk211Mod0 { ammo = "FA_127x99_Mk211Mod0_AP_T_White"; displayName = "[Ghost] 200Rnd .50 Mk211 Mod 0 Belt (White Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_127_Mk211Mod0_T_Blue: FA_200Rnd_127_Mk211Mod0 { ammo = "FA_127x99_Mk211Mod0_AP_T_Blue"; displayName = "[Ghost] 200Rnd .50 Mk211 Mod 0 Belt (Blue Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_127_Mk211Mod0_T_Orange: FA_200Rnd_127_Mk211Mod0 { ammo = "FA_127x99_Mk211Mod0_AP_T_Orange"; displayName = "[Ghost] 200Rnd .50 Mk211 Mod 0 Belt (Orange Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_127_Mk211Mod0_T_IR: FA_200Rnd_127_Mk211Mod0 { ammo = "FA_127x99_Mk211Mod0_AP_T_IR"; displayName = "[Ghost] 200Rnd .50 Mk211 Mod 0 Belt (IR Tracer)"; tracersEvery = 4; };
+
+    // =========================================================
+    // 12.7x99 (.50 BMG) — Mk258 LRP — 200Rnd belt (precision RWS)
+    // =========================================================
+    class FA_200Rnd_127_Mk258: 200Rnd_127x99_mag_Tracer_Red {
+        author = QAUTHOR;
+        displayName = "[Ghost] 200Rnd .50 Mk258 LRP Belt";
+        descriptionShort = "12.7x99 Mk258 LRP (2033)<br/>Reduced-drag match projectile - vehicle belt";
+        ammo = "FA_127x99_Mk258_LRP";
+        initSpeed = 860;
+        tracersEvery = 0;
+    };
+    class FA_200Rnd_127_Mk258_T_Red: FA_200Rnd_127_Mk258 { ammo = "FA_127x99_Mk258_LRP_T_Red"; displayName = "[Ghost] 200Rnd .50 Mk258 LRP Belt (Red Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_127_Mk258_T_Yellow: FA_200Rnd_127_Mk258 { ammo = "FA_127x99_Mk258_LRP_T_Yellow"; displayName = "[Ghost] 200Rnd .50 Mk258 LRP Belt (Yellow Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_127_Mk258_T_Green: FA_200Rnd_127_Mk258 { ammo = "FA_127x99_Mk258_LRP_T_Green"; displayName = "[Ghost] 200Rnd .50 Mk258 LRP Belt (Green Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_127_Mk258_T_White: FA_200Rnd_127_Mk258 { ammo = "FA_127x99_Mk258_LRP_T_White"; displayName = "[Ghost] 200Rnd .50 Mk258 LRP Belt (White Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_127_Mk258_T_Blue: FA_200Rnd_127_Mk258 { ammo = "FA_127x99_Mk258_LRP_T_Blue"; displayName = "[Ghost] 200Rnd .50 Mk258 LRP Belt (Blue Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_127_Mk258_T_Orange: FA_200Rnd_127_Mk258 { ammo = "FA_127x99_Mk258_LRP_T_Orange"; displayName = "[Ghost] 200Rnd .50 Mk258 LRP Belt (Orange Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_127_Mk258_T_IR: FA_200Rnd_127_Mk258 { ammo = "FA_127x99_Mk258_LRP_T_IR"; displayName = "[Ghost] 200Rnd .50 Mk258 LRP Belt (IR Tracer)"; tracersEvery = 4; };
 
     // =========================================================
     // .300 BLK (subsonic) — Mk341 SUB-AP
@@ -377,7 +456,7 @@ class CfgMagazines {
     class FA_30Rnd_65_EPR_Black_T_Orange: FA_30Rnd_65_EPR_Black { ammo = "FA_65_EPR_T_Orange"; displayName = "[Ghost] 30Rnd 6.5 Caseless EPR Black (Orange Tracer)"; tracersEvery = 4; };
     class FA_30Rnd_65_EPR_Black_T_IR: FA_30Rnd_65_EPR_Black { ammo = "FA_65_EPR_T_IR"; displayName = "[Ghost] 30Rnd 6.5 Caseless EPR Black (IR Tracer)"; tracersEvery = 4; };
 
-    class FA_30Rnd_65_EPR_Green: 30Rnd_65x39_caseless_green {
+    class FA_30Rnd_65_EPR_Khaki: 30Rnd_65x39_caseless_khaki_mag {
         author = QAUTHOR;
         displayName = "[Ghost] 30Rnd 6.5 Caseless EPR (Green)";
         descriptionShort = "6.5x39 Caseless EPR (2035)<br/>Tungsten, MX family only";
@@ -385,13 +464,13 @@ class CfgMagazines {
         initSpeed = 820;
         mass = 7;
     };
-    class FA_30Rnd_65_EPR_Green_T_Red: FA_30Rnd_65_EPR_Green { ammo = "FA_65_EPR_T_Red"; displayName = "[Ghost] 30Rnd 6.5 Caseless EPR Green (Red Tracer)"; tracersEvery = 4; };
-    class FA_30Rnd_65_EPR_Green_T_Yellow: FA_30Rnd_65_EPR_Green { ammo = "FA_65_EPR_T_Yellow"; displayName = "[Ghost] 30Rnd 6.5 Caseless EPR Green (Yellow Tracer)"; tracersEvery = 4; };
-    class FA_30Rnd_65_EPR_Green_T_Green: FA_30Rnd_65_EPR_Green { ammo = "FA_65_EPR_T_Green"; displayName = "[Ghost] 30Rnd 6.5 Caseless EPR Green (Green Tracer)"; tracersEvery = 4; };
-    class FA_30Rnd_65_EPR_Green_T_White: FA_30Rnd_65_EPR_Green { ammo = "FA_65_EPR_T_White"; displayName = "[Ghost] 30Rnd 6.5 Caseless EPR Green (White Tracer)"; tracersEvery = 4; };
-    class FA_30Rnd_65_EPR_Green_T_Blue: FA_30Rnd_65_EPR_Green { ammo = "FA_65_EPR_T_Blue"; displayName = "[Ghost] 30Rnd 6.5 Caseless EPR Green (Blue Tracer)"; tracersEvery = 4; };
-    class FA_30Rnd_65_EPR_Green_T_Orange: FA_30Rnd_65_EPR_Green { ammo = "FA_65_EPR_T_Orange"; displayName = "[Ghost] 30Rnd 6.5 Caseless EPR Green (Orange Tracer)"; tracersEvery = 4; };
-    class FA_30Rnd_65_EPR_Green_T_IR: FA_30Rnd_65_EPR_Green { ammo = "FA_65_EPR_T_IR"; displayName = "[Ghost] 30Rnd 6.5 Caseless EPR Green (IR Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_65_EPR_Khaki_T_Red: FA_30Rnd_65_EPR_Khaki { ammo = "FA_65_EPR_T_Red"; displayName = "[Ghost] 30Rnd 6.5 Caseless EPR Khaki (Red Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_65_EPR_Khaki_T_Yellow: FA_30Rnd_65_EPR_Khaki { ammo = "FA_65_EPR_T_Yellow"; displayName = "[Ghost] 30Rnd 6.5 Caseless EPR Khaki (Yellow Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_65_EPR_Khaki_T_Green: FA_30Rnd_65_EPR_Khaki { ammo = "FA_65_EPR_T_Green"; displayName = "[Ghost] 30Rnd 6.5 Caseless EPR Khaki (Green Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_65_EPR_Khaki_T_White: FA_30Rnd_65_EPR_Khaki { ammo = "FA_65_EPR_T_White"; displayName = "[Ghost] 30Rnd 6.5 Caseless EPR Khaki (White Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_65_EPR_Khaki_T_Blue: FA_30Rnd_65_EPR_Khaki { ammo = "FA_65_EPR_T_Blue"; displayName = "[Ghost] 30Rnd 6.5 Caseless EPR Khaki (Blue Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_65_EPR_Khaki_T_Orange: FA_30Rnd_65_EPR_Khaki { ammo = "FA_65_EPR_T_Orange"; displayName = "[Ghost] 30Rnd 6.5 Caseless EPR Khaki (Orange Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_65_EPR_Khaki_T_IR: FA_30Rnd_65_EPR_Khaki { ammo = "FA_65_EPR_T_IR"; displayName = "[Ghost] 30Rnd 6.5 Caseless EPR Khaki (IR Tracer)"; tracersEvery = 4; };
 
     class FA_30Rnd_65_EPR_MSBS: 30Rnd_65x39_caseless_msbs_mag {
         author = QAUTHOR;
@@ -637,6 +716,7 @@ class CfgMagazines {
     // =========================================================
     // 7.62x54R — 150Rnd_762x54_Box (PKM/PKP)
     // =========================================================
+    class FA_150Rnd_762x54_Box: 150Rnd_762x54_Box { author = QAUTHOR; displayName = "[Ghost] 150Rnd 7.62x54R Box"; descriptionShort = "7.62x54R Ball HV"; ammo = "FA_762x54R_Ball_HV"; initSpeed = 850; };
     class FA_150Rnd_762x54_Box_T_Red : 150Rnd_762x54_Box { author = QAUTHOR; displayName = "[Ghost] 150Rnd 7.62x54R Box (Red Tracer)"; descriptionShort = "7.62x54R Ball HV - Red Tracer"; ammo = "FA_762x54R_Ball_HV_T_Red"; initSpeed = 855; tracersEvery = 4; };
     class FA_150Rnd_762x54_Box_T_Yellow : 150Rnd_762x54_Box { author = QAUTHOR; displayName = "[Ghost] 150Rnd 7.62x54R Box (Yellow Tracer)"; descriptionShort = "7.62x54R Ball HV - Yellow Tracer"; ammo = "FA_762x54R_Ball_HV_T_Yellow"; initSpeed = 855; tracersEvery = 4; };
     class FA_150Rnd_762x54_Box_T_Green : 150Rnd_762x54_Box { author = QAUTHOR; displayName = "[Ghost] 150Rnd 7.62x54R Box (Green Tracer)"; descriptionShort = "7.62x54R Ball HV - Green Tracer"; ammo = "FA_762x54R_Ball_HV_T_Green"; initSpeed = 855; tracersEvery = 4; };
@@ -648,6 +728,7 @@ class CfgMagazines {
     // =========================================================
     // ACE 7.62x51 HK417 — ACE_20Rnd_762x51_M993_AP_Mag
     // =========================================================
+    class FA_ACE_20Rnd_762x51_M993_AP: ACE_20Rnd_762x51_M993_AP_Mag { author = QAUTHOR; displayName = "[Ghost] 20Rnd 7.62 HK417 AP"; descriptionShort = "7.62x51 M80A2 HV"; ammo = "FA_762_M80A2_HV"; initSpeed = 833; };
     class FA_ACE_20Rnd_762x51_M993_AP_T_Red : ACE_20Rnd_762x51_M993_AP_Mag { author = QAUTHOR; displayName = "[Ghost] 20Rnd 7.62 HK417 AP (Red Tracer)"; descriptionShort = "7.62x51 M80A2 HV - Red Tracer"; ammo = "FA_762_M80A2_HV_T_Red"; initSpeed = 940; tracersEvery = 4; };
     class FA_ACE_20Rnd_762x51_M993_AP_T_Yellow : ACE_20Rnd_762x51_M993_AP_Mag { author = QAUTHOR; displayName = "[Ghost] 20Rnd 7.62 HK417 AP (Yellow Tracer)"; descriptionShort = "7.62x51 M80A2 HV - Yellow Tracer"; ammo = "FA_762_M80A2_HV_T_Yellow"; initSpeed = 940; tracersEvery = 4; };
     class FA_ACE_20Rnd_762x51_M993_AP_T_Green : ACE_20Rnd_762x51_M993_AP_Mag { author = QAUTHOR; displayName = "[Ghost] 20Rnd 7.62 HK417 AP (Green Tracer)"; descriptionShort = "7.62x51 M80A2 HV - Green Tracer"; ammo = "FA_762_M80A2_HV_T_Green"; initSpeed = 940; tracersEvery = 4; };
@@ -659,6 +740,7 @@ class CfgMagazines {
     // =========================================================
     // ACE 7.62x51 HK417 — ACE_10Rnd_762x51_Mag_SD
     // =========================================================
+    class FA_ACE_10Rnd_762x51_SD: ACE_10Rnd_762x51_Mag_SD { author = QAUTHOR; displayName = "[Ghost] 10Rnd 7.62 HK417 SD"; descriptionShort = "7.62x51 M80A2 HV"; ammo = "FA_762_M80A2_HV"; initSpeed = 833; };
     class FA_ACE_10Rnd_762x51_SD_T_Red : ACE_10Rnd_762x51_Mag_SD { author = QAUTHOR; displayName = "[Ghost] 10Rnd 7.62 HK417 SD (Red Tracer)"; descriptionShort = "7.62x51 M80A2 HV - Red Tracer"; ammo = "FA_762_M80A2_HV_T_Red"; initSpeed = 940; tracersEvery = 4; };
     class FA_ACE_10Rnd_762x51_SD_T_Yellow : ACE_10Rnd_762x51_Mag_SD { author = QAUTHOR; displayName = "[Ghost] 10Rnd 7.62 HK417 SD (Yellow Tracer)"; descriptionShort = "7.62x51 M80A2 HV - Yellow Tracer"; ammo = "FA_762_M80A2_HV_T_Yellow"; initSpeed = 940; tracersEvery = 4; };
     class FA_ACE_10Rnd_762x51_SD_T_Green : ACE_10Rnd_762x51_Mag_SD { author = QAUTHOR; displayName = "[Ghost] 10Rnd 7.62 HK417 SD (Green Tracer)"; descriptionShort = "7.62x51 M80A2 HV - Green Tracer"; ammo = "FA_762_M80A2_HV_T_Green"; initSpeed = 940; tracersEvery = 4; };
@@ -746,35 +828,6 @@ class CfgMagazines {
     class FA_200Rnd_65x39_Belt_T_Blue : 200Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 200Rnd 6.5 Belt (Blue Tracer)"; descriptionShort = "6.5x39 Caseless EPR - Blue Tracer"; ammo = "FA_65_EPR_T_Blue"; initSpeed = 820; tracersEvery = 4; };
     class FA_200Rnd_65x39_Belt_T_Orange : 200Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 200Rnd 6.5 Belt (Orange Tracer)"; descriptionShort = "6.5x39 Caseless EPR - Orange Tracer"; ammo = "FA_65_EPR_T_Orange"; initSpeed = 820; tracersEvery = 4; };
 
-    // =========================================================
-    // 6.5x39 — 30Rnd_65x39_caseless_black_mag
-    // =========================================================
-    class FA_30Rnd_65x39_caseless_black_mag_T_Red : 30Rnd_65x39_caseless_black_mag { author = QAUTHOR; displayName = "[Ghost] 30Rnd 6.5 Caseless Black (Red Tracer)"; descriptionShort = "6.5x39 Caseless EPR - Red Tracer"; ammo = "FA_65_EPR_T_Red"; initSpeed = 820; tracersEvery = 4; };
-    class FA_30Rnd_65x39_caseless_black_mag_T_Yellow : 30Rnd_65x39_caseless_black_mag { author = QAUTHOR; displayName = "[Ghost] 30Rnd 6.5 Caseless Black (Yellow Tracer)"; descriptionShort = "6.5x39 Caseless EPR - Yellow Tracer"; ammo = "FA_65_EPR_T_Yellow"; initSpeed = 820; tracersEvery = 4; };
-    class FA_30Rnd_65x39_caseless_black_mag_T_Green : 30Rnd_65x39_caseless_black_mag { author = QAUTHOR; displayName = "[Ghost] 30Rnd 6.5 Caseless Black (Green Tracer)"; descriptionShort = "6.5x39 Caseless EPR - Green Tracer"; ammo = "FA_65_EPR_T_Green"; initSpeed = 820; tracersEvery = 4; };
-    class FA_30Rnd_65x39_caseless_black_mag_T_White : 30Rnd_65x39_caseless_black_mag { author = QAUTHOR; displayName = "[Ghost] 30Rnd 6.5 Caseless Black (White Tracer)"; descriptionShort = "6.5x39 Caseless EPR - White Tracer"; ammo = "FA_65_EPR_T_White"; initSpeed = 820; tracersEvery = 4; };
-    class FA_30Rnd_65x39_caseless_black_mag_T_Blue : 30Rnd_65x39_caseless_black_mag { author = QAUTHOR; displayName = "[Ghost] 30Rnd 6.5 Caseless Black (Blue Tracer)"; descriptionShort = "6.5x39 Caseless EPR - Blue Tracer"; ammo = "FA_65_EPR_T_Blue"; initSpeed = 820; tracersEvery = 4; };
-    class FA_30Rnd_65x39_caseless_black_mag_T_Orange : 30Rnd_65x39_caseless_black_mag { author = QAUTHOR; displayName = "[Ghost] 30Rnd 6.5 Caseless Black (Orange Tracer)"; descriptionShort = "6.5x39 Caseless EPR - Orange Tracer"; ammo = "FA_65_EPR_T_Orange"; initSpeed = 820; tracersEvery = 4; };
-
-    // =========================================================
-    // 6.5x39 — 30Rnd_65x39_caseless_green
-    // =========================================================
-    class FA_30Rnd_65x39_caseless_green_T_Red : 30Rnd_65x39_caseless_green { author = QAUTHOR; displayName = "[Ghost] 30Rnd 6.5 Caseless Green (Red Tracer)"; descriptionShort = "6.5x39 Caseless EPR - Red Tracer"; ammo = "FA_65_EPR_T_Red"; initSpeed = 820; tracersEvery = 4; };
-    class FA_30Rnd_65x39_caseless_green_T_Yellow : 30Rnd_65x39_caseless_green { author = QAUTHOR; displayName = "[Ghost] 30Rnd 6.5 Caseless Green (Yellow Tracer)"; descriptionShort = "6.5x39 Caseless EPR - Yellow Tracer"; ammo = "FA_65_EPR_T_Yellow"; initSpeed = 820; tracersEvery = 4; };
-    class FA_30Rnd_65x39_caseless_green_T_Green : 30Rnd_65x39_caseless_green { author = QAUTHOR; displayName = "[Ghost] 30Rnd 6.5 Caseless Green (Green Tracer)"; descriptionShort = "6.5x39 Caseless EPR - Green Tracer"; ammo = "FA_65_EPR_T_Green"; initSpeed = 820; tracersEvery = 4; };
-    class FA_30Rnd_65x39_caseless_green_T_White : 30Rnd_65x39_caseless_green { author = QAUTHOR; displayName = "[Ghost] 30Rnd 6.5 Caseless Green (White Tracer)"; descriptionShort = "6.5x39 Caseless EPR - White Tracer"; ammo = "FA_65_EPR_T_White"; initSpeed = 820; tracersEvery = 4; };
-    class FA_30Rnd_65x39_caseless_green_T_Blue : 30Rnd_65x39_caseless_green { author = QAUTHOR; displayName = "[Ghost] 30Rnd 6.5 Caseless Green (Blue Tracer)"; descriptionShort = "6.5x39 Caseless EPR - Blue Tracer"; ammo = "FA_65_EPR_T_Blue"; initSpeed = 820; tracersEvery = 4; };
-    class FA_30Rnd_65x39_caseless_green_T_Orange : 30Rnd_65x39_caseless_green { author = QAUTHOR; displayName = "[Ghost] 30Rnd 6.5 Caseless Green (Orange Tracer)"; descriptionShort = "6.5x39 Caseless EPR - Orange Tracer"; ammo = "FA_65_EPR_T_Orange"; initSpeed = 820; tracersEvery = 4; };
-
-    // =========================================================
-    // 6.5x39 — 30Rnd_65x39_caseless_mag
-    // =========================================================
-    class FA_30Rnd_65x39_caseless_mag_T_Red : 30Rnd_65x39_caseless_mag { author = QAUTHOR; displayName = "[Ghost] 30Rnd 6.5 Caseless (Red Tracer)"; descriptionShort = "6.5x39 Caseless EPR - Red Tracer"; ammo = "FA_65_EPR_T_Red"; initSpeed = 820; tracersEvery = 4; };
-    class FA_30Rnd_65x39_caseless_mag_T_Yellow : 30Rnd_65x39_caseless_mag { author = QAUTHOR; displayName = "[Ghost] 30Rnd 6.5 Caseless (Yellow Tracer)"; descriptionShort = "6.5x39 Caseless EPR - Yellow Tracer"; ammo = "FA_65_EPR_T_Yellow"; initSpeed = 820; tracersEvery = 4; };
-    class FA_30Rnd_65x39_caseless_mag_T_Green : 30Rnd_65x39_caseless_mag { author = QAUTHOR; displayName = "[Ghost] 30Rnd 6.5 Caseless (Green Tracer)"; descriptionShort = "6.5x39 Caseless EPR - Green Tracer"; ammo = "FA_65_EPR_T_Green"; initSpeed = 820; tracersEvery = 4; };
-    class FA_30Rnd_65x39_caseless_mag_T_White : 30Rnd_65x39_caseless_mag { author = QAUTHOR; displayName = "[Ghost] 30Rnd 6.5 Caseless (White Tracer)"; descriptionShort = "6.5x39 Caseless EPR - White Tracer"; ammo = "FA_65_EPR_T_White"; initSpeed = 820; tracersEvery = 4; };
-    class FA_30Rnd_65x39_caseless_mag_T_Blue : 30Rnd_65x39_caseless_mag { author = QAUTHOR; displayName = "[Ghost] 30Rnd 6.5 Caseless (Blue Tracer)"; descriptionShort = "6.5x39 Caseless EPR - Blue Tracer"; ammo = "FA_65_EPR_T_Blue"; initSpeed = 820; tracersEvery = 4; };
-    class FA_30Rnd_65x39_caseless_mag_T_Orange : 30Rnd_65x39_caseless_mag { author = QAUTHOR; displayName = "[Ghost] 30Rnd 6.5 Caseless (Orange Tracer)"; descriptionShort = "6.5x39 Caseless EPR - Orange Tracer"; ammo = "FA_65_EPR_T_Orange"; initSpeed = 820; tracersEvery = 4; };
 
     // =========================================================
     // 6.5x39 — 500Rnd_65x39_Belt
@@ -899,8 +952,48 @@ class CfgMagazines {
     class FA_5Rnd_127x108_Mk211Mod2_T_IR     : 5Rnd_127x108_Mag { author = QAUTHOR; displayName = "[Ghost] 5Rnd 12.7x108 Mk211 Mod 2 (IR Tracer)";     descriptionShort = "12.7 Mk211 Mod 2 - IR Tracer";     ammo = "FA_127x108_Mk211Mod2_T_IR";     initSpeed = 900; tracersEvery = 4; };
 
     // =========================================================
+    // 12.7x99 (.50 BMG) — Mk258 LRP — 200Rnd belt (Rhino commander HMG et al.)
+    // FA's other .50 x99 mags are 5Rnd sniper mags (aegis WF50), not belts.
+    // =========================================================
+    class FA_200Rnd_127x99_Mk258: 200Rnd_127x99_mag_Tracer_Red {
+        author = QAUTHOR;
+        displayName = "[Ghost] 200Rnd .50 Mk258 LRP Belt";
+        descriptionShort = "12.7x99 Mk258 LRP<br/>HMG belt - precision / match";
+        ammo = "FA_127x99_Mk258_LRP";
+        initSpeed = 860;
+        tracersEvery = 0;
+    };
+    class FA_200Rnd_127x99_Mk258_T_Red: FA_200Rnd_127x99_Mk258 { ammo = "FA_127x99_Mk258_LRP_T_Red"; displayName = "[Ghost] 200Rnd .50 Mk258 LRP Belt (Red Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_127x99_Mk258_T_Yellow: FA_200Rnd_127x99_Mk258 { ammo = "FA_127x99_Mk258_LRP_T_Yellow"; displayName = "[Ghost] 200Rnd .50 Mk258 LRP Belt (Yellow Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_127x99_Mk258_T_Green: FA_200Rnd_127x99_Mk258 { ammo = "FA_127x99_Mk258_LRP_T_Green"; displayName = "[Ghost] 200Rnd .50 Mk258 LRP Belt (Green Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_127x99_Mk258_T_White: FA_200Rnd_127x99_Mk258 { ammo = "FA_127x99_Mk258_LRP_T_White"; displayName = "[Ghost] 200Rnd .50 Mk258 LRP Belt (White Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_127x99_Mk258_T_Blue: FA_200Rnd_127x99_Mk258 { ammo = "FA_127x99_Mk258_LRP_T_Blue"; displayName = "[Ghost] 200Rnd .50 Mk258 LRP Belt (Blue Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_127x99_Mk258_T_Orange: FA_200Rnd_127x99_Mk258 { ammo = "FA_127x99_Mk258_LRP_T_Orange"; displayName = "[Ghost] 200Rnd .50 Mk258 LRP Belt (Orange Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_127x99_Mk258_T_IR: FA_200Rnd_127x99_Mk258 { ammo = "FA_127x99_Mk258_LRP_T_IR"; displayName = "[Ghost] 200Rnd .50 Mk258 LRP Belt (IR Tracer)"; tracersEvery = 4; };
+
+    // =========================================================
+    // 12.7x99 (.50 BMG) — Mk211 Mod 0 HEIAP — 200Rnd belt (Rhino commander HMG et al.)
+    // =========================================================
+    class FA_200Rnd_127x99_Mk211Mod0: 200Rnd_127x99_mag_Tracer_Red {
+        author = QAUTHOR;
+        displayName = "[Ghost] 200Rnd .50 Mk211 Mod 0 Belt (HEIAP)";
+        descriptionShort = "12.7x99 Mk211 Mod 0 HEIAP<br/>HMG belt - anti-materiel";
+        ammo = "FA_127x99_Mk211Mod0_AP";
+        initSpeed = 890;
+        tracersEvery = 0;
+    };
+    class FA_200Rnd_127x99_Mk211Mod0_T_Red: FA_200Rnd_127x99_Mk211Mod0 { ammo = "FA_127x99_Mk211Mod0_AP_T_Red"; displayName = "[Ghost] 200Rnd .50 Mk211 Mod 0 Belt (Red Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_127x99_Mk211Mod0_T_Yellow: FA_200Rnd_127x99_Mk211Mod0 { ammo = "FA_127x99_Mk211Mod0_AP_T_Yellow"; displayName = "[Ghost] 200Rnd .50 Mk211 Mod 0 Belt (Yellow Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_127x99_Mk211Mod0_T_Green: FA_200Rnd_127x99_Mk211Mod0 { ammo = "FA_127x99_Mk211Mod0_AP_T_Green"; displayName = "[Ghost] 200Rnd .50 Mk211 Mod 0 Belt (Green Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_127x99_Mk211Mod0_T_White: FA_200Rnd_127x99_Mk211Mod0 { ammo = "FA_127x99_Mk211Mod0_AP_T_White"; displayName = "[Ghost] 200Rnd .50 Mk211 Mod 0 Belt (White Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_127x99_Mk211Mod0_T_Blue: FA_200Rnd_127x99_Mk211Mod0 { ammo = "FA_127x99_Mk211Mod0_AP_T_Blue"; displayName = "[Ghost] 200Rnd .50 Mk211 Mod 0 Belt (Blue Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_127x99_Mk211Mod0_T_Orange: FA_200Rnd_127x99_Mk211Mod0 { ammo = "FA_127x99_Mk211Mod0_AP_T_Orange"; displayName = "[Ghost] 200Rnd .50 Mk211 Mod 0 Belt (Orange Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_127x99_Mk211Mod0_T_IR: FA_200Rnd_127x99_Mk211Mod0 { ammo = "FA_127x99_Mk211Mod0_AP_T_IR"; displayName = "[Ghost] 200Rnd .50 Mk211 Mod 0 Belt (IR Tracer)"; tracersEvery = 4; };
+
+    // =========================================================
     // 5.56x45 — 200Rnd_556x45_Box_F (vanilla MINIMI belt box)
     // =========================================================
+    class FA_200Rnd_556x45_Box_F: 200Rnd_556x45_Box_F { author = QAUTHOR; displayName = "[Ghost] 200Rnd 5.56 Box"; descriptionShort = "5.56x45 Mk327 HV"; ammo = "FA_556_Mk327_HV"; initSpeed = 1000; };
     class FA_200Rnd_556x45_Box_F_T_Red : 200Rnd_556x45_Box_F { author = QAUTHOR; displayName = "[Ghost] 200Rnd 5.56 Box (Red Tracer)"; descriptionShort = "5.56x45 Mk327 HV - Red Tracer"; ammo = "FA_556_Mk327_HV_T_Red"; initSpeed = 1000; tracersEvery = 4; };
     class FA_200Rnd_556x45_Box_F_T_Yellow : 200Rnd_556x45_Box_F { author = QAUTHOR; displayName = "[Ghost] 200Rnd 5.56 Box (Yellow Tracer)"; descriptionShort = "5.56x45 Mk327 HV - Yellow Tracer"; ammo = "FA_556_Mk327_HV_T_Yellow"; initSpeed = 1000; tracersEvery = 4; };
     class FA_200Rnd_556x45_Box_F_T_Green : 200Rnd_556x45_Box_F { author = QAUTHOR; displayName = "[Ghost] 200Rnd 5.56 Box (Green Tracer)"; descriptionShort = "5.56x45 Mk327 HV - Green Tracer"; ammo = "FA_556_Mk327_HV_T_Green"; initSpeed = 1000; tracersEvery = 4; };
@@ -1002,4 +1095,165 @@ class CfgMagazines {
         ammo = "FA_40mm_Mk389_TBK";
         initSpeed = 180;
     };
+    #include "CfgMag65_matrix.hpp"
+    class FA_30Rnd_556_Mk332_AP: 30Rnd_556x45_Stanag { author = QAUTHOR; displayName = "[Ghost] 30Rnd 5.56 Mk332 AP"; descriptionShort = "5.56x45 Mk332 AP"; ammo = "FA_556_Mk332_AP"; initSpeed = 940; };
+    class FA_30Rnd_556_Mk332_AP_T_Red: FA_30Rnd_556_Mk332_AP { ammo = "FA_556_Mk332_AP_T_Red"; displayName = "[Ghost] 30Rnd 5.56 Mk332 AP (Red Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_556_Mk332_AP_T_Yellow: FA_30Rnd_556_Mk332_AP { ammo = "FA_556_Mk332_AP_T_Yellow"; displayName = "[Ghost] 30Rnd 5.56 Mk332 AP (Yellow Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_556_Mk332_AP_T_Green: FA_30Rnd_556_Mk332_AP { ammo = "FA_556_Mk332_AP_T_Green"; displayName = "[Ghost] 30Rnd 5.56 Mk332 AP (Green Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_556_Mk332_AP_T_White: FA_30Rnd_556_Mk332_AP { ammo = "FA_556_Mk332_AP_T_White"; displayName = "[Ghost] 30Rnd 5.56 Mk332 AP (White Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_556_Mk332_AP_T_Blue: FA_30Rnd_556_Mk332_AP { ammo = "FA_556_Mk332_AP_T_Blue"; displayName = "[Ghost] 30Rnd 5.56 Mk332 AP (Blue Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_556_Mk332_AP_T_Orange: FA_30Rnd_556_Mk332_AP { ammo = "FA_556_Mk332_AP_T_Orange"; displayName = "[Ghost] 30Rnd 5.56 Mk332 AP (Orange Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_556_Mk332_AP_T_IR: FA_30Rnd_556_Mk332_AP { ammo = "FA_556_Mk332_AP_T_IR"; displayName = "[Ghost] 30Rnd 5.56 Mk332 AP (IR Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_556x45_Box_F_XM891_CTEP: 200Rnd_556x45_Box_F { author = QAUTHOR; displayName = "[Ghost] 200Rnd 5.56 Box XM891 CTEP"; descriptionShort = "5.56x45 XM891 CTEP"; ammo = "FA_556_XM891_CTEP"; initSpeed = 980; };
+    class FA_200Rnd_556x45_Box_F_XM891_CTEP_T_Red: FA_200Rnd_556x45_Box_F_XM891_CTEP { ammo = "FA_556_XM891_CTEP_T_Red"; displayName = "[Ghost] 200Rnd 5.56 Box XM891 CTEP (Red Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_556x45_Box_F_XM891_CTEP_T_Yellow: FA_200Rnd_556x45_Box_F_XM891_CTEP { ammo = "FA_556_XM891_CTEP_T_Yellow"; displayName = "[Ghost] 200Rnd 5.56 Box XM891 CTEP (Yellow Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_556x45_Box_F_XM891_CTEP_T_Green: FA_200Rnd_556x45_Box_F_XM891_CTEP { ammo = "FA_556_XM891_CTEP_T_Green"; displayName = "[Ghost] 200Rnd 5.56 Box XM891 CTEP (Green Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_556x45_Box_F_XM891_CTEP_T_White: FA_200Rnd_556x45_Box_F_XM891_CTEP { ammo = "FA_556_XM891_CTEP_T_White"; displayName = "[Ghost] 200Rnd 5.56 Box XM891 CTEP (White Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_556x45_Box_F_XM891_CTEP_T_Blue: FA_200Rnd_556x45_Box_F_XM891_CTEP { ammo = "FA_556_XM891_CTEP_T_Blue"; displayName = "[Ghost] 200Rnd 5.56 Box XM891 CTEP (Blue Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_556x45_Box_F_XM891_CTEP_T_Orange: FA_200Rnd_556x45_Box_F_XM891_CTEP { ammo = "FA_556_XM891_CTEP_T_Orange"; displayName = "[Ghost] 200Rnd 5.56 Box XM891 CTEP (Orange Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_556x45_Box_F_XM891_CTEP_T_IR: FA_200Rnd_556x45_Box_F_XM891_CTEP { ammo = "FA_556_XM891_CTEP_T_IR"; displayName = "[Ghost] 200Rnd 5.56 Box XM891 CTEP (IR Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_556x45_Box_F_Mk332_AP: 200Rnd_556x45_Box_F { author = QAUTHOR; displayName = "[Ghost] 200Rnd 5.56 Box Mk332 AP"; descriptionShort = "5.56x45 Mk332 AP"; ammo = "FA_556_Mk332_AP"; initSpeed = 940; };
+    class FA_200Rnd_556x45_Box_F_Mk332_AP_T_Red: FA_200Rnd_556x45_Box_F_Mk332_AP { ammo = "FA_556_Mk332_AP_T_Red"; displayName = "[Ghost] 200Rnd 5.56 Box Mk332 AP (Red Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_556x45_Box_F_Mk332_AP_T_Yellow: FA_200Rnd_556x45_Box_F_Mk332_AP { ammo = "FA_556_Mk332_AP_T_Yellow"; displayName = "[Ghost] 200Rnd 5.56 Box Mk332 AP (Yellow Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_556x45_Box_F_Mk332_AP_T_Green: FA_200Rnd_556x45_Box_F_Mk332_AP { ammo = "FA_556_Mk332_AP_T_Green"; displayName = "[Ghost] 200Rnd 5.56 Box Mk332 AP (Green Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_556x45_Box_F_Mk332_AP_T_White: FA_200Rnd_556x45_Box_F_Mk332_AP { ammo = "FA_556_Mk332_AP_T_White"; displayName = "[Ghost] 200Rnd 5.56 Box Mk332 AP (White Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_556x45_Box_F_Mk332_AP_T_Blue: FA_200Rnd_556x45_Box_F_Mk332_AP { ammo = "FA_556_Mk332_AP_T_Blue"; displayName = "[Ghost] 200Rnd 5.56 Box Mk332 AP (Blue Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_556x45_Box_F_Mk332_AP_T_Orange: FA_200Rnd_556x45_Box_F_Mk332_AP { ammo = "FA_556_Mk332_AP_T_Orange"; displayName = "[Ghost] 200Rnd 5.56 Box Mk332 AP (Orange Tracer)"; tracersEvery = 4; };
+    class FA_200Rnd_556x45_Box_F_Mk332_AP_T_IR: FA_200Rnd_556x45_Box_F_Mk332_AP { ammo = "FA_556_Mk332_AP_T_IR"; displayName = "[Ghost] 200Rnd 5.56 Box Mk332 AP (IR Tracer)"; tracersEvery = 4; };
+    class FA_ACE_20Rnd_762x51_M993_AP_XM751_CTEP: ACE_20Rnd_762x51_M993_AP_Mag { author = QAUTHOR; displayName = "[Ghost] 20Rnd 7.62 HK417 AP XM751 CTEP"; descriptionShort = "XM751 CTEP"; ammo = "FA_762_XM751_CTEP"; initSpeed = 850; };
+    class FA_ACE_20Rnd_762x51_M993_AP_XM751_CTEP_T_Red: FA_ACE_20Rnd_762x51_M993_AP_XM751_CTEP { ammo = "FA_762_XM751_CTEP_T_Red"; displayName = "[Ghost] 20Rnd 7.62 HK417 AP XM751 CTEP (Red Tracer)"; tracersEvery = 4; };
+    class FA_ACE_20Rnd_762x51_M993_AP_XM751_CTEP_T_Yellow: FA_ACE_20Rnd_762x51_M993_AP_XM751_CTEP { ammo = "FA_762_XM751_CTEP_T_Yellow"; displayName = "[Ghost] 20Rnd 7.62 HK417 AP XM751 CTEP (Yellow Tracer)"; tracersEvery = 4; };
+    class FA_ACE_20Rnd_762x51_M993_AP_XM751_CTEP_T_Green: FA_ACE_20Rnd_762x51_M993_AP_XM751_CTEP { ammo = "FA_762_XM751_CTEP_T_Green"; displayName = "[Ghost] 20Rnd 7.62 HK417 AP XM751 CTEP (Green Tracer)"; tracersEvery = 4; };
+    class FA_ACE_20Rnd_762x51_M993_AP_XM751_CTEP_T_White: FA_ACE_20Rnd_762x51_M993_AP_XM751_CTEP { ammo = "FA_762_XM751_CTEP_T_White"; displayName = "[Ghost] 20Rnd 7.62 HK417 AP XM751 CTEP (White Tracer)"; tracersEvery = 4; };
+    class FA_ACE_20Rnd_762x51_M993_AP_XM751_CTEP_T_Blue: FA_ACE_20Rnd_762x51_M993_AP_XM751_CTEP { ammo = "FA_762_XM751_CTEP_T_Blue"; displayName = "[Ghost] 20Rnd 7.62 HK417 AP XM751 CTEP (Blue Tracer)"; tracersEvery = 4; };
+    class FA_ACE_20Rnd_762x51_M993_AP_XM751_CTEP_T_Orange: FA_ACE_20Rnd_762x51_M993_AP_XM751_CTEP { ammo = "FA_762_XM751_CTEP_T_Orange"; displayName = "[Ghost] 20Rnd 7.62 HK417 AP XM751 CTEP (Orange Tracer)"; tracersEvery = 4; };
+    class FA_ACE_20Rnd_762x51_M993_AP_XM751_CTEP_T_IR: FA_ACE_20Rnd_762x51_M993_AP_XM751_CTEP { ammo = "FA_762_XM751_CTEP_T_IR"; displayName = "[Ghost] 20Rnd 7.62 HK417 AP XM751 CTEP (IR Tracer)"; tracersEvery = 4; };
+    class FA_ACE_10Rnd_762x51_SD_XM751_CTEP: ACE_10Rnd_762x51_Mag_SD { author = QAUTHOR; displayName = "[Ghost] 10Rnd 7.62 HK417 SD XM751 CTEP"; descriptionShort = "XM751 CTEP"; ammo = "FA_762_XM751_CTEP"; initSpeed = 850; };
+    class FA_ACE_10Rnd_762x51_SD_XM751_CTEP_T_Red: FA_ACE_10Rnd_762x51_SD_XM751_CTEP { ammo = "FA_762_XM751_CTEP_T_Red"; displayName = "[Ghost] 10Rnd 7.62 HK417 SD XM751 CTEP (Red Tracer)"; tracersEvery = 4; };
+    class FA_ACE_10Rnd_762x51_SD_XM751_CTEP_T_Yellow: FA_ACE_10Rnd_762x51_SD_XM751_CTEP { ammo = "FA_762_XM751_CTEP_T_Yellow"; displayName = "[Ghost] 10Rnd 7.62 HK417 SD XM751 CTEP (Yellow Tracer)"; tracersEvery = 4; };
+    class FA_ACE_10Rnd_762x51_SD_XM751_CTEP_T_Green: FA_ACE_10Rnd_762x51_SD_XM751_CTEP { ammo = "FA_762_XM751_CTEP_T_Green"; displayName = "[Ghost] 10Rnd 7.62 HK417 SD XM751 CTEP (Green Tracer)"; tracersEvery = 4; };
+    class FA_ACE_10Rnd_762x51_SD_XM751_CTEP_T_White: FA_ACE_10Rnd_762x51_SD_XM751_CTEP { ammo = "FA_762_XM751_CTEP_T_White"; displayName = "[Ghost] 10Rnd 7.62 HK417 SD XM751 CTEP (White Tracer)"; tracersEvery = 4; };
+    class FA_ACE_10Rnd_762x51_SD_XM751_CTEP_T_Blue: FA_ACE_10Rnd_762x51_SD_XM751_CTEP { ammo = "FA_762_XM751_CTEP_T_Blue"; displayName = "[Ghost] 10Rnd 7.62 HK417 SD XM751 CTEP (Blue Tracer)"; tracersEvery = 4; };
+    class FA_ACE_10Rnd_762x51_SD_XM751_CTEP_T_Orange: FA_ACE_10Rnd_762x51_SD_XM751_CTEP { ammo = "FA_762_XM751_CTEP_T_Orange"; displayName = "[Ghost] 10Rnd 7.62 HK417 SD XM751 CTEP (Orange Tracer)"; tracersEvery = 4; };
+    class FA_ACE_10Rnd_762x51_SD_XM751_CTEP_T_IR: FA_ACE_10Rnd_762x51_SD_XM751_CTEP { ammo = "FA_762_XM751_CTEP_T_IR"; displayName = "[Ghost] 10Rnd 7.62 HK417 SD XM751 CTEP (IR Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7N47_CT_Green: 30Rnd_762x39_Mag_Green_F { author = QAUTHOR; displayName = "[Ghost] 30Rnd 7.62x39 7N47 CT Kremen (Green)"; descriptionShort = "7N47 CT"; ammo = "FA_762x39_7N47_CT"; initSpeed = 800; };
+    class FA_30Rnd_762x39_7N47_CT_Green_T_Red: FA_30Rnd_762x39_7N47_CT_Green { ammo = "FA_762x39_7N47_CT_T_Red"; displayName = "[Ghost] 30Rnd 7.62x39 7N47 CT Kremen (Green) (Red Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7N47_CT_Green_T_Yellow: FA_30Rnd_762x39_7N47_CT_Green { ammo = "FA_762x39_7N47_CT_T_Yellow"; displayName = "[Ghost] 30Rnd 7.62x39 7N47 CT Kremen (Green) (Yellow Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7N47_CT_Green_T_Green: FA_30Rnd_762x39_7N47_CT_Green { ammo = "FA_762x39_7N47_CT_T_Green"; displayName = "[Ghost] 30Rnd 7.62x39 7N47 CT Kremen (Green) (Green Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7N47_CT_Green_T_White: FA_30Rnd_762x39_7N47_CT_Green { ammo = "FA_762x39_7N47_CT_T_White"; displayName = "[Ghost] 30Rnd 7.62x39 7N47 CT Kremen (Green) (White Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7N47_CT_Green_T_Blue: FA_30Rnd_762x39_7N47_CT_Green { ammo = "FA_762x39_7N47_CT_T_Blue"; displayName = "[Ghost] 30Rnd 7.62x39 7N47 CT Kremen (Green) (Blue Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7N47_CT_Green_T_Orange: FA_30Rnd_762x39_7N47_CT_Green { ammo = "FA_762x39_7N47_CT_T_Orange"; displayName = "[Ghost] 30Rnd 7.62x39 7N47 CT Kremen (Green) (Orange Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7N47_CT_Green_T_IR: FA_30Rnd_762x39_7N47_CT_Green { ammo = "FA_762x39_7N47_CT_T_IR"; displayName = "[Ghost] 30Rnd 7.62x39 7N47 CT Kremen (Green) (IR Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7U4_Sub_Green: 30Rnd_762x39_Mag_Green_F { author = QAUTHOR; displayName = "[Ghost] 30Rnd 7.62x39 7U4 Sub Kremen (Green)"; descriptionShort = "7U4 Sub"; ammo = "FA_762x39_7U4_Sub"; initSpeed = 290; };
+    class FA_30Rnd_762x39_7U4_Sub_Green_T_Red: FA_30Rnd_762x39_7U4_Sub_Green { ammo = "FA_762x39_7U4_Sub_T_Red"; displayName = "[Ghost] 30Rnd 7.62x39 7U4 Sub Kremen (Green) (Red Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7U4_Sub_Green_T_Yellow: FA_30Rnd_762x39_7U4_Sub_Green { ammo = "FA_762x39_7U4_Sub_T_Yellow"; displayName = "[Ghost] 30Rnd 7.62x39 7U4 Sub Kremen (Green) (Yellow Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7U4_Sub_Green_T_Green: FA_30Rnd_762x39_7U4_Sub_Green { ammo = "FA_762x39_7U4_Sub_T_Green"; displayName = "[Ghost] 30Rnd 7.62x39 7U4 Sub Kremen (Green) (Green Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7U4_Sub_Green_T_White: FA_30Rnd_762x39_7U4_Sub_Green { ammo = "FA_762x39_7U4_Sub_T_White"; displayName = "[Ghost] 30Rnd 7.62x39 7U4 Sub Kremen (Green) (White Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7U4_Sub_Green_T_Blue: FA_30Rnd_762x39_7U4_Sub_Green { ammo = "FA_762x39_7U4_Sub_T_Blue"; displayName = "[Ghost] 30Rnd 7.62x39 7U4 Sub Kremen (Green) (Blue Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7U4_Sub_Green_T_Orange: FA_30Rnd_762x39_7U4_Sub_Green { ammo = "FA_762x39_7U4_Sub_T_Orange"; displayName = "[Ghost] 30Rnd 7.62x39 7U4 Sub Kremen (Green) (Orange Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7U4_Sub_Green_T_IR: FA_30Rnd_762x39_7U4_Sub_Green { ammo = "FA_762x39_7U4_Sub_T_IR"; displayName = "[Ghost] 30Rnd 7.62x39 7U4 Sub Kremen (Green) (IR Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7N47_CT_Lush: 30Rnd_762x39_AK12_Lush_Mag_F { author = QAUTHOR; displayName = "[Ghost] 30Rnd 7.62x39 7N47 CT Kremen (Lush)"; descriptionShort = "7N47 CT"; ammo = "FA_762x39_7N47_CT"; initSpeed = 800; };
+    class FA_30Rnd_762x39_7N47_CT_Lush_T_Red: FA_30Rnd_762x39_7N47_CT_Lush { ammo = "FA_762x39_7N47_CT_T_Red"; displayName = "[Ghost] 30Rnd 7.62x39 7N47 CT Kremen (Lush) (Red Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7N47_CT_Lush_T_Yellow: FA_30Rnd_762x39_7N47_CT_Lush { ammo = "FA_762x39_7N47_CT_T_Yellow"; displayName = "[Ghost] 30Rnd 7.62x39 7N47 CT Kremen (Lush) (Yellow Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7N47_CT_Lush_T_Green: FA_30Rnd_762x39_7N47_CT_Lush { ammo = "FA_762x39_7N47_CT_T_Green"; displayName = "[Ghost] 30Rnd 7.62x39 7N47 CT Kremen (Lush) (Green Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7N47_CT_Lush_T_White: FA_30Rnd_762x39_7N47_CT_Lush { ammo = "FA_762x39_7N47_CT_T_White"; displayName = "[Ghost] 30Rnd 7.62x39 7N47 CT Kremen (Lush) (White Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7N47_CT_Lush_T_Blue: FA_30Rnd_762x39_7N47_CT_Lush { ammo = "FA_762x39_7N47_CT_T_Blue"; displayName = "[Ghost] 30Rnd 7.62x39 7N47 CT Kremen (Lush) (Blue Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7N47_CT_Lush_T_Orange: FA_30Rnd_762x39_7N47_CT_Lush { ammo = "FA_762x39_7N47_CT_T_Orange"; displayName = "[Ghost] 30Rnd 7.62x39 7N47 CT Kremen (Lush) (Orange Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7N47_CT_Lush_T_IR: FA_30Rnd_762x39_7N47_CT_Lush { ammo = "FA_762x39_7N47_CT_T_IR"; displayName = "[Ghost] 30Rnd 7.62x39 7N47 CT Kremen (Lush) (IR Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7U4_Sub_Lush: 30Rnd_762x39_AK12_Lush_Mag_F { author = QAUTHOR; displayName = "[Ghost] 30Rnd 7.62x39 7U4 Sub Kremen (Lush)"; descriptionShort = "7U4 Sub"; ammo = "FA_762x39_7U4_Sub"; initSpeed = 290; };
+    class FA_30Rnd_762x39_7U4_Sub_Lush_T_Red: FA_30Rnd_762x39_7U4_Sub_Lush { ammo = "FA_762x39_7U4_Sub_T_Red"; displayName = "[Ghost] 30Rnd 7.62x39 7U4 Sub Kremen (Lush) (Red Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7U4_Sub_Lush_T_Yellow: FA_30Rnd_762x39_7U4_Sub_Lush { ammo = "FA_762x39_7U4_Sub_T_Yellow"; displayName = "[Ghost] 30Rnd 7.62x39 7U4 Sub Kremen (Lush) (Yellow Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7U4_Sub_Lush_T_Green: FA_30Rnd_762x39_7U4_Sub_Lush { ammo = "FA_762x39_7U4_Sub_T_Green"; displayName = "[Ghost] 30Rnd 7.62x39 7U4 Sub Kremen (Lush) (Green Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7U4_Sub_Lush_T_White: FA_30Rnd_762x39_7U4_Sub_Lush { ammo = "FA_762x39_7U4_Sub_T_White"; displayName = "[Ghost] 30Rnd 7.62x39 7U4 Sub Kremen (Lush) (White Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7U4_Sub_Lush_T_Blue: FA_30Rnd_762x39_7U4_Sub_Lush { ammo = "FA_762x39_7U4_Sub_T_Blue"; displayName = "[Ghost] 30Rnd 7.62x39 7U4 Sub Kremen (Lush) (Blue Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7U4_Sub_Lush_T_Orange: FA_30Rnd_762x39_7U4_Sub_Lush { ammo = "FA_762x39_7U4_Sub_T_Orange"; displayName = "[Ghost] 30Rnd 7.62x39 7U4 Sub Kremen (Lush) (Orange Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7U4_Sub_Lush_T_IR: FA_30Rnd_762x39_7U4_Sub_Lush { ammo = "FA_762x39_7U4_Sub_T_IR"; displayName = "[Ghost] 30Rnd 7.62x39 7U4 Sub Kremen (Lush) (IR Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7N47_CT_Arid: 30Rnd_762x39_AK12_Arid_Mag_F { author = QAUTHOR; displayName = "[Ghost] 30Rnd 7.62x39 7N47 CT Kremen (Arid)"; descriptionShort = "7N47 CT"; ammo = "FA_762x39_7N47_CT"; initSpeed = 800; };
+    class FA_30Rnd_762x39_7N47_CT_Arid_T_Red: FA_30Rnd_762x39_7N47_CT_Arid { ammo = "FA_762x39_7N47_CT_T_Red"; displayName = "[Ghost] 30Rnd 7.62x39 7N47 CT Kremen (Arid) (Red Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7N47_CT_Arid_T_Yellow: FA_30Rnd_762x39_7N47_CT_Arid { ammo = "FA_762x39_7N47_CT_T_Yellow"; displayName = "[Ghost] 30Rnd 7.62x39 7N47 CT Kremen (Arid) (Yellow Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7N47_CT_Arid_T_Green: FA_30Rnd_762x39_7N47_CT_Arid { ammo = "FA_762x39_7N47_CT_T_Green"; displayName = "[Ghost] 30Rnd 7.62x39 7N47 CT Kremen (Arid) (Green Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7N47_CT_Arid_T_White: FA_30Rnd_762x39_7N47_CT_Arid { ammo = "FA_762x39_7N47_CT_T_White"; displayName = "[Ghost] 30Rnd 7.62x39 7N47 CT Kremen (Arid) (White Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7N47_CT_Arid_T_Blue: FA_30Rnd_762x39_7N47_CT_Arid { ammo = "FA_762x39_7N47_CT_T_Blue"; displayName = "[Ghost] 30Rnd 7.62x39 7N47 CT Kremen (Arid) (Blue Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7N47_CT_Arid_T_Orange: FA_30Rnd_762x39_7N47_CT_Arid { ammo = "FA_762x39_7N47_CT_T_Orange"; displayName = "[Ghost] 30Rnd 7.62x39 7N47 CT Kremen (Arid) (Orange Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7N47_CT_Arid_T_IR: FA_30Rnd_762x39_7N47_CT_Arid { ammo = "FA_762x39_7N47_CT_T_IR"; displayName = "[Ghost] 30Rnd 7.62x39 7N47 CT Kremen (Arid) (IR Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7U4_Sub_Arid: 30Rnd_762x39_AK12_Arid_Mag_F { author = QAUTHOR; displayName = "[Ghost] 30Rnd 7.62x39 7U4 Sub Kremen (Arid)"; descriptionShort = "7U4 Sub"; ammo = "FA_762x39_7U4_Sub"; initSpeed = 290; };
+    class FA_30Rnd_762x39_7U4_Sub_Arid_T_Red: FA_30Rnd_762x39_7U4_Sub_Arid { ammo = "FA_762x39_7U4_Sub_T_Red"; displayName = "[Ghost] 30Rnd 7.62x39 7U4 Sub Kremen (Arid) (Red Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7U4_Sub_Arid_T_Yellow: FA_30Rnd_762x39_7U4_Sub_Arid { ammo = "FA_762x39_7U4_Sub_T_Yellow"; displayName = "[Ghost] 30Rnd 7.62x39 7U4 Sub Kremen (Arid) (Yellow Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7U4_Sub_Arid_T_Green: FA_30Rnd_762x39_7U4_Sub_Arid { ammo = "FA_762x39_7U4_Sub_T_Green"; displayName = "[Ghost] 30Rnd 7.62x39 7U4 Sub Kremen (Arid) (Green Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7U4_Sub_Arid_T_White: FA_30Rnd_762x39_7U4_Sub_Arid { ammo = "FA_762x39_7U4_Sub_T_White"; displayName = "[Ghost] 30Rnd 7.62x39 7U4 Sub Kremen (Arid) (White Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7U4_Sub_Arid_T_Blue: FA_30Rnd_762x39_7U4_Sub_Arid { ammo = "FA_762x39_7U4_Sub_T_Blue"; displayName = "[Ghost] 30Rnd 7.62x39 7U4 Sub Kremen (Arid) (Blue Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7U4_Sub_Arid_T_Orange: FA_30Rnd_762x39_7U4_Sub_Arid { ammo = "FA_762x39_7U4_Sub_T_Orange"; displayName = "[Ghost] 30Rnd 7.62x39 7U4 Sub Kremen (Arid) (Orange Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7U4_Sub_Arid_T_IR: FA_30Rnd_762x39_7U4_Sub_Arid { ammo = "FA_762x39_7U4_Sub_T_IR"; displayName = "[Ghost] 30Rnd 7.62x39 7U4 Sub Kremen (Arid) (IR Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7N47_CT_AK12: 30Rnd_762x39_AK12_Mag_F { author = QAUTHOR; displayName = "[Ghost] 30Rnd 7.62x39 7N47 CT Kremen (AK-12)"; descriptionShort = "7N47 CT"; ammo = "FA_762x39_7N47_CT"; initSpeed = 800; };
+    class FA_30Rnd_762x39_7N47_CT_AK12_T_Red: FA_30Rnd_762x39_7N47_CT_AK12 { ammo = "FA_762x39_7N47_CT_T_Red"; displayName = "[Ghost] 30Rnd 7.62x39 7N47 CT Kremen (AK-12) (Red Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7N47_CT_AK12_T_Yellow: FA_30Rnd_762x39_7N47_CT_AK12 { ammo = "FA_762x39_7N47_CT_T_Yellow"; displayName = "[Ghost] 30Rnd 7.62x39 7N47 CT Kremen (AK-12) (Yellow Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7N47_CT_AK12_T_Green: FA_30Rnd_762x39_7N47_CT_AK12 { ammo = "FA_762x39_7N47_CT_T_Green"; displayName = "[Ghost] 30Rnd 7.62x39 7N47 CT Kremen (AK-12) (Green Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7N47_CT_AK12_T_White: FA_30Rnd_762x39_7N47_CT_AK12 { ammo = "FA_762x39_7N47_CT_T_White"; displayName = "[Ghost] 30Rnd 7.62x39 7N47 CT Kremen (AK-12) (White Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7N47_CT_AK12_T_Blue: FA_30Rnd_762x39_7N47_CT_AK12 { ammo = "FA_762x39_7N47_CT_T_Blue"; displayName = "[Ghost] 30Rnd 7.62x39 7N47 CT Kremen (AK-12) (Blue Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7N47_CT_AK12_T_Orange: FA_30Rnd_762x39_7N47_CT_AK12 { ammo = "FA_762x39_7N47_CT_T_Orange"; displayName = "[Ghost] 30Rnd 7.62x39 7N47 CT Kremen (AK-12) (Orange Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7N47_CT_AK12_T_IR: FA_30Rnd_762x39_7N47_CT_AK12 { ammo = "FA_762x39_7N47_CT_T_IR"; displayName = "[Ghost] 30Rnd 7.62x39 7N47 CT Kremen (AK-12) (IR Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7U4_Sub_AK12: 30Rnd_762x39_AK12_Mag_F { author = QAUTHOR; displayName = "[Ghost] 30Rnd 7.62x39 7U4 Sub Kremen (AK-12)"; descriptionShort = "7U4 Sub"; ammo = "FA_762x39_7U4_Sub"; initSpeed = 290; };
+    class FA_30Rnd_762x39_7U4_Sub_AK12_T_Red: FA_30Rnd_762x39_7U4_Sub_AK12 { ammo = "FA_762x39_7U4_Sub_T_Red"; displayName = "[Ghost] 30Rnd 7.62x39 7U4 Sub Kremen (AK-12) (Red Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7U4_Sub_AK12_T_Yellow: FA_30Rnd_762x39_7U4_Sub_AK12 { ammo = "FA_762x39_7U4_Sub_T_Yellow"; displayName = "[Ghost] 30Rnd 7.62x39 7U4 Sub Kremen (AK-12) (Yellow Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7U4_Sub_AK12_T_Green: FA_30Rnd_762x39_7U4_Sub_AK12 { ammo = "FA_762x39_7U4_Sub_T_Green"; displayName = "[Ghost] 30Rnd 7.62x39 7U4 Sub Kremen (AK-12) (Green Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7U4_Sub_AK12_T_White: FA_30Rnd_762x39_7U4_Sub_AK12 { ammo = "FA_762x39_7U4_Sub_T_White"; displayName = "[Ghost] 30Rnd 7.62x39 7U4 Sub Kremen (AK-12) (White Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7U4_Sub_AK12_T_Blue: FA_30Rnd_762x39_7U4_Sub_AK12 { ammo = "FA_762x39_7U4_Sub_T_Blue"; displayName = "[Ghost] 30Rnd 7.62x39 7U4 Sub Kremen (AK-12) (Blue Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7U4_Sub_AK12_T_Orange: FA_30Rnd_762x39_7U4_Sub_AK12 { ammo = "FA_762x39_7U4_Sub_T_Orange"; displayName = "[Ghost] 30Rnd 7.62x39 7U4 Sub Kremen (AK-12) (Orange Tracer)"; tracersEvery = 4; };
+    class FA_30Rnd_762x39_7U4_Sub_AK12_T_IR: FA_30Rnd_762x39_7U4_Sub_AK12 { ammo = "FA_762x39_7U4_Sub_T_IR"; displayName = "[Ghost] 30Rnd 7.62x39 7U4 Sub Kremen (AK-12) (IR Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7U4_Sub: 75Rnd_762x39_Mag_F { author = QAUTHOR; displayName = "[Ghost] 75Rnd 7.62x39 7U4 Sub Kremen (Drum)"; descriptionShort = "7U4 Sub"; ammo = "FA_762x39_7U4_Sub"; initSpeed = 290; };
+    class FA_75Rnd_762x39_7U4_Sub_T_Red: FA_75Rnd_762x39_7U4_Sub { ammo = "FA_762x39_7U4_Sub_T_Red"; displayName = "[Ghost] 75Rnd 7.62x39 7U4 Sub Kremen (Drum) (Red Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7U4_Sub_T_Yellow: FA_75Rnd_762x39_7U4_Sub { ammo = "FA_762x39_7U4_Sub_T_Yellow"; displayName = "[Ghost] 75Rnd 7.62x39 7U4 Sub Kremen (Drum) (Yellow Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7U4_Sub_T_Green: FA_75Rnd_762x39_7U4_Sub { ammo = "FA_762x39_7U4_Sub_T_Green"; displayName = "[Ghost] 75Rnd 7.62x39 7U4 Sub Kremen (Drum) (Green Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7U4_Sub_T_White: FA_75Rnd_762x39_7U4_Sub { ammo = "FA_762x39_7U4_Sub_T_White"; displayName = "[Ghost] 75Rnd 7.62x39 7U4 Sub Kremen (Drum) (White Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7U4_Sub_T_Blue: FA_75Rnd_762x39_7U4_Sub { ammo = "FA_762x39_7U4_Sub_T_Blue"; displayName = "[Ghost] 75Rnd 7.62x39 7U4 Sub Kremen (Drum) (Blue Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7U4_Sub_T_Orange: FA_75Rnd_762x39_7U4_Sub { ammo = "FA_762x39_7U4_Sub_T_Orange"; displayName = "[Ghost] 75Rnd 7.62x39 7U4 Sub Kremen (Drum) (Orange Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7U4_Sub_T_IR: FA_75Rnd_762x39_7U4_Sub { ammo = "FA_762x39_7U4_Sub_T_IR"; displayName = "[Ghost] 75Rnd 7.62x39 7U4 Sub Kremen (Drum) (IR Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7N47_CT_AK12: 75rnd_762x39_AK12_Mag_F { author = QAUTHOR; displayName = "[Ghost] 75Rnd 7.62x39 7N47 CT Kremen (AK-12 Drum)"; descriptionShort = "7N47 CT"; ammo = "FA_762x39_7N47_CT"; initSpeed = 800; };
+    class FA_75Rnd_762x39_7N47_CT_AK12_T_Red: FA_75Rnd_762x39_7N47_CT_AK12 { ammo = "FA_762x39_7N47_CT_T_Red"; displayName = "[Ghost] 75Rnd 7.62x39 7N47 CT Kremen (AK-12 Drum) (Red Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7N47_CT_AK12_T_Yellow: FA_75Rnd_762x39_7N47_CT_AK12 { ammo = "FA_762x39_7N47_CT_T_Yellow"; displayName = "[Ghost] 75Rnd 7.62x39 7N47 CT Kremen (AK-12 Drum) (Yellow Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7N47_CT_AK12_T_Green: FA_75Rnd_762x39_7N47_CT_AK12 { ammo = "FA_762x39_7N47_CT_T_Green"; displayName = "[Ghost] 75Rnd 7.62x39 7N47 CT Kremen (AK-12 Drum) (Green Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7N47_CT_AK12_T_White: FA_75Rnd_762x39_7N47_CT_AK12 { ammo = "FA_762x39_7N47_CT_T_White"; displayName = "[Ghost] 75Rnd 7.62x39 7N47 CT Kremen (AK-12 Drum) (White Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7N47_CT_AK12_T_Blue: FA_75Rnd_762x39_7N47_CT_AK12 { ammo = "FA_762x39_7N47_CT_T_Blue"; displayName = "[Ghost] 75Rnd 7.62x39 7N47 CT Kremen (AK-12 Drum) (Blue Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7N47_CT_AK12_T_Orange: FA_75Rnd_762x39_7N47_CT_AK12 { ammo = "FA_762x39_7N47_CT_T_Orange"; displayName = "[Ghost] 75Rnd 7.62x39 7N47 CT Kremen (AK-12 Drum) (Orange Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7N47_CT_AK12_T_IR: FA_75Rnd_762x39_7N47_CT_AK12 { ammo = "FA_762x39_7N47_CT_T_IR"; displayName = "[Ghost] 75Rnd 7.62x39 7N47 CT Kremen (AK-12 Drum) (IR Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7U4_Sub_AK12: 75rnd_762x39_AK12_Mag_F { author = QAUTHOR; displayName = "[Ghost] 75Rnd 7.62x39 7U4 Sub Kremen (AK-12 Drum)"; descriptionShort = "7U4 Sub"; ammo = "FA_762x39_7U4_Sub"; initSpeed = 290; };
+    class FA_75Rnd_762x39_7U4_Sub_AK12_T_Red: FA_75Rnd_762x39_7U4_Sub_AK12 { ammo = "FA_762x39_7U4_Sub_T_Red"; displayName = "[Ghost] 75Rnd 7.62x39 7U4 Sub Kremen (AK-12 Drum) (Red Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7U4_Sub_AK12_T_Yellow: FA_75Rnd_762x39_7U4_Sub_AK12 { ammo = "FA_762x39_7U4_Sub_T_Yellow"; displayName = "[Ghost] 75Rnd 7.62x39 7U4 Sub Kremen (AK-12 Drum) (Yellow Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7U4_Sub_AK12_T_Green: FA_75Rnd_762x39_7U4_Sub_AK12 { ammo = "FA_762x39_7U4_Sub_T_Green"; displayName = "[Ghost] 75Rnd 7.62x39 7U4 Sub Kremen (AK-12 Drum) (Green Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7U4_Sub_AK12_T_White: FA_75Rnd_762x39_7U4_Sub_AK12 { ammo = "FA_762x39_7U4_Sub_T_White"; displayName = "[Ghost] 75Rnd 7.62x39 7U4 Sub Kremen (AK-12 Drum) (White Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7U4_Sub_AK12_T_Blue: FA_75Rnd_762x39_7U4_Sub_AK12 { ammo = "FA_762x39_7U4_Sub_T_Blue"; displayName = "[Ghost] 75Rnd 7.62x39 7U4 Sub Kremen (AK-12 Drum) (Blue Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7U4_Sub_AK12_T_Orange: FA_75Rnd_762x39_7U4_Sub_AK12 { ammo = "FA_762x39_7U4_Sub_T_Orange"; displayName = "[Ghost] 75Rnd 7.62x39 7U4 Sub Kremen (AK-12 Drum) (Orange Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7U4_Sub_AK12_T_IR: FA_75Rnd_762x39_7U4_Sub_AK12 { ammo = "FA_762x39_7U4_Sub_T_IR"; displayName = "[Ghost] 75Rnd 7.62x39 7U4 Sub Kremen (AK-12 Drum) (IR Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7N47_CT_Lush: 75rnd_762x39_AK12_Lush_Mag_F { author = QAUTHOR; displayName = "[Ghost] 75Rnd 7.62x39 7N47 CT Kremen (Lush Drum)"; descriptionShort = "7N47 CT"; ammo = "FA_762x39_7N47_CT"; initSpeed = 800; };
+    class FA_75Rnd_762x39_7N47_CT_Lush_T_Red: FA_75Rnd_762x39_7N47_CT_Lush { ammo = "FA_762x39_7N47_CT_T_Red"; displayName = "[Ghost] 75Rnd 7.62x39 7N47 CT Kremen (Lush Drum) (Red Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7N47_CT_Lush_T_Yellow: FA_75Rnd_762x39_7N47_CT_Lush { ammo = "FA_762x39_7N47_CT_T_Yellow"; displayName = "[Ghost] 75Rnd 7.62x39 7N47 CT Kremen (Lush Drum) (Yellow Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7N47_CT_Lush_T_Green: FA_75Rnd_762x39_7N47_CT_Lush { ammo = "FA_762x39_7N47_CT_T_Green"; displayName = "[Ghost] 75Rnd 7.62x39 7N47 CT Kremen (Lush Drum) (Green Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7N47_CT_Lush_T_White: FA_75Rnd_762x39_7N47_CT_Lush { ammo = "FA_762x39_7N47_CT_T_White"; displayName = "[Ghost] 75Rnd 7.62x39 7N47 CT Kremen (Lush Drum) (White Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7N47_CT_Lush_T_Blue: FA_75Rnd_762x39_7N47_CT_Lush { ammo = "FA_762x39_7N47_CT_T_Blue"; displayName = "[Ghost] 75Rnd 7.62x39 7N47 CT Kremen (Lush Drum) (Blue Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7N47_CT_Lush_T_Orange: FA_75Rnd_762x39_7N47_CT_Lush { ammo = "FA_762x39_7N47_CT_T_Orange"; displayName = "[Ghost] 75Rnd 7.62x39 7N47 CT Kremen (Lush Drum) (Orange Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7N47_CT_Lush_T_IR: FA_75Rnd_762x39_7N47_CT_Lush { ammo = "FA_762x39_7N47_CT_T_IR"; displayName = "[Ghost] 75Rnd 7.62x39 7N47 CT Kremen (Lush Drum) (IR Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7U4_Sub_Lush: 75rnd_762x39_AK12_Lush_Mag_F { author = QAUTHOR; displayName = "[Ghost] 75Rnd 7.62x39 7U4 Sub Kremen (Lush Drum)"; descriptionShort = "7U4 Sub"; ammo = "FA_762x39_7U4_Sub"; initSpeed = 290; };
+    class FA_75Rnd_762x39_7U4_Sub_Lush_T_Red: FA_75Rnd_762x39_7U4_Sub_Lush { ammo = "FA_762x39_7U4_Sub_T_Red"; displayName = "[Ghost] 75Rnd 7.62x39 7U4 Sub Kremen (Lush Drum) (Red Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7U4_Sub_Lush_T_Yellow: FA_75Rnd_762x39_7U4_Sub_Lush { ammo = "FA_762x39_7U4_Sub_T_Yellow"; displayName = "[Ghost] 75Rnd 7.62x39 7U4 Sub Kremen (Lush Drum) (Yellow Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7U4_Sub_Lush_T_Green: FA_75Rnd_762x39_7U4_Sub_Lush { ammo = "FA_762x39_7U4_Sub_T_Green"; displayName = "[Ghost] 75Rnd 7.62x39 7U4 Sub Kremen (Lush Drum) (Green Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7U4_Sub_Lush_T_White: FA_75Rnd_762x39_7U4_Sub_Lush { ammo = "FA_762x39_7U4_Sub_T_White"; displayName = "[Ghost] 75Rnd 7.62x39 7U4 Sub Kremen (Lush Drum) (White Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7U4_Sub_Lush_T_Blue: FA_75Rnd_762x39_7U4_Sub_Lush { ammo = "FA_762x39_7U4_Sub_T_Blue"; displayName = "[Ghost] 75Rnd 7.62x39 7U4 Sub Kremen (Lush Drum) (Blue Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7U4_Sub_Lush_T_Orange: FA_75Rnd_762x39_7U4_Sub_Lush { ammo = "FA_762x39_7U4_Sub_T_Orange"; displayName = "[Ghost] 75Rnd 7.62x39 7U4 Sub Kremen (Lush Drum) (Orange Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7U4_Sub_Lush_T_IR: FA_75Rnd_762x39_7U4_Sub_Lush { ammo = "FA_762x39_7U4_Sub_T_IR"; displayName = "[Ghost] 75Rnd 7.62x39 7U4 Sub Kremen (Lush Drum) (IR Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7N47_CT_Arid: 75rnd_762x39_AK12_Arid_Mag_F { author = QAUTHOR; displayName = "[Ghost] 75Rnd 7.62x39 7N47 CT Kremen (Arid Drum)"; descriptionShort = "7N47 CT"; ammo = "FA_762x39_7N47_CT"; initSpeed = 800; };
+    class FA_75Rnd_762x39_7N47_CT_Arid_T_Red: FA_75Rnd_762x39_7N47_CT_Arid { ammo = "FA_762x39_7N47_CT_T_Red"; displayName = "[Ghost] 75Rnd 7.62x39 7N47 CT Kremen (Arid Drum) (Red Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7N47_CT_Arid_T_Yellow: FA_75Rnd_762x39_7N47_CT_Arid { ammo = "FA_762x39_7N47_CT_T_Yellow"; displayName = "[Ghost] 75Rnd 7.62x39 7N47 CT Kremen (Arid Drum) (Yellow Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7N47_CT_Arid_T_Green: FA_75Rnd_762x39_7N47_CT_Arid { ammo = "FA_762x39_7N47_CT_T_Green"; displayName = "[Ghost] 75Rnd 7.62x39 7N47 CT Kremen (Arid Drum) (Green Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7N47_CT_Arid_T_White: FA_75Rnd_762x39_7N47_CT_Arid { ammo = "FA_762x39_7N47_CT_T_White"; displayName = "[Ghost] 75Rnd 7.62x39 7N47 CT Kremen (Arid Drum) (White Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7N47_CT_Arid_T_Blue: FA_75Rnd_762x39_7N47_CT_Arid { ammo = "FA_762x39_7N47_CT_T_Blue"; displayName = "[Ghost] 75Rnd 7.62x39 7N47 CT Kremen (Arid Drum) (Blue Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7N47_CT_Arid_T_Orange: FA_75Rnd_762x39_7N47_CT_Arid { ammo = "FA_762x39_7N47_CT_T_Orange"; displayName = "[Ghost] 75Rnd 7.62x39 7N47 CT Kremen (Arid Drum) (Orange Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7N47_CT_Arid_T_IR: FA_75Rnd_762x39_7N47_CT_Arid { ammo = "FA_762x39_7N47_CT_T_IR"; displayName = "[Ghost] 75Rnd 7.62x39 7N47 CT Kremen (Arid Drum) (IR Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7U4_Sub_Arid: 75rnd_762x39_AK12_Arid_Mag_F { author = QAUTHOR; displayName = "[Ghost] 75Rnd 7.62x39 7U4 Sub Kremen (Arid Drum)"; descriptionShort = "7U4 Sub"; ammo = "FA_762x39_7U4_Sub"; initSpeed = 290; };
+    class FA_75Rnd_762x39_7U4_Sub_Arid_T_Red: FA_75Rnd_762x39_7U4_Sub_Arid { ammo = "FA_762x39_7U4_Sub_T_Red"; displayName = "[Ghost] 75Rnd 7.62x39 7U4 Sub Kremen (Arid Drum) (Red Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7U4_Sub_Arid_T_Yellow: FA_75Rnd_762x39_7U4_Sub_Arid { ammo = "FA_762x39_7U4_Sub_T_Yellow"; displayName = "[Ghost] 75Rnd 7.62x39 7U4 Sub Kremen (Arid Drum) (Yellow Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7U4_Sub_Arid_T_Green: FA_75Rnd_762x39_7U4_Sub_Arid { ammo = "FA_762x39_7U4_Sub_T_Green"; displayName = "[Ghost] 75Rnd 7.62x39 7U4 Sub Kremen (Arid Drum) (Green Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7U4_Sub_Arid_T_White: FA_75Rnd_762x39_7U4_Sub_Arid { ammo = "FA_762x39_7U4_Sub_T_White"; displayName = "[Ghost] 75Rnd 7.62x39 7U4 Sub Kremen (Arid Drum) (White Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7U4_Sub_Arid_T_Blue: FA_75Rnd_762x39_7U4_Sub_Arid { ammo = "FA_762x39_7U4_Sub_T_Blue"; displayName = "[Ghost] 75Rnd 7.62x39 7U4 Sub Kremen (Arid Drum) (Blue Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7U4_Sub_Arid_T_Orange: FA_75Rnd_762x39_7U4_Sub_Arid { ammo = "FA_762x39_7U4_Sub_T_Orange"; displayName = "[Ghost] 75Rnd 7.62x39 7U4 Sub Kremen (Arid Drum) (Orange Tracer)"; tracersEvery = 4; };
+    class FA_75Rnd_762x39_7U4_Sub_Arid_T_IR: FA_75Rnd_762x39_7U4_Sub_Arid { ammo = "FA_762x39_7U4_Sub_T_IR"; displayName = "[Ghost] 75Rnd 7.62x39 7U4 Sub Kremen (Arid Drum) (IR Tracer)"; tracersEvery = 4; };
 };

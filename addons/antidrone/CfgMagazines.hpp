@@ -93,11 +93,11 @@ class CfgMagazines {
     };
 
     // =========================================================
-    // Mk367 PAB — 6.5x39 Caseless Green (MX family only)
+    // Mk367 PAB — 6.5x39 Caseless Khaki (MX family only)
     // =========================================================
     class FA_30Rnd_65_Mk367_PAB_Green: 30Rnd_65x39_caseless_khaki_mag {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 6.5 Mk367 PAB (Green)";
+        displayName = "[Ghost] 30Rnd 6.5 Mk367 PAB (Khaki)";
         descriptionShort = "6.5x39 Caseless Mk367 PAB (Anti-Drone)<br/>MX family only; proximity airburst";
         ammo = "FA_65_Mk367_PAB";
         tracersEvery = 1;
@@ -219,12 +219,12 @@ class CfgMagazines {
     class FA_30Rnd_65_Mk367_PAB_T_White: FA_30Rnd_65_Mk367_PAB { ammo = "FA_65_Mk367_PAB_T_White"; displayName = "[Ghost] 6.5 Mk367 PAB Sand (White Tracer)"; tracersEvery = 4; lastRoundsTracer = 4; };
     class FA_30Rnd_65_Mk367_PAB_T_Blue: FA_30Rnd_65_Mk367_PAB { ammo = "FA_65_Mk367_PAB_T_Blue"; displayName = "[Ghost] 6.5 Mk367 PAB Sand (Blue Tracer)"; tracersEvery = 4; lastRoundsTracer = 4; };
     class FA_30Rnd_65_Mk367_PAB_T_Orange: FA_30Rnd_65_Mk367_PAB { ammo = "FA_65_Mk367_PAB_T_Orange"; displayName = "[Ghost] 6.5 Mk367 PAB Sand (Orange Tracer)"; tracersEvery = 4; lastRoundsTracer = 4; };
-    class FA_30Rnd_65_Mk367_PAB_Green_T_Red: FA_30Rnd_65_Mk367_PAB_Green { ammo = "FA_65_Mk367_PAB_T_Red"; displayName = "[Ghost] 6.5 Mk367 PAB Green (Red Tracer)"; tracersEvery = 4; lastRoundsTracer = 4; };
-    class FA_30Rnd_65_Mk367_PAB_Green_T_Yellow: FA_30Rnd_65_Mk367_PAB_Green { ammo = "FA_65_Mk367_PAB_T_Yellow"; displayName = "[Ghost] 6.5 Mk367 PAB Green (Yellow Tracer)"; tracersEvery = 4; lastRoundsTracer = 4; };
-    class FA_30Rnd_65_Mk367_PAB_Green_T_Green: FA_30Rnd_65_Mk367_PAB_Green { ammo = "FA_65_Mk367_PAB_T_Green"; displayName = "[Ghost] 6.5 Mk367 PAB Green (Green Tracer)"; tracersEvery = 4; lastRoundsTracer = 4; };
-    class FA_30Rnd_65_Mk367_PAB_Green_T_White: FA_30Rnd_65_Mk367_PAB_Green { ammo = "FA_65_Mk367_PAB_T_White"; displayName = "[Ghost] 6.5 Mk367 PAB Green (White Tracer)"; tracersEvery = 4; lastRoundsTracer = 4; };
-    class FA_30Rnd_65_Mk367_PAB_Green_T_Blue: FA_30Rnd_65_Mk367_PAB_Green { ammo = "FA_65_Mk367_PAB_T_Blue"; displayName = "[Ghost] 6.5 Mk367 PAB Green (Blue Tracer)"; tracersEvery = 4; lastRoundsTracer = 4; };
-    class FA_30Rnd_65_Mk367_PAB_Green_T_Orange: FA_30Rnd_65_Mk367_PAB_Green { ammo = "FA_65_Mk367_PAB_T_Orange"; displayName = "[Ghost] 6.5 Mk367 PAB Green (Orange Tracer)"; tracersEvery = 4; lastRoundsTracer = 4; };
+    class FA_30Rnd_65_Mk367_PAB_Green_T_Red: FA_30Rnd_65_Mk367_PAB_Green { ammo = "FA_65_Mk367_PAB_T_Red"; displayName = "[Ghost] 6.5 Mk367 PAB Khaki (Red Tracer)"; tracersEvery = 4; lastRoundsTracer = 4; };
+    class FA_30Rnd_65_Mk367_PAB_Green_T_Yellow: FA_30Rnd_65_Mk367_PAB_Green { ammo = "FA_65_Mk367_PAB_T_Yellow"; displayName = "[Ghost] 6.5 Mk367 PAB Khaki (Yellow Tracer)"; tracersEvery = 4; lastRoundsTracer = 4; };
+    class FA_30Rnd_65_Mk367_PAB_Green_T_Green: FA_30Rnd_65_Mk367_PAB_Green { ammo = "FA_65_Mk367_PAB_T_Green"; displayName = "[Ghost] 6.5 Mk367 PAB Khaki (Green Tracer)"; tracersEvery = 4; lastRoundsTracer = 4; };
+    class FA_30Rnd_65_Mk367_PAB_Green_T_White: FA_30Rnd_65_Mk367_PAB_Green { ammo = "FA_65_Mk367_PAB_T_White"; displayName = "[Ghost] 6.5 Mk367 PAB Khaki (White Tracer)"; tracersEvery = 4; lastRoundsTracer = 4; };
+    class FA_30Rnd_65_Mk367_PAB_Green_T_Blue: FA_30Rnd_65_Mk367_PAB_Green { ammo = "FA_65_Mk367_PAB_T_Blue"; displayName = "[Ghost] 6.5 Mk367 PAB Khaki (Blue Tracer)"; tracersEvery = 4; lastRoundsTracer = 4; };
+    class FA_30Rnd_65_Mk367_PAB_Green_T_Orange: FA_30Rnd_65_Mk367_PAB_Green { ammo = "FA_65_Mk367_PAB_T_Orange"; displayName = "[Ghost] 6.5 Mk367 PAB Khaki (Orange Tracer)"; tracersEvery = 4; lastRoundsTracer = 4; };
     class FA_30Rnd_65_Mk367_PAB_Black_T_Red: FA_30Rnd_65_Mk367_PAB_Black { ammo = "FA_65_Mk367_PAB_T_Red"; displayName = "[Ghost] 6.5 Mk367 PAB Black (Red Tracer)"; tracersEvery = 4; lastRoundsTracer = 4; };
     class FA_30Rnd_65_Mk367_PAB_Black_T_Yellow: FA_30Rnd_65_Mk367_PAB_Black { ammo = "FA_65_Mk367_PAB_T_Yellow"; displayName = "[Ghost] 6.5 Mk367 PAB Black (Yellow Tracer)"; tracersEvery = 4; lastRoundsTracer = 4; };
     class FA_30Rnd_65_Mk367_PAB_Black_T_Green: FA_30Rnd_65_Mk367_PAB_Black { ammo = "FA_65_Mk367_PAB_T_Green"; displayName = "[Ghost] 6.5 Mk367 PAB Black (Green Tracer)"; tracersEvery = 4; lastRoundsTracer = 4; };

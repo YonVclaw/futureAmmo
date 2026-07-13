@@ -1,0 +1,25 @@
+[h1]Ghosts of Battle — Future Ammunition (FA)[/h1]
+
+A lore-driven projection of where ammunition goes next, for Arma 3 + ACE3. Built on the real M193 → M855A1+ / M80 → M80A1 / 6.8 Fury curves and run forward to ~2040. The rounds sit beside vanilla and RHS ammo on the same ballistic curve instead of breaking it. Everything dated past 2026 is fiction tuned for gameplay; the historical baselines use real, public figures.
+
+[h2]What's inside[/h2]
+[list]
+[*][b]Next-gen small arms[/b] — hybrid-case and cased-telescoped tungsten loads for 5.56, 7.62, .300 BLK (full family incl. subsonic AP), 6.5 caseless and .338, with full ACE Advanced Ballistics data per barrel.
+[*][b]Counter-UAS (PAB)[/b] — proximity-airburst rounds from 5.56 up to .50 and 40mm. A scripted fuze bursts them near drones (UAVs only, MP-safe); without the script they fly as normal ball.
+[*][b]MAAWS 2040[/b] — eight 84mm natures for the vanilla MAAWS Mk4: fire-and-forget top-attack HEAT (850mm RHA), confined-space tandem HEAT, programmable-airburst HE, laser-guided GM 841, three anti-drone rounds and a last-ditch VSHORAD missile (half the Titan envelope, by design).
+[*][b]Vorona + RPG 2040[/b] — lower launcher tiers under the MAAWS (RPG-7 < RPG-32 < Vorona): tandem SACLOS and thermobaric-airburst Vorona missiles plus an IR anti-air/anti-drone seeker with lock tone, and tandem / thermobaric / counter-drone rounds for the vanilla RPG-32 and RPG-7.
+[*][b]40mm ISR / EW (Mk380 block)[/b] — smart UGL support rounds: network relay, EMP soft-kill, multispectral smoke, decoy, ground sensor and area jammer. Chute-deployed, non-explosive carriers.
+[/list]
+
+All magazines are tagged [Ghost] in the Arsenal and feed compatible weapons through magazine wells. Compat addons for RHS, SPS, JCA, EF, Aegis, Atlas and LOT load only when the parent mod is present.
+
+[h2]Requirements[/h2]
+[list]
+[*]CBA_A3
+[*]ACE3 with Advanced Ballistics [b]enabled[/b] (otherwise the per-barrel tables don't apply)
+[*]Arma 3 v2.14+
+[/list]
+
+In-game briefing: every caliber and round family is documented in the map Notes tab ("Future Ammunition").
+
+Author: Ghosts of Battle — https://www.ghostsofbattle.com/

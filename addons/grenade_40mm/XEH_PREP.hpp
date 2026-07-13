@@ -1,16 +1,12 @@
 PREP(init);
 PREP(handle);
+PREP(chute);
 PREP(relay);
-PREP(sparcs);
-PREP(gluas);
 PREP(emp);
 PREP(msmoke);
 PREP(decoy);
 PREP(ugs);
-PREP(desig);
 PREP(jammer);
 PREP(enemiesNear);
 PREP(notify);
-PREP(uavClass);
-PREP(terminal);
 PREP(jamUAV);

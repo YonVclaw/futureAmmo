@@ -7,6 +7,8 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
+            "cba_main",
+            "ace_ballistics",
             "ghostfa_antidrone",
             "Weapons_F_JCA_IA_Rifles_M4A1",
             "Weapons_F_JCA_IA_Rifles_HK437",

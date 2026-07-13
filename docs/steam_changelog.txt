@@ -1,0 +1,75 @@
+[h1]Indirect Fire, Aircraft Ordnance & New Calibers[/h1]
+
+The biggest content drop yet — mortars, artillery, naval guns, aircraft pylons, and a stack of new small-arms calibers. Many indirect-fire rounds are re-labelled per faction (NATO Mk/XM/M, CSAT Type, AAF AF-) so each side reads its own designation for the same shell.
+
+[h2]Indirect fire[/h2]
+[list]
+[*][b]82mm mortar[/b] — GPS precision, laser-guided, STRIX top-attack, extended-range HE, multispectral smoke, thermobaric, IR illumination
+[*][b]155mm artillery[/b] — extended-range HE, Excalibur GPS, Krasnopol/CLGP laser, SADARM sensor-fuzed AT, ADAM/RAAMS scatterable mines, sensor-fuzed submunitions
+[*][b]230mm MLRS[/b] — guided unitary, extended-range HE, sensor-fuzed AT submunitions
+[*][b]120mm naval gun[/b] — Vulcano guided (~40 km), ballistic HE, laser-guided, sensor-fuzed, multispectral smoke
+[/list]
+
+[h2]Aircraft ordnance (pylon editor)[/h2]
+[list]
+[*][b]Air-to-air, per faction[/b] — short IR (Sidewinder / R-74 / IRIS-T), medium radar (AMRAAM / R-77 / MICA-NG), long radar (JATM / R-37M / Meteor)
+[*][b]Strike[/b] — SEAD anti-radiation, standoff cruise, and anti-ship missiles (NATO / Russia / Europe variants)
+[*][b]Man-portable[/b] — Broadsword/Copperhead and Sentry/Roadrunner now also load on the shoulder Titan launchers
+[/list]
+
+[h2]New calibers[/h2]
+[list]
+[*][b]9x39[/b] (VSS/Val subsonic AP), [b]5.7x28[/b] (PDW), [b]14.5x114[/b] (anti-materiel + counter-drone), all via CBA magazine wells — they appear on any mod's weapon in that caliber automatically
+[*][b]6.5 Grendel & 6.5 Creedmoor[/b] — rifle mags with match/precision loads, plus a 200-round MG box with general-purpose and AP-tracer belts (machine guns don't get DMR ammo)
+[*][b]12.7x55 ASh-12[/b] and the [b]RC40[/b] revolver grenade (Reaction Forces), [b]12.7x108[/b] East HMG belts, and [b]125mm[/b] CSAT tank rounds (3BM70, 3BK-31, 3OF-82, Refleks ATGM)
+[/list]
+
+[h2]Compatibility & fixes[/h2]
+[list]
+[*][b]Expeditionary Forces[/b] — the FA coyote 6.5 magazines now load correctly alongside Aegis EF (previously they silently skipped)
+[*][b]Load order[/b] — every addon now loads after ACE Advanced Ballistics so the metric ballistic data always applies
+[*][b]Field manual[/b] — new Map → Notes pages for every family above, with employment notes
+[/list]
+
+[hr][/hr]
+
+[h1]MAAWS Accuracy Fix & Field Manual Update[/h1]
+
+[h2]Fixed[/h2]
+[list]
+[*][b]MAAWS rounds falling short[/b] — the unguided HEAT 665 CS and HE 448 AB left the tube slower than the launcher's sight was calibrated for, so they dropped well below the aimpoint (a 400 m target impacted around 250 m). Both now fly the trajectory the FCS optic expects — lase the target and they land where you aim.
+[/list]
+
+[h2]Field Manual (Map → Notes)[/h2]
+[list]
+[*][b]New page — Vehicle & aircraft missiles[/b]: Broadsword, Wraith, Warhammer, Hydra-P, Copperhead, Sentry and Roadrunner now have a briefing entry.
+[*][b]"How to use" lines[/b] added across the launcher, 40mm, counter-UAS and vehicle-gun pages — lock vs. laser vs. SACLOS guidance, chute deployment, proximity fuzing, and when to lead a target.
+[*][b]Airburst controls explained[/b]: the programmable-airburst keybind (40mm Mk364 / MAAWS HE 448 / Vorona Oskol) is unbound by default — the Overview now says where to bind it and lists the range steps.
+[/list]
+
+[hr][/hr]
+
+[h1]Vehicle Ammunition Update[/h1]
+
+Future Ammunition now loads on armored vehicles. FA rounds feed the QAV vehicle pack, the VVE vehicles, and the secondary weapons on every vanilla Arma 3 tank and APC.
+
+[h2]Vehicles now fed FA ammo[/h2]
+[list]
+[*][b]QAV Ripsaw[/b] — 30mm (APFSDS-T / API / HEI / airburst / counter-UAS), .50 M2 RWS, 7.62 coax
+[*][b]QAV AbramsX[/b] — 120mm (APFSDS-T / AMP / HEAT-MP / HE-AB), 30mm autocannon (main + twin), .338 and .50 coax, .50 Kongsberg RWS, 7.62 minigun
+[*][b]QAV Marshall + VVE vehicles[/b] — 30mm and 35mm autocannon, 105mm MGS, .50 HMGs, and the Titan launcher
+[*][b]Every vanilla vehicle[/b] — 7.62 coax, .338 coax, and .50 commander/RWS HMGs now accept FA belts
+[/list]
+
+[h2]New ammunition[/h2]
+[list]
+[*][b]105mm tank rounds[/b] — XM1155 APFSDS-T, XM1160 HEAT-MP-T (programmable airburst), XM1162 HE-OB
+[*][b].50 cal vehicle belts[/b] — Mk211 Mod 0 HEIAP and Mk258 LRP, 200-round
+[*][b]Titan anti-tank option[/b] — the Marshall's Titan launcher can now load BGM-185 Broadsword and XM1200 Copperhead alongside the AA missiles
+[/list]
+
+[h2]Full tracer colors on the big guns[/h2]
+Every tank-gun round — 105mm, 120mm and 125mm — now comes in the complete tracer set: Red, Yellow, Green, White, Blue, Orange, and IR (NVG-only). No more red-only main guns.
+
+[h2]Compatibility[/h2]
+Each vehicle integration activates only when you already run that vehicle mod — no hard dependencies, nothing new required. If you don't have a given vehicle pack, its compat simply stays dormant.

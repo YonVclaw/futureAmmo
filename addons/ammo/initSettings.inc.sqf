@@ -6,3 +6,12 @@
     true,
     true
 ] call CBA_fnc_addSetting;
+
+[
+    QGVAR(debugBreaching),
+    "CHECKBOX",
+    ["Debug Mk353 BRC Breaching", "Prints each step of the breach detection/open logic to chat when firing the Mk353 BRC round, to help diagnose why a door isn't opening."],
+    COMPONENT_NAME,
+    false,
+    true
+] call CBA_fnc_addSetting;

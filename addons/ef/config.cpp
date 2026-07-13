@@ -7,9 +7,12 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
+            "cba_main",
+            "ace_ballistics",
             "ghostfa_ammo",
-            "EF_Main",
-            "EF_Addons"
+            // base Expeditionary Forces mod — provides EF_*_65x39_caseless_coy_mag
+            // (Aegis EF, weapons_f_aegis_ef, is a reskin layered on top of this)
+            "EF_Weapons"
         };
         skipWhenMissingDependencies = 1;
         author = QAUTHOR;

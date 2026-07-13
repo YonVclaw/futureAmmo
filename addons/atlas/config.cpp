@@ -7,6 +7,8 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
+            "cba_main",
+            "ace_ballistics",
             "ghostfa_ammo",
             "A3_Atlas_Weapons_F_Atlas"
         };

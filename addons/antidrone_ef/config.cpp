@@ -7,9 +7,10 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "ghostfa_antidrone",
-            "EF_Main",
-            "EF_Addons"
+            "cba_main",
+            "ace_ballistics",
+            "ghostfa_ammo",
+            "EF_Weapons"
         };
         skipWhenMissingDependencies = 1;
         author = QAUTHOR;

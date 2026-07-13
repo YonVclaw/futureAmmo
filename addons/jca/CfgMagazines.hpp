@@ -12,6 +12,7 @@ class CfgMagazines {
     // =========================================================
     // JCA 5.56x45 — JCA_30Rnd_556x45_EMAG
     // =========================================================
+    class FA_JCA_30Rnd_556x45_EMAG: JCA_30Rnd_556x45_EMAG { author = QAUTHOR; displayName = "[Ghost] 30Rnd 5.56 EMAG"; descriptionShort = "5.56x45 Mk327 HV"; ammo = "FA_556_Mk327_HV"; initSpeed = 1000; };
     class FA_JCA_30Rnd_556x45_EMAG_T_Red : JCA_30Rnd_556x45_EMAG {
         author = QAUTHOR;
         displayName = "[Ghost] 30Rnd 5.56 EMAG (Red Tracer)";
@@ -65,6 +66,7 @@ class CfgMagazines {
     // =========================================================
     // JCA 5.56x45 — JCA_30Rnd_556x45_sand_EMAG
     // =========================================================
+    class FA_JCA_30Rnd_556x45_sand_EMAG: JCA_30Rnd_556x45_sand_EMAG { author = QAUTHOR; displayName = "[Ghost] 30Rnd 5.56 EMAG Sand"; descriptionShort = "5.56x45 Mk327 HV"; ammo = "FA_556_Mk327_HV"; initSpeed = 1000; };
     class FA_JCA_30Rnd_556x45_sand_EMAG_T_Red : JCA_30Rnd_556x45_sand_EMAG {
         author = QAUTHOR;
         displayName = "[Ghost] 30Rnd 5.56 EMAG Sand (Red Tracer)";
@@ -118,6 +120,7 @@ class CfgMagazines {
     // =========================================================
     // JCA 5.56x45 — JCA_30Rnd_556x45_PMAG
     // =========================================================
+    class FA_JCA_30Rnd_556x45_PMAG: JCA_30Rnd_556x45_PMAG { author = QAUTHOR; displayName = "[Ghost] 30Rnd 5.56 PMAG"; descriptionShort = "5.56x45 Mk327 HV"; ammo = "FA_556_Mk327_HV"; initSpeed = 1000; };
     class FA_JCA_30Rnd_556x45_PMAG_T_Red : JCA_30Rnd_556x45_PMAG {
         author = QAUTHOR;
         displayName = "[Ghost] 30Rnd 5.56 PMAG (Red Tracer)";
@@ -171,6 +174,7 @@ class CfgMagazines {
     // =========================================================
     // JCA 5.56x45 — JCA_30Rnd_556x45_sand_PMAG
     // =========================================================
+    class FA_JCA_30Rnd_556x45_sand_PMAG: JCA_30Rnd_556x45_sand_PMAG { author = QAUTHOR; displayName = "[Ghost] 30Rnd 5.56 PMAG Sand"; descriptionShort = "5.56x45 Mk327 HV"; ammo = "FA_556_Mk327_HV"; initSpeed = 1000; };
     class FA_JCA_30Rnd_556x45_sand_PMAG_T_Red : JCA_30Rnd_556x45_sand_PMAG {
         author = QAUTHOR;
         displayName = "[Ghost] 30Rnd 5.56 PMAG Sand (Red Tracer)";
@@ -224,6 +228,7 @@ class CfgMagazines {
     // =========================================================
     // JCA 7.62x51 — JCA_20Rnd_762x51_PMAG
     // =========================================================
+    class FA_JCA_20Rnd_762x51_PMAG: JCA_20Rnd_762x51_PMAG { author = QAUTHOR; displayName = "[Ghost] 20Rnd 7.62 PMAG"; descriptionShort = "7.62x51 M80A2 HV"; ammo = "FA_762_M80A2_HV"; initSpeed = 833; };
     class FA_JCA_20Rnd_762x51_PMAG_T_Red : JCA_20Rnd_762x51_PMAG {
         author = QAUTHOR;
         displayName = "[Ghost] 20Rnd 7.62 PMAG (Red Tracer)";
@@ -277,6 +282,7 @@ class CfgMagazines {
     // =========================================================
     // JCA 7.62x51 — JCA_20Rnd_762x51_Sand_PMAG
     // =========================================================
+    class FA_JCA_20Rnd_762x51_Sand_PMAG: JCA_20Rnd_762x51_Sand_PMAG { author = QAUTHOR; displayName = "[Ghost] 20Rnd 7.62 PMAG Sand"; descriptionShort = "7.62x51 M80A2 HV"; ammo = "FA_762_M80A2_HV"; initSpeed = 833; };
     class FA_JCA_20Rnd_762x51_Sand_PMAG_T_Red : JCA_20Rnd_762x51_Sand_PMAG {
         author = QAUTHOR;
         displayName = "[Ghost] 20Rnd 7.62 PMAG Sand (Red Tracer)";
@@ -889,6 +895,7 @@ class CfgMagazines {
     // =========================================================
     // JCA .338 LM — JCA_5Rnd_338LM_AWM_Mag — Mk371 LRP 250gr
     // =========================================================
+    class FA_JCA_5Rnd_338LM_AWM_Mk371_250gr: JCA_5Rnd_338LM_AWM_Mag { author = QAUTHOR; displayName = "[Ghost] 5Rnd .338LM AWM Mk371 250gr"; descriptionShort = ".338 Mk371 250gr"; ammo = "FA_338_Mk371_250gr"; initSpeed = 880; };
     class FA_JCA_5Rnd_338LM_AWM_Mk371_250gr_T_Red : JCA_5Rnd_338LM_AWM_Mag {
         author = QAUTHOR;
         displayName = "[Ghost] 5Rnd .338LM AWM Mk371 250gr (Red Tracer)";
@@ -942,6 +949,7 @@ class CfgMagazines {
     // =========================================================
     // JCA .338 LM — JCA_5Rnd_338LM_AWM_Mag — Mk371 LRP 285gr
     // =========================================================
+    class FA_JCA_5Rnd_338LM_AWM_Mk371_285gr: JCA_5Rnd_338LM_AWM_Mag { author = QAUTHOR; displayName = "[Ghost] 5Rnd .338LM AWM Mk371 285gr"; descriptionShort = ".338 Mk371 285gr"; ammo = "FA_338_Mk371_285gr"; initSpeed = 880; };
     class FA_JCA_5Rnd_338LM_AWM_Mk371_285gr_T_Red : JCA_5Rnd_338LM_AWM_Mag {
         author = QAUTHOR;
         displayName = "[Ghost] 5Rnd .338LM AWM Mk371 285gr (Red Tracer)";
@@ -995,6 +1003,7 @@ class CfgMagazines {
     // =========================================================
     // JCA .338 LM — JCA_5Rnd_338LM_AWM_Mag — Mk371 LRP 300gr
     // =========================================================
+    class FA_JCA_5Rnd_338LM_AWM_Mk371_300gr: JCA_5Rnd_338LM_AWM_Mag { author = QAUTHOR; displayName = "[Ghost] 5Rnd .338LM AWM Mk371 300gr"; descriptionShort = ".338 Mk371 300gr"; ammo = "FA_338_Mk371_300gr"; initSpeed = 880; };
     class FA_JCA_5Rnd_338LM_AWM_Mk371_300gr_T_Red : JCA_5Rnd_338LM_AWM_Mag {
         author = QAUTHOR;
         displayName = "[Ghost] 5Rnd .338LM AWM Mk371 300gr (Red Tracer)";
@@ -1097,4 +1106,84 @@ class CfgMagazines {
         ammo = "FA_300_Mk341_SubAP_T_IR";
         initSpeed = 315;
     tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_EMAG_XM891_CTEP: JCA_30Rnd_556x45_EMAG { author = QAUTHOR; displayName = "[Ghost] 30Rnd 5.56 EMAG XM891 CTEP"; descriptionShort = "5.56x45 XM891 CTEP"; ammo = "FA_556_XM891_CTEP"; initSpeed = 980; };
+    class FA_JCA_30Rnd_556x45_EMAG_XM891_CTEP_T_Red: FA_JCA_30Rnd_556x45_EMAG_XM891_CTEP { ammo = "FA_556_XM891_CTEP_T_Red"; displayName = "[Ghost] 30Rnd 5.56 EMAG XM891 CTEP (Red Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_EMAG_XM891_CTEP_T_Yellow: FA_JCA_30Rnd_556x45_EMAG_XM891_CTEP { ammo = "FA_556_XM891_CTEP_T_Yellow"; displayName = "[Ghost] 30Rnd 5.56 EMAG XM891 CTEP (Yellow Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_EMAG_XM891_CTEP_T_Green: FA_JCA_30Rnd_556x45_EMAG_XM891_CTEP { ammo = "FA_556_XM891_CTEP_T_Green"; displayName = "[Ghost] 30Rnd 5.56 EMAG XM891 CTEP (Green Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_EMAG_XM891_CTEP_T_White: FA_JCA_30Rnd_556x45_EMAG_XM891_CTEP { ammo = "FA_556_XM891_CTEP_T_White"; displayName = "[Ghost] 30Rnd 5.56 EMAG XM891 CTEP (White Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_EMAG_XM891_CTEP_T_Blue: FA_JCA_30Rnd_556x45_EMAG_XM891_CTEP { ammo = "FA_556_XM891_CTEP_T_Blue"; displayName = "[Ghost] 30Rnd 5.56 EMAG XM891 CTEP (Blue Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_EMAG_XM891_CTEP_T_Orange: FA_JCA_30Rnd_556x45_EMAG_XM891_CTEP { ammo = "FA_556_XM891_CTEP_T_Orange"; displayName = "[Ghost] 30Rnd 5.56 EMAG XM891 CTEP (Orange Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_EMAG_XM891_CTEP_T_IR: FA_JCA_30Rnd_556x45_EMAG_XM891_CTEP { ammo = "FA_556_XM891_CTEP_T_IR"; displayName = "[Ghost] 30Rnd 5.56 EMAG XM891 CTEP (IR Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_EMAG_Mk332_AP: JCA_30Rnd_556x45_EMAG { author = QAUTHOR; displayName = "[Ghost] 30Rnd 5.56 EMAG Mk332 AP"; descriptionShort = "5.56x45 Mk332 AP"; ammo = "FA_556_Mk332_AP"; initSpeed = 940; };
+    class FA_JCA_30Rnd_556x45_EMAG_Mk332_AP_T_Red: FA_JCA_30Rnd_556x45_EMAG_Mk332_AP { ammo = "FA_556_Mk332_AP_T_Red"; displayName = "[Ghost] 30Rnd 5.56 EMAG Mk332 AP (Red Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_EMAG_Mk332_AP_T_Yellow: FA_JCA_30Rnd_556x45_EMAG_Mk332_AP { ammo = "FA_556_Mk332_AP_T_Yellow"; displayName = "[Ghost] 30Rnd 5.56 EMAG Mk332 AP (Yellow Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_EMAG_Mk332_AP_T_Green: FA_JCA_30Rnd_556x45_EMAG_Mk332_AP { ammo = "FA_556_Mk332_AP_T_Green"; displayName = "[Ghost] 30Rnd 5.56 EMAG Mk332 AP (Green Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_EMAG_Mk332_AP_T_White: FA_JCA_30Rnd_556x45_EMAG_Mk332_AP { ammo = "FA_556_Mk332_AP_T_White"; displayName = "[Ghost] 30Rnd 5.56 EMAG Mk332 AP (White Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_EMAG_Mk332_AP_T_Blue: FA_JCA_30Rnd_556x45_EMAG_Mk332_AP { ammo = "FA_556_Mk332_AP_T_Blue"; displayName = "[Ghost] 30Rnd 5.56 EMAG Mk332 AP (Blue Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_EMAG_Mk332_AP_T_Orange: FA_JCA_30Rnd_556x45_EMAG_Mk332_AP { ammo = "FA_556_Mk332_AP_T_Orange"; displayName = "[Ghost] 30Rnd 5.56 EMAG Mk332 AP (Orange Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_EMAG_Mk332_AP_T_IR: FA_JCA_30Rnd_556x45_EMAG_Mk332_AP { ammo = "FA_556_Mk332_AP_T_IR"; displayName = "[Ghost] 30Rnd 5.56 EMAG Mk332 AP (IR Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_sand_EMAG_XM891_CTEP: JCA_30Rnd_556x45_sand_EMAG { author = QAUTHOR; displayName = "[Ghost] 30Rnd 5.56 EMAG Sand XM891 CTEP"; descriptionShort = "5.56x45 XM891 CTEP"; ammo = "FA_556_XM891_CTEP"; initSpeed = 980; };
+    class FA_JCA_30Rnd_556x45_sand_EMAG_XM891_CTEP_T_Red: FA_JCA_30Rnd_556x45_sand_EMAG_XM891_CTEP { ammo = "FA_556_XM891_CTEP_T_Red"; displayName = "[Ghost] 30Rnd 5.56 EMAG Sand XM891 CTEP (Red Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_sand_EMAG_XM891_CTEP_T_Yellow: FA_JCA_30Rnd_556x45_sand_EMAG_XM891_CTEP { ammo = "FA_556_XM891_CTEP_T_Yellow"; displayName = "[Ghost] 30Rnd 5.56 EMAG Sand XM891 CTEP (Yellow Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_sand_EMAG_XM891_CTEP_T_Green: FA_JCA_30Rnd_556x45_sand_EMAG_XM891_CTEP { ammo = "FA_556_XM891_CTEP_T_Green"; displayName = "[Ghost] 30Rnd 5.56 EMAG Sand XM891 CTEP (Green Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_sand_EMAG_XM891_CTEP_T_White: FA_JCA_30Rnd_556x45_sand_EMAG_XM891_CTEP { ammo = "FA_556_XM891_CTEP_T_White"; displayName = "[Ghost] 30Rnd 5.56 EMAG Sand XM891 CTEP (White Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_sand_EMAG_XM891_CTEP_T_Blue: FA_JCA_30Rnd_556x45_sand_EMAG_XM891_CTEP { ammo = "FA_556_XM891_CTEP_T_Blue"; displayName = "[Ghost] 30Rnd 5.56 EMAG Sand XM891 CTEP (Blue Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_sand_EMAG_XM891_CTEP_T_Orange: FA_JCA_30Rnd_556x45_sand_EMAG_XM891_CTEP { ammo = "FA_556_XM891_CTEP_T_Orange"; displayName = "[Ghost] 30Rnd 5.56 EMAG Sand XM891 CTEP (Orange Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_sand_EMAG_XM891_CTEP_T_IR: FA_JCA_30Rnd_556x45_sand_EMAG_XM891_CTEP { ammo = "FA_556_XM891_CTEP_T_IR"; displayName = "[Ghost] 30Rnd 5.56 EMAG Sand XM891 CTEP (IR Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_sand_EMAG_Mk332_AP: JCA_30Rnd_556x45_sand_EMAG { author = QAUTHOR; displayName = "[Ghost] 30Rnd 5.56 EMAG Sand Mk332 AP"; descriptionShort = "5.56x45 Mk332 AP"; ammo = "FA_556_Mk332_AP"; initSpeed = 940; };
+    class FA_JCA_30Rnd_556x45_sand_EMAG_Mk332_AP_T_Red: FA_JCA_30Rnd_556x45_sand_EMAG_Mk332_AP { ammo = "FA_556_Mk332_AP_T_Red"; displayName = "[Ghost] 30Rnd 5.56 EMAG Sand Mk332 AP (Red Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_sand_EMAG_Mk332_AP_T_Yellow: FA_JCA_30Rnd_556x45_sand_EMAG_Mk332_AP { ammo = "FA_556_Mk332_AP_T_Yellow"; displayName = "[Ghost] 30Rnd 5.56 EMAG Sand Mk332 AP (Yellow Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_sand_EMAG_Mk332_AP_T_Green: FA_JCA_30Rnd_556x45_sand_EMAG_Mk332_AP { ammo = "FA_556_Mk332_AP_T_Green"; displayName = "[Ghost] 30Rnd 5.56 EMAG Sand Mk332 AP (Green Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_sand_EMAG_Mk332_AP_T_White: FA_JCA_30Rnd_556x45_sand_EMAG_Mk332_AP { ammo = "FA_556_Mk332_AP_T_White"; displayName = "[Ghost] 30Rnd 5.56 EMAG Sand Mk332 AP (White Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_sand_EMAG_Mk332_AP_T_Blue: FA_JCA_30Rnd_556x45_sand_EMAG_Mk332_AP { ammo = "FA_556_Mk332_AP_T_Blue"; displayName = "[Ghost] 30Rnd 5.56 EMAG Sand Mk332 AP (Blue Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_sand_EMAG_Mk332_AP_T_Orange: FA_JCA_30Rnd_556x45_sand_EMAG_Mk332_AP { ammo = "FA_556_Mk332_AP_T_Orange"; displayName = "[Ghost] 30Rnd 5.56 EMAG Sand Mk332 AP (Orange Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_sand_EMAG_Mk332_AP_T_IR: FA_JCA_30Rnd_556x45_sand_EMAG_Mk332_AP { ammo = "FA_556_Mk332_AP_T_IR"; displayName = "[Ghost] 30Rnd 5.56 EMAG Sand Mk332 AP (IR Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_PMAG_XM891_CTEP: JCA_30Rnd_556x45_PMAG { author = QAUTHOR; displayName = "[Ghost] 30Rnd 5.56 PMAG XM891 CTEP"; descriptionShort = "5.56x45 XM891 CTEP"; ammo = "FA_556_XM891_CTEP"; initSpeed = 980; };
+    class FA_JCA_30Rnd_556x45_PMAG_XM891_CTEP_T_Red: FA_JCA_30Rnd_556x45_PMAG_XM891_CTEP { ammo = "FA_556_XM891_CTEP_T_Red"; displayName = "[Ghost] 30Rnd 5.56 PMAG XM891 CTEP (Red Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_PMAG_XM891_CTEP_T_Yellow: FA_JCA_30Rnd_556x45_PMAG_XM891_CTEP { ammo = "FA_556_XM891_CTEP_T_Yellow"; displayName = "[Ghost] 30Rnd 5.56 PMAG XM891 CTEP (Yellow Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_PMAG_XM891_CTEP_T_Green: FA_JCA_30Rnd_556x45_PMAG_XM891_CTEP { ammo = "FA_556_XM891_CTEP_T_Green"; displayName = "[Ghost] 30Rnd 5.56 PMAG XM891 CTEP (Green Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_PMAG_XM891_CTEP_T_White: FA_JCA_30Rnd_556x45_PMAG_XM891_CTEP { ammo = "FA_556_XM891_CTEP_T_White"; displayName = "[Ghost] 30Rnd 5.56 PMAG XM891 CTEP (White Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_PMAG_XM891_CTEP_T_Blue: FA_JCA_30Rnd_556x45_PMAG_XM891_CTEP { ammo = "FA_556_XM891_CTEP_T_Blue"; displayName = "[Ghost] 30Rnd 5.56 PMAG XM891 CTEP (Blue Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_PMAG_XM891_CTEP_T_Orange: FA_JCA_30Rnd_556x45_PMAG_XM891_CTEP { ammo = "FA_556_XM891_CTEP_T_Orange"; displayName = "[Ghost] 30Rnd 5.56 PMAG XM891 CTEP (Orange Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_PMAG_XM891_CTEP_T_IR: FA_JCA_30Rnd_556x45_PMAG_XM891_CTEP { ammo = "FA_556_XM891_CTEP_T_IR"; displayName = "[Ghost] 30Rnd 5.56 PMAG XM891 CTEP (IR Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_PMAG_Mk332_AP: JCA_30Rnd_556x45_PMAG { author = QAUTHOR; displayName = "[Ghost] 30Rnd 5.56 PMAG Mk332 AP"; descriptionShort = "5.56x45 Mk332 AP"; ammo = "FA_556_Mk332_AP"; initSpeed = 940; };
+    class FA_JCA_30Rnd_556x45_PMAG_Mk332_AP_T_Red: FA_JCA_30Rnd_556x45_PMAG_Mk332_AP { ammo = "FA_556_Mk332_AP_T_Red"; displayName = "[Ghost] 30Rnd 5.56 PMAG Mk332 AP (Red Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_PMAG_Mk332_AP_T_Yellow: FA_JCA_30Rnd_556x45_PMAG_Mk332_AP { ammo = "FA_556_Mk332_AP_T_Yellow"; displayName = "[Ghost] 30Rnd 5.56 PMAG Mk332 AP (Yellow Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_PMAG_Mk332_AP_T_Green: FA_JCA_30Rnd_556x45_PMAG_Mk332_AP { ammo = "FA_556_Mk332_AP_T_Green"; displayName = "[Ghost] 30Rnd 5.56 PMAG Mk332 AP (Green Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_PMAG_Mk332_AP_T_White: FA_JCA_30Rnd_556x45_PMAG_Mk332_AP { ammo = "FA_556_Mk332_AP_T_White"; displayName = "[Ghost] 30Rnd 5.56 PMAG Mk332 AP (White Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_PMAG_Mk332_AP_T_Blue: FA_JCA_30Rnd_556x45_PMAG_Mk332_AP { ammo = "FA_556_Mk332_AP_T_Blue"; displayName = "[Ghost] 30Rnd 5.56 PMAG Mk332 AP (Blue Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_PMAG_Mk332_AP_T_Orange: FA_JCA_30Rnd_556x45_PMAG_Mk332_AP { ammo = "FA_556_Mk332_AP_T_Orange"; displayName = "[Ghost] 30Rnd 5.56 PMAG Mk332 AP (Orange Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_PMAG_Mk332_AP_T_IR: FA_JCA_30Rnd_556x45_PMAG_Mk332_AP { ammo = "FA_556_Mk332_AP_T_IR"; displayName = "[Ghost] 30Rnd 5.56 PMAG Mk332 AP (IR Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_sand_PMAG_XM891_CTEP: JCA_30Rnd_556x45_sand_PMAG { author = QAUTHOR; displayName = "[Ghost] 30Rnd 5.56 PMAG Sand XM891 CTEP"; descriptionShort = "5.56x45 XM891 CTEP"; ammo = "FA_556_XM891_CTEP"; initSpeed = 980; };
+    class FA_JCA_30Rnd_556x45_sand_PMAG_XM891_CTEP_T_Red: FA_JCA_30Rnd_556x45_sand_PMAG_XM891_CTEP { ammo = "FA_556_XM891_CTEP_T_Red"; displayName = "[Ghost] 30Rnd 5.56 PMAG Sand XM891 CTEP (Red Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_sand_PMAG_XM891_CTEP_T_Yellow: FA_JCA_30Rnd_556x45_sand_PMAG_XM891_CTEP { ammo = "FA_556_XM891_CTEP_T_Yellow"; displayName = "[Ghost] 30Rnd 5.56 PMAG Sand XM891 CTEP (Yellow Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_sand_PMAG_XM891_CTEP_T_Green: FA_JCA_30Rnd_556x45_sand_PMAG_XM891_CTEP { ammo = "FA_556_XM891_CTEP_T_Green"; displayName = "[Ghost] 30Rnd 5.56 PMAG Sand XM891 CTEP (Green Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_sand_PMAG_XM891_CTEP_T_White: FA_JCA_30Rnd_556x45_sand_PMAG_XM891_CTEP { ammo = "FA_556_XM891_CTEP_T_White"; displayName = "[Ghost] 30Rnd 5.56 PMAG Sand XM891 CTEP (White Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_sand_PMAG_XM891_CTEP_T_Blue: FA_JCA_30Rnd_556x45_sand_PMAG_XM891_CTEP { ammo = "FA_556_XM891_CTEP_T_Blue"; displayName = "[Ghost] 30Rnd 5.56 PMAG Sand XM891 CTEP (Blue Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_sand_PMAG_XM891_CTEP_T_Orange: FA_JCA_30Rnd_556x45_sand_PMAG_XM891_CTEP { ammo = "FA_556_XM891_CTEP_T_Orange"; displayName = "[Ghost] 30Rnd 5.56 PMAG Sand XM891 CTEP (Orange Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_sand_PMAG_XM891_CTEP_T_IR: FA_JCA_30Rnd_556x45_sand_PMAG_XM891_CTEP { ammo = "FA_556_XM891_CTEP_T_IR"; displayName = "[Ghost] 30Rnd 5.56 PMAG Sand XM891 CTEP (IR Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_sand_PMAG_Mk332_AP: JCA_30Rnd_556x45_sand_PMAG { author = QAUTHOR; displayName = "[Ghost] 30Rnd 5.56 PMAG Sand Mk332 AP"; descriptionShort = "5.56x45 Mk332 AP"; ammo = "FA_556_Mk332_AP"; initSpeed = 940; };
+    class FA_JCA_30Rnd_556x45_sand_PMAG_Mk332_AP_T_Red: FA_JCA_30Rnd_556x45_sand_PMAG_Mk332_AP { ammo = "FA_556_Mk332_AP_T_Red"; displayName = "[Ghost] 30Rnd 5.56 PMAG Sand Mk332 AP (Red Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_sand_PMAG_Mk332_AP_T_Yellow: FA_JCA_30Rnd_556x45_sand_PMAG_Mk332_AP { ammo = "FA_556_Mk332_AP_T_Yellow"; displayName = "[Ghost] 30Rnd 5.56 PMAG Sand Mk332 AP (Yellow Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_sand_PMAG_Mk332_AP_T_Green: FA_JCA_30Rnd_556x45_sand_PMAG_Mk332_AP { ammo = "FA_556_Mk332_AP_T_Green"; displayName = "[Ghost] 30Rnd 5.56 PMAG Sand Mk332 AP (Green Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_sand_PMAG_Mk332_AP_T_White: FA_JCA_30Rnd_556x45_sand_PMAG_Mk332_AP { ammo = "FA_556_Mk332_AP_T_White"; displayName = "[Ghost] 30Rnd 5.56 PMAG Sand Mk332 AP (White Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_sand_PMAG_Mk332_AP_T_Blue: FA_JCA_30Rnd_556x45_sand_PMAG_Mk332_AP { ammo = "FA_556_Mk332_AP_T_Blue"; displayName = "[Ghost] 30Rnd 5.56 PMAG Sand Mk332 AP (Blue Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_sand_PMAG_Mk332_AP_T_Orange: FA_JCA_30Rnd_556x45_sand_PMAG_Mk332_AP { ammo = "FA_556_Mk332_AP_T_Orange"; displayName = "[Ghost] 30Rnd 5.56 PMAG Sand Mk332 AP (Orange Tracer)"; tracersEvery = 4; };
+    class FA_JCA_30Rnd_556x45_sand_PMAG_Mk332_AP_T_IR: FA_JCA_30Rnd_556x45_sand_PMAG_Mk332_AP { ammo = "FA_556_Mk332_AP_T_IR"; displayName = "[Ghost] 30Rnd 5.56 PMAG Sand Mk332 AP (IR Tracer)"; tracersEvery = 4; };
+    class FA_JCA_20Rnd_762x51_PMAG_XM751_CTEP: JCA_20Rnd_762x51_PMAG { author = QAUTHOR; displayName = "[Ghost] 20Rnd 7.62 PMAG XM751 CTEP"; descriptionShort = "XM751 CTEP"; ammo = "FA_762_XM751_CTEP"; initSpeed = 850; };
+    class FA_JCA_20Rnd_762x51_PMAG_XM751_CTEP_T_Red: FA_JCA_20Rnd_762x51_PMAG_XM751_CTEP { ammo = "FA_762_XM751_CTEP_T_Red"; displayName = "[Ghost] 20Rnd 7.62 PMAG XM751 CTEP (Red Tracer)"; tracersEvery = 4; };
+    class FA_JCA_20Rnd_762x51_PMAG_XM751_CTEP_T_Yellow: FA_JCA_20Rnd_762x51_PMAG_XM751_CTEP { ammo = "FA_762_XM751_CTEP_T_Yellow"; displayName = "[Ghost] 20Rnd 7.62 PMAG XM751 CTEP (Yellow Tracer)"; tracersEvery = 4; };
+    class FA_JCA_20Rnd_762x51_PMAG_XM751_CTEP_T_Green: FA_JCA_20Rnd_762x51_PMAG_XM751_CTEP { ammo = "FA_762_XM751_CTEP_T_Green"; displayName = "[Ghost] 20Rnd 7.62 PMAG XM751 CTEP (Green Tracer)"; tracersEvery = 4; };
+    class FA_JCA_20Rnd_762x51_PMAG_XM751_CTEP_T_White: FA_JCA_20Rnd_762x51_PMAG_XM751_CTEP { ammo = "FA_762_XM751_CTEP_T_White"; displayName = "[Ghost] 20Rnd 7.62 PMAG XM751 CTEP (White Tracer)"; tracersEvery = 4; };
+    class FA_JCA_20Rnd_762x51_PMAG_XM751_CTEP_T_Blue: FA_JCA_20Rnd_762x51_PMAG_XM751_CTEP { ammo = "FA_762_XM751_CTEP_T_Blue"; displayName = "[Ghost] 20Rnd 7.62 PMAG XM751 CTEP (Blue Tracer)"; tracersEvery = 4; };
+    class FA_JCA_20Rnd_762x51_PMAG_XM751_CTEP_T_Orange: FA_JCA_20Rnd_762x51_PMAG_XM751_CTEP { ammo = "FA_762_XM751_CTEP_T_Orange"; displayName = "[Ghost] 20Rnd 7.62 PMAG XM751 CTEP (Orange Tracer)"; tracersEvery = 4; };
+    class FA_JCA_20Rnd_762x51_PMAG_XM751_CTEP_T_IR: FA_JCA_20Rnd_762x51_PMAG_XM751_CTEP { ammo = "FA_762_XM751_CTEP_T_IR"; displayName = "[Ghost] 20Rnd 7.62 PMAG XM751 CTEP (IR Tracer)"; tracersEvery = 4; };
+    class FA_JCA_20Rnd_762x51_Sand_PMAG_XM751_CTEP: JCA_20Rnd_762x51_Sand_PMAG { author = QAUTHOR; displayName = "[Ghost] 20Rnd 7.62 PMAG Sand XM751 CTEP"; descriptionShort = "XM751 CTEP"; ammo = "FA_762_XM751_CTEP"; initSpeed = 850; };
+    class FA_JCA_20Rnd_762x51_Sand_PMAG_XM751_CTEP_T_Red: FA_JCA_20Rnd_762x51_Sand_PMAG_XM751_CTEP { ammo = "FA_762_XM751_CTEP_T_Red"; displayName = "[Ghost] 20Rnd 7.62 PMAG Sand XM751 CTEP (Red Tracer)"; tracersEvery = 4; };
+    class FA_JCA_20Rnd_762x51_Sand_PMAG_XM751_CTEP_T_Yellow: FA_JCA_20Rnd_762x51_Sand_PMAG_XM751_CTEP { ammo = "FA_762_XM751_CTEP_T_Yellow"; displayName = "[Ghost] 20Rnd 7.62 PMAG Sand XM751 CTEP (Yellow Tracer)"; tracersEvery = 4; };
+    class FA_JCA_20Rnd_762x51_Sand_PMAG_XM751_CTEP_T_Green: FA_JCA_20Rnd_762x51_Sand_PMAG_XM751_CTEP { ammo = "FA_762_XM751_CTEP_T_Green"; displayName = "[Ghost] 20Rnd 7.62 PMAG Sand XM751 CTEP (Green Tracer)"; tracersEvery = 4; };
+    class FA_JCA_20Rnd_762x51_Sand_PMAG_XM751_CTEP_T_White: FA_JCA_20Rnd_762x51_Sand_PMAG_XM751_CTEP { ammo = "FA_762_XM751_CTEP_T_White"; displayName = "[Ghost] 20Rnd 7.62 PMAG Sand XM751 CTEP (White Tracer)"; tracersEvery = 4; };
+    class FA_JCA_20Rnd_762x51_Sand_PMAG_XM751_CTEP_T_Blue: FA_JCA_20Rnd_762x51_Sand_PMAG_XM751_CTEP { ammo = "FA_762_XM751_CTEP_T_Blue"; displayName = "[Ghost] 20Rnd 7.62 PMAG Sand XM751 CTEP (Blue Tracer)"; tracersEvery = 4; };
+    class FA_JCA_20Rnd_762x51_Sand_PMAG_XM751_CTEP_T_Orange: FA_JCA_20Rnd_762x51_Sand_PMAG_XM751_CTEP { ammo = "FA_762_XM751_CTEP_T_Orange"; displayName = "[Ghost] 20Rnd 7.62 PMAG Sand XM751 CTEP (Orange Tracer)"; tracersEvery = 4; };
+    class FA_JCA_20Rnd_762x51_Sand_PMAG_XM751_CTEP_T_IR: FA_JCA_20Rnd_762x51_Sand_PMAG_XM751_CTEP { ammo = "FA_762_XM751_CTEP_T_IR"; displayName = "[Ghost] 20Rnd 7.62 PMAG Sand XM751 CTEP (IR Tracer)"; tracersEvery = 4; };
 };

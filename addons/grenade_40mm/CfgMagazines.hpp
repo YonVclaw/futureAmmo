@@ -8,18 +8,6 @@ class CfgMagazines {
         descriptionShort = "Network Relay (2033)<br/>Data-link extender, 5 km radius";
         ammo = "FA_40mm_Mk380_NRP";
     };
-    class FA_1Rnd_40mm_Mk381_SPARCS: 1Rnd_HE_Grenade_shell {
-        author = QAUTHOR;
-        displayName = "[Ghost] 40mm Mk381 SPARCS-II (recon)";
-        descriptionShort = "Aerial recon capsule (2033)<br/>Auto-marks enemy contacts ~60 s";
-        ammo = "FA_40mm_Mk381_SPARCS";
-    };
-    class FA_1Rnd_40mm_Mk382_GLUAS: 1Rnd_HE_Grenade_shell {
-        author = QAUTHOR;
-        displayName = "[Ghost] 40mm Mk382 GLUAS-H (hover UAV)";
-        descriptionShort = "Loitering micro-UAV (2033)<br/>Persistent feed ~30 min";
-        ammo = "FA_40mm_Mk382_GLUAS";
-    };
     class FA_1Rnd_40mm_Mk383_EMP: 1Rnd_HE_Grenade_shell {
         author = QAUTHOR;
         displayName = "[Ghost] 40mm Mk383 EMP-M (burst)";
@@ -44,12 +32,6 @@ class CfgMagazines {
         descriptionShort = "Unattended ground sensor (2033)<br/>Persistent contact picket ~30 min";
         ammo = "FA_40mm_Mk386_UGS";
     };
-    class FA_1Rnd_40mm_Mk387_Desig: 1Rnd_HE_Grenade_shell {
-        author = QAUTHOR;
-        displayName = "[Ghost] 40mm Mk387 DESIG (designator)";
-        descriptionShort = "Deployable laser designator (2033)<br/>Lases nearest enemy for guided/loiter munitions";
-        ammo = "FA_40mm_Mk387_Desig";
-    };
     class FA_1Rnd_40mm_Mk388_Jammer: 1Rnd_HE_Grenade_shell {
         author = QAUTHOR;
         displayName = "[Ghost] 40mm Mk388 JAM (area jammer)";
@@ -65,18 +47,6 @@ class CfgMagazines {
         displayName = "[Ghost] 40mm Mk380 NR-P x3 (relay)";
         descriptionShort = "Network Relay (2033)<br/>Data-link extender, 5 km radius";
         ammo = "FA_40mm_Mk380_NRP";
-    };
-    class FA_3Rnd_40mm_Mk381_SPARCS: 3Rnd_HE_Grenade_shell {
-        author = QAUTHOR;
-        displayName = "[Ghost] 40mm Mk381 SPARCS-II x3 (recon)";
-        descriptionShort = "Aerial recon capsule (2033)<br/>Auto-marks enemy contacts ~60 s";
-        ammo = "FA_40mm_Mk381_SPARCS";
-    };
-    class FA_3Rnd_40mm_Mk382_GLUAS: 3Rnd_HE_Grenade_shell {
-        author = QAUTHOR;
-        displayName = "[Ghost] 40mm Mk382 GLUAS-H x3 (hover UAV)";
-        descriptionShort = "Loitering micro-UAV (2033)<br/>Persistent feed ~30 min";
-        ammo = "FA_40mm_Mk382_GLUAS";
     };
     class FA_3Rnd_40mm_Mk383_EMP: 3Rnd_HE_Grenade_shell {
         author = QAUTHOR;
@@ -101,12 +71,6 @@ class CfgMagazines {
         displayName = "[Ghost] 40mm Mk386 UGS x3 (sensor)";
         descriptionShort = "Unattended ground sensor (2033)<br/>Persistent contact picket ~30 min";
         ammo = "FA_40mm_Mk386_UGS";
-    };
-    class FA_3Rnd_40mm_Mk387_Desig: 3Rnd_HE_Grenade_shell {
-        author = QAUTHOR;
-        displayName = "[Ghost] 40mm Mk387 DESIG x3 (designator)";
-        descriptionShort = "Deployable laser designator (2033)<br/>Lases nearest enemy for guided/loiter munitions";
-        ammo = "FA_40mm_Mk387_Desig";
     };
     class FA_3Rnd_40mm_Mk388_Jammer: 3Rnd_HE_Grenade_shell {
         author = QAUTHOR;

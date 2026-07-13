@@ -24,16 +24,15 @@ GVAR(hasDEW)  = isClass (configFile >> "CfgPatches" >> "DEW_main") ||
 GVAR(relays) = [];
 
 // Registry: ammo class -> [deploy mode, effect function, lifetime (s), radius (m)]
+// CHUTE = HuntIR-style: pops a parachute at apex and floats the payload down,
+// then runs the effect at the landing point. No explosion on any of these.
 GVAR(registry) = createHashMapFromArray [
-    ["ghostfa_40mm_Mk380_NRP",    ["LAND", FUNC(relay),   1800, 5000]],
-    ["ghostfa_40mm_Mk381_SPARCS", ["APEX", FUNC(sparcs),    60,  400]],
-    ["ghostfa_40mm_Mk382_GLUAS",  ["APEX", FUNC(gluas),   1800,  600]],
-    ["ghostfa_40mm_Mk383_EMP",    ["LAND", FUNC(emp),        8,   60]],
-    ["ghostfa_40mm_Mk384_MSmoke", ["LAND", FUNC(msmoke),    60,   25]],
-    ["ghostfa_40mm_Mk385_Decoy",  ["LAND", FUNC(decoy),    120,  300]],
-    ["ghostfa_40mm_Mk386_UGS",    ["LAND", FUNC(ugs),     1800,  150]],
-    ["ghostfa_40mm_Mk387_Desig",  ["LAND", FUNC(desig),    120,  400]],
-    ["ghostfa_40mm_Mk388_Jammer", ["LAND", FUNC(jammer),   900,  400]]
+    ["FA_40mm_Mk380_NRP",    ["CHUTE", FUNC(relay),   1800, 5000]],
+    ["FA_40mm_Mk383_EMP",    ["CHUTE", FUNC(emp),        8,   60]],
+    ["FA_40mm_Mk384_MSmoke", ["CHUTE", FUNC(msmoke),    60,   25]],
+    ["FA_40mm_Mk385_Decoy",  ["CHUTE", FUNC(decoy),    120,  300]],
+    ["FA_40mm_Mk386_UGS",    ["CHUTE", FUNC(ugs),     1800,  150]],
+    ["FA_40mm_Mk388_Jammer", ["CHUTE", FUNC(jammer),   900,  400]]
 ];
 
 ["CAManBase", "fired", {

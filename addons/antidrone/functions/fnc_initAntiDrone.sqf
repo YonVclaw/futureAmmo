@@ -13,13 +13,16 @@
  * Public: No
  */
 
-private _p556  = [3.5, 2.5, 0.5];
-private _p762  = [4,   3,   0.5];
-private _p300  = [3.5, 2.5, 0.5];
-private _p40mm = [6,   4.5, 0.5];
-private _p50   = [5,   3.5, 0.5];
-private _p65   = [3.5, 2.5, 0.5];
-private _p338  = [4.5, 3,   0.5];
+// [trigger radius (m), lethal radius (m), max damage, effective range (m)]
+private _p556  = [3.5, 2.5, 0.5, 500];
+private _p762  = [4,   3,   0.5, 800];
+private _p300  = [3.5, 2.5, 0.5, 300];
+private _p40mm = [6,   4.5, 0.5, 400];
+private _p50   = [5,   3.5, 0.5, 1500];
+private _p65   = [3.5, 2.5, 0.5, 600];
+private _p338  = [4.5, 3,   0.5, 1500];
+// 12ga Mk363 PABS — heavy dedicated AD slug; short shotgun reach.
+private _p12g  = [4.5, 3,   0.5, 150];
 
 GVAR(AD_params) = createHashMapFromArray [
     // 5.56 Mk361
@@ -71,12 +74,31 @@ GVAR(AD_params) = createHashMapFromArray [
     ["FA_338_Mk373_PAB_T_Green",  _p338],
     ["FA_338_Mk373_PAB_T_White",  _p338],
     ["FA_338_Mk373_PAB_T_Blue",   _p338],
-    ["FA_338_Mk373_PAB_T_Orange", _p338]
+    ["FA_338_Mk373_PAB_T_Orange", _p338],
+    // 12ga Mk363 PABS (no tracer variants — slug fired from shotgun)
+    ["FA_12G_Mk363_PABS",         _p12g]
 ];
+
+// Ammo classes whose dialled airburst range (fnc_setBurst) is honoured by
+// fnc_trackAD. Other components append theirs (e.g. the MAAWS HE 448 AB).
+GVAR(programmableAB) = ["FA_40mm_Mk364_PAB"];
 
 ["CAManBase", "fired", {
     params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_mag", "_proj"];
     if (_ammo in GVAR(AD_params)) then {
-        [_proj, _ammo] call FUNC(trackAD);
+        [_proj, _ammo, _unit] call FUNC(trackAD);
     };
 }] call CBA_fnc_addClassEventHandler;
+
+// Mk364 programmable airburst — key to cycle the dialled slant range. Mirrors
+// the ACE self-interaction submenu (CfgVehicles.hpp). Unbound by default.
+if (hasInterface) then {
+    [
+        "ghostfa",
+        QGVAR(cycleBurst),
+        ["Mk364: Cycle Airburst Range", "Cycles the 40mm Mk364 programmable airburst slant range (Off / 100 / 150 / 200 / 250 / 300 / 400 m)."],
+        { call FUNC(cycleBurst); false },
+        {false},
+        []
+    ] call CBA_fnc_addKeybind;
+};

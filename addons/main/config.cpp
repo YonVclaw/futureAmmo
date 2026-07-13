@@ -7,6 +7,7 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
+            "ace_ballistics",
             "cba_main"
         };
         author = "Ghosts of Battle";

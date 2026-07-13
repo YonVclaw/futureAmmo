@@ -1,0 +1,119 @@
+== Update: indirect fire, aircraft ordnance, East/RF gaps + new calibers ==
+
+NEW — vehicles: mortar / artillery / naval families, most re-labelled per side (NATO Mk/XM/M, CSAT Type ##, AAF AF-##; same round, distinct class + displayName):
+- 82mm mortar (vanilla mortar): APMI GPS (XM395-2), LGM laser (M-LGM), STRIX top-attack (M-STRIX AT), HE-ER (M821E1), multispectral smoke (M-SMK), thermobaric (M-TB), IR illum (M853 IR).
+- 155mm SPG: HE-ER (M795E1), Excalibur GPS (M982E1), laser CLGP (M-CLGP / Krasnopol), SADARM-2 sensor-fuzed AT, ADAM/RAAMS scatterable AP/AT mines, sensor-fuzed submunition.
+- 230mm MLRS: GMLRS-U guided unitary (M31E2), GMLRS-ER (M403), AW sensor-fuzed AT (M-AW).
+- 120mm naval (destroyer gun): Vulcano-120 GLR (~40 km GPS/IIR), Mk-HE, Mk-LG laser, Mk-SFM, Mk-SMK.
+- 12.7x108 East HMG belts (NSVT-class, 450Rnd): 7N40 AP-T, 7N41 HEIAP, 7N42 HEAB (C-UAS proximity, PAB script) — mirrors the West .50 belts.
+
+NEW — rf (ghostfa_rf, a SEPARATE addon, requires Reaction Forces): 120mm Twin Mortar family (per-side HE-ER / GPS / laser / STRIX / smoke / mines / SFM / thermobaric), the ASh-12 12.7x55 rifle (7N52 Molot AP, 7U13 Molot-S subsonic, 7U14 Uragan) via the CBA 12.7x55 well, and the RC40 revolver-grenade payloads (HE-P, DP, MS multispectral smoke, AD anti-drone proximity). skipWhenMissingDependencies = 1.
+
+NEW — maincaliber: 125mm CSAT tank rounds — 3BM70 Vacuum-2 (APFSDS-T), 3BK-31 Breza (tandem HEAT-MP), 3OF-82 (HE, programmable airburst), 9M119M2 Refleks-M (gun-launched SACLOS ATGM, 5 km).
+
+NEW — missiles: fixed-wing pylon ordnance in the dynamic-loadout editor. Per-side AA seeker tiers (NATO / Russia / Europe): short IR (AIM-9X Blk III / R-74M / IRIS-T), medium radar (AIM-120E / R-77M / MICA-NG), long radar (AIM-260 JATM / R-37M / Meteor); plus SEAD (AGM-88G AARGM-ER / Kh-31PD), standoff cruise (AGM-158D JASSM-XR / Kh-101 / SCALP-EG) and anti-ship (AGM-158C LRASM / Kh-35UE / RBS-15 Mk4). Also: the four man-portable rounds (Broadsword / Copperhead AT, Sentry / Roadrunner AA) now load on the shoulder Titan launchers.
+
+NEW — extracal (ghostfa_extracal): CBA-magazineWell caliber gaps, so each round reaches every mod's weapon in that caliber with no per-weapon patching:
+- 9x39 VSS/Val — 7U15 subsonic tungsten AP, 7U16 subsonic HP.
+- 14.5x114 anti-materiel — 7N60 AP-T, 7N61 HEIAP, 7N62 HEAB (C-UAS proximity).
+- 5.7x28 PDW — Mk430 AP, Mk431 subsonic.
+- 6.5 Grendel — rifle: Mk328 HV match, XM892 CTEP; 200Rnd MG box: Mk330 GP, Mk331 AP-T.
+- 6.5 Creedmoor — rifle: Mk329 LR match, XM893 CTEP; 200Rnd MG box: Mk332 GP, Mk333 AP-T.
+Design rule: rifle mags carry DMR/match loads; MG belt boxes carry general-purpose / AP-tracer only (no DMR ammo).
+
+NEW — ef (ghostfa_ef) + antidrone_ef: FA versions of the EF 6.5x39 caseless coyote magazines (30Rnd + 100Rnd, EPR + 7 tracer colors; antidrone_ef adds the Mk367 PAB anti-drone loads). Both now depend on EF_Weapons (the base Expeditionary Forces mod that actually defines the coyote mag bodies) instead of two non-existent classes, so they load alongside Aegis EF instead of silently skipping.
+
+CHANGED — every addon (28 configs): the load-order dependency A3_Data_F_Decade_Loadorder was replaced with cba_main + ace_ballistics, so each addon loads after ACE Advanced Ballistics and its metric (mm/gram) props resolve correctly.
+
+== Update: MAAWS ballistics fix + field-manual pass ==
+
+FIXED — maaws: the unguided HEAT 665 CS and HE 448 AB left the tube at 230 / 255 m/s, but the vanilla MRAWS FCS optic reticle is calibrated to the vanilla 350 m/s muzzle velocity — so they dropped ~150 m short (a 400 m aimpoint impacted ~250 m). Both now launch at 350 m/s (initSpeed in the magazine + maxSpeed in the ammo), matching the vanilla trajectory the reticle expects; drag (airFriction 0.05) and mass are unchanged, so the ballistic natures now hit on the aimpoint. ADM 484 PROX keeps its lower velocity — it is aimed by its scripted proximity fuze, not the reticle.
+
+NEW — map Notes briefing: added a "Vehicle & aircraft missiles" page for the missiles component (Broadsword, Wraith, Warhammer, Hydra-P, Copperhead, Sentry, Roadrunner) — the family had no diary entry.
+
+CHANGED — map Notes briefing: added employment ("Use") lines to every page where a round needs more than point-and-shoot — MAAWS, Vorona / RPG, 40mm ISR/EW, Counter-UAS PAB, medium autocannon and tank main gun — plus a global airburst-control note in the Overview: the shared Mk364 "Cycle Airburst Range" keybind is UNBOUND by default (bind it under Options > Controls > Configure Addons > Ghosts of Battle, or use the ACE self-interaction menu; steps 0 / 100 / 150 / 200 / 250 / 300 / 400 m, 0 = off).
+
+== Update: QAV / VVE vehicle compat addons ==
+
+NEW — five compat addons that wire the existing FA magazines onto vehicle-pack
+weapons. All are pure wiring (magazines[] += on the weapon/muzzle class, never = ,
+so they never wipe another addon's mags), define no new ammo of their own, and
+set skipWhenMissingDependencies = 1 so each self-skips when its target mod is absent:
+
+- ghostfa_vve (requires vve_core) — VVE_Core vehicle weapons: 30mm RCWS (APFSDS/API/
+  HEI/ABM/PROX), 35mm AHEAD, both .50 HMGs (Mk211/Mk258 belts), 105mm MGS gun
+  (cannon_105mm + vve_cannon_105mm), and the Titan launcher fed the count=1 FA
+  missile variants (Broadsword/Copperhead AT + Sentry/Roadrunner AA).
+- ghostfa_vehicles (requires A3_Weapons_F) — shared VANILLA vehicle secondaries, so
+  the belts reach every A3 vehicle using them: LMG_coax / LMG_RCWS (7.62 M80A2 +
+  XM751), MMG_02_coax / _amv (.338 Mk372), HMG_127_MBT / _APC / _AFV (.50 Mk211 +
+  Mk258). Covers the Marshall coax + ATGM .338 and the Rhino coax + commander HMG.
+- ghostfa_qav_abramsx (requires QAV_AbramsX) — 120mm M360, 30mm M914 (HighROF muzzle)
+  + the twin's own HighROF, .338 + .50 coax, .50 Kongsberg RWS, 7.62 XM134 minigun.
+- ghostfa_qav_ef_abramsx (requires QAV_EF_AbramsX_Compat) — re-asserts the 30mm FA
+  appends AFTER the EF compat, which overwrites (=) the M914 HighROF magazines to
+  inject its EF HEAB round; load order via requiredAddons keeps both alive.
+- ghostfa_qav_ripsaw (requires QAV_Ripsaw) — mk30 30mm split by muzzle (kinetic AP:
+  APFSDS+API / HE: HEI+ABM+PROX), .50 M2 RWS, 7.62 coax. These are QAV-specific
+  subclasses that redefine magazines[] with = , so the shared-class patches can't
+  reach them — each needs its own += here.
+Marshall needs no dedicated addon: its weapons are covered through ghostfa_vve
+(vve_ classes) + ghostfa_vehicles (vanilla LMG_coax/RCWS).
+
+== Update: 105mm MGS rounds + Titan tube variants ==
+
+NEW — maincaliber: 105mm light-tank / MGS family (XM1155 APFSDS-T, XM1160 HEAT-MP-T, XM1162 HE-OB), 20-round magazines, each in base + full tracer-color set (Red/Yellow/Green/White/Blue/Orange/IR). Vanilla-ballistics shells reparented onto the 120mm shell bases (A3 has no native 105mm base). HEAT-MP and HE-OB are airburst — registered in the shared mediumcaliber fuze engine across all their color variants. Wiring lives in ghostfa_vve (both cannon_105mm and vve_cannon_105mm, the Marshall MGS gun) — cannon_105mm ships with the VVE dependency chain (not vanilla A3), so its patch is gated behind vve_core rather than placed in the always-loading maincaliber.
+
+NEW — missiles: single-round FA missile variants (FA_1Rnd_BGM185_Broadsword / _XM1200_Copperhead / _MIM165_Sentry / _MIM166_Roadrunner, count = 1) for 1-tube launchers. ghostfa_vve now feeds vve_missiles_titan the 1-round variants instead of the 2/4-round racks, matching its per-tube reload — so the Marshall APC's AT tubes get an FA option (Broadsword/Copperhead) alongside the AA pair without changing reload granularity.
+
+== Update: 2040 vehicle missiles ==
+
+NEW — missiles component: seven vehicle-tier missiles, one tier above the infantry launchers (RPG/Vorona/MAAWS). Fed to the vanilla vehicle missile weapons (missiles_titan, missiles_SCALPEL, missiles_DAGR, rockets_Skyfire, Macer launcher) via magazines[] patches; the Pylon variants appear in the dynamic-loadout editor on their vanilla hardpoints:
+- BGM-185 Broadsword — ground-vehicle ATGM, tandem F&F top-attack, NLOS-capable (1300mm RHA, 10 km); Titan AT sim
+- AGM-190 Wraith — attack-helo ATGM, tandem HEAT + frag sleeve, SAL + IR LOAL (1200mm RHA, 12 km); Scalpel sim
+- AGM-205 Warhammer — fixed-wing standoff AGM, penetrating blast-frag, anti-structure / anti-ship (25 km); Macer sim
+- MIM-165 Sentry — SPAAG SAM, proximity prefrag — fast jets down to drones (12 km); Titan AA sim
+- AGR-40 Hydra-P — SAL multipurpose guided rocket, APKWS-style pod retrofit (600mm RHA, 8 km); DAGR sim; C-UAS proximity mode via the mediumcaliber scripted fuze
+- XM1200 Copperhead — loitering munition: lock before launch, or fire unlocked to climb, orbit the basket (laser spot or launch bearing) and commit an autonomous terminal attack on the first hostile vehicle it sees (800mm RHA, 40 km, scripted loiter)
+- MIM-166 Roadrunner — dedicated C-UAS hard-kill missile vs drones and incoming loitering munitions (4 km); cheaper than spending a Sentry
+
+CHANGED — mediumcaliber: every active nature (30mm APFSDS/API/HEI/ABM/PROX, 35mm AHEAD) now comes in all tracer colors (Red/Yellow/Green/White/Blue/Orange/IR) at full performance; the airburst registry covers the color variants. The 30mm APFSDS Red-FACTION gradient round was renamed FA_B_30mm_APFSDS_Red / FA_60Rnd_30mm_APFSDS_Red so _T_ suffixes always mean tracer color.
+
+CHANGED — maincaliber: the 120mm family (APFSDS-T, AMP, HEAT-MP, HE-AB) and the 125mm family (3BM APFSDS-T, Type AMP) now ship the full tracer-color set (Red/Yellow/Green/White/Blue/Orange/IR) at full performance, matching mediumcaliber. The 120mm APFSDS Red-FACTION gradient was renamed FA_Sh_120mm_APFSDS_Red / FA_30Rnd_120mm_APFSDS_Red (previously the mislabeled _T_Red suffix), so _T_ now means tracer color across every caliber. The airburst registry (120mm AMP + HE-AB, 125mm AMP) registers each color variant so the scripted fuze fires on all of them.
+
+== Update: vehicle coax / HMG belts ==
+
+NEW — ammo component: 200Rnd vehicle belts so every coax/HMG caliber has an FA load to match (base + full tracer color sets):
+- 7.62x51 M80A2 HV and XM751 CTEP belts (Rhino coax; matches vanilla 200Rnd_762x51_Belt_T_Red) — also registered into the CBA 7.62x51 links well
+- 12.7x99 Mk258 LRP and Mk211 Mod 0 HEIAP belts (Rhino commander HMG; matches vanilla 200Rnd_127x99_mag_Tracer_Red) — FA's existing .50 x99 mags were WF50 sniper mags, not belts
+- .338 NM was already covered: FA_200Rnd_338_Mk372 is built on 200Rnd_338_Mag (Marshall coax)
+
+== Update: 2040 launcher families — MAAWS, Vorona, RPG-32, RPG-7 ==
+
+NEW — vorona component: three missiles for the vanilla Vorona (fed via a new FA_Vorona magazine well; vanilla tubes unchanged):
+- 9M135M Grom — tandem SACLOS anti-tank (~800mm RHA, 1800 m)
+- 9M135F-2 Oskol — thermobaric + prefrag with programmable airburst (1600 m); shares the Mk364 airburst dial
+- 9M135PVO Osa — IR lock-on vs helos, low/slow aircraft and drones (1200 m); uses the Vorona's built-in Titan lock tones
+
+NEW — rpg component: six rounds for the vanilla RPG-32 and RPG-7 (registered into the vanilla RPG32/RPG7 magazine wells, no launcher changes):
+- PG-32V-2 tandem HEAT (~700mm RHA) / TBG-32V-2 thermobaric / AB-32 PROX counter-drone airburst (300 m)
+- PG-7VR-2 tandem HEAT (~550mm RHA) / TBG-7V-2 thermobaric / AB-7 PROX counter-drone airburst (200 m)
+Launcher tiering: RPG-7 < RPG-32 < Vorona < MAAWS. Both RPGs stay unguided; AB rounds use the PAB scripted proximity fuze.
+
+CHANGED — vanilla Vorona base class now allows lock-on (canLock 2, IR) for the Osa; the SACLOS natures (vanilla and 2040) keep manual guidance.
+
+NEW — maaws component: eight 84mm rounds for the vanilla MAAWS Mk4 (all camo/rail variants, fed via a new FA_MRAWS magazine well):
+- HEAT 758 TT — tandem fire-and-forget top-attack anti-tank (~850mm RHA, 1200 m)
+- HEAT 665 CS — heavy tandem HEAT, confined-space (~650mm RHA, 500 m)
+- HE 448 AB — prefragmented HE with programmable airburst (1500 m); shares the Mk364 airburst dial (ACE self-menu / CBA keybind)
+- GM 841 — semi-active laser homing, tandem dual-purpose (2000 m)
+- ADM 484 PROX — counter-UAS proximity frag, uses the PAB scripted fuze (600 m)
+- ADM 486 CAN — tungsten flechette canister for close drone swarms, config-only (150 m)
+- ADM 487 SEEK — IR fire-and-forget vs a locked drone (1000 m)
+- AAM 517 SR — very-short-range AA missile; deliberately half the Titan envelope (1750 m)
+
+CHANGED — vanilla MAAWS Mk4 base class now allows lock-on (canLock 2, IR + laser). Lock only engages when a seeker round is loaded; vanilla HEAT/HE natures stay unguided.
+CHANGED — antidrone: the programmable-airburst fuze is now a registry (GVAR programmableAB) instead of being hardcoded to the 40mm Mk364; the Mk364 behaves exactly as before. The airburst ACE self-menu also unlocks when carrying HE 448 AB.
+NEW — map Notes briefing: added "MAAWS (Carl Gustaf M4)", "Vorona / RPG-32 / RPG-7" and "Tracer Colors" entries (Red = NATO/Western, Green = OPFOR/Eastern bloc, Yellow/Orange = HMGs and autocannon, IR = NVG-only).
+
+Fiction disclaimer: 2040 values are a gameplay projection; baselines are real public figures for each launcher's ammunition.
