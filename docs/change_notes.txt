@@ -1,3 +1,60 @@
+== Update: unified magazine naming + Titan manpad fix ==
+
+NAMING — every small-arms magazine display name now follows ONE convention:
+  [Ghost] <rounds> <designation> <MagColour> Mag <TracerColour> Tracer
+  e.g. "[Ghost] 100Rnd Mk327 HV Coyote Mag Red Tracer", "[Ghost] 30Rnd Mk330 EPR".
+The round designation (Mk327 HV, Mk330 EPR, XM751 CTEP, 7N43, ...) is pulled from
+the ammo; the mag-colour and tracer segments are appended only when present, so
+every variant is distinct at a glance in the arsenal. Applied across ammo (+ the
+6.5 matrix), jca, sps, rhs, extracal, aegis, ef and the antidrone_* addons.
+A full class -> displayName index (2826 mags) lives in docs/mag_index.md.
+Vehicle / artillery / missile mags keep their existing per-side / missile names.
+
+FIXED — man-portable Titan MPRL: the FA missiles (Broadsword/Copperhead AT,
+Sentry/Roadrunner AA) now feed the launcher additively via the vanilla
+magazineWells Titan_Short (AT) and Titan_Long (AA) instead of a parentless
+launcher reopen that could be stripped under load order. Vehicle Titan tubes
+untouched. Manpad Titan mags renamed to "[Ghost] <designation>".
+
+== Update: small-arms full mag matrices + metric corrections + AP rounds ==
+
+Every core rifle caliber now carries its full ammo family across ALL magazine
+models (vanilla, JCA, SPS, RHS, ACE, boxes/belts) in every tracer colour. New
+tungsten AP rounds added; several ballistics corrected to proper metric ACE units.
+
+5.56x45:
+- Mk327 HV and XM891 CTEP ballistics corrected to metric (960 / 980 m/s, G7 BC
+  0.151 / 0.162, 4.0 g). NEW Mk332 AP (tungsten armor-piercing, 940 m/s, BC 0.170).
+- Mk327 HV, XM891 CTEP and Mk332 AP now ride EVERY 5.56 mag family (core 30Rnd +
+  200 box, JCA PMAG/EMAG, SPS HKG3/pmag40/60Rnd, RHS M855A1/M200/soft-pouch/box)
+  with the full non-tracer base + 7 tracer colours. ~629 5.56 mag classes.
+- Added the missing non-tracer base mags to the JCA / SPS / core-box families.
+
+6.5x39 caseless (MX family):
+- Mk330 EPR ballistics corrected to metric (855 m/s, BC 0.290, 8.0 g); it is the
+  standard caseless round. NEW Mk331 AP (tungsten AP). Match/EP loads Mk328 HV,
+  XM892/XM893 CTEP, Mk329 LR.
+- Full colour x tracer matrix on every round: 30Rnd Sand/Black/Khaki/MSBS and
+  100Rnd Sand/Black/Khaki (each base + 7 tracers), 200 box + belts. ~488 classes.
+- Consolidated the duplicated 6.5 caseless mag line (removed 18 redundant classes),
+  relabelled the mislabelled "green" khaki mags, and folded the EF coyote tracer
+  mags onto a single coyote mag model.
+
+7.62x51 (.308):
+- XM751 CTEP now rides every .308 family (core, ACE SD/M993, JCA PMAG, SPS AXMC,
+  RHS M240) alongside M80A2 HV, all tracer colours. Added missing non-tracer bases.
+
+7.62x39:
+- 7N47 CT and 7U4 Sub now spread across ALL 7N43 mag families (core skins, RHS
+  bakelite/polymer/tracer, SAF M67/M78/M82) - previously core-only. ~200 mags each.
+
+.338 Norma/Lapua:
+- Added missing non-tracer base mags to the JCA AWM and SPS AXMC Mk371 families
+  (all three 250/285/300 gr weights), matching the core.
+
+NOTE: anti-drone PAB rounds (5.56 Mk361, 7.62 Mk362, 6.5 Mk367, .338 Mk373) live in
+the antidrone_* compat addons by design and were not duplicated into the base mags.
+
 == Update: indirect fire, aircraft ordnance, East/RF gaps + new calibers ==
 
 NEW — vehicles: mortar / artillery / naval families, most re-labelled per side (NATO Mk/XM/M, CSAT Type ##, AAF AF-##; same round, distinct class + displayName):

@@ -82,16 +82,7 @@ class CfgWeapons {
     // variants inherit these two bases and don't override magazines[], so the
     // rounds flow to them. AT -> full MPRL, AA -> the short (AA) MPRL.
     // -------------------------------------------------------------------
-    class launch_B_Titan_F {
-        magazines[] += {
-            "FA_Titan_AT_BGM185_Broadsword",
-            "FA_Titan_AT_XM1200_Copperhead"
-        };
-    };
-    class launch_B_Titan_short_F {
-        magazines[] += {
-            "FA_Titan_AA_MIM165_Sentry",
-            "FA_Titan_AA_MIM166_Roadrunner"
-        };
-    };
+    // Man-portable Titan MPRL: the FA missiles are added ADDITIVELY via the vanilla
+    // magazineWells Titan_Short (AT launcher + the rest) and Titan_Long (AA launcher)
+    // in CfgMagazinewells.hpp - no launcher reopen, and vehicle tubes untouched.
 };

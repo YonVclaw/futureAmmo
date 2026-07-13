@@ -144,28 +144,28 @@ class CfgMagazines {
     class Titan_AT;
     class FA_Titan_AT_BGM185_Broadsword: Titan_AT {
         author = QAUTHOR;
-        displayName = "[Ghost] Titan AT: BGM-185 Broadsword";
+        displayName = "[Ghost] BGM-185 Broadsword";
         displayNameShort = "BGM-185";
         descriptionShort = "BGM-185 Broadsword (2040)<br/>Man-portable tandem F&F top-attack ATGM, NLOS-capable — 1300mm RHA, 10 km";
         ammo = "FA_M_BGM185_Broadsword";
     };
     class FA_Titan_AT_XM1200_Copperhead: Titan_AT {
         author = QAUTHOR;
-        displayName = "[Ghost] Titan AT: XM1200 Copperhead";
+        displayName = "[Ghost] XM1200 Copperhead";
         displayNameShort = "XM1200";
         descriptionShort = "XM1200 Copperhead (2040)<br/>Man-portable loitering munition — launch unlocked to loiter + autonomous terminal, or lock before launch — 800mm RHA, 40 km";
         ammo = "FA_M_XM1200_Copperhead";
     };
     class FA_Titan_AA_MIM165_Sentry: Titan_AA {
         author = QAUTHOR;
-        displayName = "[Ghost] Titan AA: MIM-165 Sentry";
+        displayName = "[Ghost] MIM-165 Sentry";
         displayNameShort = "MIM-165";
         descriptionShort = "MIM-165 Sentry (2040)<br/>Man-portable dual-seeker SAM, proximity prefrag — jets to drones, 12 km";
         ammo = "FA_M_MIM165_Sentry";
     };
     class FA_Titan_AA_MIM166_Roadrunner: Titan_AA {
         author = QAUTHOR;
-        displayName = "[Ghost] Titan AA: MIM-166 Roadrunner";
+        displayName = "[Ghost] MIM-166 Roadrunner";
         displayNameShort = "MIM-166";
         descriptionShort = "MIM-166 Roadrunner (2040)<br/>Man-portable C-UAS hard-kill, proximity prefrag — drones + loitering munitions, 4 km";
         ammo = "FA_M_MIM166_Roadrunner";

@@ -1,3 +1,53 @@
+[h1]Cleaner Magazine Names & Manpad Titan Fix[/h1]
+
+[h2]One naming convention[/h2]
+Every small-arms magazine now reads the same way in the arsenal:
+[b][Ghost] <rounds> <round> <mag colour> Mag <tracer colour> Tracer[/b]
+[list]
+[*]e.g. [i]100Rnd Mk327 HV Coyote Mag Red Tracer[/i], [i]30Rnd Mk330 EPR[/i]
+[*]The mag-colour and tracer segments only show when they apply, so every load / colour / tracer is distinct at a glance
+[/list]
+
+[h2]Man-portable Titan[/h2]
+[list]
+[*]The FA Titan missiles (Broadsword/Copperhead AT, Sentry/Roadrunner AA) now show up correctly on the shoulder Titan launchers again — wired through the game's own Titan magazine wells
+[/list]
+
+[hr][/hr]
+
+[h1]Small-Arms Overhaul — Full Mag Coverage, AP Rounds & Corrected Ballistics[/h1]
+
+Every core rifle caliber now offers its complete ammo family on [b]every[/b] magazine model you run — vanilla, JCA, SPS, RHS, ACE, boxes and belts — in all tracer colours. New tungsten armor-piercing rounds added, and several loads corrected to accurate ballistics.
+
+[h2]5.56x45[/h2]
+[list]
+[*][b]New: Mk332 AP[/b] — tungsten armor-piercing
+[*][b]Corrected ballistics[/b] for Mk327 HV and XM891 CTEP
+[*]All three rounds now appear on every 5.56 mag (STANAG, JCA, SPS, RHS, 200-round box) with a plain load plus all 7 tracer colours
+[/list]
+
+[h2]6.5x39 caseless (MX family)[/h2]
+[list]
+[*][b]New: Mk331 AP[/b]; [b]Mk330 EPR[/b] is the corrected standard round
+[*]Full mag-colour set — Sand / Black / Khaki / MSBS (30-round), Sand / Black / Khaki (100-round) — plus 200 box and belts, every round, every tracer colour
+[*]Cleaned up duplicate 6.5 magazines and fixed mislabelled mag colours
+[/list]
+
+[h2]7.62[/h2]
+[list]
+[*][b].308:[/b] XM751 CTEP now on every family (core, ACE, JCA, SPS AXMC, RHS M240) alongside M80A2 HV
+[*][b]x39:[/b] 7N47 CT and 7U4 Sub now on all the AK/RPK mag variants (RHS, Zastava), not just the core mags
+[/list]
+
+[h2].338 Norma/Lapua[/h2]
+[list]
+[*]Mk371 LRP precision (250/285/300 gr) now complete on the AWM and AXMC bolt rifles, matching the core mags
+[/list]
+
+Anti-drone airburst rounds (Mk361/Mk362/Mk367/Mk373) remain in their dedicated compat modules.
+
+[hr][/hr]
+
 [h1]Indirect Fire, Aircraft Ordnance & New Calibers[/h1]
 
 The biggest content drop yet — mortars, artillery, naval guns, aircraft pylons, and a stack of new small-arms calibers. Many indirect-fire rounds are re-labelled per faction (NATO Mk/XM/M, CSAT Type, AAF AF-) so each side reads its own designation for the same shell.

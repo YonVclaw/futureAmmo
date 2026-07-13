@@ -4,38 +4,38 @@ class CfgMagazines {
 
     class FA_1Rnd_40mm_Mk380_NRP: 1Rnd_HE_Grenade_shell {
         author = QAUTHOR;
-        displayName = "[Ghost] 1Rnd Mk380 NRP";
-        descriptionShort = "Mk380 NRP";
+        displayName = "[Ghost] 40mm Mk380 NR-P (relay)";
+        descriptionShort = "Network Relay (2033)<br/>Data-link extender, 5 km radius";
         ammo = "FA_40mm_Mk380_NRP";
     };
     class FA_1Rnd_40mm_Mk383_EMP: 1Rnd_HE_Grenade_shell {
         author = QAUTHOR;
-        displayName = "[Ghost] 1Rnd Mk383 EMP";
-        descriptionShort = "Mk383 EMP";
+        displayName = "[Ghost] 40mm Mk383 EMP-M (burst)";
+        descriptionShort = "Kinetic EW burst (2033)<br/>Soft-kills drones and blinds optics";
         ammo = "FA_40mm_Mk383_EMP";
     };
     class FA_1Rnd_40mm_Mk384_MSmoke: 1Rnd_HE_Grenade_shell {
         author = QAUTHOR;
-        displayName = "[Ghost] 1Rnd Mk384 MSmoke";
-        descriptionShort = "Mk384 MSmoke";
+        displayName = "[Ghost] 40mm Mk384 M-SMK (multispectral)";
+        descriptionShort = "Multispectral smoke (2033)<br/>Visual and thermal screen";
         ammo = "FA_40mm_Mk384_MSmoke";
     };
     class FA_1Rnd_40mm_Mk385_Decoy: 1Rnd_HE_Grenade_shell {
         author = QAUTHOR;
-        displayName = "[Ghost] 1Rnd Mk385 Decoy";
-        descriptionShort = "Mk385 Decoy";
+        displayName = "[Ghost] 40mm Mk385 DCOY (spoofer)";
+        descriptionShort = "RF/IR decoy (2033)<br/>Baits loitering munitions and drones";
         ammo = "FA_40mm_Mk385_Decoy";
     };
     class FA_1Rnd_40mm_Mk386_UGS: 1Rnd_HE_Grenade_shell {
         author = QAUTHOR;
-        displayName = "[Ghost] 1Rnd Mk386 UGS";
-        descriptionShort = "Mk386 UGS";
+        displayName = "[Ghost] 40mm Mk386 UGS (sensor)";
+        descriptionShort = "Unattended ground sensor (2033)<br/>Persistent contact picket ~30 min";
         ammo = "FA_40mm_Mk386_UGS";
     };
     class FA_1Rnd_40mm_Mk388_Jammer: 1Rnd_HE_Grenade_shell {
         author = QAUTHOR;
-        displayName = "[Ghost] 1Rnd Mk388 Jammer";
-        descriptionShort = "Mk388 Jammer";
+        displayName = "[Ghost] 40mm Mk388 JAM (area jammer)";
+        descriptionShort = "Area comms/GNSS jammer (2033)<br/>Denies enemy drone links ~15 min";
         ammo = "FA_40mm_Mk388_Jammer";
     };
 
@@ -44,38 +44,38 @@ class CfgMagazines {
     // =========================================================
     class FA_3Rnd_40mm_Mk380_NRP: 3Rnd_HE_Grenade_shell {
         author = QAUTHOR;
-        displayName = "[Ghost] 3Rnd Mk380 NRP";
-        descriptionShort = "Mk380 NRP";
+        displayName = "[Ghost] 40mm Mk380 NR-P x3 (relay)";
+        descriptionShort = "Network Relay (2033)<br/>Data-link extender, 5 km radius";
         ammo = "FA_40mm_Mk380_NRP";
     };
     class FA_3Rnd_40mm_Mk383_EMP: 3Rnd_HE_Grenade_shell {
         author = QAUTHOR;
-        displayName = "[Ghost] 3Rnd Mk383 EMP";
-        descriptionShort = "Mk383 EMP";
+        displayName = "[Ghost] 40mm Mk383 EMP-M x3 (burst)";
+        descriptionShort = "Kinetic EW burst (2033)<br/>Soft-kills drones and blinds optics";
         ammo = "FA_40mm_Mk383_EMP";
     };
     class FA_3Rnd_40mm_Mk384_MSmoke: 3Rnd_HE_Grenade_shell {
         author = QAUTHOR;
-        displayName = "[Ghost] 3Rnd Mk384 MSmoke";
-        descriptionShort = "Mk384 MSmoke";
+        displayName = "[Ghost] 40mm Mk384 M-SMK x3 (multispectral)";
+        descriptionShort = "Multispectral smoke (2033)<br/>Visual and thermal screen";
         ammo = "FA_40mm_Mk384_MSmoke";
     };
     class FA_3Rnd_40mm_Mk385_Decoy: 3Rnd_HE_Grenade_shell {
         author = QAUTHOR;
-        displayName = "[Ghost] 3Rnd Mk385 Decoy";
-        descriptionShort = "Mk385 Decoy";
+        displayName = "[Ghost] 40mm Mk385 DCOY x3 (spoofer)";
+        descriptionShort = "RF/IR decoy (2033)<br/>Baits loitering munitions and drones";
         ammo = "FA_40mm_Mk385_Decoy";
     };
     class FA_3Rnd_40mm_Mk386_UGS: 3Rnd_HE_Grenade_shell {
         author = QAUTHOR;
-        displayName = "[Ghost] 3Rnd Mk386 UGS";
-        descriptionShort = "Mk386 UGS";
+        displayName = "[Ghost] 40mm Mk386 UGS x3 (sensor)";
+        descriptionShort = "Unattended ground sensor (2033)<br/>Persistent contact picket ~30 min";
         ammo = "FA_40mm_Mk386_UGS";
     };
     class FA_3Rnd_40mm_Mk388_Jammer: 3Rnd_HE_Grenade_shell {
         author = QAUTHOR;
-        displayName = "[Ghost] 3Rnd Mk388 Jammer";
-        descriptionShort = "Mk388 Jammer";
+        displayName = "[Ghost] 40mm Mk388 JAM x3 (area jammer)";
+        descriptionShort = "Area comms/GNSS jammer (2033)<br/>Denies enemy drone links ~15 min";
         ammo = "FA_40mm_Mk388_Jammer";
     };
 };

@@ -56,8 +56,11 @@ private _entries = [
 
   ["5.56x45",
     H("NATO carbine") +
-    R("Mk327 HV") + "Hybrid-case hypervelocity, 70gr tungsten" + S("2033 - ~83 kpsi") + NL +
-    R("XM891 CTEP") + "Cased-telescoped 2-stage tungsten EPR" + S("2039 - ~85 kpsi")],
+    R("Mk327 HV") + "Hybrid-case hypervelocity ball, 62gr" + S("2033 - ~83 kpsi") + NL +
+    R("XM891 CTEP") + "Cased-telescoped 2-stage tungsten EPR" + S("2039 - ~85 kpsi") + NL +
+    R("Mk332 AP") + "Tungsten armor-piercing" + S("2040") + NL +
+    R("Mk361 PAB") + "Proximity airburst, C-UAS (antidrone)" + NL +
+    "<font color='#7F93AC'>Mk327 / XM891 / Mk332 ride every 5.56 mag (STANAG, JCA, SPS, RHS, boxes/belts) in all tracer colors.</font>"],
 
   ["5.8x42",
     H("CSAT / PLA carbine") +
@@ -72,7 +75,9 @@ private _entries = [
   ["7.62x51 (.308)",
     H("Battle rifle / GPMG") +
     R("M80A2 HV") + "Hybrid-case 135gr tungsten EPR" + S("2032 - ~78 kpsi") + NL +
-    R("XM751 CTEP") + "Cased-telescoped 140gr 2-stage tungsten, long-range / anti-armor" + S("2039 - ~82 kpsi")],
+    R("XM751 CTEP") + "Cased-telescoped tungsten, long-range / anti-armor" + S("2039 - ~82 kpsi") + NL +
+    R("Mk362 PAB") + "Proximity airburst, C-UAS (antidrone)" + NL +
+    "<font color='#7F93AC'>M80A2 / XM751 ride every .308 mag (core, ACE, JCA, SPS AXMC, RHS M240) in all tracer colors.</font>"],
 
   [".300 BLK",
     H("Suppressed carbine - full family") +
@@ -84,14 +89,17 @@ private _entries = [
   ["6.5x39",
     H("Intermediate / caseless - MX family") +
     R("Mk330 EPR") + "Tungsten-cored standard load, requires a caseless-capable rifle by design" + S("2035 - ~75 kpsi") + NL +
+    R("Mk331 AP") + "Tungsten armor-piercing" + S("2040") + NL +
     R("Mk328 HV / Mk329 LR") + "Match / long-range DMR loads" + NL +
     R("XM892 / XM893 CTEP") + "Cased-telescoped enhanced-penetration" + NL +
-    "<font color='#7F93AC'>All feed the standard 6.5 caseless mags / wells - same caliber, different loads.</font>"],
+    R("Mk367 PAB") + "Proximity airburst, C-UAS (antidrone)" + NL +
+    "<font color='#7F93AC'>All feed the standard 6.5 caseless mags / wells (Sand/Black/Khaki/MSBS) in all tracer colors - same caliber, different loads.</font>"],
 
   [".338",
     H("Long-range precision + medium MG") +
-    R("Mk371 LRP (Lapua)") + "250 / 285 / 300 gr precision" + NL +
-    R("Mk372 MMG (Norma)") + "130 / 200 rnd belt-fed sustained fire"],
+    R("Mk371 LRP (Lapua)") + "250 / 285 / 300 gr precision (AWM / AXMC / core)" + NL +
+    R("Mk372 MMG (Norma)") + "130 / 200 rnd belt-fed sustained fire" + NL +
+    R("Mk373 PAB") + "Proximity airburst, C-UAS (antidrone)"],
 
   ["9.3x64",
     H("CSAT marksman") +
