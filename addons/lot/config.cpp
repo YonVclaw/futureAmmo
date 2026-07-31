@@ -18,18 +18,18 @@ class CfgPatches {
         skipWhenMissingDependencies = 1;
         ammo[] = {};
         magazines[] = {
-            "FA_6Rnd_12G_Mk350_TBS",
-            "FA_8Rnd_12G_Mk350_TBS",
-            "FA_6Rnd_12G_Mk351_FLE",
-            "FA_8Rnd_12G_Mk351_FLE",
-            "FA_6Rnd_12G_Mk352_APS",
-            "FA_8Rnd_12G_Mk352_APS",
-            "FA_6Rnd_12G_Mk353_BRC",
-            "FA_8Rnd_12G_Mk353_BRC",
-            "FA_6Rnd_12G_Mk360_AD",
-            "FA_8Rnd_12G_Mk360_AD",
-            "FA_6Rnd_12G_Mk363_PABS",
-            "FA_8Rnd_12G_Mk363_PABS"
+            "FA_lot_6Rnd_12G_Mk350_TBS",
+            "FA_lot_8Rnd_12G_Mk350_TBS",
+            "FA_lot_6Rnd_12G_Mk351_FLE",
+            "FA_lot_8Rnd_12G_Mk351_FLE",
+            "FA_lot_6Rnd_12G_Mk352_APS",
+            "FA_lot_8Rnd_12G_Mk352_APS",
+            "FA_lot_6Rnd_12G_Mk353_BRC",
+            "FA_lot_8Rnd_12G_Mk353_BRC",
+            "FA_lot_6Rnd_12G_Mk360_AD",
+            "FA_lot_8Rnd_12G_Mk360_AD",
+            "FA_lot_6Rnd_12G_Mk363_PABS",
+            "FA_lot_8Rnd_12G_Mk363_PABS"
         };
     };
 };

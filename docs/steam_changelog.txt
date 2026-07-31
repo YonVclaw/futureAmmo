@@ -1,3 +1,124 @@
+[h1]Change — Class names now carry their faction[/h1]
+
+Magazine and ammo class names now start with their side — [b]FA_b_[/b] (BLUFOR), [b]FA_o_[/b] (OPFOR), [b]FA_i_[/b] (Independent) — and compat magazines carry their pack's tag (FA_jca_, FA_rf_, FA_lot_, ...). Easier to script against and to filter in the arsenal.
+
+[b]Nothing breaks:[/b] every old class name still works — saved loadouts, mission crates and scripts using the old names keep functioning, and both names are visible in the arsenal for this release.
+
+[hr][/hr]
+
+[h1]New — Faction Base Ammo[/h1]
+
+Each faction now fields its own base ammunition instead of borrowing NATO's. Slightly below NATO's performance ceiling, per the mod's faction gradient.
+
+[h2]AAF (Independent) — ~95% of NATO[/h2]
+[list]
+[*][b]AF-556 HV / AF-556C CT / AF-556P AP[/b] — 5.56 for the Mk20 and TRG family, on STANAG and 200Rnd box bodies
+[*][b]AF-762 HV / AF-762C CT / AF-762P AP[/b] — 7.62x51 for the Mk18 ABR, on the 20Rnd body
+[/list]
+
+[h2]CSAT — ~90% of NATO[/h2]
+[list]
+[*][b]Type 41 EPR / Type 42 CT / Type 43 AP[/b] — 6.5 caseless for the Katiba, on the green mag body
+[*][b]DBP-39 CT / DBP-40 AP[/b] — the CAR-95's 5.8x42 finally gets its full trio alongside Ball HV
+[/list]
+
+All loads come plain plus all 7 tracer colours (Red / Yellow / Green / White / Blue / Orange / IR) — 112 new magazines.
+
+[hr][/hr]
+
+[h1]New — JCA Green PMAG gets the full ammo lineup[/h1]
+
+The JCA compat already covered the EMAG, sand EMAG, PMAG and sand PMAG. The pack's green reload-tracer PMAG now gets the same treatment — 31 new magazines.
+
+[list]
+[*][b]Mk327 HV[/b], [b]XM891 CTEP[/b] and [b]Mk332 AP[/b] — each plain plus all 7 tracer colours (Red / Yellow / Green / White / Blue / Orange / IR)
+[*][b]Mk361 PAB[/b] anti-drone — plain plus 6 tracer colours
+[/list]
+
+These read [i]"Green PMAG"[/i] in their names so you can tell them apart from the plain PMAG loads, which use the same mag model. The plain (non-tracer) loads no longer inherit the JCA base mag's last-four-rounds tracer, so plain really is plain.
+
+[hr][/hr]
+
+[h1]New — E22 Russian Armed Forces Ammo Compat[/h1]
+
+FutureAmmo now feeds Grave's "E22: Russian Armed Forces" weapon pack. Install both mods and the AK-12, RPK-12, SVD-12 and VS-121 gain the FA magazine lineup — using the pack's own magazines, so the models, icons and reloads are unchanged. If you don't run the RAF pack, this does nothing.
+
+[h2]5.45x39 — AK-12 & RPK-12[/h2]
+[list]
+[*][b]7N44 Osa[/b] — hollow-point
+[*][b]7N48 Osa-2[/b] — cased-telescoped
+[*][b]7U5 Tishina[/b] — subsonic AP
+[*]30-round (AK-12) and 75-round (RPK-12) bodies, each load with a plain round plus all 7 tracer colours (Red / Yellow / Green / White / Blue / Orange / IR)
+[/list]
+
+[h2]7.62x54R — SVD-12 & VS-121[/h2]
+[list]
+[*][b]Ball HV[/b] — high-velocity ball, plus all 7 tracer colours
+[/list]
+
+[hr][/hr]
+
+[h1]Fixes — Scorcher/Sochor Artillery, Mk200 Belts, Katiba Magazines[/h1]
+
+[h2]Fixed[/h2]
+[list]
+[*][b]Vanilla 155mm artillery broken[/b] — the Scorcher and Sochor lost their gun and spammed the RPT log with "No entry mortar_155mm_AMOS" errors. Our vehicle ammo was attaching to the 155mm weapon before the game had defined it; it now loads in the right order. If you had unusable SPGs, they work again.
+[*][b]Mk200 (Stoner) could load MX SW magazines[/b] — the belt-fed Mk200 was offering 100-round MX SW box mags. Those 100-round loads now sit where they belong, on the MX SW itself, and the Mk200 only takes proper 200-round belts.
+[*][b]Katiba magazine errors[/b] — the Katiba's magazine well listed a dozen caseless tracer mags that never existed, so filling a CSAT unit logged "creating magazine … with scope=private" errors. The dead entries are gone; the working EPR tracer mags are untouched.
+[/list]
+
+[hr][/hr]
+
+[h1]RF 5.56x45 STANAG-AP Magazines[/h1]
+
+The RF STANAG-AP magazine bodies now carry the full FutureAmmo 5.56 lineup, so they show up on every STANAG 5.56 rifle.
+
+[h2]5.56x45[/h2]
+[list]
+[*][b]Mk327 HV[/b] — hybrid-case standard
+[*][b]Mk332 AP[/b] — armor-piercing
+[*][b]XM891 CTEP[/b] — cased-telescoped
+[*]Three mag bodies (black / khaki / tan), each load with a plain round plus all 7 tracer colours (Red / Yellow / Green / White / Blue / Orange / IR) — 72 magazines
+[/list]
+
+[hr][/hr]
+
+[h1]New Caliber — 6.2x40 Caseless (CSAT DBP-25 Family)[/h1]
+
+A fictional CSAT / PLA next-gen caseless caliber, projecting the East going caseless on its own logistics chain (6.2x40 → 12.7x108 → 125mm). Fielded on the Katiba.
+
+[h2]6.2x40 caseless[/h2]
+[list]
+[*][b]DBP-25[/b] — caseless standard
+[*][b]DBP-26 AP[/b] — caseless tungsten armor-piercing
+[*][b]DBP-88B[/b] — caseless heavy (DMR)
+[*][b]DBJ-25 PAB[/b] — caseless proximity airburst, a light counter-UAS round that bursts near drones
+[*]Every load on the Katiba (30-round) with a plain round plus all 7 tracer colours (Red / Yellow / Green / White / Blue / Orange / IR)
+[/list]
+
+[hr][/hr]
+
+[h1]JCA M107 .50 cal Ammo Family[/h1]
+
+The JCA M107A1 anti-materiel rifle now runs the full FutureAmmo .50 BMG (12.7x99) magazine family, in both its black and sand mag bodies.
+
+[h2]12.7x99 / .50 BMG[/h2]
+[list]
+[*][b]Mk258 LRP[/b] — precision / long-range match
+[*][b]Mk211 Mod 0 AP[/b] — Raufoss HEIAP anti-materiel
+[*]Each load on both the black and sand M107 mags, with a plain round plus all 7 tracer colours (Red / Yellow / Green / White / Blue / Orange / IR)
+[/list]
+
+[hr][/hr]
+
+[h1]Aegis SCAR 7.62x51 Compatibility[/h1]
+
+[list]
+[*]The FA 7.62x51 magazines (M80A2 HV and XM751 CTEP, all tracer colours) now load on every Aegis SCAR variant — GL, short and grip, black and khaki. The SCAR carried no magazine well, so FA rounds previously couldn't reach it the way they do the SR25/SLR. Vanilla 20Rnd_762x51_Mag still works as before, and nothing in the Aegis mod is modified.
+[/list]
+
+[hr][/hr]
+
 [h1]Cleaner Magazine Names & Manpad Titan Fix[/h1]
 
 [h2]One naming convention[/h2]

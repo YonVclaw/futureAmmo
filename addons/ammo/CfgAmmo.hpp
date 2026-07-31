@@ -20,7 +20,7 @@ class CfgAmmo {
     // =========================================================
 
     // Release 1 (~2033) — Mk327 Mod 0 EPR-HV, hybrid case, ~83 kpsi, 70gr tungsten
-    class FA_556_Mk327_HV: B_556x45_Ball {
+    class FA_b_556_Mk327_HV: B_556x45_Ball {
         hit = 8;
         caliber = 2.4;
         typicalSpeed = 960;
@@ -38,16 +38,16 @@ class CfgAmmo {
         ACE_muzzleVelocities[] = {900, 960, 1000};
         ACE_barrelLengths[] = {254, 368, 508};
     };
-    class FA_556_Mk327_HV_T_Red: FA_556_Mk327_HV { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
-    class FA_556_Mk327_HV_T_Yellow: FA_556_Mk327_HV { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
-    class FA_556_Mk327_HV_T_Green: FA_556_Mk327_HV { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
-    class FA_556_Mk327_HV_T_White: FA_556_Mk327_HV { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
-    class FA_556_Mk327_HV_T_Blue: FA_556_Mk327_HV { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
-    class FA_556_Mk327_HV_T_Orange: FA_556_Mk327_HV { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
-    class FA_556_Mk327_HV_T_IR: FA_556_Mk327_HV { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
+    class FA_b_556_Mk327_HV_T_Red: FA_b_556_Mk327_HV { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
+    class FA_b_556_Mk327_HV_T_Yellow: FA_b_556_Mk327_HV { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
+    class FA_b_556_Mk327_HV_T_Green: FA_b_556_Mk327_HV { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
+    class FA_b_556_Mk327_HV_T_White: FA_b_556_Mk327_HV { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
+    class FA_b_556_Mk327_HV_T_Blue: FA_b_556_Mk327_HV { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
+    class FA_b_556_Mk327_HV_T_Orange: FA_b_556_Mk327_HV { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
+    class FA_b_556_Mk327_HV_T_IR: FA_b_556_Mk327_HV { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
 
     // Release 2 (~2039) — XM891 CTEP, cased-telescoped composite, ~85 kpsi, 68gr 2-stage tungsten
-    class FA_556_XM891_CTEP: B_556x45_Ball {
+    class FA_b_556_XM891_CTEP: B_556x45_Ball {
         hit = 8;
         caliber = 2.6;
         typicalSpeed = 980;
@@ -65,35 +65,35 @@ class CfgAmmo {
         ACE_muzzleVelocities[] = {915, 980, 1020};
         ACE_barrelLengths[] = {254, 368, 508};
     };
-    class FA_556_XM891_CTEP_T_Red: FA_556_XM891_CTEP { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
-    class FA_556_XM891_CTEP_T_Yellow: FA_556_XM891_CTEP { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
-    class FA_556_XM891_CTEP_T_Green: FA_556_XM891_CTEP { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
-    class FA_556_XM891_CTEP_T_White: FA_556_XM891_CTEP { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
-    class FA_556_XM891_CTEP_T_Blue: FA_556_XM891_CTEP { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
-    class FA_556_XM891_CTEP_T_Orange: FA_556_XM891_CTEP { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
-    class FA_556_XM891_CTEP_T_IR: FA_556_XM891_CTEP { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
+    class FA_b_556_XM891_CTEP_T_Red: FA_b_556_XM891_CTEP { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
+    class FA_b_556_XM891_CTEP_T_Yellow: FA_b_556_XM891_CTEP { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
+    class FA_b_556_XM891_CTEP_T_Green: FA_b_556_XM891_CTEP { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
+    class FA_b_556_XM891_CTEP_T_White: FA_b_556_XM891_CTEP { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
+    class FA_b_556_XM891_CTEP_T_Blue: FA_b_556_XM891_CTEP { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
+    class FA_b_556_XM891_CTEP_T_Orange: FA_b_556_XM891_CTEP { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
+    class FA_b_556_XM891_CTEP_T_IR: FA_b_556_XM891_CTEP { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
 
     // Mk332 AP — caseless-era 5.56 tungsten armor-piercing (metric, 2040)
-    class FA_556_Mk332_AP: B_556x45_Ball {
+    class FA_b_556_Mk332_AP: B_556x45_Ball {
         hit = 8; caliber = 3.0; typicalSpeed = 940; airFriction = -0.00118; deflecting = 12; tracerScale = 0.6;
         ACE_caliber = 5.69; ACE_bulletLength = 24.5; ACE_bulletMass = 4.2; ACE_muzzleVelocityVariationSD = 0.15;
         ACE_ballisticCoefficients[] = {0.170}; ACE_velocityBoundaries[] = {}; ACE_standardAtmosphere = "ICAO"; ACE_dragModel = 7;
         ACE_muzzleVelocities[] = {880, 940, 980}; ACE_barrelLengths[] = {254, 368, 508};
     };
-    class FA_556_Mk332_AP_T_Red: FA_556_Mk332_AP { tracer = 1; tracerColor[] = {1.0,0.0,0.0,1.0}; };
-    class FA_556_Mk332_AP_T_Yellow: FA_556_Mk332_AP { tracer = 1; tracerColor[] = {1.0,1.0,0.0,1.0}; };
-    class FA_556_Mk332_AP_T_Green: FA_556_Mk332_AP { tracer = 1; tracerColor[] = {0.0,1.0,0.0,1.0}; };
-    class FA_556_Mk332_AP_T_White: FA_556_Mk332_AP { tracer = 1; tracerColor[] = {1.0,1.0,1.0,1.0}; };
-    class FA_556_Mk332_AP_T_Blue: FA_556_Mk332_AP { tracer = 1; tracerColor[] = {0.0,0.3,1.0,1.0}; };
-    class FA_556_Mk332_AP_T_Orange: FA_556_Mk332_AP { tracer = 1; tracerColor[] = {1.0,0.4,0.0,1.0}; };
-    class FA_556_Mk332_AP_T_IR: FA_556_Mk332_AP { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2,1.0,0.2,1.0}; };
+    class FA_b_556_Mk332_AP_T_Red: FA_b_556_Mk332_AP { tracer = 1; tracerColor[] = {1.0,0.0,0.0,1.0}; };
+    class FA_b_556_Mk332_AP_T_Yellow: FA_b_556_Mk332_AP { tracer = 1; tracerColor[] = {1.0,1.0,0.0,1.0}; };
+    class FA_b_556_Mk332_AP_T_Green: FA_b_556_Mk332_AP { tracer = 1; tracerColor[] = {0.0,1.0,0.0,1.0}; };
+    class FA_b_556_Mk332_AP_T_White: FA_b_556_Mk332_AP { tracer = 1; tracerColor[] = {1.0,1.0,1.0,1.0}; };
+    class FA_b_556_Mk332_AP_T_Blue: FA_b_556_Mk332_AP { tracer = 1; tracerColor[] = {0.0,0.3,1.0,1.0}; };
+    class FA_b_556_Mk332_AP_T_Orange: FA_b_556_Mk332_AP { tracer = 1; tracerColor[] = {1.0,0.4,0.0,1.0}; };
+    class FA_b_556_Mk332_AP_T_IR: FA_b_556_Mk332_AP { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2,1.0,0.2,1.0}; };
 
     // =========================================================
     // 7.62x51mm
     // =========================================================
 
     // Release 1 (~2032) — M80A2 HV-EPR, hybrid case, ~78 kpsi, 135gr tungsten
-    class FA_762_M80A2_HV: B_762x51_Ball {
+    class FA_b_762_M80A2_HV: B_762x51_Ball {
         hit = 14;
         caliber = 3.0;
         typicalSpeed = 940;
@@ -110,16 +110,16 @@ class CfgAmmo {
         ACE_muzzleVelocities[] = {885, 920, 940, 955};
         ACE_barrelLengths[] = {406, 508, 610, 660};
     };
-    class FA_762_M80A2_HV_T_Red: FA_762_M80A2_HV { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
-    class FA_762_M80A2_HV_T_Yellow: FA_762_M80A2_HV { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
-    class FA_762_M80A2_HV_T_Green: FA_762_M80A2_HV { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
-    class FA_762_M80A2_HV_T_White: FA_762_M80A2_HV { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
-    class FA_762_M80A2_HV_T_Blue: FA_762_M80A2_HV { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
-    class FA_762_M80A2_HV_T_Orange: FA_762_M80A2_HV { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
-    class FA_762_M80A2_HV_T_IR: FA_762_M80A2_HV { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
+    class FA_b_762_M80A2_HV_T_Red: FA_b_762_M80A2_HV { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
+    class FA_b_762_M80A2_HV_T_Yellow: FA_b_762_M80A2_HV { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
+    class FA_b_762_M80A2_HV_T_Green: FA_b_762_M80A2_HV { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
+    class FA_b_762_M80A2_HV_T_White: FA_b_762_M80A2_HV { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
+    class FA_b_762_M80A2_HV_T_Blue: FA_b_762_M80A2_HV { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
+    class FA_b_762_M80A2_HV_T_Orange: FA_b_762_M80A2_HV { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
+    class FA_b_762_M80A2_HV_T_IR: FA_b_762_M80A2_HV { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
 
     // Release 2 (~2039) — XM751 CTEP, cased-telescoped, ~82 kpsi, 140gr 2-stage tungsten
-    class FA_762_XM751_CTEP: B_762x51_Ball {
+    class FA_b_762_XM751_CTEP: B_762x51_Ball {
         hit = 15;
         caliber = 3.4;
         typicalSpeed = 960;
@@ -136,13 +136,13 @@ class CfgAmmo {
         ACE_muzzleVelocities[] = {905, 945, 960, 975};
         ACE_barrelLengths[] = {406, 508, 610, 660};
     };
-    class FA_762_XM751_CTEP_T_Red: FA_762_XM751_CTEP { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
-    class FA_762_XM751_CTEP_T_Yellow: FA_762_XM751_CTEP { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
-    class FA_762_XM751_CTEP_T_Green: FA_762_XM751_CTEP { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
-    class FA_762_XM751_CTEP_T_White: FA_762_XM751_CTEP { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
-    class FA_762_XM751_CTEP_T_Blue: FA_762_XM751_CTEP { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
-    class FA_762_XM751_CTEP_T_Orange: FA_762_XM751_CTEP { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
-    class FA_762_XM751_CTEP_T_IR: FA_762_XM751_CTEP { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
+    class FA_b_762_XM751_CTEP_T_Red: FA_b_762_XM751_CTEP { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
+    class FA_b_762_XM751_CTEP_T_Yellow: FA_b_762_XM751_CTEP { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
+    class FA_b_762_XM751_CTEP_T_Green: FA_b_762_XM751_CTEP { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
+    class FA_b_762_XM751_CTEP_T_White: FA_b_762_XM751_CTEP { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
+    class FA_b_762_XM751_CTEP_T_Blue: FA_b_762_XM751_CTEP { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
+    class FA_b_762_XM751_CTEP_T_Orange: FA_b_762_XM751_CTEP { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
+    class FA_b_762_XM751_CTEP_T_IR: FA_b_762_XM751_CTEP { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
 
     // =========================================================
     // 7.62x67mm (.300 Win Mag) — Mk248 family
@@ -150,7 +150,7 @@ class CfgAmmo {
     // structural placeholder; ACE ballistics drive the real behaviour.
     // =========================================================
     // Mk248 Mod 2 — 220gr hybrid + tungsten, extreme long range
-    class FA_762x67_Mk248Mod2: B_762x51_Ball {
+    class FA_b_762x67_Mk248Mod2: B_762x51_Ball {
         hit = 13;
         caliber = 3.6;
         typicalSpeed = 900;
@@ -167,16 +167,16 @@ class CfgAmmo {
         ACE_muzzleVelocities[] = {850, 890, 900};
         ACE_barrelLengths[]    = {508, 609.6, 660.4};
     };
-    class FA_762x67_Mk248Mod2_T_Red:    FA_762x67_Mk248Mod2 { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
-    class FA_762x67_Mk248Mod2_T_Yellow: FA_762x67_Mk248Mod2 { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
-    class FA_762x67_Mk248Mod2_T_Green:  FA_762x67_Mk248Mod2 { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
-    class FA_762x67_Mk248Mod2_T_White:  FA_762x67_Mk248Mod2 { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
-    class FA_762x67_Mk248Mod2_T_Blue:   FA_762x67_Mk248Mod2 { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
-    class FA_762x67_Mk248Mod2_T_Orange: FA_762x67_Mk248Mod2 { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
-    class FA_762x67_Mk248Mod2_T_IR:     FA_762x67_Mk248Mod2 { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
+    class FA_b_762x67_Mk248Mod2_T_Red:    FA_b_762x67_Mk248Mod2 { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
+    class FA_b_762x67_Mk248Mod2_T_Yellow: FA_b_762x67_Mk248Mod2 { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
+    class FA_b_762x67_Mk248Mod2_T_Green:  FA_b_762x67_Mk248Mod2 { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
+    class FA_b_762x67_Mk248Mod2_T_White:  FA_b_762x67_Mk248Mod2 { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
+    class FA_b_762x67_Mk248Mod2_T_Blue:   FA_b_762x67_Mk248Mod2 { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
+    class FA_b_762x67_Mk248Mod2_T_Orange: FA_b_762x67_Mk248Mod2 { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
+    class FA_b_762x67_Mk248Mod2_T_IR:     FA_b_762x67_Mk248Mod2 { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
 
     // Mk248 LV — 190gr light, fast, flat-shooting
-    class FA_762x67_Mk248LV: B_762x51_Ball {
+    class FA_b_762x67_Mk248LV: B_762x51_Ball {
         hit = 12;
         caliber = 3.2;
         typicalSpeed = 965;
@@ -193,20 +193,20 @@ class CfgAmmo {
         ACE_muzzleVelocities[] = {910, 950, 965};
         ACE_barrelLengths[]    = {508, 609.6, 660.4};
     };
-    class FA_762x67_Mk248LV_T_Red:    FA_762x67_Mk248LV { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
-    class FA_762x67_Mk248LV_T_Yellow: FA_762x67_Mk248LV { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
-    class FA_762x67_Mk248LV_T_Green:  FA_762x67_Mk248LV { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
-    class FA_762x67_Mk248LV_T_White:  FA_762x67_Mk248LV { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
-    class FA_762x67_Mk248LV_T_Blue:   FA_762x67_Mk248LV { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
-    class FA_762x67_Mk248LV_T_Orange: FA_762x67_Mk248LV { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
-    class FA_762x67_Mk248LV_T_IR:     FA_762x67_Mk248LV { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
+    class FA_b_762x67_Mk248LV_T_Red:    FA_b_762x67_Mk248LV { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
+    class FA_b_762x67_Mk248LV_T_Yellow: FA_b_762x67_Mk248LV { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
+    class FA_b_762x67_Mk248LV_T_Green:  FA_b_762x67_Mk248LV { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
+    class FA_b_762x67_Mk248LV_T_White:  FA_b_762x67_Mk248LV { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
+    class FA_b_762x67_Mk248LV_T_Blue:   FA_b_762x67_Mk248LV { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
+    class FA_b_762x67_Mk248LV_T_Orange: FA_b_762x67_Mk248LV { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
+    class FA_b_762x67_Mk248LV_T_IR:     FA_b_762x67_Mk248LV { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
 
     // =========================================================
     // .300 BLK (subsonic) — velocity-capped, improves via mass/material only
     // =========================================================
 
     // Release 1 (~2033) — Mk341 SUB-AP, conventional brass, ~48 kpsi, 210gr tungsten
-    class FA_300_Mk341_SubAP: B_762x51_Ball {
+    class FA_b_300_Mk341_SubAP: B_762x51_Ball {
         hit = 10;
         caliber = 2.3;
         typicalSpeed = 315;
@@ -223,16 +223,16 @@ class CfgAmmo {
         ACE_muzzleVelocities[] = {300, 310, 315};
         ACE_barrelLengths[] = {229, 305, 406};
     };
-    class FA_300_Mk341_SubAP_T_Red: FA_300_Mk341_SubAP { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
-    class FA_300_Mk341_SubAP_T_Yellow: FA_300_Mk341_SubAP { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
-    class FA_300_Mk341_SubAP_T_Green: FA_300_Mk341_SubAP { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
-    class FA_300_Mk341_SubAP_T_White: FA_300_Mk341_SubAP { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
-    class FA_300_Mk341_SubAP_T_Blue: FA_300_Mk341_SubAP { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
-    class FA_300_Mk341_SubAP_T_Orange: FA_300_Mk341_SubAP { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
-    class FA_300_Mk341_SubAP_T_IR: FA_300_Mk341_SubAP { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
+    class FA_b_300_Mk341_SubAP_T_Red: FA_b_300_Mk341_SubAP { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
+    class FA_b_300_Mk341_SubAP_T_Yellow: FA_b_300_Mk341_SubAP { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
+    class FA_b_300_Mk341_SubAP_T_Green: FA_b_300_Mk341_SubAP { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
+    class FA_b_300_Mk341_SubAP_T_White: FA_b_300_Mk341_SubAP { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
+    class FA_b_300_Mk341_SubAP_T_Blue: FA_b_300_Mk341_SubAP { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
+    class FA_b_300_Mk341_SubAP_T_Orange: FA_b_300_Mk341_SubAP { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
+    class FA_b_300_Mk341_SubAP_T_IR: FA_b_300_Mk341_SubAP { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
 
     // Release 2 (~2039) — XM345 SUB-AP2, conventional brass, ~49 kpsi, 220gr 2-stage tungsten
-    class FA_300_XM345_SubAP2: B_762x51_Ball {
+    class FA_b_300_XM345_SubAP2: B_762x51_Ball {
         hit = 11;
         caliber = 2.7;
         typicalSpeed = 312;
@@ -249,13 +249,13 @@ class CfgAmmo {
         ACE_muzzleVelocities[] = {298, 308, 312};
         ACE_barrelLengths[] = {229, 305, 406};
     };
-    class FA_300_XM345_SubAP2_T_Red: FA_300_XM345_SubAP2 { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
-    class FA_300_XM345_SubAP2_T_Yellow: FA_300_XM345_SubAP2 { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
-    class FA_300_XM345_SubAP2_T_Green: FA_300_XM345_SubAP2 { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
-    class FA_300_XM345_SubAP2_T_White: FA_300_XM345_SubAP2 { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
-    class FA_300_XM345_SubAP2_T_Blue: FA_300_XM345_SubAP2 { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
-    class FA_300_XM345_SubAP2_T_Orange: FA_300_XM345_SubAP2 { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
-    class FA_300_XM345_SubAP2_T_IR: FA_300_XM345_SubAP2 { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
+    class FA_b_300_XM345_SubAP2_T_Red: FA_b_300_XM345_SubAP2 { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
+    class FA_b_300_XM345_SubAP2_T_Yellow: FA_b_300_XM345_SubAP2 { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
+    class FA_b_300_XM345_SubAP2_T_Green: FA_b_300_XM345_SubAP2 { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
+    class FA_b_300_XM345_SubAP2_T_White: FA_b_300_XM345_SubAP2 { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
+    class FA_b_300_XM345_SubAP2_T_Blue: FA_b_300_XM345_SubAP2 { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
+    class FA_b_300_XM345_SubAP2_T_Orange: FA_b_300_XM345_SubAP2 { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
+    class FA_b_300_XM345_SubAP2_T_IR: FA_b_300_XM345_SubAP2 { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
 
     // =========================================================
     // .338 Lapua Magnum — Mk371 LRP (hybrid case, tungsten)
@@ -263,7 +263,7 @@ class CfgAmmo {
     // =========================================================
 
     // Mod 0 — 250gr, fastest, flattest near-to-mid
-    class FA_338_Mk371_250gr: B_338_LM_Ball {
+    class FA_b_338_Mk371_250gr: B_338_LM_Ball {
         hit = 22;
         caliber = 3.6;
         typicalSpeed = 905;
@@ -280,16 +280,16 @@ class CfgAmmo {
         ACE_muzzleVelocities[] = {875, 895, 905};
         ACE_barrelLengths[] = {610, 660, 686};
     };
-    class FA_338_Mk371_250gr_T_Red: FA_338_Mk371_250gr { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
-    class FA_338_Mk371_250gr_T_Yellow: FA_338_Mk371_250gr { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
-    class FA_338_Mk371_250gr_T_Green: FA_338_Mk371_250gr { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
-    class FA_338_Mk371_250gr_T_White: FA_338_Mk371_250gr { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
-    class FA_338_Mk371_250gr_T_Blue: FA_338_Mk371_250gr { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
-    class FA_338_Mk371_250gr_T_Orange: FA_338_Mk371_250gr { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
-    class FA_338_Mk371_250gr_T_IR: FA_338_Mk371_250gr { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
+    class FA_b_338_Mk371_250gr_T_Red: FA_b_338_Mk371_250gr { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
+    class FA_b_338_Mk371_250gr_T_Yellow: FA_b_338_Mk371_250gr { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
+    class FA_b_338_Mk371_250gr_T_Green: FA_b_338_Mk371_250gr { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
+    class FA_b_338_Mk371_250gr_T_White: FA_b_338_Mk371_250gr { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
+    class FA_b_338_Mk371_250gr_T_Blue: FA_b_338_Mk371_250gr { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
+    class FA_b_338_Mk371_250gr_T_Orange: FA_b_338_Mk371_250gr { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
+    class FA_b_338_Mk371_250gr_T_IR: FA_b_338_Mk371_250gr { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
 
     // Mod 1 — 285gr, balanced BC vs speed
-    class FA_338_Mk371_285gr: B_338_LM_Ball {
+    class FA_b_338_Mk371_285gr: B_338_LM_Ball {
         hit = 24;
         caliber = 3.8;
         typicalSpeed = 870;
@@ -306,16 +306,16 @@ class CfgAmmo {
         ACE_muzzleVelocities[] = {840, 862, 870};
         ACE_barrelLengths[] = {610, 660, 686};
     };
-    class FA_338_Mk371_285gr_T_Red: FA_338_Mk371_285gr { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
-    class FA_338_Mk371_285gr_T_Yellow: FA_338_Mk371_285gr { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
-    class FA_338_Mk371_285gr_T_Green: FA_338_Mk371_285gr { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
-    class FA_338_Mk371_285gr_T_White: FA_338_Mk371_285gr { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
-    class FA_338_Mk371_285gr_T_Blue: FA_338_Mk371_285gr { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
-    class FA_338_Mk371_285gr_T_Orange: FA_338_Mk371_285gr { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
-    class FA_338_Mk371_285gr_T_IR: FA_338_Mk371_285gr { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
+    class FA_b_338_Mk371_285gr_T_Red: FA_b_338_Mk371_285gr { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
+    class FA_b_338_Mk371_285gr_T_Yellow: FA_b_338_Mk371_285gr { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
+    class FA_b_338_Mk371_285gr_T_Green: FA_b_338_Mk371_285gr { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
+    class FA_b_338_Mk371_285gr_T_White: FA_b_338_Mk371_285gr { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
+    class FA_b_338_Mk371_285gr_T_Blue: FA_b_338_Mk371_285gr { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
+    class FA_b_338_Mk371_285gr_T_Orange: FA_b_338_Mk371_285gr { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
+    class FA_b_338_Mk371_285gr_T_IR: FA_b_338_Mk371_285gr { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
 
     // Mod 2 — 300gr, extreme range, best retained velocity
-    class FA_338_Mk371_300gr: B_338_LM_Ball {
+    class FA_b_338_Mk371_300gr: B_338_LM_Ball {
         hit = 25;
         caliber = 4.0;
         typicalSpeed = 830;
@@ -332,13 +332,13 @@ class CfgAmmo {
         ACE_muzzleVelocities[] = {805, 825, 830};
         ACE_barrelLengths[] = {610, 660, 686};
     };
-    class FA_338_Mk371_300gr_T_Red: FA_338_Mk371_300gr { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
-    class FA_338_Mk371_300gr_T_Yellow: FA_338_Mk371_300gr { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
-    class FA_338_Mk371_300gr_T_Green: FA_338_Mk371_300gr { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
-    class FA_338_Mk371_300gr_T_White: FA_338_Mk371_300gr { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
-    class FA_338_Mk371_300gr_T_Blue: FA_338_Mk371_300gr { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
-    class FA_338_Mk371_300gr_T_Orange: FA_338_Mk371_300gr { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
-    class FA_338_Mk371_300gr_T_IR: FA_338_Mk371_300gr { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
+    class FA_b_338_Mk371_300gr_T_Red: FA_b_338_Mk371_300gr { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
+    class FA_b_338_Mk371_300gr_T_Yellow: FA_b_338_Mk371_300gr { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
+    class FA_b_338_Mk371_300gr_T_Green: FA_b_338_Mk371_300gr { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
+    class FA_b_338_Mk371_300gr_T_White: FA_b_338_Mk371_300gr { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
+    class FA_b_338_Mk371_300gr_T_Blue: FA_b_338_Mk371_300gr { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
+    class FA_b_338_Mk371_300gr_T_Orange: FA_b_338_Mk371_300gr { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
+    class FA_b_338_Mk371_300gr_T_IR: FA_b_338_Mk371_300gr { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
 
     // =========================================================
     // .300 BLK (supersonic) — Mk335 / Mk336 / Mk337
@@ -346,7 +346,7 @@ class CfgAmmo {
     // =========================================================
 
     // Mk335 — 110gr light supersonic
-    class FA_300_Mk335: B_762x51_Ball {
+    class FA_b_300_Mk335: B_762x51_Ball {
         hit = 9;
         caliber = 1.4;
         typicalSpeed = 725;
@@ -363,16 +363,16 @@ class CfgAmmo {
         ACE_muzzleVelocities[] = {640, 690, 725};
         ACE_barrelLengths[] = {229, 305, 406};
     };
-    class FA_300_Mk335_T_Red: FA_300_Mk335 { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
-    class FA_300_Mk335_T_Yellow: FA_300_Mk335 { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
-    class FA_300_Mk335_T_Green: FA_300_Mk335 { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
-    class FA_300_Mk335_T_White: FA_300_Mk335 { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
-    class FA_300_Mk335_T_Blue: FA_300_Mk335 { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
-    class FA_300_Mk335_T_Orange: FA_300_Mk335 { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
-    class FA_300_Mk335_T_IR: FA_300_Mk335 { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
+    class FA_b_300_Mk335_T_Red: FA_b_300_Mk335 { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
+    class FA_b_300_Mk335_T_Yellow: FA_b_300_Mk335 { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
+    class FA_b_300_Mk335_T_Green: FA_b_300_Mk335 { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
+    class FA_b_300_Mk335_T_White: FA_b_300_Mk335 { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
+    class FA_b_300_Mk335_T_Blue: FA_b_300_Mk335 { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
+    class FA_b_300_Mk335_T_Orange: FA_b_300_Mk335 { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
+    class FA_b_300_Mk335_T_IR: FA_b_300_Mk335 { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
 
     // Mk336 — 125gr standard supersonic
-    class FA_300_Mk336: B_762x51_Ball {
+    class FA_b_300_Mk336: B_762x51_Ball {
         hit = 10;
         caliber = 1.5;
         typicalSpeed = 675;
@@ -389,16 +389,16 @@ class CfgAmmo {
         ACE_muzzleVelocities[] = {600, 650, 675};
         ACE_barrelLengths[] = {229, 305, 406};
     };
-    class FA_300_Mk336_T_Red: FA_300_Mk336 { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
-    class FA_300_Mk336_T_Yellow: FA_300_Mk336 { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
-    class FA_300_Mk336_T_Green: FA_300_Mk336 { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
-    class FA_300_Mk336_T_White: FA_300_Mk336 { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
-    class FA_300_Mk336_T_Blue: FA_300_Mk336 { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
-    class FA_300_Mk336_T_Orange: FA_300_Mk336 { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
-    class FA_300_Mk336_T_IR: FA_300_Mk336 { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
+    class FA_b_300_Mk336_T_Red: FA_b_300_Mk336 { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
+    class FA_b_300_Mk336_T_Yellow: FA_b_300_Mk336 { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
+    class FA_b_300_Mk336_T_Green: FA_b_300_Mk336 { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
+    class FA_b_300_Mk336_T_White: FA_b_300_Mk336 { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
+    class FA_b_300_Mk336_T_Blue: FA_b_300_Mk336 { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
+    class FA_b_300_Mk336_T_Orange: FA_b_300_Mk336 { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
+    class FA_b_300_Mk336_T_IR: FA_b_300_Mk336 { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
 
     // Mk337 — 150gr heavy supersonic (drops subsonic at distance)
-    class FA_300_Mk337: B_762x51_Ball {
+    class FA_b_300_Mk337: B_762x51_Ball {
         hit = 11;
         caliber = 1.6;
         typicalSpeed = 620;
@@ -415,13 +415,13 @@ class CfgAmmo {
         ACE_muzzleVelocities[] = {560, 600, 620};
         ACE_barrelLengths[] = {229, 305, 406};
     };
-    class FA_300_Mk337_T_Red: FA_300_Mk337 { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
-    class FA_300_Mk337_T_Yellow: FA_300_Mk337 { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
-    class FA_300_Mk337_T_Green: FA_300_Mk337 { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
-    class FA_300_Mk337_T_White: FA_300_Mk337 { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
-    class FA_300_Mk337_T_Blue: FA_300_Mk337 { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
-    class FA_300_Mk337_T_Orange: FA_300_Mk337 { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
-    class FA_300_Mk337_T_IR: FA_300_Mk337 { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
+    class FA_b_300_Mk337_T_Red: FA_b_300_Mk337 { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
+    class FA_b_300_Mk337_T_Yellow: FA_b_300_Mk337 { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
+    class FA_b_300_Mk337_T_Green: FA_b_300_Mk337 { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
+    class FA_b_300_Mk337_T_White: FA_b_300_Mk337 { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
+    class FA_b_300_Mk337_T_Blue: FA_b_300_Mk337 { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
+    class FA_b_300_Mk337_T_Orange: FA_b_300_Mk337 { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
+    class FA_b_300_Mk337_T_IR: FA_b_300_Mk337 { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
 
     // =========================================================
     // .300 BLK (subsonic) — Mk342 / Mk343 (non-AP variants)
@@ -429,7 +429,7 @@ class CfgAmmo {
     // =========================================================
 
     // Mk342 — 190gr subsonic
-    class FA_300_Mk342_Sub: B_762x51_Ball {
+    class FA_b_300_Mk342_Sub: B_762x51_Ball {
         hit = 8;
         caliber = 1.7;
         typicalSpeed = 318;
@@ -446,16 +446,16 @@ class CfgAmmo {
         ACE_muzzleVelocities[] = {300, 312, 318};
         ACE_barrelLengths[] = {229, 305, 406};
     };
-    class FA_300_Mk342_Sub_T_Red: FA_300_Mk342_Sub { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
-    class FA_300_Mk342_Sub_T_Yellow: FA_300_Mk342_Sub { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
-    class FA_300_Mk342_Sub_T_Green: FA_300_Mk342_Sub { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
-    class FA_300_Mk342_Sub_T_White: FA_300_Mk342_Sub { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
-    class FA_300_Mk342_Sub_T_Blue: FA_300_Mk342_Sub { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
-    class FA_300_Mk342_Sub_T_Orange: FA_300_Mk342_Sub { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
-    class FA_300_Mk342_Sub_T_IR: FA_300_Mk342_Sub { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
+    class FA_b_300_Mk342_Sub_T_Red: FA_b_300_Mk342_Sub { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
+    class FA_b_300_Mk342_Sub_T_Yellow: FA_b_300_Mk342_Sub { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
+    class FA_b_300_Mk342_Sub_T_Green: FA_b_300_Mk342_Sub { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
+    class FA_b_300_Mk342_Sub_T_White: FA_b_300_Mk342_Sub { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
+    class FA_b_300_Mk342_Sub_T_Blue: FA_b_300_Mk342_Sub { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
+    class FA_b_300_Mk342_Sub_T_Orange: FA_b_300_Mk342_Sub { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
+    class FA_b_300_Mk342_Sub_T_IR: FA_b_300_Mk342_Sub { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
 
     // Mk343 — 220gr heavy subsonic (best BC, quietest)
-    class FA_300_Mk343_Sub: B_762x51_Ball {
+    class FA_b_300_Mk343_Sub: B_762x51_Ball {
         hit = 9;
         caliber = 1.9;
         typicalSpeed = 305;
@@ -472,13 +472,13 @@ class CfgAmmo {
         ACE_muzzleVelocities[] = {295, 303, 305};
         ACE_barrelLengths[] = {229, 305, 406};
     };
-    class FA_300_Mk343_Sub_T_Red: FA_300_Mk343_Sub { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
-    class FA_300_Mk343_Sub_T_Yellow: FA_300_Mk343_Sub { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
-    class FA_300_Mk343_Sub_T_Green: FA_300_Mk343_Sub { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
-    class FA_300_Mk343_Sub_T_White: FA_300_Mk343_Sub { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
-    class FA_300_Mk343_Sub_T_Blue: FA_300_Mk343_Sub { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
-    class FA_300_Mk343_Sub_T_Orange: FA_300_Mk343_Sub { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
-    class FA_300_Mk343_Sub_T_IR: FA_300_Mk343_Sub { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
+    class FA_b_300_Mk343_Sub_T_Red: FA_b_300_Mk343_Sub { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
+    class FA_b_300_Mk343_Sub_T_Yellow: FA_b_300_Mk343_Sub { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
+    class FA_b_300_Mk343_Sub_T_Green: FA_b_300_Mk343_Sub { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
+    class FA_b_300_Mk343_Sub_T_White: FA_b_300_Mk343_Sub { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
+    class FA_b_300_Mk343_Sub_T_Blue: FA_b_300_Mk343_Sub { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
+    class FA_b_300_Mk343_Sub_T_Orange: FA_b_300_Mk343_Sub { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
+    class FA_b_300_Mk343_Sub_T_IR: FA_b_300_Mk343_Sub { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
 
     // =========================================================
     // .338 Norma Magnum — Mk372 MMG (hybrid case, tungsten)
@@ -487,7 +487,7 @@ class CfgAmmo {
     // =========================================================
 
     // Mk372 — 300gr, high BC, best sustained-fire reach (single load)
-    class FA_338_Mk372: B_338_NM_Ball {
+    class FA_b_338_Mk372: B_338_NM_Ball {
         hit = 25;
         caliber = 4.0;
         typicalSpeed = 810;
@@ -504,13 +504,13 @@ class CfgAmmo {
         ACE_muzzleVelocities[] = {780, 800, 810};
         ACE_barrelLengths[] = {600, 640, 680};
     };
-    class FA_338_Mk372_T_Red: FA_338_Mk372 { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
-    class FA_338_Mk372_T_Yellow: FA_338_Mk372 { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
-    class FA_338_Mk372_T_Green: FA_338_Mk372 { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
-    class FA_338_Mk372_T_White: FA_338_Mk372 { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
-    class FA_338_Mk372_T_Blue: FA_338_Mk372 { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
-    class FA_338_Mk372_T_Orange: FA_338_Mk372 { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
-    class FA_338_Mk372_T_IR: FA_338_Mk372 { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
+    class FA_b_338_Mk372_T_Red: FA_b_338_Mk372 { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
+    class FA_b_338_Mk372_T_Yellow: FA_b_338_Mk372 { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
+    class FA_b_338_Mk372_T_Green: FA_b_338_Mk372 { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
+    class FA_b_338_Mk372_T_White: FA_b_338_Mk372 { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
+    class FA_b_338_Mk372_T_Blue: FA_b_338_Mk372 { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
+    class FA_b_338_Mk372_T_Orange: FA_b_338_Mk372 { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
+    class FA_b_338_Mk372_T_IR: FA_b_338_Mk372 { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
 
     // =========================================================
     // 6.5x39 Caseless (Arma 3 canon, 2035)
@@ -522,7 +522,7 @@ class CfgAmmo {
     // =========================================================
 
     // Ball HV (~2033) — 64gr tungsten-core, ~940 m/s
-    class FA_580_Ball_HV: B_556x45_Ball {
+    class FA_o_580_Ball_HV: B_556x45_Ball {
         displayName = "5.8x42mm Ball HV";
         hit = 11;
         caliber = 2.2;
@@ -540,20 +540,20 @@ class CfgAmmo {
         ACE_muzzleVelocities[] = {895, 925, 940, 960};
         ACE_barrelLengths[] = {368, 406, 463, 508};
     };
-    class FA_580_Ball_HV_T_Red: FA_580_Ball_HV { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
-    class FA_580_Ball_HV_T_Yellow: FA_580_Ball_HV { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
-    class FA_580_Ball_HV_T_Green: FA_580_Ball_HV { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
-    class FA_580_Ball_HV_T_White: FA_580_Ball_HV { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
-    class FA_580_Ball_HV_T_Blue: FA_580_Ball_HV { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
-    class FA_580_Ball_HV_T_Orange: FA_580_Ball_HV { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
-    class FA_580_Ball_HV_T_IR: FA_580_Ball_HV { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
+    class FA_o_580_Ball_HV_T_Red: FA_o_580_Ball_HV { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
+    class FA_o_580_Ball_HV_T_Yellow: FA_o_580_Ball_HV { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
+    class FA_o_580_Ball_HV_T_Green: FA_o_580_Ball_HV { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
+    class FA_o_580_Ball_HV_T_White: FA_o_580_Ball_HV { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
+    class FA_o_580_Ball_HV_T_Blue: FA_o_580_Ball_HV { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
+    class FA_o_580_Ball_HV_T_Orange: FA_o_580_Ball_HV { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
+    class FA_o_580_Ball_HV_T_IR: FA_o_580_Ball_HV { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
 
     // =========================================================
     // 7.62x54R (PKM/PKP family — belt-fed LMG)
     // =========================================================
 
     // Ball HV (~2033) — 145gr tungsten-core, ~855 m/s
-    class FA_762x54R_Ball_HV: B_762x51_Ball {
+    class FA_o_762x54R_Ball_HV: B_762x51_Ball {
         displayName = "7.62x54R Ball HV";
         hit = 15;
         caliber = 3.2;
@@ -571,13 +571,13 @@ class CfgAmmo {
         ACE_muzzleVelocities[] = {820, 845, 855, 865};
         ACE_barrelLengths[] = {525, 590, 658, 720};
     };
-    class FA_762x54R_Ball_HV_T_Red: FA_762x54R_Ball_HV { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
-    class FA_762x54R_Ball_HV_T_Yellow: FA_762x54R_Ball_HV { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
-    class FA_762x54R_Ball_HV_T_Green: FA_762x54R_Ball_HV { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
-    class FA_762x54R_Ball_HV_T_White: FA_762x54R_Ball_HV { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
-    class FA_762x54R_Ball_HV_T_Blue: FA_762x54R_Ball_HV { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
-    class FA_762x54R_Ball_HV_T_Orange: FA_762x54R_Ball_HV { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
-    class FA_762x54R_Ball_HV_T_IR: FA_762x54R_Ball_HV { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
+    class FA_o_762x54R_Ball_HV_T_Red: FA_o_762x54R_Ball_HV { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
+    class FA_o_762x54R_Ball_HV_T_Yellow: FA_o_762x54R_Ball_HV { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
+    class FA_o_762x54R_Ball_HV_T_Green: FA_o_762x54R_Ball_HV { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
+    class FA_o_762x54R_Ball_HV_T_White: FA_o_762x54R_Ball_HV { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
+    class FA_o_762x54R_Ball_HV_T_Blue: FA_o_762x54R_Ball_HV { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
+    class FA_o_762x54R_Ball_HV_T_Orange: FA_o_762x54R_Ball_HV { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
+    class FA_o_762x54R_Ball_HV_T_IR: FA_o_762x54R_Ball_HV { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
 
     // =========================================================
     // 6.5x39 Caseless (Arma 3 canon, 2035)
@@ -585,7 +585,7 @@ class CfgAmmo {
     // =========================================================
 
     // 6.5mm Caseless EPR (~2035) — caseless, ~75 kpsi (fictional), 120gr tungsten
-    class FA_65_EPR: B_65x39_Caseless {
+    class FA_b_65_EPR: B_65x39_Caseless {
         displayName = "Mk330 EPR";
         hit = 8;
         caliber = 2.8;
@@ -604,64 +604,64 @@ class CfgAmmo {
         ACE_muzzleVelocities[] = {815, 855, 880};
         ACE_barrelLengths[] = {330, 407, 508};
     };
-    class FA_65_EPR_T_Red: FA_65_EPR { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
-    class FA_65_EPR_T_Yellow: FA_65_EPR { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
-    class FA_65_EPR_T_Green: FA_65_EPR { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
-    class FA_65_EPR_T_White: FA_65_EPR { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
-    class FA_65_EPR_T_Blue: FA_65_EPR { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
-    class FA_65_EPR_T_Orange: FA_65_EPR { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
-    class FA_65_EPR_T_IR: FA_65_EPR { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
+    class FA_b_65_EPR_T_Red: FA_b_65_EPR { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
+    class FA_b_65_EPR_T_Yellow: FA_b_65_EPR { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
+    class FA_b_65_EPR_T_Green: FA_b_65_EPR { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
+    class FA_b_65_EPR_T_White: FA_b_65_EPR { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
+    class FA_b_65_EPR_T_Blue: FA_b_65_EPR { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
+    class FA_b_65_EPR_T_Orange: FA_b_65_EPR { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
+    class FA_b_65_EPR_T_IR: FA_b_65_EPR { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
     // Mk331 AP — caseless tungsten armor-piercing (metric, 2040)
-    class FA_65_Mk331_AP: B_65x39_Caseless { hit=8; caliber=3.4; typicalSpeed=840; airFriction=-0.00090; deflecting=10; displayName="Mk331 AP"; ACE_caliber=6.71; ACE_bulletLength=30.5; ACE_bulletMass=8.4; ACE_muzzleVelocityVariationSD=0.14; ACE_ballisticCoefficients[]={0.300}; ACE_velocityBoundaries[]={}; ACE_standardAtmosphere="ICAO"; ACE_dragModel=7; ACE_muzzleVelocities[]={800,840,865}; ACE_barrelLengths[]={330,407,508}; };
-    class FA_65_Mk331_AP_T_Red: FA_65_Mk331_AP { tracer=1; tracerColor[]={1,0,0,1}; };
-    class FA_65_Mk331_AP_T_Yellow: FA_65_Mk331_AP { tracer=1; tracerColor[]={1,1,0,1}; };
-    class FA_65_Mk331_AP_T_Green: FA_65_Mk331_AP { tracer=1; tracerColor[]={0,1,0,1}; };
-    class FA_65_Mk331_AP_T_White: FA_65_Mk331_AP { tracer=1; tracerColor[]={1,1,1,1}; };
-    class FA_65_Mk331_AP_T_Blue: FA_65_Mk331_AP { tracer=1; tracerColor[]={0,0.3,1,1}; };
-    class FA_65_Mk331_AP_T_Orange: FA_65_Mk331_AP { tracer=1; tracerColor[]={1,0.4,0,1}; };
-    class FA_65_Mk331_AP_T_IR: FA_65_Mk331_AP { tracer=1; nvgOnly=1; tracerColor[]={0.2,1,0.2,1}; };
+    class FA_b_65_Mk331_AP: B_65x39_Caseless { hit=8; caliber=3.4; typicalSpeed=840; airFriction=-0.00090; deflecting=10; displayName="Mk331 AP"; ACE_caliber=6.71; ACE_bulletLength=30.5; ACE_bulletMass=8.4; ACE_muzzleVelocityVariationSD=0.14; ACE_ballisticCoefficients[]={0.300}; ACE_velocityBoundaries[]={}; ACE_standardAtmosphere="ICAO"; ACE_dragModel=7; ACE_muzzleVelocities[]={800,840,865}; ACE_barrelLengths[]={330,407,508}; };
+    class FA_b_65_Mk331_AP_T_Red: FA_b_65_Mk331_AP { tracer=1; tracerColor[]={1,0,0,1}; };
+    class FA_b_65_Mk331_AP_T_Yellow: FA_b_65_Mk331_AP { tracer=1; tracerColor[]={1,1,0,1}; };
+    class FA_b_65_Mk331_AP_T_Green: FA_b_65_Mk331_AP { tracer=1; tracerColor[]={0,1,0,1}; };
+    class FA_b_65_Mk331_AP_T_White: FA_b_65_Mk331_AP { tracer=1; tracerColor[]={1,1,1,1}; };
+    class FA_b_65_Mk331_AP_T_Blue: FA_b_65_Mk331_AP { tracer=1; tracerColor[]={0,0.3,1,1}; };
+    class FA_b_65_Mk331_AP_T_Orange: FA_b_65_Mk331_AP { tracer=1; tracerColor[]={1,0.4,0,1}; };
+    class FA_b_65_Mk331_AP_T_IR: FA_b_65_Mk331_AP { tracer=1; nvgOnly=1; tracerColor[]={0.2,1,0.2,1}; };
 
     // ===== 6.5x39 caseless extra loads (Mk328/XM892/Mk329/XM893) =====
-    class FA_ammo_65g_Mk328: B_65x39_Caseless { displayName = "Mk328 HV"; caliber = 2.4; hit = 11; typicalSpeed = 810; airFriction = -0.00055; ACE_caliber = 6.71; ACE_bulletLength = 33.0; ACE_bulletMass = 8.0; ACE_dragModel = 7; ACE_ballisticCoefficients[] = {0.28}; ACE_muzzleVelocities[] = {810}; ACE_barrelLengths[] = {508}; };
-    class FA_ammo_65g_XM892: B_65x39_Caseless { displayName = "XM892 CTEP"; caliber = 4.2; hit = 12; typicalSpeed = 830; airFriction = -0.00050; ACE_caliber = 6.71; ACE_bulletLength = 34.0; ACE_bulletMass = 7.8; ACE_dragModel = 7; ACE_ballisticCoefficients[] = {0.29}; ACE_muzzleVelocities[] = {830}; ACE_barrelLengths[] = {508}; };
-    class FA_ammo_65cm_Mk329: B_65x39_Caseless { displayName = "Mk329 LR"; caliber = 2.6; hit = 13; typicalSpeed = 860; airFriction = -0.00045; ACE_caliber = 6.71; ACE_bulletLength = 36.0; ACE_bulletMass = 9.07; ACE_dragModel = 7; ACE_ballisticCoefficients[] = {0.32}; ACE_muzzleVelocities[] = {860}; ACE_barrelLengths[] = {610}; };
-    class FA_ammo_65cm_XM893: B_65x39_Caseless { displayName = "XM893 CTEP"; caliber = 4.6; hit = 13; typicalSpeed = 880; airFriction = -0.00042; ACE_caliber = 6.71; ACE_bulletLength = 37.0; ACE_bulletMass = 8.9; ACE_dragModel = 7; ACE_ballisticCoefficients[] = {0.34}; ACE_muzzleVelocities[] = {880}; ACE_barrelLengths[] = {610}; };
+    class FA_b_ammo_65g_Mk328: B_65x39_Caseless { displayName = "Mk328 HV"; caliber = 2.4; hit = 11; typicalSpeed = 810; airFriction = -0.00055; ACE_caliber = 6.71; ACE_bulletLength = 33.0; ACE_bulletMass = 8.0; ACE_dragModel = 7; ACE_ballisticCoefficients[] = {0.28}; ACE_muzzleVelocities[] = {810}; ACE_barrelLengths[] = {508}; };
+    class FA_b_ammo_65g_XM892: B_65x39_Caseless { displayName = "XM892 CTEP"; caliber = 4.2; hit = 12; typicalSpeed = 830; airFriction = -0.00050; ACE_caliber = 6.71; ACE_bulletLength = 34.0; ACE_bulletMass = 7.8; ACE_dragModel = 7; ACE_ballisticCoefficients[] = {0.29}; ACE_muzzleVelocities[] = {830}; ACE_barrelLengths[] = {508}; };
+    class FA_b_ammo_65cm_Mk329: B_65x39_Caseless { displayName = "Mk329 LR"; caliber = 2.6; hit = 13; typicalSpeed = 860; airFriction = -0.00045; ACE_caliber = 6.71; ACE_bulletLength = 36.0; ACE_bulletMass = 9.07; ACE_dragModel = 7; ACE_ballisticCoefficients[] = {0.32}; ACE_muzzleVelocities[] = {860}; ACE_barrelLengths[] = {610}; };
+    class FA_b_ammo_65cm_XM893: B_65x39_Caseless { displayName = "XM893 CTEP"; caliber = 4.6; hit = 13; typicalSpeed = 880; airFriction = -0.00042; ACE_caliber = 6.71; ACE_bulletLength = 37.0; ACE_bulletMass = 8.9; ACE_dragModel = 7; ACE_ballisticCoefficients[] = {0.34}; ACE_muzzleVelocities[] = {880}; ACE_barrelLengths[] = {610}; };
 // 6.5 tracer ammo variants for the 4 caseless rifle loads (generated)
-    class FA_ammo_65g_Mk328_T_Red: FA_ammo_65g_Mk328 { tracer=1; tracerColor[]={1,0,0,1}; };
-    class FA_ammo_65g_Mk328_T_Yellow: FA_ammo_65g_Mk328 { tracer=1; tracerColor[]={1,1,0,1}; };
-    class FA_ammo_65g_Mk328_T_Green: FA_ammo_65g_Mk328 { tracer=1; tracerColor[]={0,1,0,1}; };
-    class FA_ammo_65g_Mk328_T_White: FA_ammo_65g_Mk328 { tracer=1; tracerColor[]={1,1,1,1}; };
-    class FA_ammo_65g_Mk328_T_Blue: FA_ammo_65g_Mk328 { tracer=1; tracerColor[]={0,0.3,1,1}; };
-    class FA_ammo_65g_Mk328_T_Orange: FA_ammo_65g_Mk328 { tracer=1; tracerColor[]={1,0.4,0,1}; };
-    class FA_ammo_65g_Mk328_T_IR: FA_ammo_65g_Mk328 { tracer=1; nvgOnly=1; tracerColor[]={0.2,1,0.2,1}; };
-    class FA_ammo_65g_XM892_T_Red: FA_ammo_65g_XM892 { tracer=1; tracerColor[]={1,0,0,1}; };
-    class FA_ammo_65g_XM892_T_Yellow: FA_ammo_65g_XM892 { tracer=1; tracerColor[]={1,1,0,1}; };
-    class FA_ammo_65g_XM892_T_Green: FA_ammo_65g_XM892 { tracer=1; tracerColor[]={0,1,0,1}; };
-    class FA_ammo_65g_XM892_T_White: FA_ammo_65g_XM892 { tracer=1; tracerColor[]={1,1,1,1}; };
-    class FA_ammo_65g_XM892_T_Blue: FA_ammo_65g_XM892 { tracer=1; tracerColor[]={0,0.3,1,1}; };
-    class FA_ammo_65g_XM892_T_Orange: FA_ammo_65g_XM892 { tracer=1; tracerColor[]={1,0.4,0,1}; };
-    class FA_ammo_65g_XM892_T_IR: FA_ammo_65g_XM892 { tracer=1; nvgOnly=1; tracerColor[]={0.2,1,0.2,1}; };
-    class FA_ammo_65cm_Mk329_T_Red: FA_ammo_65cm_Mk329 { tracer=1; tracerColor[]={1,0,0,1}; };
-    class FA_ammo_65cm_Mk329_T_Yellow: FA_ammo_65cm_Mk329 { tracer=1; tracerColor[]={1,1,0,1}; };
-    class FA_ammo_65cm_Mk329_T_Green: FA_ammo_65cm_Mk329 { tracer=1; tracerColor[]={0,1,0,1}; };
-    class FA_ammo_65cm_Mk329_T_White: FA_ammo_65cm_Mk329 { tracer=1; tracerColor[]={1,1,1,1}; };
-    class FA_ammo_65cm_Mk329_T_Blue: FA_ammo_65cm_Mk329 { tracer=1; tracerColor[]={0,0.3,1,1}; };
-    class FA_ammo_65cm_Mk329_T_Orange: FA_ammo_65cm_Mk329 { tracer=1; tracerColor[]={1,0.4,0,1}; };
-    class FA_ammo_65cm_Mk329_T_IR: FA_ammo_65cm_Mk329 { tracer=1; nvgOnly=1; tracerColor[]={0.2,1,0.2,1}; };
-    class FA_ammo_65cm_XM893_T_Red: FA_ammo_65cm_XM893 { tracer=1; tracerColor[]={1,0,0,1}; };
-    class FA_ammo_65cm_XM893_T_Yellow: FA_ammo_65cm_XM893 { tracer=1; tracerColor[]={1,1,0,1}; };
-    class FA_ammo_65cm_XM893_T_Green: FA_ammo_65cm_XM893 { tracer=1; tracerColor[]={0,1,0,1}; };
-    class FA_ammo_65cm_XM893_T_White: FA_ammo_65cm_XM893 { tracer=1; tracerColor[]={1,1,1,1}; };
-    class FA_ammo_65cm_XM893_T_Blue: FA_ammo_65cm_XM893 { tracer=1; tracerColor[]={0,0.3,1,1}; };
-    class FA_ammo_65cm_XM893_T_Orange: FA_ammo_65cm_XM893 { tracer=1; tracerColor[]={1,0.4,0,1}; };
-    class FA_ammo_65cm_XM893_T_IR: FA_ammo_65cm_XM893 { tracer=1; nvgOnly=1; tracerColor[]={0.2,1,0.2,1}; };
+    class FA_b_ammo_65g_Mk328_T_Red: FA_b_ammo_65g_Mk328 { tracer=1; tracerColor[]={1,0,0,1}; };
+    class FA_b_ammo_65g_Mk328_T_Yellow: FA_b_ammo_65g_Mk328 { tracer=1; tracerColor[]={1,1,0,1}; };
+    class FA_b_ammo_65g_Mk328_T_Green: FA_b_ammo_65g_Mk328 { tracer=1; tracerColor[]={0,1,0,1}; };
+    class FA_b_ammo_65g_Mk328_T_White: FA_b_ammo_65g_Mk328 { tracer=1; tracerColor[]={1,1,1,1}; };
+    class FA_b_ammo_65g_Mk328_T_Blue: FA_b_ammo_65g_Mk328 { tracer=1; tracerColor[]={0,0.3,1,1}; };
+    class FA_b_ammo_65g_Mk328_T_Orange: FA_b_ammo_65g_Mk328 { tracer=1; tracerColor[]={1,0.4,0,1}; };
+    class FA_b_ammo_65g_Mk328_T_IR: FA_b_ammo_65g_Mk328 { tracer=1; nvgOnly=1; tracerColor[]={0.2,1,0.2,1}; };
+    class FA_b_ammo_65g_XM892_T_Red: FA_b_ammo_65g_XM892 { tracer=1; tracerColor[]={1,0,0,1}; };
+    class FA_b_ammo_65g_XM892_T_Yellow: FA_b_ammo_65g_XM892 { tracer=1; tracerColor[]={1,1,0,1}; };
+    class FA_b_ammo_65g_XM892_T_Green: FA_b_ammo_65g_XM892 { tracer=1; tracerColor[]={0,1,0,1}; };
+    class FA_b_ammo_65g_XM892_T_White: FA_b_ammo_65g_XM892 { tracer=1; tracerColor[]={1,1,1,1}; };
+    class FA_b_ammo_65g_XM892_T_Blue: FA_b_ammo_65g_XM892 { tracer=1; tracerColor[]={0,0.3,1,1}; };
+    class FA_b_ammo_65g_XM892_T_Orange: FA_b_ammo_65g_XM892 { tracer=1; tracerColor[]={1,0.4,0,1}; };
+    class FA_b_ammo_65g_XM892_T_IR: FA_b_ammo_65g_XM892 { tracer=1; nvgOnly=1; tracerColor[]={0.2,1,0.2,1}; };
+    class FA_b_ammo_65cm_Mk329_T_Red: FA_b_ammo_65cm_Mk329 { tracer=1; tracerColor[]={1,0,0,1}; };
+    class FA_b_ammo_65cm_Mk329_T_Yellow: FA_b_ammo_65cm_Mk329 { tracer=1; tracerColor[]={1,1,0,1}; };
+    class FA_b_ammo_65cm_Mk329_T_Green: FA_b_ammo_65cm_Mk329 { tracer=1; tracerColor[]={0,1,0,1}; };
+    class FA_b_ammo_65cm_Mk329_T_White: FA_b_ammo_65cm_Mk329 { tracer=1; tracerColor[]={1,1,1,1}; };
+    class FA_b_ammo_65cm_Mk329_T_Blue: FA_b_ammo_65cm_Mk329 { tracer=1; tracerColor[]={0,0.3,1,1}; };
+    class FA_b_ammo_65cm_Mk329_T_Orange: FA_b_ammo_65cm_Mk329 { tracer=1; tracerColor[]={1,0.4,0,1}; };
+    class FA_b_ammo_65cm_Mk329_T_IR: FA_b_ammo_65cm_Mk329 { tracer=1; nvgOnly=1; tracerColor[]={0.2,1,0.2,1}; };
+    class FA_b_ammo_65cm_XM893_T_Red: FA_b_ammo_65cm_XM893 { tracer=1; tracerColor[]={1,0,0,1}; };
+    class FA_b_ammo_65cm_XM893_T_Yellow: FA_b_ammo_65cm_XM893 { tracer=1; tracerColor[]={1,1,0,1}; };
+    class FA_b_ammo_65cm_XM893_T_Green: FA_b_ammo_65cm_XM893 { tracer=1; tracerColor[]={0,1,0,1}; };
+    class FA_b_ammo_65cm_XM893_T_White: FA_b_ammo_65cm_XM893 { tracer=1; tracerColor[]={1,1,1,1}; };
+    class FA_b_ammo_65cm_XM893_T_Blue: FA_b_ammo_65cm_XM893 { tracer=1; tracerColor[]={0,0.3,1,1}; };
+    class FA_b_ammo_65cm_XM893_T_Orange: FA_b_ammo_65cm_XM893 { tracer=1; tracerColor[]={1,0.4,0,1}; };
+    class FA_b_ammo_65cm_XM893_T_IR: FA_b_ammo_65cm_XM893 { tracer=1; nvgOnly=1; tracerColor[]={0.2,1,0.2,1}; };
 
     // =========================================================
     // 7.62x39mm (AK family — AK-12, RPK-12)
     // =========================================================
 
     // 7N43 "Kremen" (~2034) — hybrid case, tungsten core, ~70 kpsi
-    class FA_762x39_7N43: B_762x39_Ball_F {
+    class FA_o_762x39_7N43: B_762x39_Ball_F {
         displayName = "7.62x39 7N43 Kremen";
         hit = 12;
         caliber = 2.8;
@@ -679,16 +679,16 @@ class CfgAmmo {
         ACE_muzzleVelocities[] = {750, 795, 820};
         ACE_barrelLengths[] = {255, 415, 590};
     };
-    class FA_762x39_7N43_T_Red: FA_762x39_7N43 { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
-    class FA_762x39_7N43_T_Yellow: FA_762x39_7N43 { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
-    class FA_762x39_7N43_T_Green: FA_762x39_7N43 { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
-    class FA_762x39_7N43_T_White: FA_762x39_7N43 { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
-    class FA_762x39_7N43_T_Blue: FA_762x39_7N43 { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
-    class FA_762x39_7N43_T_Orange: FA_762x39_7N43 { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
-    class FA_762x39_7N43_T_IR: FA_762x39_7N43 { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
+    class FA_o_762x39_7N43_T_Red: FA_o_762x39_7N43 { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
+    class FA_o_762x39_7N43_T_Yellow: FA_o_762x39_7N43 { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
+    class FA_o_762x39_7N43_T_Green: FA_o_762x39_7N43 { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
+    class FA_o_762x39_7N43_T_White: FA_o_762x39_7N43 { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
+    class FA_o_762x39_7N43_T_Blue: FA_o_762x39_7N43 { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
+    class FA_o_762x39_7N43_T_Orange: FA_o_762x39_7N43 { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
+    class FA_o_762x39_7N43_T_IR: FA_o_762x39_7N43 { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
 
     // 7N47 "Kremen-2" (~2040) — cased-telescoped, 2-stage tungsten, ~75 kpsi
-    class FA_762x39_7N47_CT: B_762x39_Ball_F {
+    class FA_o_762x39_7N47_CT: B_762x39_Ball_F {
         displayName = "7.62x39 7N47 Kremen-2 CT";
         hit = 12;
         caliber = 3.2;
@@ -706,16 +706,16 @@ class CfgAmmo {
         ACE_muzzleVelocities[] = {775, 820, 845};
         ACE_barrelLengths[] = {255, 415, 590};
     };
-    class FA_762x39_7N47_CT_T_Red: FA_762x39_7N47_CT { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
-    class FA_762x39_7N47_CT_T_Yellow: FA_762x39_7N47_CT { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
-    class FA_762x39_7N47_CT_T_Green: FA_762x39_7N47_CT { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
-    class FA_762x39_7N47_CT_T_White: FA_762x39_7N47_CT { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
-    class FA_762x39_7N47_CT_T_Blue: FA_762x39_7N47_CT { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
-    class FA_762x39_7N47_CT_T_Orange: FA_762x39_7N47_CT { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
-    class FA_762x39_7N47_CT_T_IR: FA_762x39_7N47_CT { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
+    class FA_o_762x39_7N47_CT_T_Red: FA_o_762x39_7N47_CT { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
+    class FA_o_762x39_7N47_CT_T_Yellow: FA_o_762x39_7N47_CT { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
+    class FA_o_762x39_7N47_CT_T_Green: FA_o_762x39_7N47_CT { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
+    class FA_o_762x39_7N47_CT_T_White: FA_o_762x39_7N47_CT { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
+    class FA_o_762x39_7N47_CT_T_Blue: FA_o_762x39_7N47_CT { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
+    class FA_o_762x39_7N47_CT_T_Orange: FA_o_762x39_7N47_CT { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
+    class FA_o_762x39_7N47_CT_T_IR: FA_o_762x39_7N47_CT { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
 
     // 7U4 "Tishina-2" — subsonic tungsten AP, velocity-capped
-    class FA_762x39_7U4_Sub: B_762x39_Ball_F {
+    class FA_o_762x39_7U4_Sub: B_762x39_Ball_F {
         displayName = "7.62x39 7U4 Tishina-2 SubAP";
         hit = 11;
         caliber = 2.0;
@@ -733,13 +733,13 @@ class CfgAmmo {
         ACE_muzzleVelocities[] = {290, 298, 302};
         ACE_barrelLengths[] = {255, 415, 590};
     };
-    class FA_762x39_7U4_Sub_T_Red: FA_762x39_7U4_Sub { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
-    class FA_762x39_7U4_Sub_T_Yellow: FA_762x39_7U4_Sub { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
-    class FA_762x39_7U4_Sub_T_Green: FA_762x39_7U4_Sub { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
-    class FA_762x39_7U4_Sub_T_White: FA_762x39_7U4_Sub { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
-    class FA_762x39_7U4_Sub_T_Blue: FA_762x39_7U4_Sub { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
-    class FA_762x39_7U4_Sub_T_Orange: FA_762x39_7U4_Sub { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
-    class FA_762x39_7U4_Sub_T_IR: FA_762x39_7U4_Sub { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
+    class FA_o_762x39_7U4_Sub_T_Red: FA_o_762x39_7U4_Sub { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
+    class FA_o_762x39_7U4_Sub_T_Yellow: FA_o_762x39_7U4_Sub { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
+    class FA_o_762x39_7U4_Sub_T_Green: FA_o_762x39_7U4_Sub { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
+    class FA_o_762x39_7U4_Sub_T_White: FA_o_762x39_7U4_Sub { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
+    class FA_o_762x39_7U4_Sub_T_Blue: FA_o_762x39_7U4_Sub { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
+    class FA_o_762x39_7U4_Sub_T_Orange: FA_o_762x39_7U4_Sub { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
+    class FA_o_762x39_7U4_Sub_T_IR: FA_o_762x39_7U4_Sub { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
 
     // =========================================================
     // 5.45x39mm (AK-74 / AK-12 family) — GRAU-designated next-gen
@@ -747,7 +747,7 @@ class CfgAmmo {
     // ACE ballistics drive the real 5.45 behaviour.
     // =========================================================
     // 7N44 "Osa" — hybrid case, tungsten core, high-pressure
-    class FA_545x39_7N44_HP: B_762x39_Ball_F {
+    class FA_o_545x39_7N44_HP: B_762x39_Ball_F {
         hit = 10;
         caliber = 2.3;
         typicalSpeed = 925;
@@ -764,16 +764,16 @@ class CfgAmmo {
         ACE_muzzleVelocities[] = {850, 905, 925};
         ACE_barrelLengths[]    = {206, 415, 590};
     };
-    class FA_545x39_7N44_HP_T_Red:    FA_545x39_7N44_HP { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
-    class FA_545x39_7N44_HP_T_Yellow: FA_545x39_7N44_HP { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
-    class FA_545x39_7N44_HP_T_Green:  FA_545x39_7N44_HP { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
-    class FA_545x39_7N44_HP_T_White:  FA_545x39_7N44_HP { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
-    class FA_545x39_7N44_HP_T_Blue:   FA_545x39_7N44_HP { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
-    class FA_545x39_7N44_HP_T_Orange: FA_545x39_7N44_HP { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
-    class FA_545x39_7N44_HP_T_IR:     FA_545x39_7N44_HP { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
+    class FA_o_545x39_7N44_HP_T_Red:    FA_o_545x39_7N44_HP { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
+    class FA_o_545x39_7N44_HP_T_Yellow: FA_o_545x39_7N44_HP { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
+    class FA_o_545x39_7N44_HP_T_Green:  FA_o_545x39_7N44_HP { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
+    class FA_o_545x39_7N44_HP_T_White:  FA_o_545x39_7N44_HP { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
+    class FA_o_545x39_7N44_HP_T_Blue:   FA_o_545x39_7N44_HP { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
+    class FA_o_545x39_7N44_HP_T_Orange: FA_o_545x39_7N44_HP { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
+    class FA_o_545x39_7N44_HP_T_IR:     FA_o_545x39_7N44_HP { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
 
     // 7N48 "Osa-2" — cased-telescoped, 2-stage tungsten
-    class FA_545x39_7N48_CT: B_762x39_Ball_F {
+    class FA_o_545x39_7N48_CT: B_762x39_Ball_F {
         hit = 10;
         caliber = 2.6;
         typicalSpeed = 950;
@@ -790,16 +790,16 @@ class CfgAmmo {
         ACE_muzzleVelocities[] = {875, 930, 950};
         ACE_barrelLengths[]    = {206, 415, 590};
     };
-    class FA_545x39_7N48_CT_T_Red:    FA_545x39_7N48_CT { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
-    class FA_545x39_7N48_CT_T_Yellow: FA_545x39_7N48_CT { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
-    class FA_545x39_7N48_CT_T_Green:  FA_545x39_7N48_CT { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
-    class FA_545x39_7N48_CT_T_White:  FA_545x39_7N48_CT { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
-    class FA_545x39_7N48_CT_T_Blue:   FA_545x39_7N48_CT { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
-    class FA_545x39_7N48_CT_T_Orange: FA_545x39_7N48_CT { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
-    class FA_545x39_7N48_CT_T_IR:     FA_545x39_7N48_CT { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
+    class FA_o_545x39_7N48_CT_T_Red:    FA_o_545x39_7N48_CT { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
+    class FA_o_545x39_7N48_CT_T_Yellow: FA_o_545x39_7N48_CT { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
+    class FA_o_545x39_7N48_CT_T_Green:  FA_o_545x39_7N48_CT { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
+    class FA_o_545x39_7N48_CT_T_White:  FA_o_545x39_7N48_CT { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
+    class FA_o_545x39_7N48_CT_T_Blue:   FA_o_545x39_7N48_CT { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
+    class FA_o_545x39_7N48_CT_T_Orange: FA_o_545x39_7N48_CT { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
+    class FA_o_545x39_7N48_CT_T_IR:     FA_o_545x39_7N48_CT { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
 
     // 7U5 "Tishina-5" — subsonic tungsten (suppressed, niche)
-    class FA_545x39_7U5_SubAP: B_762x39_Ball_F {
+    class FA_o_545x39_7U5_SubAP: B_762x39_Ball_F {
         hit = 8;
         caliber = 1.6;
         typicalSpeed = 303;
@@ -816,18 +816,18 @@ class CfgAmmo {
         ACE_muzzleVelocities[] = {295, 300, 303};
         ACE_barrelLengths[]    = {206, 415, 590};
     };
-    class FA_545x39_7U5_SubAP_T_Red:    FA_545x39_7U5_SubAP { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
-    class FA_545x39_7U5_SubAP_T_Yellow: FA_545x39_7U5_SubAP { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
-    class FA_545x39_7U5_SubAP_T_Green:  FA_545x39_7U5_SubAP { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
-    class FA_545x39_7U5_SubAP_T_White:  FA_545x39_7U5_SubAP { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
-    class FA_545x39_7U5_SubAP_T_Blue:   FA_545x39_7U5_SubAP { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
-    class FA_545x39_7U5_SubAP_T_Orange: FA_545x39_7U5_SubAP { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
-    class FA_545x39_7U5_SubAP_T_IR:     FA_545x39_7U5_SubAP { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
+    class FA_o_545x39_7U5_SubAP_T_Red:    FA_o_545x39_7U5_SubAP { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
+    class FA_o_545x39_7U5_SubAP_T_Yellow: FA_o_545x39_7U5_SubAP { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
+    class FA_o_545x39_7U5_SubAP_T_Green:  FA_o_545x39_7U5_SubAP { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
+    class FA_o_545x39_7U5_SubAP_T_White:  FA_o_545x39_7U5_SubAP { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
+    class FA_o_545x39_7U5_SubAP_T_Blue:   FA_o_545x39_7U5_SubAP { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
+    class FA_o_545x39_7U5_SubAP_T_Orange: FA_o_545x39_7U5_SubAP { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
+    class FA_o_545x39_7U5_SubAP_T_IR:     FA_o_545x39_7U5_SubAP { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
 
     // =========================================================
     // 9.3x64 "Type 40" — CSAT precision marksman, hybrid case + tungsten
     // =========================================================
-    class FA_93x64_Type40: B_93x64_Ball {
+    class FA_o_93x64_Type40: B_93x64_Ball {
         hit = 26;
         caliber = 3.8;
         typicalSpeed = 882;
@@ -844,18 +844,18 @@ class CfgAmmo {
         ACE_muzzleVelocities[] = {850, 872, 882};
         ACE_barrelLengths[]    = {508, 609.6, 660.4};
     };
-    class FA_93x64_Type40_T_Red:    FA_93x64_Type40 { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
-    class FA_93x64_Type40_T_Yellow: FA_93x64_Type40 { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
-    class FA_93x64_Type40_T_Green:  FA_93x64_Type40 { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
-    class FA_93x64_Type40_T_White:  FA_93x64_Type40 { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
-    class FA_93x64_Type40_T_Blue:   FA_93x64_Type40 { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
-    class FA_93x64_Type40_T_Orange: FA_93x64_Type40 { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
-    class FA_93x64_Type40_T_IR:     FA_93x64_Type40 { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
+    class FA_o_93x64_Type40_T_Red:    FA_o_93x64_Type40 { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
+    class FA_o_93x64_Type40_T_Yellow: FA_o_93x64_Type40 { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
+    class FA_o_93x64_Type40_T_Green:  FA_o_93x64_Type40 { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
+    class FA_o_93x64_Type40_T_White:  FA_o_93x64_Type40 { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
+    class FA_o_93x64_Type40_T_Blue:   FA_o_93x64_Type40 { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
+    class FA_o_93x64_Type40_T_Orange: FA_o_93x64_Type40 { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
+    class FA_o_93x64_Type40_T_IR:     FA_o_93x64_Type40 { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
 
     // =========================================================
     // .408 CheyTac "Mk240 LRP" — extreme-range precision, hybrid + tungsten
     // =========================================================
-    class FA_408_Mk240: B_338_LM_Ball {
+    class FA_b_408_Mk240: B_338_LM_Ball {
         hit = 30;
         caliber = 4.2;
         typicalSpeed = 965;
@@ -872,18 +872,18 @@ class CfgAmmo {
         ACE_muzzleVelocities[] = {930, 955, 965};
         ACE_barrelLengths[]    = {660.4, 711.2, 762};
     };
-    class FA_408_Mk240_T_Red:    FA_408_Mk240 { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
-    class FA_408_Mk240_T_Yellow: FA_408_Mk240 { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
-    class FA_408_Mk240_T_Green:  FA_408_Mk240 { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
-    class FA_408_Mk240_T_White:  FA_408_Mk240 { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
-    class FA_408_Mk240_T_Blue:   FA_408_Mk240 { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
-    class FA_408_Mk240_T_Orange: FA_408_Mk240 { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
-    class FA_408_Mk240_T_IR:     FA_408_Mk240 { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
+    class FA_b_408_Mk240_T_Red:    FA_b_408_Mk240 { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
+    class FA_b_408_Mk240_T_Yellow: FA_b_408_Mk240 { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
+    class FA_b_408_Mk240_T_Green:  FA_b_408_Mk240 { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
+    class FA_b_408_Mk240_T_White:  FA_b_408_Mk240 { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
+    class FA_b_408_Mk240_T_Blue:   FA_b_408_Mk240 { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
+    class FA_b_408_Mk240_T_Orange: FA_b_408_Mk240 { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
+    class FA_b_408_Mk240_T_IR:     FA_b_408_Mk240 { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
 
     // =========================================================
     // .408 CheyTac "Mk241 ELR" — heavy high-BC extreme long range
     // =========================================================
-    class FA_408_Mk241_ELR: B_338_LM_Ball {
+    class FA_b_408_Mk241_ELR: B_338_LM_Ball {
         hit = 32;
         caliber = 4.0;
         typicalSpeed = 905;
@@ -900,18 +900,18 @@ class CfgAmmo {
         ACE_muzzleVelocities[] = {870, 895, 905};
         ACE_barrelLengths[]    = {660.4, 711.2, 762};
     };
-    class FA_408_Mk241_ELR_T_Red:    FA_408_Mk241_ELR { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
-    class FA_408_Mk241_ELR_T_Yellow: FA_408_Mk241_ELR { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
-    class FA_408_Mk241_ELR_T_Green:  FA_408_Mk241_ELR { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
-    class FA_408_Mk241_ELR_T_White:  FA_408_Mk241_ELR { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
-    class FA_408_Mk241_ELR_T_Blue:   FA_408_Mk241_ELR { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
-    class FA_408_Mk241_ELR_T_Orange: FA_408_Mk241_ELR { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
-    class FA_408_Mk241_ELR_T_IR:     FA_408_Mk241_ELR { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
+    class FA_b_408_Mk241_ELR_T_Red:    FA_b_408_Mk241_ELR { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
+    class FA_b_408_Mk241_ELR_T_Yellow: FA_b_408_Mk241_ELR { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
+    class FA_b_408_Mk241_ELR_T_Green:  FA_b_408_Mk241_ELR { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
+    class FA_b_408_Mk241_ELR_T_White:  FA_b_408_Mk241_ELR { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
+    class FA_b_408_Mk241_ELR_T_Blue:   FA_b_408_Mk241_ELR { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
+    class FA_b_408_Mk241_ELR_T_Orange: FA_b_408_Mk241_ELR { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
+    class FA_b_408_Mk241_ELR_T_IR:     FA_b_408_Mk241_ELR { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
 
     // =========================================================
     // .408 CheyTac "Mk242 HV" — light, fast, flat-shooting
     // =========================================================
-    class FA_408_Mk242_HV: B_338_LM_Ball {
+    class FA_b_408_Mk242_HV: B_338_LM_Ball {
         hit = 28;
         caliber = 3.8;
         typicalSpeed = 1015;
@@ -928,18 +928,18 @@ class CfgAmmo {
         ACE_muzzleVelocities[] = {975, 1005, 1015};
         ACE_barrelLengths[]    = {660.4, 711.2, 762};
     };
-    class FA_408_Mk242_HV_T_Red:    FA_408_Mk242_HV { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
-    class FA_408_Mk242_HV_T_Yellow: FA_408_Mk242_HV { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
-    class FA_408_Mk242_HV_T_Green:  FA_408_Mk242_HV { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
-    class FA_408_Mk242_HV_T_White:  FA_408_Mk242_HV { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
-    class FA_408_Mk242_HV_T_Blue:   FA_408_Mk242_HV { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
-    class FA_408_Mk242_HV_T_Orange: FA_408_Mk242_HV { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
-    class FA_408_Mk242_HV_T_IR:     FA_408_Mk242_HV { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
+    class FA_b_408_Mk242_HV_T_Red:    FA_b_408_Mk242_HV { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
+    class FA_b_408_Mk242_HV_T_Yellow: FA_b_408_Mk242_HV { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
+    class FA_b_408_Mk242_HV_T_Green:  FA_b_408_Mk242_HV { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
+    class FA_b_408_Mk242_HV_T_White:  FA_b_408_Mk242_HV { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
+    class FA_b_408_Mk242_HV_T_Blue:   FA_b_408_Mk242_HV { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
+    class FA_b_408_Mk242_HV_T_Orange: FA_b_408_Mk242_HV { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
+    class FA_b_408_Mk242_HV_T_IR:     FA_b_408_Mk242_HV { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
 
     // =========================================================
     // .408 CheyTac "Mk243 AP" — tungsten penetrator, anti-materiel
     // =========================================================
-    class FA_408_Mk243_AP: B_338_LM_Ball {
+    class FA_b_408_Mk243_AP: B_338_LM_Ball {
         hit = 30;
         caliber = 6.0;
         typicalSpeed = 980;
@@ -956,18 +956,18 @@ class CfgAmmo {
         ACE_muzzleVelocities[] = {945, 970, 980};
         ACE_barrelLengths[]    = {660.4, 711.2, 762};
     };
-    class FA_408_Mk243_AP_T_Red:    FA_408_Mk243_AP { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
-    class FA_408_Mk243_AP_T_Yellow: FA_408_Mk243_AP { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
-    class FA_408_Mk243_AP_T_Green:  FA_408_Mk243_AP { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
-    class FA_408_Mk243_AP_T_White:  FA_408_Mk243_AP { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
-    class FA_408_Mk243_AP_T_Blue:   FA_408_Mk243_AP { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
-    class FA_408_Mk243_AP_T_Orange: FA_408_Mk243_AP { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
-    class FA_408_Mk243_AP_T_IR:     FA_408_Mk243_AP { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
+    class FA_b_408_Mk243_AP_T_Red:    FA_b_408_Mk243_AP { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
+    class FA_b_408_Mk243_AP_T_Yellow: FA_b_408_Mk243_AP { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
+    class FA_b_408_Mk243_AP_T_Green:  FA_b_408_Mk243_AP { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
+    class FA_b_408_Mk243_AP_T_White:  FA_b_408_Mk243_AP { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
+    class FA_b_408_Mk243_AP_T_Blue:   FA_b_408_Mk243_AP { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
+    class FA_b_408_Mk243_AP_T_Orange: FA_b_408_Mk243_AP { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
+    class FA_b_408_Mk243_AP_T_IR:     FA_b_408_Mk243_AP { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
 
     // =========================================================
     // 12.7x108 "Mk250 LRP" — .50 precision / match
     // =========================================================
-    class FA_127x108_Mk250: B_127x108_Ball {
+    class FA_b_127x108_Mk250: B_127x108_Ball {
         hit = 42;
         caliber = 5.5;
         typicalSpeed = 870;
@@ -984,18 +984,18 @@ class CfgAmmo {
         ACE_muzzleVelocities[] = {840, 860, 870};
         ACE_barrelLengths[]    = {660.4, 711.2, 737};
     };
-    class FA_127x108_Mk250_T_Red:    FA_127x108_Mk250 { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
-    class FA_127x108_Mk250_T_Yellow: FA_127x108_Mk250 { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
-    class FA_127x108_Mk250_T_Green:  FA_127x108_Mk250 { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
-    class FA_127x108_Mk250_T_White:  FA_127x108_Mk250 { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
-    class FA_127x108_Mk250_T_Blue:   FA_127x108_Mk250 { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
-    class FA_127x108_Mk250_T_Orange: FA_127x108_Mk250 { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
-    class FA_127x108_Mk250_T_IR:     FA_127x108_Mk250 { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
+    class FA_b_127x108_Mk250_T_Red:    FA_b_127x108_Mk250 { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
+    class FA_b_127x108_Mk250_T_Yellow: FA_b_127x108_Mk250 { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
+    class FA_b_127x108_Mk250_T_Green:  FA_b_127x108_Mk250 { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
+    class FA_b_127x108_Mk250_T_White:  FA_b_127x108_Mk250 { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
+    class FA_b_127x108_Mk250_T_Blue:   FA_b_127x108_Mk250 { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
+    class FA_b_127x108_Mk250_T_Orange: FA_b_127x108_Mk250 { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
+    class FA_b_127x108_Mk250_T_IR:     FA_b_127x108_Mk250 { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
 
     // =========================================================
     // 12.7x108 "Mk211 Mod 2" — .50 HEIAP anti-materiel
     // =========================================================
-    class FA_127x108_Mk211Mod2: B_127x108_Ball {
+    class FA_b_127x108_Mk211Mod2: B_127x108_Ball {
         hit = 48;
         caliber = 8.0;
         typicalSpeed = 900;
@@ -1012,18 +1012,18 @@ class CfgAmmo {
         ACE_muzzleVelocities[] = {870, 890, 900};
         ACE_barrelLengths[]    = {660.4, 711.2, 737};
     };
-    class FA_127x108_Mk211Mod2_T_Red:    FA_127x108_Mk211Mod2 { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
-    class FA_127x108_Mk211Mod2_T_Yellow: FA_127x108_Mk211Mod2 { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
-    class FA_127x108_Mk211Mod2_T_Green:  FA_127x108_Mk211Mod2 { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
-    class FA_127x108_Mk211Mod2_T_White:  FA_127x108_Mk211Mod2 { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
-    class FA_127x108_Mk211Mod2_T_Blue:   FA_127x108_Mk211Mod2 { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
-    class FA_127x108_Mk211Mod2_T_Orange: FA_127x108_Mk211Mod2 { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
-    class FA_127x108_Mk211Mod2_T_IR:     FA_127x108_Mk211Mod2 { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
+    class FA_b_127x108_Mk211Mod2_T_Red:    FA_b_127x108_Mk211Mod2 { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
+    class FA_b_127x108_Mk211Mod2_T_Yellow: FA_b_127x108_Mk211Mod2 { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
+    class FA_b_127x108_Mk211Mod2_T_Green:  FA_b_127x108_Mk211Mod2 { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
+    class FA_b_127x108_Mk211Mod2_T_White:  FA_b_127x108_Mk211Mod2 { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
+    class FA_b_127x108_Mk211Mod2_T_Blue:   FA_b_127x108_Mk211Mod2 { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
+    class FA_b_127x108_Mk211Mod2_T_Orange: FA_b_127x108_Mk211Mod2 { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
+    class FA_b_127x108_Mk211Mod2_T_IR:     FA_b_127x108_Mk211Mod2 { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
 
     // =========================================================
     // 12.7x99 (.50 BMG) "Mk258 LRP" — precision / match (AS50)
     // =========================================================
-    class FA_127x99_Mk258_LRP: B_127x99_Ball {
+    class FA_b_127x99_Mk258_LRP: B_127x99_Ball {
         hit = 42;
         caliber = 5.5;
         typicalSpeed = 860;
@@ -1040,18 +1040,18 @@ class CfgAmmo {
         ACE_muzzleVelocities[] = {820, 850, 860};
         ACE_barrelLengths[]    = {736.6, 736.6, 736.6};
     };
-    class FA_127x99_Mk258_LRP_T_Red:    FA_127x99_Mk258_LRP { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
-    class FA_127x99_Mk258_LRP_T_Yellow: FA_127x99_Mk258_LRP { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
-    class FA_127x99_Mk258_LRP_T_Green:  FA_127x99_Mk258_LRP { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
-    class FA_127x99_Mk258_LRP_T_White:  FA_127x99_Mk258_LRP { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
-    class FA_127x99_Mk258_LRP_T_Blue:   FA_127x99_Mk258_LRP { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
-    class FA_127x99_Mk258_LRP_T_Orange: FA_127x99_Mk258_LRP { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
-    class FA_127x99_Mk258_LRP_T_IR:     FA_127x99_Mk258_LRP { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
+    class FA_b_127x99_Mk258_LRP_T_Red:    FA_b_127x99_Mk258_LRP { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
+    class FA_b_127x99_Mk258_LRP_T_Yellow: FA_b_127x99_Mk258_LRP { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
+    class FA_b_127x99_Mk258_LRP_T_Green:  FA_b_127x99_Mk258_LRP { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
+    class FA_b_127x99_Mk258_LRP_T_White:  FA_b_127x99_Mk258_LRP { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
+    class FA_b_127x99_Mk258_LRP_T_Blue:   FA_b_127x99_Mk258_LRP { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
+    class FA_b_127x99_Mk258_LRP_T_Orange: FA_b_127x99_Mk258_LRP { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
+    class FA_b_127x99_Mk258_LRP_T_IR:     FA_b_127x99_Mk258_LRP { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
 
     // =========================================================
     // 12.7x99 (.50 BMG) "Mk211 Mod 0" — Raufoss HEIAP anti-materiel (AS50)
     // =========================================================
-    class FA_127x99_Mk211Mod0_AP: B_127x99_Ball {
+    class FA_b_127x99_Mk211Mod0_AP: B_127x99_Ball {
         hit = 48;
         caliber = 8.0;
         typicalSpeed = 890;
@@ -1068,18 +1068,18 @@ class CfgAmmo {
         ACE_muzzleVelocities[] = {850, 880, 890};
         ACE_barrelLengths[]    = {736.6, 736.6, 736.6};
     };
-    class FA_127x99_Mk211Mod0_AP_T_Red:    FA_127x99_Mk211Mod0_AP { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
-    class FA_127x99_Mk211Mod0_AP_T_Yellow: FA_127x99_Mk211Mod0_AP { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
-    class FA_127x99_Mk211Mod0_AP_T_Green:  FA_127x99_Mk211Mod0_AP { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
-    class FA_127x99_Mk211Mod0_AP_T_White:  FA_127x99_Mk211Mod0_AP { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
-    class FA_127x99_Mk211Mod0_AP_T_Blue:   FA_127x99_Mk211Mod0_AP { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
-    class FA_127x99_Mk211Mod0_AP_T_Orange: FA_127x99_Mk211Mod0_AP { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
-    class FA_127x99_Mk211Mod0_AP_T_IR:     FA_127x99_Mk211Mod0_AP { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
+    class FA_b_127x99_Mk211Mod0_AP_T_Red:    FA_b_127x99_Mk211Mod0_AP { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
+    class FA_b_127x99_Mk211Mod0_AP_T_Yellow: FA_b_127x99_Mk211Mod0_AP { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
+    class FA_b_127x99_Mk211Mod0_AP_T_Green:  FA_b_127x99_Mk211Mod0_AP { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
+    class FA_b_127x99_Mk211Mod0_AP_T_White:  FA_b_127x99_Mk211Mod0_AP { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
+    class FA_b_127x99_Mk211Mod0_AP_T_Blue:   FA_b_127x99_Mk211Mod0_AP { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
+    class FA_b_127x99_Mk211Mod0_AP_T_Orange: FA_b_127x99_Mk211Mod0_AP { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
+    class FA_b_127x99_Mk211Mod0_AP_T_IR:     FA_b_127x99_Mk211Mod0_AP { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
 
     // =========================================================
     // .45 ACP "Mk421 SUB-AP" — subsonic tungsten-core AP, CQB suppressed
     // =========================================================
-    class FA_45ACP_Mk421_SubAP: B_45ACP_Ball {
+    class FA_b_45ACP_Mk421_SubAP: B_45ACP_Ball {
         hit = 12;
         caliber = 1.4;
         typicalSpeed = 290;
@@ -1096,13 +1096,13 @@ class CfgAmmo {
         ACE_muzzleVelocities[] = {255, 280, 290};
         ACE_barrelLengths[]    = {127, 200, 254};
     };
-    class FA_45ACP_Mk421_SubAP_T_Red:    FA_45ACP_Mk421_SubAP { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
-    class FA_45ACP_Mk421_SubAP_T_Yellow: FA_45ACP_Mk421_SubAP { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
-    class FA_45ACP_Mk421_SubAP_T_Green:  FA_45ACP_Mk421_SubAP { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
-    class FA_45ACP_Mk421_SubAP_T_White:  FA_45ACP_Mk421_SubAP { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
-    class FA_45ACP_Mk421_SubAP_T_Blue:   FA_45ACP_Mk421_SubAP { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
-    class FA_45ACP_Mk421_SubAP_T_Orange: FA_45ACP_Mk421_SubAP { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
-    class FA_45ACP_Mk421_SubAP_T_IR:     FA_45ACP_Mk421_SubAP { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
+    class FA_b_45ACP_Mk421_SubAP_T_Red:    FA_b_45ACP_Mk421_SubAP { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
+    class FA_b_45ACP_Mk421_SubAP_T_Yellow: FA_b_45ACP_Mk421_SubAP { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
+    class FA_b_45ACP_Mk421_SubAP_T_Green:  FA_b_45ACP_Mk421_SubAP { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
+    class FA_b_45ACP_Mk421_SubAP_T_White:  FA_b_45ACP_Mk421_SubAP { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
+    class FA_b_45ACP_Mk421_SubAP_T_Blue:   FA_b_45ACP_Mk421_SubAP { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
+    class FA_b_45ACP_Mk421_SubAP_T_Orange: FA_b_45ACP_Mk421_SubAP { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
+    class FA_b_45ACP_Mk421_SubAP_T_IR:     FA_b_45ACP_Mk421_SubAP { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
 
     // =========================================================
     // 12 Gauge — LOT M1014 shotgun ammunition (Mk35x / Mk360 / Mk363)
@@ -1112,15 +1112,15 @@ class CfgAmmo {
     // ---- Mk350 TBS — Tungsten Buckshot ----
     // Denser, harder pellets: more penetration and less velocity
     // bleed than lead — effective to ~50 m vs. soft targets.
-    class FA_12G_Mk350_TBS_Sub: B_12Gauge_Pellets_Submunition {
+    class FA_b_12G_Mk350_TBS_Sub: B_12Gauge_Pellets_Submunition {
         hit = 8;
         caliber = 1.0;
         airFriction = -0.0120;
         typicalSpeed = 400;
     };
-    class FA_12G_Mk350_TBS: B_12Gauge_Pellets_Submunition_Cartridge {
+    class FA_b_12G_Mk350_TBS: B_12Gauge_Pellets_Submunition_Cartridge {
         displayName = "12g Mk350 Tungsten Buckshot";
-        submunitionAmmo = "FA_12G_Mk350_TBS_Sub";
+        submunitionAmmo = "FA_b_12G_Mk350_TBS_Sub";
         submunitionConeAngle = 3.0;
         ACE_barrelLengths[] = {470, 508};
         ACE_muzzleVelocities[] = {392, 400};
@@ -1129,15 +1129,15 @@ class CfgAmmo {
     // ---- Mk351 FLE — Tungsten Flechette ----
     // Fin-stabilised darts: tight pattern, low drag, high
     // penetration. Effective to ~80 m; passes light cover.
-    class FA_12G_Mk351_FLE_Sub: B_12Gauge_Pellets_Submunition {
+    class FA_b_12G_Mk351_FLE_Sub: B_12Gauge_Pellets_Submunition {
         hit = 5;
         caliber = 1.6;
         airFriction = -0.0060;
         typicalSpeed = 450;
     };
-    class FA_12G_Mk351_FLE: B_12Gauge_Pellets_Submunition_Cartridge {
+    class FA_b_12G_Mk351_FLE: B_12Gauge_Pellets_Submunition_Cartridge {
         displayName = "12g Mk351 Tungsten Flechette";
-        submunitionAmmo = "FA_12G_Mk351_FLE_Sub";
+        submunitionAmmo = "FA_b_12G_Mk351_FLE_Sub";
         submunitionConeAngle = 1.3;
         ACE_barrelLengths[] = {470, 508};
         ACE_muzzleVelocities[] = {442, 450};
@@ -1146,7 +1146,7 @@ class CfgAmmo {
     // ---- Mk352 APS — Tungsten AP Slug ----
     // Single heavy projectile; tungsten core for light-armor /
     // hard-cover defeat at close range.
-    class FA_12G_Mk352_APS: B_12Gauge_Slug {
+    class FA_b_12G_Mk352_APS: B_12Gauge_Slug {
         displayName = "12g Mk352 Tungsten AP Slug";
         hit = 30;
         caliber = 2.2;
@@ -1160,7 +1160,7 @@ class CfgAmmo {
     // Defeats a lock or hinge up close then sheds energy fast:
     // near-zero over-penetration. Door breach is handled by
     // FA_ammo_fnc_breach (gated by CBA setting).
-    class FA_12G_Mk353_BRC: B_12Gauge_Slug {
+    class FA_b_12G_Mk353_BRC: B_12Gauge_Slug {
         displayName = "12g Mk353 Frangible Breaching";
         hit = 35;
         caliber = 0.15;
@@ -1174,15 +1174,15 @@ class CfgAmmo {
     // ---- Mk360 AD — Anti-Drone Shot ----
     // Dense tungsten pattern tuned for FPV/quad intercept at
     // close range (~40-50 m). Config-only; no script needed.
-    class FA_12G_Mk360_AD_Sub: B_12Gauge_Pellets_Submunition {
+    class FA_b_12G_Mk360_AD_Sub: B_12Gauge_Pellets_Submunition {
         hit = 6;
         caliber = 0.9;
         airFriction = -0.0110;
         typicalSpeed = 410;
     };
-    class FA_12G_Mk360_AD: B_12Gauge_Pellets_Submunition_Cartridge {
+    class FA_b_12G_Mk360_AD: B_12Gauge_Pellets_Submunition_Cartridge {
         displayName = "12g Mk360 Anti-Drone Shot";
-        submunitionAmmo = "FA_12G_Mk360_AD_Sub";
+        submunitionAmmo = "FA_b_12G_Mk360_AD_Sub";
         submunitionConeAngle = 2.2;
         ACE_barrelLengths[] = {470, 508};
         ACE_muzzleVelocities[] = {402, 410};
@@ -1197,7 +1197,7 @@ class CfgAmmo {
     // scripted (fnc_detonateAD). Sized as the slug's share of the 40mm HE
     // warhead: 12.22% of 40mm mass (right.json percent_of_40mm_mass) ->
     // metal 200 g x12.22% = 24.4 g, charge 32 g x12.22% = 3.9 g.
-    class FA_12G_Mk363_PABS: B_12Gauge_Slug {
+    class FA_b_12G_Mk363_PABS: B_12Gauge_Slug {
         displayName = "12g Mk363 Proximity Airburst";
         hit = 4;
         caliber = 0.8;
@@ -1221,18 +1221,547 @@ class CfgAmmo {
     // far past a conventional 40mm buckshot (~30-40 m).
     // Pellets/magazines/magwells all live in the ammo addon.
     // =========================================================
-    class FA_40mm_Mk389_TBK_Sub: B_12Gauge_Pellets_Submunition {
+    class FA_b_40mm_Mk389_TBK_Sub: B_12Gauge_Pellets_Submunition {
         hit = 11;
         caliber = 1.3;
         airFriction = -0.0045;   // low drag: holds energy to 100 m
         typicalSpeed = 180;
     };
-    class FA_40mm_Mk389_TBK: B_12Gauge_Pellets_Submunition_Cartridge {
+    class FA_b_40mm_Mk389_TBK: B_12Gauge_Pellets_Submunition_Cartridge {
         displayName = "40mm Mk389 Tungsten Buckshot";
         triggerTime = 0;
-        submunitionAmmo = "FA_40mm_Mk389_TBK_Sub";
+        submunitionAmmo = "FA_b_40mm_Mk389_TBK_Sub";
         submunitionConeAngle = 1.5;                       // ~2.6 m pattern radius at 100 m
         submunitionConeType[] = {"poissondisccenter", 18}; // 18 pellets
         typicalSpeed = 180;
     };
+
+    // =========================================================
+    // FACTION BASE AMMO — AAF (AF-*, ~95%% of West), CSAT 6.5 (Type 4x, ~90%%),
+    // 5.8x42 trio completion (DBP-39 CT / DBP-40 AP)
+    // =========================================================
+    class FA_i_556_AF556_HV: B_556x45_Ball {
+        displayName = "AF-556 HV";
+        hit = 8;
+        caliber = 2.3;
+        typicalSpeed = 910;
+        airFriction = -0.00126;
+        deflecting = 15;
+        tracerScale = 0.6;
+        ACE_caliber = 5.69;
+        ACE_bulletLength = 23;
+        ACE_bulletMass = 4;
+        ACE_muzzleVelocityVariationSD = 0.18;
+        ACE_ballisticCoefficients[] = {0.151};
+        ACE_velocityBoundaries[] = {};
+        ACE_standardAtmosphere = "ICAO";
+        ACE_dragModel = 7;
+        ACE_muzzleVelocities[] = {855, 910, 950};
+        ACE_barrelLengths[] = {254, 368, 508};
+    };
+    class FA_i_556_AF556_HV_T_Red: FA_i_556_AF556_HV {
+        tracer = 1;
+        tracerColor[] = {1.0, 0.0, 0.0, 1.0};
+    };
+    class FA_i_556_AF556_HV_T_Yellow: FA_i_556_AF556_HV {
+        tracer = 1;
+        tracerColor[] = {1.0, 1.0, 0.0, 1.0};
+    };
+    class FA_i_556_AF556_HV_T_Green: FA_i_556_AF556_HV {
+        tracer = 1;
+        tracerColor[] = {0.0, 1.0, 0.0, 1.0};
+    };
+    class FA_i_556_AF556_HV_T_White: FA_i_556_AF556_HV {
+        tracer = 1;
+        tracerColor[] = {1.0, 1.0, 1.0, 1.0};
+    };
+    class FA_i_556_AF556_HV_T_Blue: FA_i_556_AF556_HV {
+        tracer = 1;
+        tracerColor[] = {0.0, 0.3, 1.0, 1.0};
+    };
+    class FA_i_556_AF556_HV_T_Orange: FA_i_556_AF556_HV {
+        tracer = 1;
+        tracerColor[] = {1.0, 0.4, 0.0, 1.0};
+    };
+    class FA_i_556_AF556_HV_T_IR: FA_i_556_AF556_HV {
+        tracer = 1;
+        nvgOnly = 1;
+        tracerColor[] = {0.2, 1.0, 0.2, 1.0};
+    };
+    class FA_i_556_AF556C_CT: B_556x45_Ball {
+        displayName = "AF-556C CT";
+        hit = 8;
+        caliber = 2.5;
+        typicalSpeed = 930;
+        airFriction = -0.0012;
+        deflecting = 14;
+        tracerScale = 0.6;
+        ACE_caliber = 5.69;
+        ACE_bulletLength = 24;
+        ACE_bulletMass = 4;
+        ACE_muzzleVelocityVariationSD = 0.16;
+        ACE_ballisticCoefficients[] = {0.162};
+        ACE_velocityBoundaries[] = {};
+        ACE_standardAtmosphere = "ICAO";
+        ACE_dragModel = 7;
+        ACE_muzzleVelocities[] = {870, 930, 970};
+        ACE_barrelLengths[] = {254, 368, 508};
+    };
+    class FA_i_556_AF556C_CT_T_Red: FA_i_556_AF556C_CT {
+        tracer = 1;
+        tracerColor[] = {1.0, 0.0, 0.0, 1.0};
+    };
+    class FA_i_556_AF556C_CT_T_Yellow: FA_i_556_AF556C_CT {
+        tracer = 1;
+        tracerColor[] = {1.0, 1.0, 0.0, 1.0};
+    };
+    class FA_i_556_AF556C_CT_T_Green: FA_i_556_AF556C_CT {
+        tracer = 1;
+        tracerColor[] = {0.0, 1.0, 0.0, 1.0};
+    };
+    class FA_i_556_AF556C_CT_T_White: FA_i_556_AF556C_CT {
+        tracer = 1;
+        tracerColor[] = {1.0, 1.0, 1.0, 1.0};
+    };
+    class FA_i_556_AF556C_CT_T_Blue: FA_i_556_AF556C_CT {
+        tracer = 1;
+        tracerColor[] = {0.0, 0.3, 1.0, 1.0};
+    };
+    class FA_i_556_AF556C_CT_T_Orange: FA_i_556_AF556C_CT {
+        tracer = 1;
+        tracerColor[] = {1.0, 0.4, 0.0, 1.0};
+    };
+    class FA_i_556_AF556C_CT_T_IR: FA_i_556_AF556C_CT {
+        tracer = 1;
+        nvgOnly = 1;
+        tracerColor[] = {0.2, 1.0, 0.2, 1.0};
+    };
+    class FA_i_556_AF556P_AP: B_556x45_Ball {
+        displayName = "AF-556P AP";
+        hit = 8;
+        caliber = 2.85;
+        typicalSpeed = 895;
+        airFriction = -0.00118;
+        deflecting = 12;
+        tracerScale = 0.6;
+        ACE_caliber = 5.69;
+        ACE_bulletLength = 24.5;
+        ACE_bulletMass = 4.2;
+        ACE_muzzleVelocityVariationSD = 0.15;
+        ACE_ballisticCoefficients[] = {0.170};
+        ACE_velocityBoundaries[] = {};
+        ACE_standardAtmosphere = "ICAO";
+        ACE_dragModel = 7;
+        ACE_muzzleVelocities[] = {835, 895, 930};
+        ACE_barrelLengths[] = {254, 368, 508};
+    };
+    class FA_i_556_AF556P_AP_T_Red: FA_i_556_AF556P_AP {
+        tracer = 1;
+        tracerColor[] = {1.0, 0.0, 0.0, 1.0};
+    };
+    class FA_i_556_AF556P_AP_T_Yellow: FA_i_556_AF556P_AP {
+        tracer = 1;
+        tracerColor[] = {1.0, 1.0, 0.0, 1.0};
+    };
+    class FA_i_556_AF556P_AP_T_Green: FA_i_556_AF556P_AP {
+        tracer = 1;
+        tracerColor[] = {0.0, 1.0, 0.0, 1.0};
+    };
+    class FA_i_556_AF556P_AP_T_White: FA_i_556_AF556P_AP {
+        tracer = 1;
+        tracerColor[] = {1.0, 1.0, 1.0, 1.0};
+    };
+    class FA_i_556_AF556P_AP_T_Blue: FA_i_556_AF556P_AP {
+        tracer = 1;
+        tracerColor[] = {0.0, 0.3, 1.0, 1.0};
+    };
+    class FA_i_556_AF556P_AP_T_Orange: FA_i_556_AF556P_AP {
+        tracer = 1;
+        tracerColor[] = {1.0, 0.4, 0.0, 1.0};
+    };
+    class FA_i_556_AF556P_AP_T_IR: FA_i_556_AF556P_AP {
+        tracer = 1;
+        nvgOnly = 1;
+        tracerColor[] = {0.2, 1.0, 0.2, 1.0};
+    };
+    class FA_i_762_AF762_HV: B_762x51_Ball {
+        displayName = "AF-762 HV";
+        hit = 13;
+        caliber = 2.85;
+        typicalSpeed = 895;
+        airFriction = -0.00082;
+        deflecting = 15;
+        tracerScale = 0.8;
+        ACE_caliber = 7.82;
+        ACE_bulletLength = 29.21;
+        ACE_bulletMass = 8.75;
+        ACE_ballisticCoefficients[] = {0.228};
+        ACE_velocityBoundaries[] = {};
+        ACE_standardAtmosphere = "ICAO";
+        ACE_dragModel = 7;
+        ACE_muzzleVelocities[] = {840, 875, 895, 905};
+        ACE_barrelLengths[] = {406, 508, 610, 660};
+    };
+    class FA_i_762_AF762_HV_T_Red: FA_i_762_AF762_HV {
+        tracer = 1;
+        tracerColor[] = {1.0, 0.0, 0.0, 1.0};
+    };
+    class FA_i_762_AF762_HV_T_Yellow: FA_i_762_AF762_HV {
+        tracer = 1;
+        tracerColor[] = {1.0, 1.0, 0.0, 1.0};
+    };
+    class FA_i_762_AF762_HV_T_Green: FA_i_762_AF762_HV {
+        tracer = 1;
+        tracerColor[] = {0.0, 1.0, 0.0, 1.0};
+    };
+    class FA_i_762_AF762_HV_T_White: FA_i_762_AF762_HV {
+        tracer = 1;
+        tracerColor[] = {1.0, 1.0, 1.0, 1.0};
+    };
+    class FA_i_762_AF762_HV_T_Blue: FA_i_762_AF762_HV {
+        tracer = 1;
+        tracerColor[] = {0.0, 0.3, 1.0, 1.0};
+    };
+    class FA_i_762_AF762_HV_T_Orange: FA_i_762_AF762_HV {
+        tracer = 1;
+        tracerColor[] = {1.0, 0.4, 0.0, 1.0};
+    };
+    class FA_i_762_AF762_HV_T_IR: FA_i_762_AF762_HV {
+        tracer = 1;
+        nvgOnly = 1;
+        tracerColor[] = {0.2, 1.0, 0.2, 1.0};
+    };
+    class FA_i_762_AF762C_CT: B_762x51_Ball {
+        displayName = "AF-762C CT";
+        hit = 14;
+        caliber = 3.2;
+        typicalSpeed = 910;
+        airFriction = -0.00078;
+        deflecting = 14;
+        tracerScale = 0.8;
+        ACE_caliber = 7.82;
+        ACE_bulletLength = 30.48;
+        ACE_bulletMass = 9.07;
+        ACE_ballisticCoefficients[] = {0.245};
+        ACE_velocityBoundaries[] = {};
+        ACE_standardAtmosphere = "ICAO";
+        ACE_dragModel = 7;
+        ACE_muzzleVelocities[] = {860, 900, 910, 925};
+        ACE_barrelLengths[] = {406, 508, 610, 660};
+    };
+    class FA_i_762_AF762C_CT_T_Red: FA_i_762_AF762C_CT {
+        tracer = 1;
+        tracerColor[] = {1.0, 0.0, 0.0, 1.0};
+    };
+    class FA_i_762_AF762C_CT_T_Yellow: FA_i_762_AF762C_CT {
+        tracer = 1;
+        tracerColor[] = {1.0, 1.0, 0.0, 1.0};
+    };
+    class FA_i_762_AF762C_CT_T_Green: FA_i_762_AF762C_CT {
+        tracer = 1;
+        tracerColor[] = {0.0, 1.0, 0.0, 1.0};
+    };
+    class FA_i_762_AF762C_CT_T_White: FA_i_762_AF762C_CT {
+        tracer = 1;
+        tracerColor[] = {1.0, 1.0, 1.0, 1.0};
+    };
+    class FA_i_762_AF762C_CT_T_Blue: FA_i_762_AF762C_CT {
+        tracer = 1;
+        tracerColor[] = {0.0, 0.3, 1.0, 1.0};
+    };
+    class FA_i_762_AF762C_CT_T_Orange: FA_i_762_AF762C_CT {
+        tracer = 1;
+        tracerColor[] = {1.0, 0.4, 0.0, 1.0};
+    };
+    class FA_i_762_AF762C_CT_T_IR: FA_i_762_AF762C_CT {
+        tracer = 1;
+        nvgOnly = 1;
+        tracerColor[] = {0.2, 1.0, 0.2, 1.0};
+    };
+    class FA_i_762_AF762P_AP: B_762x51_Ball {
+        displayName = "AF-762P AP";
+        hit = 14;
+        caliber = 3.6;
+        typicalSpeed = 895;
+        airFriction = -0.00078;
+        deflecting = 12;
+        tracerScale = 0.8;
+        ACE_caliber = 7.82;
+        ACE_bulletLength = 30.9;
+        ACE_bulletMass = 9.5;
+        ACE_ballisticCoefficients[] = {0.245};
+        ACE_velocityBoundaries[] = {};
+        ACE_standardAtmosphere = "ICAO";
+        ACE_dragModel = 7;
+        ACE_muzzleVelocities[] = {850, 885, 895, 910};
+        ACE_barrelLengths[] = {406, 508, 610, 660};
+    };
+    class FA_i_762_AF762P_AP_T_Red: FA_i_762_AF762P_AP {
+        tracer = 1;
+        tracerColor[] = {1.0, 0.0, 0.0, 1.0};
+    };
+    class FA_i_762_AF762P_AP_T_Yellow: FA_i_762_AF762P_AP {
+        tracer = 1;
+        tracerColor[] = {1.0, 1.0, 0.0, 1.0};
+    };
+    class FA_i_762_AF762P_AP_T_Green: FA_i_762_AF762P_AP {
+        tracer = 1;
+        tracerColor[] = {0.0, 1.0, 0.0, 1.0};
+    };
+    class FA_i_762_AF762P_AP_T_White: FA_i_762_AF762P_AP {
+        tracer = 1;
+        tracerColor[] = {1.0, 1.0, 1.0, 1.0};
+    };
+    class FA_i_762_AF762P_AP_T_Blue: FA_i_762_AF762P_AP {
+        tracer = 1;
+        tracerColor[] = {0.0, 0.3, 1.0, 1.0};
+    };
+    class FA_i_762_AF762P_AP_T_Orange: FA_i_762_AF762P_AP {
+        tracer = 1;
+        tracerColor[] = {1.0, 0.4, 0.0, 1.0};
+    };
+    class FA_i_762_AF762P_AP_T_IR: FA_i_762_AF762P_AP {
+        tracer = 1;
+        nvgOnly = 1;
+        tracerColor[] = {0.2, 1.0, 0.2, 1.0};
+    };
+    class FA_o_65_Type41_EPR: B_65x39_Caseless {
+        displayName = "Type 41 EPR";
+        hit = 7;
+        caliber = 2.5;
+        typicalSpeed = 770;
+        airFriction = -0.00095;
+        deflecting = 12;
+        tracerScale = 0.7;
+        ACE_caliber = 6.71;
+        ACE_bulletLength = 30;
+        ACE_bulletMass = 8;
+        ACE_muzzleVelocityVariationSD = 0.15;
+        ACE_ballisticCoefficients[] = {0.290};
+        ACE_velocityBoundaries[] = {};
+        ACE_standardAtmosphere = "ICAO";
+        ACE_dragModel = 7;
+        ACE_muzzleVelocities[] = {735, 770, 790};
+        ACE_barrelLengths[] = {330, 407, 508};
+    };
+    class FA_o_65_Type41_EPR_T_Red: FA_o_65_Type41_EPR {
+        tracer = 1;
+        tracerColor[] = {1.0, 0.0, 0.0, 1.0};
+    };
+    class FA_o_65_Type41_EPR_T_Yellow: FA_o_65_Type41_EPR {
+        tracer = 1;
+        tracerColor[] = {1.0, 1.0, 0.0, 1.0};
+    };
+    class FA_o_65_Type41_EPR_T_Green: FA_o_65_Type41_EPR {
+        tracer = 1;
+        tracerColor[] = {0.0, 1.0, 0.0, 1.0};
+    };
+    class FA_o_65_Type41_EPR_T_White: FA_o_65_Type41_EPR {
+        tracer = 1;
+        tracerColor[] = {1.0, 1.0, 1.0, 1.0};
+    };
+    class FA_o_65_Type41_EPR_T_Blue: FA_o_65_Type41_EPR {
+        tracer = 1;
+        tracerColor[] = {0.0, 0.3, 1.0, 1.0};
+    };
+    class FA_o_65_Type41_EPR_T_Orange: FA_o_65_Type41_EPR {
+        tracer = 1;
+        tracerColor[] = {1.0, 0.4, 0.0, 1.0};
+    };
+    class FA_o_65_Type41_EPR_T_IR: FA_o_65_Type41_EPR {
+        tracer = 1;
+        nvgOnly = 1;
+        tracerColor[] = {0.2, 1.0, 0.2, 1.0};
+    };
+    class FA_o_65_Type42_CT: B_65x39_Caseless {
+        displayName = "Type 42 CT";
+        hit = 11;
+        caliber = 3.8;
+        typicalSpeed = 745;
+        airFriction = -0.0005;
+        deflecting = 12;
+        tracerScale = 0.7;
+        ACE_caliber = 6.71;
+        ACE_bulletLength = 34;
+        ACE_bulletMass = 7.8;
+        ACE_ballisticCoefficients[] = {0.29};
+        ACE_velocityBoundaries[] = {};
+        ACE_standardAtmosphere = "ICAO";
+        ACE_dragModel = 7;
+        ACE_muzzleVelocities[] = {745};
+        ACE_barrelLengths[] = {508};
+    };
+    class FA_o_65_Type42_CT_T_Red: FA_o_65_Type42_CT {
+        tracer = 1;
+        tracerColor[] = {1.0, 0.0, 0.0, 1.0};
+    };
+    class FA_o_65_Type42_CT_T_Yellow: FA_o_65_Type42_CT {
+        tracer = 1;
+        tracerColor[] = {1.0, 1.0, 0.0, 1.0};
+    };
+    class FA_o_65_Type42_CT_T_Green: FA_o_65_Type42_CT {
+        tracer = 1;
+        tracerColor[] = {0.0, 1.0, 0.0, 1.0};
+    };
+    class FA_o_65_Type42_CT_T_White: FA_o_65_Type42_CT {
+        tracer = 1;
+        tracerColor[] = {1.0, 1.0, 1.0, 1.0};
+    };
+    class FA_o_65_Type42_CT_T_Blue: FA_o_65_Type42_CT {
+        tracer = 1;
+        tracerColor[] = {0.0, 0.3, 1.0, 1.0};
+    };
+    class FA_o_65_Type42_CT_T_Orange: FA_o_65_Type42_CT {
+        tracer = 1;
+        tracerColor[] = {1.0, 0.4, 0.0, 1.0};
+    };
+    class FA_o_65_Type42_CT_T_IR: FA_o_65_Type42_CT {
+        tracer = 1;
+        nvgOnly = 1;
+        tracerColor[] = {0.2, 1.0, 0.2, 1.0};
+    };
+    class FA_o_65_Type43_AP: B_65x39_Caseless {
+        displayName = "Type 43 AP";
+        hit = 7;
+        caliber = 3.1;
+        typicalSpeed = 755;
+        airFriction = -0.0009;
+        deflecting = 10;
+        tracerScale = 0.7;
+        ACE_caliber = 6.71;
+        ACE_bulletLength = 30.5;
+        ACE_bulletMass = 8.4;
+        ACE_muzzleVelocityVariationSD = 0.14;
+        ACE_ballisticCoefficients[] = {0.300};
+        ACE_velocityBoundaries[] = {};
+        ACE_standardAtmosphere = "ICAO";
+        ACE_dragModel = 7;
+        ACE_muzzleVelocities[] = {720, 755, 780};
+        ACE_barrelLengths[] = {330, 407, 508};
+    };
+    class FA_o_65_Type43_AP_T_Red: FA_o_65_Type43_AP {
+        tracer = 1;
+        tracerColor[] = {1.0, 0.0, 0.0, 1.0};
+    };
+    class FA_o_65_Type43_AP_T_Yellow: FA_o_65_Type43_AP {
+        tracer = 1;
+        tracerColor[] = {1.0, 1.0, 0.0, 1.0};
+    };
+    class FA_o_65_Type43_AP_T_Green: FA_o_65_Type43_AP {
+        tracer = 1;
+        tracerColor[] = {0.0, 1.0, 0.0, 1.0};
+    };
+    class FA_o_65_Type43_AP_T_White: FA_o_65_Type43_AP {
+        tracer = 1;
+        tracerColor[] = {1.0, 1.0, 1.0, 1.0};
+    };
+    class FA_o_65_Type43_AP_T_Blue: FA_o_65_Type43_AP {
+        tracer = 1;
+        tracerColor[] = {0.0, 0.3, 1.0, 1.0};
+    };
+    class FA_o_65_Type43_AP_T_Orange: FA_o_65_Type43_AP {
+        tracer = 1;
+        tracerColor[] = {1.0, 0.4, 0.0, 1.0};
+    };
+    class FA_o_65_Type43_AP_T_IR: FA_o_65_Type43_AP {
+        tracer = 1;
+        nvgOnly = 1;
+        tracerColor[] = {0.2, 1.0, 0.2, 1.0};
+    };
+    class FA_o_580_DBP39_CT: B_556x45_Ball {
+        displayName = "DBP-39 CT";
+        hit = 11;
+        caliber = 2.4;
+        typicalSpeed = 950;
+        airFriction = -0.0009;
+        deflecting = 16;
+        tracerScale = 0.6;
+        ACE_caliber = 5.79;
+        ACE_bulletLength = 23.5;
+        ACE_bulletMass = 4.2;
+        ACE_ballisticCoefficients[] = {0.210};
+        ACE_velocityBoundaries[] = {};
+        ACE_standardAtmosphere = "ICAO";
+        ACE_dragModel = 7;
+        ACE_muzzleVelocities[] = {905, 935, 950, 970};
+        ACE_barrelLengths[] = {368, 406, 463, 508};
+    };
+    class FA_o_580_DBP39_CT_T_Red: FA_o_580_DBP39_CT {
+        tracer = 1;
+        tracerColor[] = {1.0, 0.0, 0.0, 1.0};
+    };
+    class FA_o_580_DBP39_CT_T_Yellow: FA_o_580_DBP39_CT {
+        tracer = 1;
+        tracerColor[] = {1.0, 1.0, 0.0, 1.0};
+    };
+    class FA_o_580_DBP39_CT_T_Green: FA_o_580_DBP39_CT {
+        tracer = 1;
+        tracerColor[] = {0.0, 1.0, 0.0, 1.0};
+    };
+    class FA_o_580_DBP39_CT_T_White: FA_o_580_DBP39_CT {
+        tracer = 1;
+        tracerColor[] = {1.0, 1.0, 1.0, 1.0};
+    };
+    class FA_o_580_DBP39_CT_T_Blue: FA_o_580_DBP39_CT {
+        tracer = 1;
+        tracerColor[] = {0.0, 0.3, 1.0, 1.0};
+    };
+    class FA_o_580_DBP39_CT_T_Orange: FA_o_580_DBP39_CT {
+        tracer = 1;
+        tracerColor[] = {1.0, 0.4, 0.0, 1.0};
+    };
+    class FA_o_580_DBP39_CT_T_IR: FA_o_580_DBP39_CT {
+        tracer = 1;
+        nvgOnly = 1;
+        tracerColor[] = {0.2, 1.0, 0.2, 1.0};
+    };
+    class FA_o_580_DBP40_AP: B_556x45_Ball {
+        displayName = "DBP-40 AP";
+        hit = 10;
+        caliber = 2.7;
+        typicalSpeed = 915;
+        airFriction = -0.00092;
+        deflecting = 12;
+        tracerScale = 0.6;
+        ACE_caliber = 5.79;
+        ACE_bulletLength = 23.8;
+        ACE_bulletMass = 4.4;
+        ACE_ballisticCoefficients[] = {0.215};
+        ACE_velocityBoundaries[] = {};
+        ACE_standardAtmosphere = "ICAO";
+        ACE_dragModel = 7;
+        ACE_muzzleVelocities[] = {870, 900, 915, 935};
+        ACE_barrelLengths[] = {368, 406, 463, 508};
+    };
+    class FA_o_580_DBP40_AP_T_Red: FA_o_580_DBP40_AP {
+        tracer = 1;
+        tracerColor[] = {1.0, 0.0, 0.0, 1.0};
+    };
+    class FA_o_580_DBP40_AP_T_Yellow: FA_o_580_DBP40_AP {
+        tracer = 1;
+        tracerColor[] = {1.0, 1.0, 0.0, 1.0};
+    };
+    class FA_o_580_DBP40_AP_T_Green: FA_o_580_DBP40_AP {
+        tracer = 1;
+        tracerColor[] = {0.0, 1.0, 0.0, 1.0};
+    };
+    class FA_o_580_DBP40_AP_T_White: FA_o_580_DBP40_AP {
+        tracer = 1;
+        tracerColor[] = {1.0, 1.0, 1.0, 1.0};
+    };
+    class FA_o_580_DBP40_AP_T_Blue: FA_o_580_DBP40_AP {
+        tracer = 1;
+        tracerColor[] = {0.0, 0.3, 1.0, 1.0};
+    };
+    class FA_o_580_DBP40_AP_T_Orange: FA_o_580_DBP40_AP {
+        tracer = 1;
+        tracerColor[] = {1.0, 0.4, 0.0, 1.0};
+    };
+    class FA_o_580_DBP40_AP_T_IR: FA_o_580_DBP40_AP {
+        tracer = 1;
+        nvgOnly = 1;
+        tracerColor[] = {0.2, 1.0, 0.2, 1.0};
+    };
+
+    #include "CfgAmmo_compat.hpp"
 };

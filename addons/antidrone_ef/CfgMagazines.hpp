@@ -7,30 +7,30 @@ class CfgMagazines {
         author = QAUTHOR;
         displayName = "[Ghost] 30Rnd Mk367 PAB";
         descriptionShort = "Mk367 PAB";
-        ammo = "FA_65_Mk367_PAB";
+        ammo = "FA_b_65_Mk367_PAB";
         tracersEvery = 0;
         lastRoundsTracer = 0;
     };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Red: FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB { ammo = "FA_65_Mk367_PAB_T_Red"; displayName = "[Ghost] 30Rnd Mk367 PAB Red Tracer"; descriptionShort = "Mk367 PAB"; tracersEvery = 4; lastRoundsTracer = 4; };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Yellow: FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB { ammo = "FA_65_Mk367_PAB_T_Yellow"; displayName = "[Ghost] 30Rnd Mk367 PAB Yellow Tracer"; descriptionShort = "Mk367 PAB"; tracersEvery = 4; lastRoundsTracer = 4; };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Green: FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB { ammo = "FA_65_Mk367_PAB_T_Green"; displayName = "[Ghost] 30Rnd Mk367 PAB Green Tracer"; descriptionShort = "Mk367 PAB"; tracersEvery = 4; lastRoundsTracer = 4; };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_White: FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB { ammo = "FA_65_Mk367_PAB_T_White"; displayName = "[Ghost] 30Rnd Mk367 PAB White Tracer"; descriptionShort = "Mk367 PAB"; tracersEvery = 4; lastRoundsTracer = 4; };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Blue: FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB { ammo = "FA_65_Mk367_PAB_T_Blue"; displayName = "[Ghost] 30Rnd Mk367 PAB Blue Tracer"; descriptionShort = "Mk367 PAB"; tracersEvery = 4; lastRoundsTracer = 4; };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Orange: FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB { ammo = "FA_65_Mk367_PAB_T_Orange"; displayName = "[Ghost] 30Rnd Mk367 PAB Orange Tracer"; descriptionShort = "Mk367 PAB"; tracersEvery = 4; lastRoundsTracer = 4; };
+    class FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Red: FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB { ammo = "FA_b_65_Mk367_PAB_T_Red"; displayName = "[Ghost] 30Rnd Mk367 PAB Red Tracer"; descriptionShort = "Mk367 PAB"; tracersEvery = 4; lastRoundsTracer = 4; };
+    class FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Yellow: FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB { ammo = "FA_b_65_Mk367_PAB_T_Yellow"; displayName = "[Ghost] 30Rnd Mk367 PAB Yellow Tracer"; descriptionShort = "Mk367 PAB"; tracersEvery = 4; lastRoundsTracer = 4; };
+    class FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Green: FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB { ammo = "FA_b_65_Mk367_PAB_T_Green"; displayName = "[Ghost] 30Rnd Mk367 PAB Green Tracer"; descriptionShort = "Mk367 PAB"; tracersEvery = 4; lastRoundsTracer = 4; };
+    class FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_White: FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB { ammo = "FA_b_65_Mk367_PAB_T_White"; displayName = "[Ghost] 30Rnd Mk367 PAB White Tracer"; descriptionShort = "Mk367 PAB"; tracersEvery = 4; lastRoundsTracer = 4; };
+    class FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Blue: FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB { ammo = "FA_b_65_Mk367_PAB_T_Blue"; displayName = "[Ghost] 30Rnd Mk367 PAB Blue Tracer"; descriptionShort = "Mk367 PAB"; tracersEvery = 4; lastRoundsTracer = 4; };
+    class FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Orange: FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB { ammo = "FA_b_65_Mk367_PAB_T_Orange"; displayName = "[Ghost] 30Rnd Mk367 PAB Orange Tracer"; descriptionShort = "Mk367 PAB"; tracersEvery = 4; lastRoundsTracer = 4; };
 
     // EF 6.5 100Rnd Coyote — Mk367 PAB
     class FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB: EF_100Rnd_65x39_caseless_coy_mag {
         author = QAUTHOR;
         displayName = "[Ghost] 100Rnd Mk367 PAB";
         descriptionShort = "Mk367 PAB";
-        ammo = "FA_65_Mk367_PAB";
+        ammo = "FA_b_65_Mk367_PAB";
         tracersEvery = 0;
         lastRoundsTracer = 0;
     };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Red: FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB { ammo = "FA_65_Mk367_PAB_T_Red"; displayName = "[Ghost] 100Rnd Mk367 PAB Red Tracer"; descriptionShort = "Mk367 PAB"; tracersEvery = 4; lastRoundsTracer = 4; };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Yellow: FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB { ammo = "FA_65_Mk367_PAB_T_Yellow"; displayName = "[Ghost] 100Rnd Mk367 PAB Yellow Tracer"; descriptionShort = "Mk367 PAB"; tracersEvery = 4; lastRoundsTracer = 4; };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Green: FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB { ammo = "FA_65_Mk367_PAB_T_Green"; displayName = "[Ghost] 100Rnd Mk367 PAB Green Tracer"; descriptionShort = "Mk367 PAB"; tracersEvery = 4; lastRoundsTracer = 4; };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_White: FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB { ammo = "FA_65_Mk367_PAB_T_White"; displayName = "[Ghost] 100Rnd Mk367 PAB White Tracer"; descriptionShort = "Mk367 PAB"; tracersEvery = 4; lastRoundsTracer = 4; };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Blue: FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB { ammo = "FA_65_Mk367_PAB_T_Blue"; displayName = "[Ghost] 100Rnd Mk367 PAB Blue Tracer"; descriptionShort = "Mk367 PAB"; tracersEvery = 4; lastRoundsTracer = 4; };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Orange: FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB { ammo = "FA_65_Mk367_PAB_T_Orange"; displayName = "[Ghost] 100Rnd Mk367 PAB Orange Tracer"; descriptionShort = "Mk367 PAB"; tracersEvery = 4; lastRoundsTracer = 4; };
+    class FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Red: FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB { ammo = "FA_b_65_Mk367_PAB_T_Red"; displayName = "[Ghost] 100Rnd Mk367 PAB Red Tracer"; descriptionShort = "Mk367 PAB"; tracersEvery = 4; lastRoundsTracer = 4; };
+    class FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Yellow: FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB { ammo = "FA_b_65_Mk367_PAB_T_Yellow"; displayName = "[Ghost] 100Rnd Mk367 PAB Yellow Tracer"; descriptionShort = "Mk367 PAB"; tracersEvery = 4; lastRoundsTracer = 4; };
+    class FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Green: FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB { ammo = "FA_b_65_Mk367_PAB_T_Green"; displayName = "[Ghost] 100Rnd Mk367 PAB Green Tracer"; descriptionShort = "Mk367 PAB"; tracersEvery = 4; lastRoundsTracer = 4; };
+    class FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_White: FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB { ammo = "FA_b_65_Mk367_PAB_T_White"; displayName = "[Ghost] 100Rnd Mk367 PAB White Tracer"; descriptionShort = "Mk367 PAB"; tracersEvery = 4; lastRoundsTracer = 4; };
+    class FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Blue: FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB { ammo = "FA_b_65_Mk367_PAB_T_Blue"; displayName = "[Ghost] 100Rnd Mk367 PAB Blue Tracer"; descriptionShort = "Mk367 PAB"; tracersEvery = 4; lastRoundsTracer = 4; };
+    class FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Orange: FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB { ammo = "FA_b_65_Mk367_PAB_T_Orange"; displayName = "[Ghost] 100Rnd Mk367 PAB Orange Tracer"; descriptionShort = "Mk367 PAB"; tracersEvery = 4; lastRoundsTracer = 4; };
 };

@@ -31,20 +31,20 @@
     "FA_250Rnd_30mm_PROX_T_White", "FA_250Rnd_30mm_PROX_T_Blue", "FA_250Rnd_30mm_PROX_T_Orange", "FA_250Rnd_30mm_PROX_T_IR"
 
 #define FA_MAGS_50CAL \
-    "FA_200Rnd_127_Mk211Mod0", \
-    "FA_200Rnd_127_Mk211Mod0_T_Red", "FA_200Rnd_127_Mk211Mod0_T_Yellow", "FA_200Rnd_127_Mk211Mod0_T_Green", \
-    "FA_200Rnd_127_Mk211Mod0_T_White", "FA_200Rnd_127_Mk211Mod0_T_Blue", "FA_200Rnd_127_Mk211Mod0_T_Orange", "FA_200Rnd_127_Mk211Mod0_T_IR", \
-    "FA_200Rnd_127_Mk258", \
-    "FA_200Rnd_127_Mk258_T_Red", "FA_200Rnd_127_Mk258_T_Yellow", "FA_200Rnd_127_Mk258_T_Green", \
-    "FA_200Rnd_127_Mk258_T_White", "FA_200Rnd_127_Mk258_T_Blue", "FA_200Rnd_127_Mk258_T_Orange", "FA_200Rnd_127_Mk258_T_IR"
+    "FA_b_200Rnd_127_Mk211Mod0", \
+    "FA_b_200Rnd_127_Mk211Mod0_T_Red", "FA_b_200Rnd_127_Mk211Mod0_T_Yellow", "FA_b_200Rnd_127_Mk211Mod0_T_Green", \
+    "FA_b_200Rnd_127_Mk211Mod0_T_White", "FA_b_200Rnd_127_Mk211Mod0_T_Blue", "FA_b_200Rnd_127_Mk211Mod0_T_Orange", "FA_b_200Rnd_127_Mk211Mod0_T_IR", \
+    "FA_b_200Rnd_127_Mk258", \
+    "FA_b_200Rnd_127_Mk258_T_Red", "FA_b_200Rnd_127_Mk258_T_Yellow", "FA_b_200Rnd_127_Mk258_T_Green", \
+    "FA_b_200Rnd_127_Mk258_T_White", "FA_b_200Rnd_127_Mk258_T_Blue", "FA_b_200Rnd_127_Mk258_T_Orange", "FA_b_200Rnd_127_Mk258_T_IR"
 
 #define FA_MAGS_762 \
-    "FA_200Rnd_762_M80A2_HV", \
-    "FA_200Rnd_762_M80A2_HV_T_Red", "FA_200Rnd_762_M80A2_HV_T_Yellow", "FA_200Rnd_762_M80A2_HV_T_Green", \
-    "FA_200Rnd_762_M80A2_HV_T_White", "FA_200Rnd_762_M80A2_HV_T_Blue", "FA_200Rnd_762_M80A2_HV_T_Orange", "FA_200Rnd_762_M80A2_HV_T_IR", \
-    "FA_200Rnd_762_XM751_CTEP", \
-    "FA_200Rnd_762_XM751_CTEP_T_Red", "FA_200Rnd_762_XM751_CTEP_T_Yellow", "FA_200Rnd_762_XM751_CTEP_T_Green", \
-    "FA_200Rnd_762_XM751_CTEP_T_White", "FA_200Rnd_762_XM751_CTEP_T_Blue", "FA_200Rnd_762_XM751_CTEP_T_Orange", "FA_200Rnd_762_XM751_CTEP_T_IR"
+    "FA_b_200Rnd_762_M80A2_HV", \
+    "FA_b_200Rnd_762_M80A2_HV_T_Red", "FA_b_200Rnd_762_M80A2_HV_T_Yellow", "FA_b_200Rnd_762_M80A2_HV_T_Green", \
+    "FA_b_200Rnd_762_M80A2_HV_T_White", "FA_b_200Rnd_762_M80A2_HV_T_Blue", "FA_b_200Rnd_762_M80A2_HV_T_Orange", "FA_b_200Rnd_762_M80A2_HV_T_IR", \
+    "FA_b_200Rnd_762_XM751_CTEP", \
+    "FA_b_200Rnd_762_XM751_CTEP_T_Red", "FA_b_200Rnd_762_XM751_CTEP_T_Yellow", "FA_b_200Rnd_762_XM751_CTEP_T_Green", \
+    "FA_b_200Rnd_762_XM751_CTEP_T_White", "FA_b_200Rnd_762_XM751_CTEP_T_Blue", "FA_b_200Rnd_762_XM751_CTEP_T_Orange", "FA_b_200Rnd_762_XM751_CTEP_T_IR"
 
 class CfgWeapons {
     // 30mm Mk44 — multi-muzzle {"AP","HE"}; append per muzzle

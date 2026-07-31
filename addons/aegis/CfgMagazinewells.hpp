@@ -8,43 +8,43 @@ class CfgMagazinewells {
     // ---- 7.62x51 — SR25 (Aegis) ----
     class Aegis_SR25_762x51 {
         ADDON[] += {
-            "FA_20Rnd_762_M80A2_HV",
-            "FA_20Rnd_762_M80A2_HV_T_Red",
-            "FA_20Rnd_762_M80A2_HV_T_Yellow",
-            "FA_20Rnd_762_M80A2_HV_T_Green",
-            "FA_20Rnd_762_M80A2_HV_T_White",
-            "FA_20Rnd_762_M80A2_HV_T_Blue",
-            "FA_20Rnd_762_M80A2_HV_T_Orange",
-            "FA_20Rnd_762_M80A2_HV_T_IR",
-            "FA_20Rnd_762_XM751_CTEP",
-            "FA_20Rnd_762_XM751_CTEP_T_Red",
-            "FA_20Rnd_762_XM751_CTEP_T_Yellow",
-            "FA_20Rnd_762_XM751_CTEP_T_Green",
-            "FA_20Rnd_762_XM751_CTEP_T_White",
-            "FA_20Rnd_762_XM751_CTEP_T_Blue",
-            "FA_20Rnd_762_XM751_CTEP_T_Orange",
-            "FA_20Rnd_762_XM751_CTEP_T_IR"
+            "FA_b_20Rnd_762_M80A2_HV",
+            "FA_b_20Rnd_762_M80A2_HV_T_Red",
+            "FA_b_20Rnd_762_M80A2_HV_T_Yellow",
+            "FA_b_20Rnd_762_M80A2_HV_T_Green",
+            "FA_b_20Rnd_762_M80A2_HV_T_White",
+            "FA_b_20Rnd_762_M80A2_HV_T_Blue",
+            "FA_b_20Rnd_762_M80A2_HV_T_Orange",
+            "FA_b_20Rnd_762_M80A2_HV_T_IR",
+            "FA_b_20Rnd_762_XM751_CTEP",
+            "FA_b_20Rnd_762_XM751_CTEP_T_Red",
+            "FA_b_20Rnd_762_XM751_CTEP_T_Yellow",
+            "FA_b_20Rnd_762_XM751_CTEP_T_Green",
+            "FA_b_20Rnd_762_XM751_CTEP_T_White",
+            "FA_b_20Rnd_762_XM751_CTEP_T_Blue",
+            "FA_b_20Rnd_762_XM751_CTEP_T_Orange",
+            "FA_b_20Rnd_762_XM751_CTEP_T_IR"
         };
     };
     // ---- 7.62x51 — SLR (Aegis) ----
     class SLR_762x51 {
         ADDON[] += {
-            "FA_20Rnd_762_M80A2_HV",
-            "FA_20Rnd_762_M80A2_HV_T_Red",
-            "FA_20Rnd_762_M80A2_HV_T_Yellow",
-            "FA_20Rnd_762_M80A2_HV_T_Green",
-            "FA_20Rnd_762_M80A2_HV_T_White",
-            "FA_20Rnd_762_M80A2_HV_T_Blue",
-            "FA_20Rnd_762_M80A2_HV_T_Orange",
-            "FA_20Rnd_762_M80A2_HV_T_IR",
-            "FA_20Rnd_762_XM751_CTEP",
-            "FA_20Rnd_762_XM751_CTEP_T_Red",
-            "FA_20Rnd_762_XM751_CTEP_T_Yellow",
-            "FA_20Rnd_762_XM751_CTEP_T_Green",
-            "FA_20Rnd_762_XM751_CTEP_T_White",
-            "FA_20Rnd_762_XM751_CTEP_T_Blue",
-            "FA_20Rnd_762_XM751_CTEP_T_Orange",
-            "FA_20Rnd_762_XM751_CTEP_T_IR"
+            "FA_b_20Rnd_762_M80A2_HV",
+            "FA_b_20Rnd_762_M80A2_HV_T_Red",
+            "FA_b_20Rnd_762_M80A2_HV_T_Yellow",
+            "FA_b_20Rnd_762_M80A2_HV_T_Green",
+            "FA_b_20Rnd_762_M80A2_HV_T_White",
+            "FA_b_20Rnd_762_M80A2_HV_T_Blue",
+            "FA_b_20Rnd_762_M80A2_HV_T_Orange",
+            "FA_b_20Rnd_762_M80A2_HV_T_IR",
+            "FA_b_20Rnd_762_XM751_CTEP",
+            "FA_b_20Rnd_762_XM751_CTEP_T_Red",
+            "FA_b_20Rnd_762_XM751_CTEP_T_Yellow",
+            "FA_b_20Rnd_762_XM751_CTEP_T_Green",
+            "FA_b_20Rnd_762_XM751_CTEP_T_White",
+            "FA_b_20Rnd_762_XM751_CTEP_T_Blue",
+            "FA_b_20Rnd_762_XM751_CTEP_T_Orange",
+            "FA_b_20Rnd_762_XM751_CTEP_T_IR"
         };
     };
     // ---- 7.62x54R — SVD (Aegis) ----
@@ -84,18 +84,18 @@ class CfgMagazinewells {
     // ---- 12 gauge — KSG / M4 SSAS / MP153 (Aegis) ----
     class Shotgun_12GA {
         ADDON[] += {
-            "FA_6Rnd_12g_No0_Buck",
-            "FA_6Rnd_12g_No1_Buck",
-            "FA_6Rnd_12g_No2_Buck",
-            "FA_6Rnd_12g_No3_Buck",
-            "FA_6Rnd_12g_No4_Buck",
-            "FA_6Rnd_12g_No4_Bird",
-            "FA_2Rnd_12g_No0_Buck",
-            "FA_2Rnd_12g_No1_Buck",
-            "FA_2Rnd_12g_No2_Buck",
-            "FA_2Rnd_12g_No3_Buck",
-            "FA_2Rnd_12g_No4_Buck",
-            "FA_2Rnd_12g_No4_Bird"
+            "FA_b_6Rnd_12g_No0_Buck",
+            "FA_b_6Rnd_12g_No1_Buck",
+            "FA_b_6Rnd_12g_No2_Buck",
+            "FA_b_6Rnd_12g_No3_Buck",
+            "FA_b_6Rnd_12g_No4_Buck",
+            "FA_b_6Rnd_12g_No4_Bird",
+            "FA_b_2Rnd_12g_No0_Buck",
+            "FA_b_2Rnd_12g_No1_Buck",
+            "FA_b_2Rnd_12g_No2_Buck",
+            "FA_b_2Rnd_12g_No3_Buck",
+            "FA_b_2Rnd_12g_No4_Buck",
+            "FA_b_2Rnd_12g_No4_Bird"
         };
     };
     // ---- 5.45x39 — AK-12 / RPK-74 (Aegis) ----

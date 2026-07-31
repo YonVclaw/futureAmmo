@@ -1,6 +1,13 @@
 class CfgMagazinewells {
     class STANAG_556x45 {
         ADDON[] += {
+            "FA_JCA_30Rnd_556x45_Green_PMAG_Mk361_PAB",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_Mk361_PAB_T_Red",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_Mk361_PAB_T_Yellow",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_Mk361_PAB_T_Green",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_Mk361_PAB_T_White",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_Mk361_PAB_T_Blue",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_Mk361_PAB_T_Orange",
             "FA_JCA_30Rnd_556x45_EMAG_Mk361_PAB",
             "FA_JCA_30Rnd_556x45_EMAG_Mk361_PAB_T_Red",
             "FA_JCA_30Rnd_556x45_EMAG_Mk361_PAB_T_Yellow",

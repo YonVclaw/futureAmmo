@@ -2,7 +2,8 @@
 
 ["CAManBase", "fired", {
     params ["_unit", "", "", "", "_ammo", "", "_proj"];
-    if (_ammo == "FA_12G_Mk353_BRC" && {GVAR(enableBreaching)}) then {
+    // second name is the pre-side-prefix compat alias
+    if (_ammo in ["FA_b_12G_Mk353_BRC", "FA_12G_Mk353_BRC"] && GVAR(enableBreaching)) then {
         [_unit, _proj] call FUNC(breach);
     };
 }] call CBA_fnc_addClassEventHandler;

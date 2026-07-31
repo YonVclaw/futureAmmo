@@ -60,11 +60,14 @@ private _entries = [
     R("XM891 CTEP") + "Cased-telescoped 2-stage tungsten EPR" + S("2039 - ~85 kpsi") + NL +
     R("Mk332 AP") + "Tungsten armor-piercing" + S("2040") + NL +
     R("Mk361 PAB") + "Proximity airburst, C-UAS (antidrone)" + NL +
+    R("AF-556 / AF-556C / AF-556P") + "AAF faction trio - HV / CT / AP at ~95% of NATO performance" + S("2040") + NL +
     "<font color='#7F93AC'>Mk327 / XM891 / Mk332 ride every 5.56 mag (STANAG, JCA, SPS, RHS, boxes/belts) in all tracer colors.</font>"],
 
   ["5.8x42",
     H("CSAT / PLA carbine") +
-    R("Ball HV") + "High-velocity ball reference load"],
+    R("Ball HV") + "High-velocity ball reference load" + NL +
+    R("DBP-39 CT") + "Cased-telescoped tungsten" + S("2040") + NL +
+    R("DBP-40 AP") + "Tungsten armor-piercing" + S("2040")],
 
   ["7.62x39",
     H("AK / RPK") +
@@ -77,6 +80,7 @@ private _entries = [
     R("M80A2 HV") + "Hybrid-case 135gr tungsten EPR" + S("2032 - ~78 kpsi") + NL +
     R("XM751 CTEP") + "Cased-telescoped tungsten, long-range / anti-armor" + S("2039 - ~82 kpsi") + NL +
     R("Mk362 PAB") + "Proximity airburst, C-UAS (antidrone)" + NL +
+    R("AF-762 / AF-762C / AF-762P") + "AAF faction trio - HV / CT / AP at ~95% of NATO performance" + S("2040") + NL +
     "<font color='#7F93AC'>M80A2 / XM751 ride every .308 mag (core, ACE, JCA, SPS AXMC, RHS M240) in all tracer colors.</font>"],
 
   [".300 BLK",
@@ -93,6 +97,7 @@ private _entries = [
     R("Mk328 HV / Mk329 LR") + "Match / long-range DMR loads" + NL +
     R("XM892 / XM893 CTEP") + "Cased-telescoped enhanced-penetration" + NL +
     R("Mk367 PAB") + "Proximity airburst, C-UAS (antidrone)" + NL +
+    R("Type 41 / 42 / 43") + "CSAT faction trio for the Katiba - EPR / CT / AP at ~90% of NATO" + S("2040") + NL +
     "<font color='#7F93AC'>All feed the standard 6.5 caseless mags / wells (Sand/Black/Khaki/MSBS) in all tracer colors - same caliber, different loads.</font>"],
 
   [".338",
