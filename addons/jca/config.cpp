@@ -19,6 +19,31 @@ class CfgPatches {
         author = QAUTHOR;
         VERSION_CONFIG;
         magazines[] = {
+            // JCA 5.56 Green PMAG
+            "FA_JCA_30Rnd_556x45_Green_PMAG",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_T_Red",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_T_Yellow",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_T_Green",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_T_White",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_T_Blue",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_T_Orange",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_T_IR",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_XM891_CTEP",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_XM891_CTEP_T_Red",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_XM891_CTEP_T_Yellow",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_XM891_CTEP_T_Green",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_XM891_CTEP_T_White",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_XM891_CTEP_T_Blue",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_XM891_CTEP_T_Orange",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_XM891_CTEP_T_IR",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_Mk332_AP",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_Mk332_AP_T_Red",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_Mk332_AP_T_Yellow",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_Mk332_AP_T_Green",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_Mk332_AP_T_White",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_Mk332_AP_T_Blue",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_Mk332_AP_T_Orange",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_Mk332_AP_T_IR",
             // JCA 5.56 EMAG
             "FA_JCA_30Rnd_556x45_EMAG",
             "FA_JCA_30Rnd_556x45_EMAG_XM891_CTEP",
@@ -275,7 +300,43 @@ class CfgPatches {
             "FA_JCA_5Rnd_338LM_AWM_Mk371_300gr_T_White",
             "FA_JCA_5Rnd_338LM_AWM_Mk371_300gr_T_Blue",
             "FA_JCA_5Rnd_338LM_AWM_Mk371_300gr_T_Orange",
-            "FA_JCA_5Rnd_338LM_AWM_Mk371_300gr_T_IR"
+            "FA_JCA_5Rnd_338LM_AWM_Mk371_300gr_T_IR",
+            // JCA 12.7x99 M107 — Mk258 LRP
+            "FA_JCA_10Rnd_127x99_M107_Mk258",
+            "FA_JCA_10Rnd_127x99_M107_Mk258_T_Red",
+            "FA_JCA_10Rnd_127x99_M107_Mk258_T_Yellow",
+            "FA_JCA_10Rnd_127x99_M107_Mk258_T_Green",
+            "FA_JCA_10Rnd_127x99_M107_Mk258_T_White",
+            "FA_JCA_10Rnd_127x99_M107_Mk258_T_Blue",
+            "FA_JCA_10Rnd_127x99_M107_Mk258_T_Orange",
+            "FA_JCA_10Rnd_127x99_M107_Mk258_T_IR",
+            // JCA 12.7x99 M107 — Mk211 Mod 0 AP
+            "FA_JCA_10Rnd_127x99_M107_Mk211Mod0",
+            "FA_JCA_10Rnd_127x99_M107_Mk211Mod0_T_Red",
+            "FA_JCA_10Rnd_127x99_M107_Mk211Mod0_T_Yellow",
+            "FA_JCA_10Rnd_127x99_M107_Mk211Mod0_T_Green",
+            "FA_JCA_10Rnd_127x99_M107_Mk211Mod0_T_White",
+            "FA_JCA_10Rnd_127x99_M107_Mk211Mod0_T_Blue",
+            "FA_JCA_10Rnd_127x99_M107_Mk211Mod0_T_Orange",
+            "FA_JCA_10Rnd_127x99_M107_Mk211Mod0_T_IR",
+            // JCA 12.7x99 M107 Sand — Mk258 LRP
+            "FA_JCA_10Rnd_127x99_M107_Sand_Mk258",
+            "FA_JCA_10Rnd_127x99_M107_Sand_Mk258_T_Red",
+            "FA_JCA_10Rnd_127x99_M107_Sand_Mk258_T_Yellow",
+            "FA_JCA_10Rnd_127x99_M107_Sand_Mk258_T_Green",
+            "FA_JCA_10Rnd_127x99_M107_Sand_Mk258_T_White",
+            "FA_JCA_10Rnd_127x99_M107_Sand_Mk258_T_Blue",
+            "FA_JCA_10Rnd_127x99_M107_Sand_Mk258_T_Orange",
+            "FA_JCA_10Rnd_127x99_M107_Sand_Mk258_T_IR",
+            // JCA 12.7x99 M107 Sand — Mk211 Mod 0 AP
+            "FA_JCA_10Rnd_127x99_M107_Sand_Mk211Mod0",
+            "FA_JCA_10Rnd_127x99_M107_Sand_Mk211Mod0_T_Red",
+            "FA_JCA_10Rnd_127x99_M107_Sand_Mk211Mod0_T_Yellow",
+            "FA_JCA_10Rnd_127x99_M107_Sand_Mk211Mod0_T_Green",
+            "FA_JCA_10Rnd_127x99_M107_Sand_Mk211Mod0_T_White",
+            "FA_JCA_10Rnd_127x99_M107_Sand_Mk211Mod0_T_Blue",
+            "FA_JCA_10Rnd_127x99_M107_Sand_Mk211Mod0_T_Orange",
+            "FA_JCA_10Rnd_127x99_M107_Sand_Mk211Mod0_T_IR"
         };
     };
 };

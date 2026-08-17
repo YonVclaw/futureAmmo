@@ -42,6 +42,6 @@ _s setObjectScale 0.4;
         _mk pushBack _m;
     } forEach ([getPos _s, _radius, _side] call FUNC(enemiesNear));
     _s setVariable ["mk", _mk];
-}, 2, [_s, _side, _radius, time + _life]] call CBA_fnc_addPerFrameHandler;
+}, 12, [_s, _side, _radius, time + _life]] call CBA_fnc_addPerFrameHandler;
 
 [_unit, "<t color='#ffcc55'>UGS picket active</t>"] call FUNC(notify);

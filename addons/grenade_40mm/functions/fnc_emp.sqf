@@ -43,7 +43,7 @@ params [
     // HOOK: Drongo EW jam call on _x here
     if (GVAR(hasDEW)) then {};
     // HOOK: comms jam on _x here
-    if (GVAR(hasTFAR) || {GVAR(hasACRE)}) then {};
+    if (GVAR(hasTFAR) || GVAR(hasACRE)) then {};
 } forEach (
     (_pos nearEntities [["Man"], _radius]) select {
         [side group _unit, side group _x] call BIS_fnc_sideIsEnemy

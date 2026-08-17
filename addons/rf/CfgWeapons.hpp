@@ -1,8 +1,17 @@
-// Append the 2040 rounds to the RF Twin Mortar weapon (shared by the B/O/I
-// TwinMortar vehicles). Reopened with NO parent (bodied parentless merge) so we
-// never reparent/strip the RF weapon. Per the RF design, wiring is on the weapon.
+// Append the 2040 rounds to the RF 120mm Twin Mortar weapon (shared by the
+// B/O/I TwinMortar_RF static vehicles from the Reaction Forces CDLC).
+//
+// Name the real parent (Twin_Mortar_120mm_RF: mortar_155mm_AMOS) rather than
+// reopening it parentless. RF bases its twin-mortar WEAPON on the vanilla 155mm
+// artillery weapon mortar_155mm_AMOS; in-game Config Viewer confirms the chain
+// Twin_Mortar_120mm_RF -> mortar_155mm_AMOS -> CannonCore -> Default. NOTE: the
+// vehicle base is TwinMortar_base_RF, but that is a CfgVehicles class and is NOT
+// the weapon's parent — inheriting from it collapses the weapon to scope=private.
+// A parentless reopen collapses it the same way, so name mortar_155mm_AMOS
+// (defined in A3_Weapons_F, already in requiredAddons).
 class CfgWeapons {
-    class Twin_Mortar_120mm_RF {
+    class mortar_155mm_AMOS;
+    class Twin_Mortar_120mm_RF: mortar_155mm_AMOS {
         magazines[] += {
             "FA_6Rnd_120mm_heer_B", "FA_6Rnd_120mm_heer_O", "FA_6Rnd_120mm_heer_I",
             "FA_2Rnd_120mm_apmi_B", "FA_2Rnd_120mm_apmi_O", "FA_2Rnd_120mm_apmi_I",

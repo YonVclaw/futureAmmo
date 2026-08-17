@@ -79,7 +79,7 @@ class CfgAmmo {
     // =========================================================
     class B_127x99_Ball;
     // 7N52 Molot — tungsten AP, transonic. Barrier / light-armor at short range.
-    class FA_ammo_127x55_7N52: B_127x99_Ball {
+    class FA_rf_ammo_127x55_7N52: B_127x99_Ball {
         displayName = "7N52 Molot";
         caliber = 3.5; hit = 22; typicalSpeed = 430; airFriction = -0.0011;
         ACE_caliber = 12.95; ACE_bulletLength = 35.0; ACE_bulletMass = 20.0;
@@ -87,7 +87,7 @@ class CfgAmmo {
         ACE_muzzleVelocities[] = {430}; ACE_barrelLengths[] = {230};
     };
     // 7U13 Molot-S — subsonic tungsten AP. Suppressed, quiet, hits hard.
-    class FA_ammo_127x55_7U13: B_127x99_Ball {
+    class FA_rf_ammo_127x55_7U13: B_127x99_Ball {
         displayName = "7U13 Molot-S";
         caliber = 2.8; hit = 26; typicalSpeed = 290; airFriction = -0.0009;
         ACE_caliber = 12.95; ACE_bulletLength = 33.0; ACE_bulletMass = 22.0;
@@ -95,7 +95,7 @@ class CfgAmmo {
         ACE_muzzleVelocities[] = {290}; ACE_barrelLengths[] = {230};
     };
     // 7U14 Uragan — subsonic heavy HP. Suppressed anti-personnel, massive bullet.
-    class FA_ammo_127x55_7U14: B_127x99_Ball {
+    class FA_rf_ammo_127x55_7U14: B_127x99_Ball {
         displayName = "7U14 Uragan";
         caliber = 1.6; hit = 35; typicalSpeed = 290; airFriction = -0.0008;
         ACE_caliber = 12.95; ACE_bulletLength = 40.0; ACE_bulletMass = 33.0;
@@ -134,4 +134,6 @@ class CfgAmmo {
         warheadName = "HEAT"; caliber = 3.3;
         hit = 60; indirectHit = 14; indirectHitRange = 5;
     };
+
+    #include "CfgAmmo_compat.hpp"
 };

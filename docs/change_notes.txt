@@ -1,3 +1,435 @@
+== Balance: 6.5x39 caseless repositioned between 5.56 and 7.62 ==
+
+The 6.5 family never sat where an intermediate cartridge should. It hit for the
+same 8 as 5.56 while carrying a 7.62-class bullet, and its drag/BC figures were
+flatter than 7.62 outright (Mk329 BC 0.32, XM893 0.34 vs XM751's 0.245), so 6.5
+shot further than the round it is supposed to sit under. Penetration was
+scattered in both directions — Mk328 pierced like 5.56 (2.4) while XM892/XM893
+out-pierced every 7.62 load (4.2 / 4.6).
+
+Every West 6.5 stat is now the arithmetic midpoint of its 5.56 and 7.62 role
+peer (Mk327/M80A2 for GP, XM891/XM751 for CTEP), so the caliber reads as a true
+step between the two — ~2.9-3.3 kJ muzzle energy against 1.8-1.9 kJ (5.56) and
+3.9-4.2 kJ (7.62). No classes were added, renamed or removed.
+
+  hit / caliber / typicalSpeed / airFriction / BC / bullet mass g, old -> new:
+    Mk330 EPR   8/2.8/855/-0.00095/0.290/8.0   -> 11/2.7/950/-0.00104/0.190/6.4
+    Mk328 HV   11/2.4/810/-0.00055/0.28 /8.0   -> 11/2.8/965/-0.00101/0.196/6.4
+    XM892 CTEP 12/4.2/830/-0.00050/0.29 /7.8   -> 12/3.0/970/-0.00099/0.204/6.5
+    Mk331 AP    8/3.4/840/-0.00090/0.300/8.4   -> 11/3.3/945/-0.00100/0.201/6.6
+    Mk329 LR   13/2.6/860/-0.00045/0.32 /9.07  -> 12/2.9/960/-0.00095/0.212/6.8
+    XM893 CTEP 13/4.6/880/-0.00042/0.34 /8.9   -> 12/3.2/980/-0.00092/0.219/6.9
+
+Role spread inside the band: Mk331 AP keeps the +0.6 pen offset that 5.56's
+Mk332 carries over its GP round (2.7 -> 3.3) and stays the slowest load;
+Mk328/XM892 are the carbine loads (330/407/508 mm); Mk329 LR and XM893 CTEP are
+the 610 mm DMR/MG loads at the top of the band. deflecting now follows the
+tier its peers use (GP 15, CTEP 14, LR 13, AP 12) and tracerScale is 0.7
+throughout — midway between 5.56's 0.6 and 7.62's 0.8.
+
+The four matrix loads (Mk328/XM892/Mk329/XM893) also gained the ACE fields the
+rest of the small-arms line already carried and they were missing entirely:
+ACE_muzzleVelocityVariationSD, ACE_velocityBoundaries, ACE_standardAtmosphere,
+deflecting, tracerScale, and real multi-point ACE_muzzleVelocities /
+ACE_barrelLengths curves instead of a single 508 or 610 mm data point.
+
+CSAT's 6.5 trio keeps its documented x0.90 gradient against the rebalanced West
+peer (speed and pen scaled, geometry/BC copied from the parent), so the faction
+gap is unchanged:
+    Type 41 EPR  7/2.5/770 -> 10/2.4/855   (<- Mk330)
+    Type 42 CT  11/3.8/745 -> 11/2.7/873   (<- XM892)
+    Type 43 AP   7/3.1/755 -> 10/3.0/851   (<- Mk331)
+Type 42 also picks up the 3-point barrel curve its parent uses (was a single
+508 mm point).
+
+213 magazine initSpeed values across ammo/CfgMagazines.hpp, ammo/CfgMag65_matrix.hpp
+and ef/CfgMagazines.hpp were resynced to the new muzzle velocities.
+
+Untouched: the 6.2x40 caseless line (csat62 DBP-25/26/88B, DBJ-25 PAB) stays
+exactly where it was, and the Mk367 PAB keeps inheriting vanilla 6.5 ballistics
+and its balance-tuned fuze envelope.
+
+== Balance: 5.56 / 7.62 PAB fuze radii halved again ==
+
+Realism pass on the two smallest PAB rounds — a rifle-bullet frag sleeve
+shouldn't threaten a drone a full metre and a half away. Damage, effective
+range and every other caliber unchanged; the CBA sliders still scale on top.
+
+  trigger/lethal, old -> new:
+    Mk361 5.56: 1.75/1.25 -> 0.875/0.625
+    Mk362 7.62: 2/1.5     -> 1/0.75
+
+== New: rifle anti-drone buckshot — Mk368 / Mk369 AD (K/L) ==
+
+NEW — antidrone: rifle-cased tungsten buckshot for FPV/quad intercept with no
+fuze script — a pure config submunition burst at the muzzle (poisson-disc with
+a center pellet, same mechanism as the 12 ga Mk360 AD and 40mm Mk389 TBK).
+No tracer variants. Pattern holds a 1 ft radius at each variant's effective
+range (coneAngle = atan(0.3048 / range)):
+  - 5.56x45 Mk368K AD — 8 pellets,  eff. 100 m, 671 m/s (2200 fps)
+  - 5.56x45 Mk368L AD — 5 heavier pellets, eff. 200 m, 671 m/s
+  - 7.62x51 Mk369K AD — 12 pellets, eff. 150 m, 640 m/s (2100 fps)
+  - 7.62x51 Mk369L AD — 10 heavier pellets, eff. 250 m, 640 m/s
+Pellet drag is tuned so every variant keeps ~45-47% of muzzle velocity at its
+max effective range; past that the pattern goes soft fast. Mags feed the
+STANAG 5.56 (30Rnd) and M14 7.62 (20Rnd) wells; the caliber diary and the
+Counter-UAS map note list the new natures.
+
+Also on JCA bodies (antidrone_jca): Mk368K/L on all five JCA 5.56 mag bodies
+(EMAG / sand EMAG / PMAG / sand PMAG / Green PMAG), Mk369K/L on both JCA 7.62
+PMAG bodies — no tracer variants, the round splits at the muzzle. The JCA
+5.56 / 7.62 training-area signs gained the buckshot rows, and the 7.62 board
+now lists its Mk362 PAB row (was missing).
+
+== Balance: Mk386 UGS sweep rate 2s -> 12s ==
+
+The 40mm unattended ground sensor now refreshes its contact markers every 12
+seconds instead of every 2 - contacts can slip past between sweeps and the map
+picture lags real movement, making the picket an early-warning tool rather than
+a live tracker. Lifetime (30 min) and radius (150 m) unchanged.
+
+== Balance: bullet-type PAB anti-drone rounds halved ==
+
+All rifle/HMG proximity-airburst rounds lose half their fuze envelope and half
+their damage; lethal radius is halved with the trigger radius so the falloff
+proportions stay intact (leaving it would have made every burst a full-damage
+burst, cancelling most of the damage cut).
+
+  trigger/lethal/damage, old -> new:
+    Mk361 5.56 / Mk363 .300 / Mk367 6.5:  3.5/2.5/0.5 -> 1.75/1.25/0.25
+    Mk362 7.62:                           4/3/0.5     -> 2/1.5/0.25
+    Mk366 12.7x99:                        5/3.5/0.5   -> 2.5/1.75/0.25
+    Mk373 .338 / Mk363 PABS 12ga:         4.5/3/0.5   -> 2.25/1.5/0.25
+    DBJ-25 6.2 (csat62):                  4/3/0.5     -> 2/1.5/0.25
+    7N62 14.5 (extracal):                 6/5/0.7     -> 3/2.5/0.35
+    7N42 12.7x108 (vehicles):             6/5/0.6     -> 3/2.5/0.3
+
+Deliberately NOT touched: the 40mm Mk364 (dedicated C-UAS payload keeps its
+6/4.5/0.5 envelope), the RC40 40mm revolver rounds, and every launcher round
+(MAAWS ADM/HE448, Mk153 ADM/HEDP, RPG AB-32/AB-7, Vorona Oskol) — those are
+warheads, not bullets. Effective ranges unchanged. The CBA sliders
+(trigger/lethal/damage multipliers) still scale on top of the new baselines.
+
+== Change: side-prefixed class names (FA_b_/FA_o_/FA_i_) + addon prefixes, with aliases ==
+
+All 1806 small-arms classes in the core addons were renamed to carry their side in
+the class name, and the untagged compat addons got addon prefixes:
+
+  ammo / antidrone / extracal / csat62:   FA_x -> FA_<side>_x
+      b (BLUFOR/NATO-designated) 1199 · o (OPFOR: GRAU/Type/DBP/5.8/x39/x54R) 466
+      · i (AAF AF-*) 120
+  rf 12.7x55 ASh-12 classes:              FA_x -> FA_rf_x   (9)
+  lot 12G tube mags:                      FA_x -> FA_lot_x  (12)
+
+Side is derived from the designation (Mk/XM/M = b; 7N/7U/DBP/DBJ/Type4x = o;
+AF-* = i), matching the side plan table. Already-conforming addons untouched:
+jca/sps/rhs/aegis/ef/e22raf (addon-tagged; config names are case-insensitive so
+FA_JCA_* == FA_jca_*), and the vehicle/mortar _O/_I suffix convention stays.
+
+FIX (post-rename): the rename had swapped the magazine wells and weapon
+magazines[] arrays over to the new names only, so an old-name mag from a saved
+loadout sat in the inventory but no weapon would chamber it ("mag with no
+ammo"). All 1777 old names are restored into every magazineWell ADDON[] list,
+CfgWeapons magazines[] and CfgVehicles turret array right beside their new
+names (ammo, antidrone, extracal, csat62, rf, lot, aegis, atlas, vehicles).
+Old and new mags now both load everywhere.
+
+Backwards compatibility: every old name still exists as a VISIBLE alias
+(`class OLD: NEW {};`) in per-addon CfgAmmo_compat.hpp / CfgMagazines_compat.hpp,
+included at the end of the respective config block. Old names in saved missions,
+crates and loadouts keep working and still show in the arsenal (both names appear,
+by choice). Wells and CfgPatches arrays list only the new names. The Mk353 breach
+check accepts both the new and the alias ammo name; the antidrone proximity
+registry lists new names only, so the PAB scripts require the new (or alias-mag-
+fed) rounds — direct createVehicle of an alias PAB ammo class won't fuze.
+
+mag_index.md lists real classes only (renamed + resorted; aliases excluded,
+total unchanged at 3169).
+
+== New: faction base ammo — AAF AF-* trios, CSAT 6.5 Type 4x trio, 5.8 completed ==
+
+Until now every cross-side caliber fired West-designated FA ammo: the AAF Mk20/Mk18
+used NATO Mk loads, the CSAT Katiba fired the NATO 6.5 lineup. Per the side plan
+each faction now has its own base ammo, with a small performance gradient baked in
+(ACE AB reads config, so it cannot be runtime-scaled like mediumcaliber's sliders):
+
+  AAF  (~95% of West)                  CSAT 6.5  (~90% of West)
+    AF-556  HV   <- Mk327  x0.95         Type 41 EPR <- Mk330  x0.90
+    AF-556C CT   <- XM891  x0.95         Type 42 CT  <- XM892  x0.90
+    AF-556P AP   <- Mk332  x0.95         Type 43 AP  <- Mk331  x0.90
+    AF-762  HV   <- M80A2  x0.95
+    AF-762C CT   <- XM751  x0.95       5.8x42 trio completed (Red-native)
+    AF-762P AP   (no West AP peer —      DBP-39 CT  (~950 m/s, pen under XM891)
+      XM751 base, pen up, MV down)       DBP-40 AP  (~915 m/s, pen under Mk332)
+
+Gradient = typicalSpeed/ACE_muzzleVelocities and config `caliber` (pen) scaled;
+bullet geometry/BC kept from the West parent so ATragMX profiles stay sane.
+
+88 ammo classes (11 families x plain + 7 tracers) and 112 magazines:
+
+  ghostfa_ammo  AF-556 trio  -> 30Rnd_556x45_Stanag (STANAG_556x45 well)
+                             -> 200Rnd_556x45_Box_F (CBA_556x45_MINIMI well)
+                AF-762 trio  -> 20Rnd_762x51_Mag    (M14_762x51 well)
+                Type 4x trio -> 30Rnd_65x39_caseless_green (CBA_65x39_Katiba well)
+                DBP-39/40    -> 30Rnd_580x42_Mag_F  (CBA_580x42_TYPE95 well)
+
+Registered exactly where the corresponding West/Red families already sit, so any
+weapon that takes the existing FA loads takes the faction loads too. New external
+decl for 30Rnd_65x39_caseless_green in ammo (previously only csat62 declared it).
+
+Designations follow the lore line (NATO Mk/XM, CSAT Type ##, AAF AF-##, PLA DBP).
+mag_index total 3057 -> 3169. Not done: AF mags on third-party bodies (JCA/SPS/
+RHS), Aegis wells (aegis addon references FA_20Rnd_762_M80A2_HV separately), and
+the 12.7x108 GRAU rename flagged earlier.
+
+== New: full FA set on JCA_30Rnd_556x45_Green_PMAG (5th JCA 5.56 body) ==
+
+The JCA 5.56 compat covered four bodies (EMAG, sand EMAG, PMAG, sand PMAG) at 31
+magazines each. JCA also ships Red/Green/Yellow/IR "Reload Tracer" variants of all
+four, 36 mag classes in total, none of which we touched. This adds the full FA set
+to one of them, JCA_30Rnd_556x45_Green_PMAG, bringing it to parity: 31 new classes.
+
+  ghostfa_jca            +24  Mk327 HV / XM891 CTEP / Mk332 AP, each plain + 7 tracers
+  ghostfa_antidrone_jca   +7  Mk361 PAB, plain + 6 tracers (no IR, as elsewhere)
+
+Two things differ from the other four bodies and are worth knowing:
+
+lastRoundsTracer had to be zeroed explicitly. JCA_30Rnd_556x45_Green_PMAG inherits
+from JCA_30Rnd_556x45_Red_PMAG, which sets lastRoundsTracer = 4 (it is a reload-
+tracer mag by design). The plain PMAG/EMAG bodies carry no such setting, so the
+existing FA classes never had to override it. Here the non-tracer loads explicitly
+set tracersEvery = 0 and lastRoundsTracer = 0, otherwise a "plain" Mk327 HV mag
+would still burn tracers on its last four rounds. Verified against a derapified
+weapons_f_JCA_IA (config.cpp, class chain Green_PMAG -> Red_PMAG -> PMAG).
+
+displayName carries a "Green PMAG" tag. The other four bodies all share the bare
+"[Ghost] 30Rnd Mk327 HV" name and are told apart in the arsenal by their icons —
+EMAG vs PMAG, black vs sand. Green_PMAG overrides neither picture nor modelSpecial,
+so it is pixel-identical to the plain PMAG; without a tag it would be an
+unselectable duplicate. Names read "[Ghost] 30Rnd Mk327 HV Green PMAG Red Tracer".
+
+Also injected into the STANAG_556x45 magazine well and both CfgPatches magazines[]
+arrays. mag_index.md total goes 3026 -> 3057.
+
+The remaining 31 JCA reload-tracer bodies (Red/Yellow/IR PMAG, all four EMAG/sand
+colours, etc.) are still untouched — same treatment would work if wanted.
+
+== New: Mk6 82mm mortars now SPAWN with the FA shells (turret loadout) ==
+
+Until now the FA 82mm shells were only appended to the weapon mortar_82mm, which is
+the COMPATIBILITY list — the tube would accept them, but no mortar was placed
+carrying any, so they only showed up after a rearm. New addons/vehicles/CfgVehicles.hpp
+adds them to the LOADOUT: Mortar_01_base_F >> Turrets >> MainTurret >> magazines[].
+Both levers are needed; the CfgWeapons append stays.
+
+Vanilla loadout is 4x 8Rnd_82mm_Mo_shells + flare + illum + smoke on the base class,
+and none of the six side variants override it, so a += on a variant inherits those
+seven and appends (verified against a derapified static_f.pbo, Mortar_01\config.bin).
+
+Placed PER SIDE rather than on Mortar_01_base_F itself — the _B/_O/_I mags sit on
+identical vanilla bodies and differ only in national displayName, so putting all 19
+on the shared base would give every mortar three near-identical copies of each shell
+type:
+  - B_Mortar_01_F   +7  (_B set, incl. the West-only IR illum round)
+  - O_Mortar_01_F   +6  (_O set)
+  - I_Mortar_01_F   +6  (_I set)
+  - I_G_Mortar_01_F +6  (_I set; B_G/O_G_Mortar_01_F inherit from I_G, not from
+                         their same-side regulars, so all three guerrilla mortars
+                         ride this one — overriding would need a hard magazines[] =
+                         restating the vanilla seven)
+
+Class chain and the `class Turrets: Turrets / class MainTurret: MainTurret` reopen
+idiom follow ACE (addons/mk6mortar/CfgVehicles.hpp). Added A3_Static_F_Mortar_01 to
+requiredAddons. No new classes, so mag_index.md is unaffected.
+
+NOT yet done for the other heavy fires: the 155mm SPGs (Scorcher / Sochor) and the
+230mm MLRS have the same split — FA shells are compatible but not in the turret
+loadout, so they still need a rearm to appear.
+
+== Change: 155mm SPG shells now ride the ACE_155mm_artillery magazine well ==
+
+ghostfa_vehicles no longer reopens the vanilla 155mm gun to attach its shells. The
+25 FA 155mm magazines are injected into the CBA magazine well ACE_155mm_artillery
+(new addons/vehicles/CfgMagazinewells.hpp) instead of magazines[] += on
+mortar_155mm_AMOS.
+
+That well is defined by ACE3's ace_missile_clgp, which is also what attaches it to
+the gun (mortar_155mm_AMOS: CannonCore { magazineWell[] += {"ACE_155mm_artillery"}; }).
+Vanilla mortar_155mm_AMOS carries no magazineWell[] of its own, so ace_missile_clgp
+was added to requiredAddons — without it the 155mm rounds would not appear at all.
+
+Consequences:
+  - We stop touching mortar_155mm_AMOS entirely; only a forward declaration remains,
+    so weapon_ShipCannon_120mm can still name it as its parent. This retires the
+    parentless-reopen hazard that previously collapsed the destroyer gun and the RF
+    twin mortar (both inherit AMOS) to scope=private.
+  - weapon_ShipCannon_120mm inherits AMOS and declares no magazineWell[] of its own,
+    so the Mk45 Hammer now also lists the 155mm shells. Pre-existing ACE behaviour
+    (their M712 rounds already ride along via the same inheritance). The Hammer's own
+    FA 120N shells are unchanged and still attached via magazines[] +=.
+  - 82mm (mortar_82mm), 230mm (rockets_230mm_GAT) and the 120mm naval gun stay on
+    magazines[] +=: neither vanilla nor ACE/CBA defines a magazine well for any of
+    them, so a well would still require reopening the weapon to attach it.
+
+Swept the rest of the file for the same parentless-reopen hazard the AMOS fix was
+about and found three more, now all naming their real vanilla parent (verified
+against a derapified weapons_f.pbo, all defined in A3_Weapons_F):
+  - mortar_82mm: CannonCore          (B/O/I_Mortar_01_F Mk6)
+  - rockets_230mm_GAT: RocketPods    (Seara / Zamak MLRS)
+  - HMG_NSVT: HMG_127                (CSAT 12.7x108 Kord)
+
+Also corrected a wrong comment in the requiredAddons block: mortar_155mm_AMOS is
+defined in A3_Weapons_F (verified against a derapified weapons_f.pbo), not in
+armor_f_gamma — armor_f_gamma only mounts it on the Scorcher / Sochor turrets.
+A3_Armor_F_Gamma stays listed for the SPGs themselves.
+
+Config-only; no class or magazine changes, so mag_index.md is unaffected.
+
+== Fix: ship cannon + RF twin mortar collapsed to scope=private (shared AMOS parent) ==
+
+Two weapons loaded with scope=private and no model/simulation/muzzles, flooding
+the RPT with "No entry '.../<weapon>.scope/.type/.muzzles/...'" + "Error: creating
+weapon <weapon> with scope=private": the vanilla destroyer gun
+weapon_ShipCannon_120mm and the Reaction Forces twin mortar Twin_Mortar_120mm_RF.
+
+In-game Config Viewer shows both share one parent chain:
+  weapon_ShipCannon_120mm -> mortar_155mm_AMOS -> CannonCore -> Default
+  Twin_Mortar_120mm_RF    -> mortar_155mm_AMOS -> CannonCore -> Default
+
+The cause was ghostfa_vehicles reopening mortar_155mm_AMOS PARENTLESS (class
+mortar_155mm_AMOS { magazines[] += ... }) to append its 155mm shells. A parentless
+reopen doesn't merge — it resets AMOS's parent to root (RPT: "Updating base class
+CannonCore->, by ...mortar_155mm_AMOS"), stripping AMOS, which cascaded to both
+weapons that inherit it.
+
+Fix — name the real parent on the reopens:
+  - ghostfa_vehicles: mortar_155mm_AMOS: CannonCore (weapon_ShipCannon_120mm:
+    mortar_155mm_AMOS was already named). AMOS lives in A3_Weapons_F (required).
+  - ghostfa_rf: Twin_Mortar_120mm_RF: mortar_155mm_AMOS. NOTE: TwinMortar_base_RF
+    is the CfgVehicles base, NOT the weapon's parent — the weapon inherits AMOS.
+
+Config-only; no class or magazine changes, so mag_index.md is unaffected.
+
+== New: E22 Russian Armed Forces (e22raf) compat — 5.45x39 & 7.62x54R ==
+
+NEW addon ghostfa_e22raf wires FutureAmmo into Grave's "E22: Russian Armed
+Forces" weapon pack (requiredAddons Weapons_F_RAF, skipWhenMissingDependencies
+so the PBO self-skips when the pack is absent). The RAF AK-12, RPK-12, SVD-12
+and VS-121 now feed FA rounds through their magazine wells.
+
+Mags are built off the pack's own mag bodies (so they keep the RAF proxy
+models, pictures and reload actions) and reuse the existing FA ammo already
+defined in ghostfa_ammo — no new ammo classes:
+
+  - 5.45x39 AK-12 (30Rnd, well AK_545x39) and RPK-12 (75Rnd, well
+    E22_RAF_RPK_545x39): 7N44 HP (925), 7N48 CT (950), 7U5 SubAP (303).
+  - 7.62x54R SVD-12 (16Rnd, well E22_RAF_SVD12_762x54) and VS-121 (10Rnd,
+    well E22_RAF_VS121_762x54): 7.62x54R Ball HV (855).
+
+Each load ships a plain round plus all 7 tracer colours (Red / Yellow / Green /
+White / Blue / Orange / IR) — 64 new magazines. mag_index.md updated
+(2962 -> 3026).
+
+== Fix: broken mortar_155mm_AMOS weapon (RPT "No entry" spam, dead Scorcher/Sochor) ==
+
+The ghostfa_vehicles addon appends its 155mm shells onto the vanilla artillery
+weapon mortar_155mm_AMOS via a parentless merge (class mortar_155mm_AMOS {
+magazines[] += ... }). requiredAddons only listed A3_Weapons_F, which defines the
+82mm (mortar_82mm) and 230mm (rockets_230mm_GAT) weapons — but NOT the 155mm one.
+mortar_155mm_AMOS is actually defined in armor_f_gamma.pbo (A3_Armor_F_Gamma,
+alongside the Scorcher B_MBT_01_arty_F / Sochor). Missing that dependency, our
+append bound before the base weapon existed, so the engine created an empty,
+parentless mortar_155mm_AMOS — flooding the RPT with "No entry
+'…/mortar_155mm_AMOS.type/.model/.muzzles/…'" and breaking the vanilla 155mm SPGs.
+
+Added "A3_Armor_F_Gamma" to ghostfa_vehicles requiredAddons so the append binds
+after the real weapon is defined. Config-only; no class or magazine changes, so
+mag_index.md is unaffected.
+
+== Fix: Mk200 (Stoner) LMG could load 100Rnd SW mags ==
+
+The Mk200 (Stoner) is a belt-fed MG and should only take 200Rnd cased boxes, but
+two wells were feeding it 100Rnd MX-SW magazines:
+
+  1. ammo addon (main offender): the Mk200_65x39 well listed the full 100Rnd
+     Mk331 AP / Mk328 / XM892 / Mk329 / XM893 lineup (base/black/khaki + tracers,
+     120 entries), all based on 100Rnd_65x39_caseless_mag — i.e. MX SW magazines
+     pasted into the belt well by mistake. Their 30Rnd siblings already live in
+     the MX_65x39 / CBA_65x39_MX (SW) wells, which were missing the 100Rnd
+     versions. Relocated the 120 entries to MX_65x39 and CBA_65x39_MX; stripped
+     Mk200_65x39 down to belt boxes only (200Rnd Mk331 AP / Mk328 / XM892 /
+     cased Box).
+  2. ef addon: the Mk200_65x39 well was appending the EF 100Rnd caseless coyote
+     tracer mags. Removed that block; those mags remain wired to the MX SW via
+     CBA_65x39_MX_XL.
+
+No magazine classes were added or removed (only well membership moved), so
+mag_index.md is unaffected.
+
+== Update: RF 5.56x45 STANAG-AP magazines ==
+
+NEW — the RF STANAG-AP mag bodies now feed the full FA 5.56 lineup through the
+STANAG_556x45 well in the rf addon, so they appear on every STANAG 5.56 rifle.
+Three cosmetic bodies (black / khaki / tan), each carrying all three FA 5.56
+loads with a non-tracer base plus all seven tracer colours
+(Red/Yellow/Green/White/Blue/Orange/IR) — 72 mags total:
+  - Mk327 HV   — hybrid-case standard    (FA_556_Mk327_HV,   initSpeed 1000)
+  - Mk332 AP   — armour-piercing         (FA_556_Mk332_AP,   initSpeed 940)
+  - XM891 CTEP — cased-telescoped        (FA_556_XM891_CTEP, initSpeed 1015)
+Classes FA_30Rnd_556x45_AP_Stanag_RF*, _khk_RF*, _Tan_RF* (24 per body). Ammo is
+the existing shared FA 5.56 ammo (from the ammo addon); only magazines are new.
+mag_index.md updated (+72 -> 2962).
+
+== Fix: Katiba magwell referenced undefined caseless tracer mags (scope=private RPT) ==
+
+The re-enabled CBA_65x39_Katiba well in ghostfa_ammo listed 12 magazine classes
+that were never defined — FA_30Rnd_65x39_caseless_mag_T_{Red..Orange} and
+FA_30Rnd_65x39_caseless_green_T_{Red..Orange}. When Arma filled a Katiba-armed
+unit (e.g. Atlas_O_Soldier_R_base_F) from the well it hit a phantom class and
+logged "Error: creating magazine FA_30Rnd_65x39_caseless_green_T_Orange with
+scope=private". Removed the 12 dangling entries; the valid FA_30Rnd_65_EPR and
+FA_30Rnd_65_EPR_Khaki tracer variants in the same well are unchanged. No class
+changes, so mag_index.md is unaffected.
+
+== Update: 6.2x40 caseless (CSAT DBP-25 family) — new addon ==
+
+NEW — ghostfa_csat62 addon adds a fictional CSAT/PLA next-gen caseless caliber,
+6.2x40 (DBP-25 family), on the Katiba (CBA_65x39_Katiba well, green caseless mag
+body). Four loads, each with a plain round and all seven tracer colours
+(Red/Yellow/Green/White/Blue/Orange/IR):
+  - DBP-25     — caseless standard
+  - DBP-26 AP  — caseless tungsten AP
+  - DBP-88B    — caseless heavy (DMR)
+  - DBJ-25 PAB — caseless proximity airburst, counter-UAS
+Ammo classes FA_ammo_62_*, mags FA_30Rnd_62_* (32 mags).
+The DBJ-25 PAB registers with the antidrone proximity-fuze registry (trigger 4 m,
+lethal 3 m, 0.5 dmg, 1200 m) and flies as a plain caseless round without the
+antidrone component. Base bullet is the vanilla 6.5 caseless projectile (the
+6.2x40 is fictional and has no real mod base). mag_index.md updated (+32 -> 2890).
+NOTE — needs a QBZ-25-family weapon for a lore-pure chambering; for now it rides
+the Katiba 6.5 caseless well so CSAT rifles can load it today.
+
+== Update: JCA M107 .50 cal FA magazines ==
+
+NEW — JCA M107A1 (12.7x99 / .50 BMG) now feeds FA magazines through its
+JCA_M107_127x99 magazineWell in the jca addon. Two caliber-correct .50 BMG
+loads, both black and sand mag bodies, each with all seven tracer colours
+(Red/Yellow/Green/White/Blue/Orange/IR) plus a non-tracer base — 32 mags total:
+  - Mk258 LRP       — precision / long-range match (FA_127x99_Mk258_LRP)
+  - Mk211 Mod 0 AP  — Raufoss HEIAP anti-materiel (FA_127x99_Mk211Mod0_AP)
+Classes: FA_JCA_10Rnd_127x99_M107_Mk258*, _Mk211Mod0*, and the _Sand_ variants.
+mag_index.md updated (+32 -> 2858).
+
+== Update: Aegis SCAR 7.62x51 magazine compat ==
+
+FIXED — Aegis SCAR family: the FA 7.62x51 mags (M80A2 HV + XM751 CTEP, all
+tracer colours) now feed every SCAR variant. The Aegis SCAR base carries no
+magazineWell — only magazines[] = {20Rnd_762x51_Mag} — so FA rounds could not
+reach it through a well like the SR25/SLR do. They're now appended additively
+to the weapon's magazines[] via a base-class override in the aegis addon, so
+all SCAR variants (GL / short / grip + black / khaki) inherit them without
+touching the Aegis mod source. Vanilla 20Rnd_762x51_Mag still available.
+
 == Update: unified magazine naming + Titan manpad fix ==
 
 NAMING — every small-arms magazine display name now follows ONE convention:

@@ -10,9 +10,15 @@ class CfgPatches {
             "ace_ballistics",
             "ghostfa_main",
             "ghostfa_ammo",     // .50 / .338 / 7.62 vehicle belts
-            "A3_Weapons_F",     // vanilla vehicle coax / RCWS / HMG + 82/155/230 arty
+            "A3_Weapons_F",     // vanilla vehicle coax / RCWS / HMG + 82mm/230mm/155mm arty weapons
+                                // (mortar_155mm_AMOS lives here, per derapified weapons_f.pbo)
+            "A3_Armor_F_Gamma", // Scorcher / Sochor SPGs that mount mortar_155mm_AMOS
+            "ace_missile_clgp", // defines the ACE_155mm_artillery magazine well AND attaches it to
+                                // mortar_155mm_AMOS — our 155mm shells ride that well, no gun patch
             "A3_Weapons_F_Destroyer",  // Mk45 Hammer naval gun (weapon_ShipCannon_120mm)
+            "A3_Static_F_Mortar_01",   // Mk6 82mm mortar vehicles — turret ammo loadout (CfgVehicles)
             "ghostfa_antidrone",       // 12.7x108 7N42 HEAB proximity-fuze registry
+            "RF_Weapons",
             "cba_main"
         };
         author = QAUTHOR;
@@ -63,4 +69,6 @@ class CfgPatches {
 #include "CfgEventHandlers.hpp"
 #include "CfgAmmo.hpp"
 #include "CfgMagazines.hpp"
+#include "CfgMagazinewells.hpp"
 #include "CfgWeapons.hpp"
+#include "CfgVehicles.hpp"

@@ -18,15 +18,15 @@ class CfgPatches {
         author = QAUTHOR;
         VERSION_CONFIG;
         ammo[] = {
-            "FA_ammo_9x39_7U15", "FA_ammo_9x39_7U16",
-            "FA_ammo_145_7N60", "FA_ammo_145_7N61", "FA_ammo_145_7N62",
-            "FA_ammo_57_Mk430", "FA_ammo_57_Mk431"
+            "FA_o_ammo_9x39_7U15", "FA_o_ammo_9x39_7U16",
+            "FA_o_ammo_145_7N60", "FA_o_ammo_145_7N61", "FA_o_ammo_145_7N62",
+            "FA_b_ammo_57_Mk430", "FA_b_ammo_57_Mk431"
         };
         magazines[] = {
-            "FA_20Rnd_9x39_7U15", "FA_20Rnd_9x39_7U16",
-            "FA_50Rnd_57x28_Mk430", "FA_50Rnd_57x28_Mk431",
-            "FA_20Rnd_57x28_Mk430", "FA_20Rnd_57x28_Mk431",
-            "FA_5Rnd_145_7N60", "FA_5Rnd_145_7N61", "FA_5Rnd_145_7N62"
+            "FA_o_20Rnd_9x39_7U15", "FA_o_20Rnd_9x39_7U16",
+            "FA_b_50Rnd_57x28_Mk430", "FA_b_50Rnd_57x28_Mk431",
+            "FA_b_20Rnd_57x28_Mk430", "FA_b_20Rnd_57x28_Mk431",
+            "FA_o_5Rnd_145_7N60", "FA_o_5Rnd_145_7N61", "FA_o_5Rnd_145_7N62"
         };
     };
 };

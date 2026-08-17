@@ -11,7 +11,7 @@ class CfgAmmo {
 
     // ===== 9x39 (VSS Vintorez / AS Val) — subsonic AP, 7U series =====
     // 7U15 — subsonic tungsten AP (SP-6 successor); defeats body armor quietly.
-    class FA_ammo_9x39_7U15: B_762x39_Ball_F {
+    class FA_o_ammo_9x39_7U15: B_762x39_Ball_F {
         displayName = "7U15";
         caliber = 4.0; hit = 14; typicalSpeed = 295; airFriction = -0.0009;
         ACE_caliber = 9.25; ACE_bulletLength = 27.0; ACE_bulletMass = 16.2;
@@ -19,7 +19,7 @@ class CfgAmmo {
         ACE_muzzleVelocities[] = {295}; ACE_barrelLengths[] = {200};
     };
     // 7U16 — subsonic HP (SP-5 successor); suppressed anti-personnel.
-    class FA_ammo_9x39_7U16: B_762x39_Ball_F {
+    class FA_o_ammo_9x39_7U16: B_762x39_Ball_F {
         displayName = "7U16";
         caliber = 2.0; hit = 16; typicalSpeed = 295; airFriction = -0.0008;
         ACE_caliber = 9.25; ACE_bulletLength = 25.0; ACE_bulletMass = 16.0;
@@ -29,7 +29,7 @@ class CfgAmmo {
 
     // ===== 14.5x114 (KPV heavy MG / anti-materiel) — above .50 =====
     // 7N60 AP-T — tungsten AP-tracer (BS-41 successor); shreds light vehicles.
-    class FA_ammo_145_7N60: B_127x99_Ball {
+    class FA_o_ammo_145_7N60: B_127x99_Ball {
         displayName = "7N60 AP-T";
         caliber = 12.0; hit = 45; typicalSpeed = 1005; airFriction = -0.0008;
         ACE_caliber = 14.9; ACE_bulletLength = 51.0; ACE_bulletMass = 60.0;
@@ -37,7 +37,7 @@ class CfgAmmo {
         ACE_muzzleVelocities[] = {1005}; ACE_barrelLengths[] = {1346};
     };
     // 7N61 HEIAP — HE incendiary AP, multipurpose.
-    class FA_ammo_145_7N61: B_127x99_Ball {
+    class FA_o_ammo_145_7N61: B_127x99_Ball {
         displayName = "7N61 HEIAP";
         caliber = 9.0; hit = 42; indirectHit = 6; indirectHitRange = 1; explosive = 0.3;
         typicalSpeed = 1000; airFriction = -0.0009;
@@ -47,7 +47,7 @@ class CfgAmmo {
     };
     // 7N62 HEAB — proximity airburst (C-UAS). Hooks the PAB script (XEH_postInit);
     // makes the KPV a drone-killer. Flies as ball if the script is not loaded.
-    class FA_ammo_145_7N62: B_127x99_Ball {
+    class FA_o_ammo_145_7N62: B_127x99_Ball {
         displayName = "7N62 HEAB";
         caliber = 5.0; hit = 35; typicalSpeed = 1000; airFriction = -0.0009;
         ACE_caliber = 14.9; ACE_bulletLength = 52.0; ACE_bulletMass = 58.0;
@@ -59,7 +59,7 @@ class CfgAmmo {
 
     // ===== 5.7x28 (P90 / Five-seveN) — PDW AP, Mk series =====
     // Mk430 AP — tungsten penetrator (SS190 successor); soft-armor defeat.
-    class FA_ammo_57_Mk430: B_556x45_Ball {
+    class FA_b_ammo_57_Mk430: B_556x45_Ball {
         displayName = "Mk430 AP";
         caliber = 3.0; hit = 8; typicalSpeed = 715; airFriction = -0.0016;
         ACE_caliber = 5.7; ACE_bulletLength = 21.0; ACE_bulletMass = 2.02;
@@ -67,7 +67,7 @@ class CfgAmmo {
         ACE_muzzleVelocities[] = {715}; ACE_barrelLengths[] = {263};
     };
     // Mk431 SUB — subsonic suppressed PDW load.
-    class FA_ammo_57_Mk431: B_556x45_Ball {
+    class FA_b_ammo_57_Mk431: B_556x45_Ball {
         displayName = "Mk431 SUB";
         caliber = 1.0; hit = 9; typicalSpeed = 305; airFriction = -0.0012;
         ACE_caliber = 5.7; ACE_bulletLength = 22.0; ACE_bulletMass = 3.6;
@@ -77,4 +77,6 @@ class CfgAmmo {
 
     // 6.5x39 caseless loads (Mk328/XM892/Mk329/XM893) now live in ghostfa_ammo,
     // with the full colour/tracer matrix — removed from here.
+
+    #include "CfgAmmo_compat.hpp"
 };

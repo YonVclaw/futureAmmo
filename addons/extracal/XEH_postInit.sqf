@@ -10,4 +10,4 @@
 if (isNil QEGVAR(antidrone,AD_params)) exitWith {};
 
 // [trigger radius (m), lethal radius (m), max damage, effective range (m)]
-EGVAR(antidrone,AD_params) set ["FA_ammo_145_7N62", [6, 5, 0.7, 2000]];
+EGVAR(antidrone,AD_params) set ["FA_o_ammo_145_7N62", [3, 2.5, 0.35, 2000]];   // halved 2026-08 (PAB rebalance)

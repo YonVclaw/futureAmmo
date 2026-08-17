@@ -46,7 +46,7 @@ _j setVariable ["ghostfa_grenade_40mm_jammer", true, true];
     // HOOK: Drongo EW area jam at getPos _j
     if (GVAR(hasDEW)) then {};
     // HOOK: enemy comms jam in radius
-    if (GVAR(hasTFAR) || {GVAR(hasACRE)}) then {};
+    if (GVAR(hasTFAR) || GVAR(hasACRE)) then {};
 }, 1, [_j, _side, _radius, time + _life]] call CBA_fnc_addPerFrameHandler;
 
 [_unit, format ["<t color='#ff8888'>Area jammer active</t><br/>%1 m bubble", _radius]] call FUNC(notify);

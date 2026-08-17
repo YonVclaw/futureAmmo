@@ -33,12 +33,12 @@
     "FA_680Rnd_35mm_AHEAD_T_White", "FA_680Rnd_35mm_AHEAD_T_Blue", "FA_680Rnd_35mm_AHEAD_T_Orange", "FA_680Rnd_35mm_AHEAD_T_IR"
 
 #define FA_MAGS_50CAL \
-    "FA_200Rnd_127_Mk211Mod0", \
-    "FA_200Rnd_127_Mk211Mod0_T_Red", "FA_200Rnd_127_Mk211Mod0_T_Yellow", "FA_200Rnd_127_Mk211Mod0_T_Green", \
-    "FA_200Rnd_127_Mk211Mod0_T_White", "FA_200Rnd_127_Mk211Mod0_T_Blue", "FA_200Rnd_127_Mk211Mod0_T_Orange", "FA_200Rnd_127_Mk211Mod0_T_IR", \
-    "FA_200Rnd_127_Mk258", \
-    "FA_200Rnd_127_Mk258_T_Red", "FA_200Rnd_127_Mk258_T_Yellow", "FA_200Rnd_127_Mk258_T_Green", \
-    "FA_200Rnd_127_Mk258_T_White", "FA_200Rnd_127_Mk258_T_Blue", "FA_200Rnd_127_Mk258_T_Orange", "FA_200Rnd_127_Mk258_T_IR"
+    "FA_b_200Rnd_127_Mk211Mod0", \
+    "FA_b_200Rnd_127_Mk211Mod0_T_Red", "FA_b_200Rnd_127_Mk211Mod0_T_Yellow", "FA_b_200Rnd_127_Mk211Mod0_T_Green", \
+    "FA_b_200Rnd_127_Mk211Mod0_T_White", "FA_b_200Rnd_127_Mk211Mod0_T_Blue", "FA_b_200Rnd_127_Mk211Mod0_T_Orange", "FA_b_200Rnd_127_Mk211Mod0_T_IR", \
+    "FA_b_200Rnd_127_Mk258", \
+    "FA_b_200Rnd_127_Mk258_T_Red", "FA_b_200Rnd_127_Mk258_T_Yellow", "FA_b_200Rnd_127_Mk258_T_Green", \
+    "FA_b_200Rnd_127_Mk258_T_White", "FA_b_200Rnd_127_Mk258_T_Blue", "FA_b_200Rnd_127_Mk258_T_Orange", "FA_b_200Rnd_127_Mk258_T_IR"
 
 // vve_missiles_titan redefines magazines[] with = , wiping the FA family that
 // ghostfa_missiles appends to the vanilla missiles_titan parent. Restore the

@@ -10,7 +10,8 @@ class CfgPatches {
             "cba_main",
             "ace_ballistics",
             "ghostfa_ammo",
-            "A3_Aegis_Weapons_F_Aegis"
+            "A3_Aegis_Weapons_F_Aegis",
+            "A3_Aegis_Weapons_F_Aegis_Rifles_SCAR"
         };
         skipWhenMissingDependencies = 1;
         author = QAUTHOR;
@@ -100,3 +101,4 @@ class CfgPatches {
 
 #include "CfgMagazines.hpp"
 #include "CfgMagazinewells.hpp"
+#include "CfgWeapons.hpp"

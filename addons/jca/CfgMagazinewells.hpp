@@ -2,6 +2,30 @@ class CfgMagazinewells {
     // 5.56x45 STANAG well — JCA EMAG/PMAG (Black and Sand) tracer variants
     class STANAG_556x45 {
         ADDON[] += {
+            "FA_JCA_30Rnd_556x45_Green_PMAG",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_T_Red",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_T_Yellow",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_T_Green",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_T_White",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_T_Blue",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_T_Orange",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_T_IR",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_XM891_CTEP",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_XM891_CTEP_T_Red",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_XM891_CTEP_T_Yellow",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_XM891_CTEP_T_Green",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_XM891_CTEP_T_White",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_XM891_CTEP_T_Blue",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_XM891_CTEP_T_Orange",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_XM891_CTEP_T_IR",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_Mk332_AP",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_Mk332_AP_T_Red",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_Mk332_AP_T_Yellow",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_Mk332_AP_T_Green",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_Mk332_AP_T_White",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_Mk332_AP_T_Blue",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_Mk332_AP_T_Orange",
+            "FA_JCA_30Rnd_556x45_Green_PMAG_Mk332_AP_T_IR",
             "FA_JCA_30Rnd_556x45_EMAG",
             "FA_JCA_30Rnd_556x45_EMAG_XM891_CTEP",
             "FA_JCA_30Rnd_556x45_EMAG_XM891_CTEP_T_Red",
@@ -268,6 +292,47 @@ class CfgMagazinewells {
             "FA_JCA_5Rnd_338LM_AWM_Mk371_300gr_T_Blue",
             "FA_JCA_5Rnd_338LM_AWM_Mk371_300gr_T_Orange",
             "FA_JCA_5Rnd_338LM_AWM_Mk371_300gr_T_IR"
+        };
+    };
+    // 12.7x99 JCA M107 well — JCA M107 10Rnd variants (.50 BMG: Mk258 LRP + Mk211 Mod 0 AP)
+    class JCA_M107_127x99 {
+        ADDON[] += {
+            // Mk258 LRP
+            "FA_JCA_10Rnd_127x99_M107_Mk258",
+            "FA_JCA_10Rnd_127x99_M107_Mk258_T_Red",
+            "FA_JCA_10Rnd_127x99_M107_Mk258_T_Yellow",
+            "FA_JCA_10Rnd_127x99_M107_Mk258_T_Green",
+            "FA_JCA_10Rnd_127x99_M107_Mk258_T_White",
+            "FA_JCA_10Rnd_127x99_M107_Mk258_T_Blue",
+            "FA_JCA_10Rnd_127x99_M107_Mk258_T_Orange",
+            "FA_JCA_10Rnd_127x99_M107_Mk258_T_IR",
+            // Mk211 Mod 0 AP
+            "FA_JCA_10Rnd_127x99_M107_Mk211Mod0",
+            "FA_JCA_10Rnd_127x99_M107_Mk211Mod0_T_Red",
+            "FA_JCA_10Rnd_127x99_M107_Mk211Mod0_T_Yellow",
+            "FA_JCA_10Rnd_127x99_M107_Mk211Mod0_T_Green",
+            "FA_JCA_10Rnd_127x99_M107_Mk211Mod0_T_White",
+            "FA_JCA_10Rnd_127x99_M107_Mk211Mod0_T_Blue",
+            "FA_JCA_10Rnd_127x99_M107_Mk211Mod0_T_Orange",
+            "FA_JCA_10Rnd_127x99_M107_Mk211Mod0_T_IR",
+            // Mk258 LRP Sand
+            "FA_JCA_10Rnd_127x99_M107_Sand_Mk258",
+            "FA_JCA_10Rnd_127x99_M107_Sand_Mk258_T_Red",
+            "FA_JCA_10Rnd_127x99_M107_Sand_Mk258_T_Yellow",
+            "FA_JCA_10Rnd_127x99_M107_Sand_Mk258_T_Green",
+            "FA_JCA_10Rnd_127x99_M107_Sand_Mk258_T_White",
+            "FA_JCA_10Rnd_127x99_M107_Sand_Mk258_T_Blue",
+            "FA_JCA_10Rnd_127x99_M107_Sand_Mk258_T_Orange",
+            "FA_JCA_10Rnd_127x99_M107_Sand_Mk258_T_IR",
+            // Mk211 Mod 0 AP Sand
+            "FA_JCA_10Rnd_127x99_M107_Sand_Mk211Mod0",
+            "FA_JCA_10Rnd_127x99_M107_Sand_Mk211Mod0_T_Red",
+            "FA_JCA_10Rnd_127x99_M107_Sand_Mk211Mod0_T_Yellow",
+            "FA_JCA_10Rnd_127x99_M107_Sand_Mk211Mod0_T_Green",
+            "FA_JCA_10Rnd_127x99_M107_Sand_Mk211Mod0_T_White",
+            "FA_JCA_10Rnd_127x99_M107_Sand_Mk211Mod0_T_Blue",
+            "FA_JCA_10Rnd_127x99_M107_Sand_Mk211Mod0_T_Orange",
+            "FA_JCA_10Rnd_127x99_M107_Sand_Mk211Mod0_T_IR"
         };
     };
 };

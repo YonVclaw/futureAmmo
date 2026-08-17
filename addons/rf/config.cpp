@@ -36,12 +36,12 @@ class CfgPatches {
             "FA_120_atmine", "FA_120_atmine_O", "FA_120_atmine_I",
             "FA_120_sfm", "FA_120_sfm_O", "FA_120_sfm_I",
             // ASh-12 12.7x55 + RC40 (magazines/wiring pending RF classnames)
-            "FA_ammo_127x55_7N52", "FA_ammo_127x55_7U13", "FA_ammo_127x55_7U14",
+            "FA_rf_ammo_127x55_7N52", "FA_rf_ammo_127x55_7U13", "FA_rf_ammo_127x55_7U14",
             "FA_ammo_RC40_HEP", "FA_ammo_RC40_MS", "FA_ammo_RC40_AD", "FA_ammo_RC40_DP"
         };
         magazines[] = {
-            "FA_20Rnd_127x55_7N52", "FA_20Rnd_127x55_7U13", "FA_20Rnd_127x55_7U14",
-            "FA_10Rnd_127x55_7N52", "FA_10Rnd_127x55_7U13", "FA_10Rnd_127x55_7U14",
+            "FA_rf_20Rnd_127x55_7N52", "FA_rf_20Rnd_127x55_7U13", "FA_rf_20Rnd_127x55_7U14",
+            "FA_rf_10Rnd_127x55_7N52", "FA_rf_10Rnd_127x55_7U13", "FA_rf_10Rnd_127x55_7U14",
             "FA_1Rnd_RC40_HEP", "FA_1Rnd_RC40_MS", "FA_1Rnd_RC40_AD", "FA_1Rnd_RC40_DP",
             "FA_6Rnd_120mm_heer_B", "FA_6Rnd_120mm_heer_O", "FA_6Rnd_120mm_heer_I",
             "FA_2Rnd_120mm_apmi_B", "FA_2Rnd_120mm_apmi_O", "FA_2Rnd_120mm_apmi_I",

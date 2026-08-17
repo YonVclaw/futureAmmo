@@ -12,25 +12,25 @@
 // =====================================================================
 
 #define FA_MAGS_762 \
-    "FA_200Rnd_762_M80A2_HV", \
-    "FA_200Rnd_762_M80A2_HV_T_Red", "FA_200Rnd_762_M80A2_HV_T_Yellow", "FA_200Rnd_762_M80A2_HV_T_Green", \
-    "FA_200Rnd_762_M80A2_HV_T_White", "FA_200Rnd_762_M80A2_HV_T_Blue", "FA_200Rnd_762_M80A2_HV_T_Orange", "FA_200Rnd_762_M80A2_HV_T_IR", \
-    "FA_200Rnd_762_XM751_CTEP", \
-    "FA_200Rnd_762_XM751_CTEP_T_Red", "FA_200Rnd_762_XM751_CTEP_T_Yellow", "FA_200Rnd_762_XM751_CTEP_T_Green", \
-    "FA_200Rnd_762_XM751_CTEP_T_White", "FA_200Rnd_762_XM751_CTEP_T_Blue", "FA_200Rnd_762_XM751_CTEP_T_Orange", "FA_200Rnd_762_XM751_CTEP_T_IR"
+    "FA_b_200Rnd_762_M80A2_HV", "FA_200Rnd_762_M80A2_HV", \
+    "FA_b_200Rnd_762_M80A2_HV_T_Red", "FA_200Rnd_762_M80A2_HV_T_Red", "FA_b_200Rnd_762_M80A2_HV_T_Yellow", "FA_200Rnd_762_M80A2_HV_T_Yellow", "FA_b_200Rnd_762_M80A2_HV_T_Green", "FA_200Rnd_762_M80A2_HV_T_Green", \
+    "FA_b_200Rnd_762_M80A2_HV_T_White", "FA_200Rnd_762_M80A2_HV_T_White", "FA_b_200Rnd_762_M80A2_HV_T_Blue", "FA_200Rnd_762_M80A2_HV_T_Blue", "FA_b_200Rnd_762_M80A2_HV_T_Orange", "FA_200Rnd_762_M80A2_HV_T_Orange", "FA_b_200Rnd_762_M80A2_HV_T_IR", "FA_200Rnd_762_M80A2_HV_T_IR", \
+    "FA_b_200Rnd_762_XM751_CTEP", "FA_200Rnd_762_XM751_CTEP", \
+    "FA_b_200Rnd_762_XM751_CTEP_T_Red", "FA_200Rnd_762_XM751_CTEP_T_Red", "FA_b_200Rnd_762_XM751_CTEP_T_Yellow", "FA_200Rnd_762_XM751_CTEP_T_Yellow", "FA_b_200Rnd_762_XM751_CTEP_T_Green", "FA_200Rnd_762_XM751_CTEP_T_Green", \
+    "FA_b_200Rnd_762_XM751_CTEP_T_White", "FA_200Rnd_762_XM751_CTEP_T_White", "FA_b_200Rnd_762_XM751_CTEP_T_Blue", "FA_200Rnd_762_XM751_CTEP_T_Blue", "FA_b_200Rnd_762_XM751_CTEP_T_Orange", "FA_200Rnd_762_XM751_CTEP_T_Orange", "FA_b_200Rnd_762_XM751_CTEP_T_IR", "FA_200Rnd_762_XM751_CTEP_T_IR"
 
 #define FA_MAGS_338 \
-    "FA_200Rnd_338_Mk372", \
-    "FA_200Rnd_338_Mk372_T_Red", "FA_200Rnd_338_Mk372_T_Yellow", "FA_200Rnd_338_Mk372_T_Green", \
-    "FA_200Rnd_338_Mk372_T_White", "FA_200Rnd_338_Mk372_T_Blue", "FA_200Rnd_338_Mk372_T_Orange", "FA_200Rnd_338_Mk372_T_IR"
+    "FA_b_200Rnd_338_Mk372", "FA_200Rnd_338_Mk372", \
+    "FA_b_200Rnd_338_Mk372_T_Red", "FA_200Rnd_338_Mk372_T_Red", "FA_b_200Rnd_338_Mk372_T_Yellow", "FA_200Rnd_338_Mk372_T_Yellow", "FA_b_200Rnd_338_Mk372_T_Green", "FA_200Rnd_338_Mk372_T_Green", \
+    "FA_b_200Rnd_338_Mk372_T_White", "FA_200Rnd_338_Mk372_T_White", "FA_b_200Rnd_338_Mk372_T_Blue", "FA_200Rnd_338_Mk372_T_Blue", "FA_b_200Rnd_338_Mk372_T_Orange", "FA_200Rnd_338_Mk372_T_Orange", "FA_b_200Rnd_338_Mk372_T_IR", "FA_200Rnd_338_Mk372_T_IR"
 
 #define FA_MAGS_50CAL \
-    "FA_200Rnd_127_Mk211Mod0", \
-    "FA_200Rnd_127_Mk211Mod0_T_Red", "FA_200Rnd_127_Mk211Mod0_T_Yellow", "FA_200Rnd_127_Mk211Mod0_T_Green", \
-    "FA_200Rnd_127_Mk211Mod0_T_White", "FA_200Rnd_127_Mk211Mod0_T_Blue", "FA_200Rnd_127_Mk211Mod0_T_Orange", "FA_200Rnd_127_Mk211Mod0_T_IR", \
-    "FA_200Rnd_127_Mk258", \
-    "FA_200Rnd_127_Mk258_T_Red", "FA_200Rnd_127_Mk258_T_Yellow", "FA_200Rnd_127_Mk258_T_Green", \
-    "FA_200Rnd_127_Mk258_T_White", "FA_200Rnd_127_Mk258_T_Blue", "FA_200Rnd_127_Mk258_T_Orange", "FA_200Rnd_127_Mk258_T_IR"
+    "FA_b_200Rnd_127_Mk211Mod0", "FA_200Rnd_127_Mk211Mod0", \
+    "FA_b_200Rnd_127_Mk211Mod0_T_Red", "FA_200Rnd_127_Mk211Mod0_T_Red", "FA_b_200Rnd_127_Mk211Mod0_T_Yellow", "FA_200Rnd_127_Mk211Mod0_T_Yellow", "FA_b_200Rnd_127_Mk211Mod0_T_Green", "FA_200Rnd_127_Mk211Mod0_T_Green", \
+    "FA_b_200Rnd_127_Mk211Mod0_T_White", "FA_200Rnd_127_Mk211Mod0_T_White", "FA_b_200Rnd_127_Mk211Mod0_T_Blue", "FA_200Rnd_127_Mk211Mod0_T_Blue", "FA_b_200Rnd_127_Mk211Mod0_T_Orange", "FA_200Rnd_127_Mk211Mod0_T_Orange", "FA_b_200Rnd_127_Mk211Mod0_T_IR", "FA_200Rnd_127_Mk211Mod0_T_IR", \
+    "FA_b_200Rnd_127_Mk258", "FA_200Rnd_127_Mk258", \
+    "FA_b_200Rnd_127_Mk258_T_Red", "FA_200Rnd_127_Mk258_T_Red", "FA_b_200Rnd_127_Mk258_T_Yellow", "FA_200Rnd_127_Mk258_T_Yellow", "FA_b_200Rnd_127_Mk258_T_Green", "FA_200Rnd_127_Mk258_T_Green", \
+    "FA_b_200Rnd_127_Mk258_T_White", "FA_200Rnd_127_Mk258_T_White", "FA_b_200Rnd_127_Mk258_T_Blue", "FA_200Rnd_127_Mk258_T_Blue", "FA_b_200Rnd_127_Mk258_T_Orange", "FA_200Rnd_127_Mk258_T_Orange", "FA_b_200Rnd_127_Mk258_T_IR", "FA_200Rnd_127_Mk258_T_IR"
 
 // Each shared weapon is reopened WITH its real parent named (and that parent
 // forward-declared). A parentless reopen (`class LMG_coax { ... };`) makes HEMTT
@@ -60,32 +60,37 @@ class CfgWeapons {
     class HMG_127_MBT: HMG_127_APC { magazines[] += { FA_MAGS_50CAL }; };  // Rhino commander HMG
 
     // -------------------------------------------------------------------
-    // Heavy fires — vanilla artillery weapons, one parentless-merge append each.
-    // mortar_155mm_AMOS is shared by the Sholef / 2S9 Sochor / Scorcher SPGs;
-    // rockets_230mm_GAT by the Seara / Zamak MLRS.
+    // Heavy fires — vanilla artillery weapons.
+    //
+    // mortar_155mm_AMOS (shared by the M4 Scorcher B_MBT_01_arty_F — the "Sholef"
+    // — and the 2S9 Sochor O_MBT_02_arty_F) is NO LONGER reopened here: its shells
+    // now ride the ACE_155mm_artillery magazine well, see CfgMagazineWells.hpp.
+    // Only the forward declaration remains, so weapon_ShipCannon_120mm below can
+    // name it as its parent. A bare `class X;` is a declaration, not a reopen, so
+    // it cannot strip AMOS -> CannonCore the way a parentless body would.
+    // AMOS is defined in A3_Weapons_F (verified against a derapified weapons_f.pbo;
+    // armor_f_gamma only mounts it on the SPG turrets).
+    //
+    // The 82mm / 230mm / 120mm naval guns below stay on magazines[] +=: neither
+    // vanilla nor ACE/CBA define a magazine well for any of them, so a well here
+    // would need us to reopen the weapon anyway to attach it — no gain. They do
+    // each NAME their vanilla parent, same rule as the coax/HMG block above.
+    // Parents per derapified weapons_f.pbo (all A3_Weapons_F): mortar_82mm:
+    // CannonCore, rockets_230mm_GAT:RocketPods, HMG_NSVT:HMG_127.
     // -------------------------------------------------------------------
-    class mortar_155mm_AMOS {
-        magazines[] += {
-            "FA_32Rnd_155mm_heer_B", "FA_32Rnd_155mm_heer_O", "FA_32Rnd_155mm_heer_I",
-            "FA_4Rnd_155mm_apmi_B", "FA_4Rnd_155mm_apmi_O", "FA_4Rnd_155mm_apmi_I",
-            "FA_4Rnd_155mm_lgm_B", "FA_4Rnd_155mm_lgm_O", "FA_4Rnd_155mm_lgm_I",
-            "FA_6Rnd_155mm_smk_B", "FA_6Rnd_155mm_smk_O", "FA_6Rnd_155mm_smk_I",
-            "FA_6Rnd_155mm_apmine_B", "FA_6Rnd_155mm_apmine_O", "FA_6Rnd_155mm_apmine_I",
-            "FA_6Rnd_155mm_atmine_B", "FA_6Rnd_155mm_atmine_O", "FA_6Rnd_155mm_atmine_I",
-            "FA_2Rnd_155mm_sfm_B", "FA_2Rnd_155mm_sfm_O", "FA_2Rnd_155mm_sfm_I",
-            "FA_32Rnd_155mm_tb_B", "FA_32Rnd_155mm_tb_O", "FA_32Rnd_155mm_tb_I",
-            "FA_8Rnd_155mm_ir_B"
-        };
-    };
-    // CSAT 12.7x108 heavy MG (HMG_NSVT / Kord)
-    class HMG_NSVT {
+    class mortar_155mm_AMOS;
+    class CannonCore;
+    class RocketPods;
+    // CSAT 12.7x108 heavy MG (HMG_NSVT / Kord) — HMG_127 declared with the .50s above
+    class HMG_NSVT: HMG_127 {
         magazines[] += {
             "FA_450Rnd_127x108_7N40",
             "FA_450Rnd_127x108_7N41",
             "FA_450Rnd_127x108_7N42"
         };
     };
-    class rockets_230mm_GAT {
+    // 230mm GAT MLRS — Seara / Zamak MLRS
+    class rockets_230mm_GAT: RocketPods {
         magazines[] += {
             "FA_12Rnd_230mm_gmlrsu_B", "FA_12Rnd_230mm_gmlrsu_O", "FA_12Rnd_230mm_gmlrsu_I",
             "FA_12Rnd_230mm_gmlrser_B", "FA_12Rnd_230mm_gmlrser_O", "FA_12Rnd_230mm_gmlrser_I",
@@ -93,7 +98,7 @@ class CfgWeapons {
         };
     };
     // 82mm Mk6 mortar (vanilla) — shared by B/O/I_Mortar_01_F.
-    class mortar_82mm {
+    class mortar_82mm: CannonCore {
         magazines[] += {
             "FA_8Rnd_82mm_apmi_B", "FA_8Rnd_82mm_apmi_O", "FA_8Rnd_82mm_apmi_I",
             "FA_8Rnd_82mm_lgm_B", "FA_8Rnd_82mm_lgm_O", "FA_8Rnd_82mm_lgm_I",
@@ -104,10 +109,15 @@ class CfgWeapons {
             "FA_8Rnd_82mm_ir_B"
         };
     };
-    // Mk45 Hammer naval gun (vanilla) — West-only. weapon_ShipCannon_120mm
-    // overrides magazines[] with =, so this parentless merge appends onto its
-    // existing ship magazines rather than reaching it via mortar_155mm_AMOS.
-    class weapon_ShipCannon_120mm {
+    // Mk45 Hammer naval gun (vanilla) — West-only. Name the real vanilla parent
+    // (weapon_ShipCannon_120mm: mortar_155mm_AMOS, forward-declared above) rather
+    // than reopening it parentless: a parentless reopen can win the bind under
+    // undefined load order and strip the vanilla parent link, collapsing the gun
+    // to a scope=private stub (it inherits scope down the mortar chain, its own
+    // body sets none). The gun overrides magazines[] with = to its seven ship
+    // shells, so this += appends our FA rounds onto those, not the 155mm mortar
+    // mags — inheriting the parent does not pull those in.
+    class weapon_ShipCannon_120mm: mortar_155mm_AMOS {
         magazines[] += {
             "FA_2Rnd_120N_glr",
             "FA_32Rnd_120N_he",
