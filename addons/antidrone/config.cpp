@@ -64,7 +64,16 @@ class CfgPatches {
             "FA_b_338_Mk373_PAB_T_Green",
             "FA_b_338_Mk373_PAB_T_White",
             "FA_b_338_Mk373_PAB_T_Blue",
-            "FA_b_338_Mk373_PAB_T_Orange"
+            "FA_b_338_Mk373_PAB_T_Orange",
+            // Mk368/Mk369 AD buckshot (K short / L long)
+            "FA_b_556_Mk368K_AD_Sub",
+            "FA_b_556_Mk368K_AD",
+            "FA_b_556_Mk368L_AD_Sub",
+            "FA_b_556_Mk368L_AD",
+            "FA_b_762_Mk369K_AD_Sub",
+            "FA_b_762_Mk369K_AD",
+            "FA_b_762_Mk369L_AD_Sub",
+            "FA_b_762_Mk369L_AD"
         };
         magazines[] = {
             // 5.56 Mk361 PAB
@@ -170,7 +179,12 @@ class CfgPatches {
             "FA_b_30Rnd_65_Mk367_PAB_MSBS_T_Green",
             "FA_b_30Rnd_65_Mk367_PAB_MSBS_T_White",
             "FA_b_30Rnd_65_Mk367_PAB_MSBS_T_Blue",
-            "FA_b_30Rnd_65_Mk367_PAB_MSBS_T_Orange"
+            "FA_b_30Rnd_65_Mk367_PAB_MSBS_T_Orange",
+            // Mk368/Mk369 AD buckshot (K short / L long)
+            "FA_b_30Rnd_556_Mk368K_AD",
+            "FA_b_30Rnd_556_Mk368L_AD",
+            "FA_b_20Rnd_762_Mk369K_AD",
+            "FA_b_20Rnd_762_Mk369L_AD"
         };
     };
 };

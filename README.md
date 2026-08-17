@@ -68,7 +68,9 @@ airburst rounds near a UAV.
 | Mk362 PAB | 7.62 | rifle / MG | Proximity airburst (script) |
 | Mk364 PAB | 40mm UGL | grenade launcher | Programmable airburst (ACE menu / CBA keybind sets burst range) + HE on impact |
 | Mk366 PAB | .50 / 12.7×99 | HMG | Heavy proximity airburst |
-| Mk371 PAB | .338 | precision rifle | Precision proximity airburst |
+| Mk368K/L AD | 5.56 | rifle | Buckshot — **config only** (K: 8 pellets / 100 m · L: 5 / 200 m) |
+| Mk369K/L AD | 7.62 | rifle | Buckshot — **config only** (K: 12 pellets / 150 m · L: 10 / 250 m) |
+| Mk373 PAB | .338 | precision rifle | Precision proximity airburst |
 
 Targets UAVs only by default (`unitIsUAV`) — manned aircraft are ignored — with
 MP-safe damage handling (local if the drone is local, otherwise routed to its owner

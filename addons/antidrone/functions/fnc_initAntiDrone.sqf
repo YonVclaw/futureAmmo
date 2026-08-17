@@ -14,15 +14,19 @@
  */
 
 // [trigger radius (m), lethal radius (m), max damage, effective range (m)]
-private _p556  = [3.5, 2.5, 0.5, 500];
-private _p762  = [4,   3,   0.5, 800];
-private _p300  = [3.5, 2.5, 0.5, 300];
-private _p40mm = [6,   4.5, 0.5, 400];
-private _p50   = [5,   3.5, 0.5, 1500];
-private _p65   = [3.5, 2.5, 0.5, 600];
-private _p338  = [4.5, 3,   0.5, 1500];
+// Rifle/HMG PAB rounds rebalanced: radii and damage halved (2026-08). The
+// 40mm Mk364 keeps its original envelope — it is the dedicated C-UAS payload.
+// 5.56/7.62 radii halved again (2026-08) — realism pass: a bullet-sized frag
+// sleeve shouldn't reach much past half a metre.
+private _p556  = [0.875, 0.625, 0.25, 500];
+private _p762  = [1,     0.75,  0.25, 800];
+private _p300  = [1.75, 1.25, 0.25, 300];
+private _p40mm = [6,    4.5,  0.5,  400];
+private _p50   = [2.5,  1.75, 0.25, 1500];
+private _p65   = [1.75, 1.25, 0.25, 600];
+private _p338  = [2.25, 1.5,  0.25, 1500];
 // 12ga Mk363 PABS — heavy dedicated AD slug; short shotgun reach.
-private _p12g  = [4.5, 3,   0.5, 150];
+private _p12g  = [2.25, 1.5,  0.25, 150];
 
 GVAR(AD_params) = createHashMapFromArray [
     // 5.56 Mk361

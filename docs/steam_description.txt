@@ -5,7 +5,7 @@ A lore-driven projection of where ammunition goes next, for Arma 3 + ACE3. Built
 [h2]What's inside[/h2]
 [list]
 [*][b]Next-gen small arms[/b] — hybrid-case and cased-telescoped tungsten loads for 5.56, 7.62, .300 BLK (full family incl. subsonic AP), 6.5 caseless and .338, with full ACE Advanced Ballistics data per barrel.
-[*][b]Counter-UAS (PAB)[/b] — proximity-airburst rounds from 5.56 up to .50 and 40mm. A scripted fuze bursts them near drones (UAVs only, MP-safe); without the script they fly as normal ball.
+[*][b]Counter-UAS (PAB)[/b] — proximity-airburst rounds from 5.56 up to .50 and 40mm. A scripted fuze bursts them near drones (UAVs only, MP-safe); without the script they fly as normal ball. Plus config-only anti-drone buckshot: 5.56/7.62 Mk368/Mk369 in short (K) and long (L) patterns, 12 ga and 40mm spreads.
 [*][b]MAAWS 2040[/b] — eight 84mm natures for the vanilla MAAWS Mk4: fire-and-forget top-attack HEAT (850mm RHA), confined-space tandem HEAT, programmable-airburst HE, laser-guided GM 841, three anti-drone rounds and a last-ditch VSHORAD missile (half the Titan envelope, by design).
 [*][b]Vorona + RPG 2040[/b] — lower launcher tiers under the MAAWS (RPG-7 < RPG-32 < Vorona): tandem SACLOS and thermobaric-airburst Vorona missiles plus an IR anti-air/anti-drone seeker with lock tone, and tandem / thermobaric / counter-drone rounds for the vanilla RPG-32 and RPG-7.
 [*][b]40mm ISR / EW (Mk380 block)[/b] — smart UGL support rounds: network relay, EMP soft-kill, multispectral smoke, decoy, ground sensor and area jammer. Chute-deployed, non-explosive carriers.

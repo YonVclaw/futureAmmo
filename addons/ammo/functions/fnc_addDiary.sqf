@@ -60,6 +60,7 @@ private _entries = [
     R("XM891 CTEP") + "Cased-telescoped 2-stage tungsten EPR" + S("2039 - ~85 kpsi") + NL +
     R("Mk332 AP") + "Tungsten armor-piercing" + S("2040") + NL +
     R("Mk361 PAB") + "Proximity airburst, C-UAS (antidrone)" + NL +
+    R("Mk368K/L AD") + "Anti-drone buckshot - 8 pellets/100 m (K), 5 pellets/200 m (L) (antidrone)" + NL +
     R("AF-556 / AF-556C / AF-556P") + "AAF faction trio - HV / CT / AP at ~95% of NATO performance" + S("2040") + NL +
     "<font color='#7F93AC'>Mk327 / XM891 / Mk332 ride every 5.56 mag (STANAG, JCA, SPS, RHS, boxes/belts) in all tracer colors.</font>"],
 
@@ -80,6 +81,7 @@ private _entries = [
     R("M80A2 HV") + "Hybrid-case 135gr tungsten EPR" + S("2032 - ~78 kpsi") + NL +
     R("XM751 CTEP") + "Cased-telescoped tungsten, long-range / anti-armor" + S("2039 - ~82 kpsi") + NL +
     R("Mk362 PAB") + "Proximity airburst, C-UAS (antidrone)" + NL +
+    R("Mk369K/L AD") + "Anti-drone buckshot - 12 pellets/150 m (K), 10 pellets/250 m (L) (antidrone)" + NL +
     R("AF-762 / AF-762C / AF-762P") + "AAF faction trio - HV / CT / AP at ~95% of NATO performance" + S("2040") + NL +
     "<font color='#7F93AC'>M80A2 / XM751 ride every .308 mag (core, ACE, JCA, SPS AXMC, RHS M240) in all tracer colors.</font>"],
 
@@ -173,6 +175,8 @@ private _entries = [
     R("Mk373 PAB") + ".338 LM precision long-range" + NL +
     R("Mk364 PAB") + "40mm programmable airburst - ACE menu / CBA keybind sets range; HE on impact" + NL +
     R("Mk389") + "40mm tungsten buckshot" + NL +
+    R("Mk368K/L AD") + "5.56 buckshot - 8 pellets/100 m (K), 5 pellets/200 m (L), config only" + NL +
+    R("Mk369K/L AD") + "7.62 buckshot - 12 pellets/150 m (K), 10 pellets/250 m (L), config only" + NL +
     R("Mk360 AD") + "12 ga dense spread (config only, no script)"],
 
   ["MAAWS (Carl Gustaf M4)",

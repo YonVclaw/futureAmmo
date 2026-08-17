@@ -87,7 +87,7 @@
     "outline": {"color": "#1E120A", "width": 3, "applies": "filled dots only"}
   },
   "content_conventions": {
-    "eyebrow": "GHOSTS OF BATTLE — TRAINING AREA (constant)",
+    "eyebrow": "GHOSTS OF BATTLE (constant)",
     "title": "<CALIBRE or SYSTEM> — <WEAPONS>, em-dash separated, UPPERCASE",
     "subline": "weapon/mag-body scope, dot-separated, sentence case",
     "rows": "designation in amber exactly as the arsenal shows it (Mk327 HV, XM891 CTEP, AF-556C CT, Type 42 CT, DBP-39 CT); description starts with an em-dash, lowercase, <= ~55 chars, optional (year) or range at the end",

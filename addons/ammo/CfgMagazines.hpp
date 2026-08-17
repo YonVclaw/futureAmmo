@@ -430,7 +430,7 @@ class CfgMagazines {
         displayName = "[Ghost] 30Rnd Mk330 EPR";
         descriptionShort = "Mk330 EPR";
         ammo = "FA_b_65_EPR";
-        initSpeed = 820;
+        initSpeed = 950;
         mass = 7;
     };
     class FA_b_30Rnd_65_EPR_T_Red: FA_b_30Rnd_65_EPR { ammo = "FA_b_65_EPR_T_Red"; displayName = "[Ghost] 30Rnd Mk330 EPR Red Tracer"; descriptionShort = "Mk330 EPR"; tracersEvery = 4; };
@@ -446,7 +446,7 @@ class CfgMagazines {
         displayName = "[Ghost] 30Rnd Mk330 EPR Black Mag";
         descriptionShort = "Mk330 EPR";
         ammo = "FA_b_65_EPR";
-        initSpeed = 820;
+        initSpeed = 950;
         mass = 7;
     };
     class FA_b_30Rnd_65_EPR_Black_T_Red: FA_b_30Rnd_65_EPR_Black { ammo = "FA_b_65_EPR_T_Red"; displayName = "[Ghost] 30Rnd Mk330 EPR Black Mag Red Tracer"; descriptionShort = "Mk330 EPR"; tracersEvery = 4; };
@@ -462,7 +462,7 @@ class CfgMagazines {
         displayName = "[Ghost] 30Rnd Mk330 EPR Khaki Mag";
         descriptionShort = "Mk330 EPR";
         ammo = "FA_b_65_EPR";
-        initSpeed = 820;
+        initSpeed = 950;
         mass = 7;
     };
     class FA_b_30Rnd_65_EPR_Khaki_T_Red: FA_b_30Rnd_65_EPR_Khaki { ammo = "FA_b_65_EPR_T_Red"; displayName = "[Ghost] 30Rnd Mk330 EPR Khaki Mag Red Tracer"; descriptionShort = "Mk330 EPR"; tracersEvery = 4; };
@@ -478,7 +478,7 @@ class CfgMagazines {
         displayName = "[Ghost] 30Rnd Mk330 EPR MSBS Mag";
         descriptionShort = "Mk330 EPR";
         ammo = "FA_b_65_EPR";
-        initSpeed = 820;
+        initSpeed = 950;
         mass = 7;
     };
     class FA_b_30Rnd_65_EPR_MSBS_T_Red: FA_b_30Rnd_65_EPR_MSBS { ammo = "FA_b_65_EPR_T_Red"; displayName = "[Ghost] 30Rnd Mk330 EPR MSBS Mag Red Tracer"; descriptionShort = "Mk330 EPR"; tracersEvery = 4; };
@@ -754,101 +754,101 @@ class CfgMagazines {
     // =========================================================
     // 6.5x39 — 100Rnd_65x39_caseless_black_mag
     // =========================================================
-    class FA_b_100Rnd_65x39_caseless_black_mag : 100Rnd_65x39_caseless_black_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR Black Mag"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR"; initSpeed = 820; };
-    class FA_b_100Rnd_65x39_caseless_black_mag_T_Red : 100Rnd_65x39_caseless_black_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR Black Mag Red Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Red"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_100Rnd_65x39_caseless_black_mag_T_Yellow : 100Rnd_65x39_caseless_black_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR Black Mag Yellow Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Yellow"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_100Rnd_65x39_caseless_black_mag_T_Green : 100Rnd_65x39_caseless_black_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR Black Mag Green Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Green"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_100Rnd_65x39_caseless_black_mag_T_White : 100Rnd_65x39_caseless_black_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR Black Mag White Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_White"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_100Rnd_65x39_caseless_black_mag_T_Blue : 100Rnd_65x39_caseless_black_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR Black Mag Blue Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Blue"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_100Rnd_65x39_caseless_black_mag_T_Orange : 100Rnd_65x39_caseless_black_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR Black Mag Orange Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Orange"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_100Rnd_65x39_caseless_black_mag_T_IR : 100Rnd_65x39_caseless_black_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR Black Mag IR Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_IR"; initSpeed = 820; tracersEvery = 4; };
+    class FA_b_100Rnd_65x39_caseless_black_mag : 100Rnd_65x39_caseless_black_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR Black Mag"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR"; initSpeed = 950; };
+    class FA_b_100Rnd_65x39_caseless_black_mag_T_Red : 100Rnd_65x39_caseless_black_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR Black Mag Red Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Red"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_100Rnd_65x39_caseless_black_mag_T_Yellow : 100Rnd_65x39_caseless_black_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR Black Mag Yellow Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Yellow"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_100Rnd_65x39_caseless_black_mag_T_Green : 100Rnd_65x39_caseless_black_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR Black Mag Green Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Green"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_100Rnd_65x39_caseless_black_mag_T_White : 100Rnd_65x39_caseless_black_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR Black Mag White Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_White"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_100Rnd_65x39_caseless_black_mag_T_Blue : 100Rnd_65x39_caseless_black_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR Black Mag Blue Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Blue"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_100Rnd_65x39_caseless_black_mag_T_Orange : 100Rnd_65x39_caseless_black_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR Black Mag Orange Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Orange"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_100Rnd_65x39_caseless_black_mag_T_IR : 100Rnd_65x39_caseless_black_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR Black Mag IR Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_IR"; initSpeed = 950; tracersEvery = 4; };
 
     // =========================================================
     // 6.5x39 — 100Rnd_65x39_caseless_khaki_mag
     // =========================================================
-    class FA_b_100Rnd_65x39_caseless_khaki_mag : 100Rnd_65x39_caseless_khaki_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR Khaki Mag"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR"; initSpeed = 820; };
-    class FA_b_100Rnd_65x39_caseless_khaki_mag_T_Red : 100Rnd_65x39_caseless_khaki_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR Khaki Mag Red Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Red"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_100Rnd_65x39_caseless_khaki_mag_T_Yellow : 100Rnd_65x39_caseless_khaki_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR Khaki Mag Yellow Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Yellow"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_100Rnd_65x39_caseless_khaki_mag_T_Green : 100Rnd_65x39_caseless_khaki_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR Khaki Mag Green Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Green"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_100Rnd_65x39_caseless_khaki_mag_T_White : 100Rnd_65x39_caseless_khaki_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR Khaki Mag White Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_White"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_100Rnd_65x39_caseless_khaki_mag_T_Blue : 100Rnd_65x39_caseless_khaki_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR Khaki Mag Blue Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Blue"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_100Rnd_65x39_caseless_khaki_mag_T_Orange : 100Rnd_65x39_caseless_khaki_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR Khaki Mag Orange Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Orange"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_100Rnd_65x39_caseless_khaki_mag_T_IR : 100Rnd_65x39_caseless_khaki_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR Khaki Mag IR Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_IR"; initSpeed = 820; tracersEvery = 4; };
+    class FA_b_100Rnd_65x39_caseless_khaki_mag : 100Rnd_65x39_caseless_khaki_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR Khaki Mag"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR"; initSpeed = 950; };
+    class FA_b_100Rnd_65x39_caseless_khaki_mag_T_Red : 100Rnd_65x39_caseless_khaki_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR Khaki Mag Red Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Red"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_100Rnd_65x39_caseless_khaki_mag_T_Yellow : 100Rnd_65x39_caseless_khaki_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR Khaki Mag Yellow Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Yellow"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_100Rnd_65x39_caseless_khaki_mag_T_Green : 100Rnd_65x39_caseless_khaki_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR Khaki Mag Green Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Green"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_100Rnd_65x39_caseless_khaki_mag_T_White : 100Rnd_65x39_caseless_khaki_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR Khaki Mag White Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_White"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_100Rnd_65x39_caseless_khaki_mag_T_Blue : 100Rnd_65x39_caseless_khaki_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR Khaki Mag Blue Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Blue"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_100Rnd_65x39_caseless_khaki_mag_T_Orange : 100Rnd_65x39_caseless_khaki_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR Khaki Mag Orange Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Orange"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_100Rnd_65x39_caseless_khaki_mag_T_IR : 100Rnd_65x39_caseless_khaki_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR Khaki Mag IR Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_IR"; initSpeed = 950; tracersEvery = 4; };
 
     // =========================================================
     // 6.5x39 — 100Rnd_65x39_caseless_mag
     // =========================================================
-    class FA_b_100Rnd_65x39_caseless_mag : 100Rnd_65x39_caseless_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR"; initSpeed = 820; };
-    class FA_b_100Rnd_65x39_caseless_mag_T_Red : 100Rnd_65x39_caseless_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR Red Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Red"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_100Rnd_65x39_caseless_mag_T_Yellow : 100Rnd_65x39_caseless_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR Yellow Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Yellow"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_100Rnd_65x39_caseless_mag_T_Green : 100Rnd_65x39_caseless_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR Green Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Green"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_100Rnd_65x39_caseless_mag_T_White : 100Rnd_65x39_caseless_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR White Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_White"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_100Rnd_65x39_caseless_mag_T_Blue : 100Rnd_65x39_caseless_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR Blue Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Blue"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_100Rnd_65x39_caseless_mag_T_Orange : 100Rnd_65x39_caseless_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR Orange Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Orange"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_100Rnd_65x39_caseless_mag_T_IR : 100Rnd_65x39_caseless_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR IR Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_IR"; initSpeed = 820; tracersEvery = 4; };
+    class FA_b_100Rnd_65x39_caseless_mag : 100Rnd_65x39_caseless_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR"; initSpeed = 950; };
+    class FA_b_100Rnd_65x39_caseless_mag_T_Red : 100Rnd_65x39_caseless_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR Red Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Red"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_100Rnd_65x39_caseless_mag_T_Yellow : 100Rnd_65x39_caseless_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR Yellow Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Yellow"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_100Rnd_65x39_caseless_mag_T_Green : 100Rnd_65x39_caseless_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR Green Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Green"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_100Rnd_65x39_caseless_mag_T_White : 100Rnd_65x39_caseless_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR White Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_White"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_100Rnd_65x39_caseless_mag_T_Blue : 100Rnd_65x39_caseless_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR Blue Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Blue"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_100Rnd_65x39_caseless_mag_T_Orange : 100Rnd_65x39_caseless_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR Orange Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Orange"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_100Rnd_65x39_caseless_mag_T_IR : 100Rnd_65x39_caseless_mag { author = QAUTHOR; displayName = "[Ghost] 100Rnd Mk330 EPR IR Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_IR"; initSpeed = 950; tracersEvery = 4; };
 
     // =========================================================
     // 6.5x39 — 200Rnd_65x39_cased_Box
     // =========================================================
-    class FA_b_200Rnd_65x39_cased_Box : 200Rnd_65x39_cased_Box { author = QAUTHOR; displayName = "[Ghost] 200Rnd Mk330 EPR"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR"; initSpeed = 820; };
-    class FA_b_200Rnd_65x39_cased_Box_T_Red : 200Rnd_65x39_cased_Box { author = QAUTHOR; displayName = "[Ghost] 200Rnd Mk330 EPR Red Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Red"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_200Rnd_65x39_cased_Box_T_Yellow : 200Rnd_65x39_cased_Box { author = QAUTHOR; displayName = "[Ghost] 200Rnd Mk330 EPR Yellow Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Yellow"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_200Rnd_65x39_cased_Box_T_Green : 200Rnd_65x39_cased_Box { author = QAUTHOR; displayName = "[Ghost] 200Rnd Mk330 EPR Green Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Green"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_200Rnd_65x39_cased_Box_T_White : 200Rnd_65x39_cased_Box { author = QAUTHOR; displayName = "[Ghost] 200Rnd Mk330 EPR White Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_White"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_200Rnd_65x39_cased_Box_T_Blue : 200Rnd_65x39_cased_Box { author = QAUTHOR; displayName = "[Ghost] 200Rnd Mk330 EPR Blue Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Blue"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_200Rnd_65x39_cased_Box_T_Orange : 200Rnd_65x39_cased_Box { author = QAUTHOR; displayName = "[Ghost] 200Rnd Mk330 EPR Orange Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Orange"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_200Rnd_65x39_cased_Box_T_IR : 200Rnd_65x39_cased_Box { author = QAUTHOR; displayName = "[Ghost] 200Rnd Mk330 EPR IR Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_IR"; initSpeed = 820; tracersEvery = 4; };
+    class FA_b_200Rnd_65x39_cased_Box : 200Rnd_65x39_cased_Box { author = QAUTHOR; displayName = "[Ghost] 200Rnd Mk330 EPR"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR"; initSpeed = 950; };
+    class FA_b_200Rnd_65x39_cased_Box_T_Red : 200Rnd_65x39_cased_Box { author = QAUTHOR; displayName = "[Ghost] 200Rnd Mk330 EPR Red Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Red"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_200Rnd_65x39_cased_Box_T_Yellow : 200Rnd_65x39_cased_Box { author = QAUTHOR; displayName = "[Ghost] 200Rnd Mk330 EPR Yellow Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Yellow"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_200Rnd_65x39_cased_Box_T_Green : 200Rnd_65x39_cased_Box { author = QAUTHOR; displayName = "[Ghost] 200Rnd Mk330 EPR Green Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Green"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_200Rnd_65x39_cased_Box_T_White : 200Rnd_65x39_cased_Box { author = QAUTHOR; displayName = "[Ghost] 200Rnd Mk330 EPR White Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_White"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_200Rnd_65x39_cased_Box_T_Blue : 200Rnd_65x39_cased_Box { author = QAUTHOR; displayName = "[Ghost] 200Rnd Mk330 EPR Blue Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Blue"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_200Rnd_65x39_cased_Box_T_Orange : 200Rnd_65x39_cased_Box { author = QAUTHOR; displayName = "[Ghost] 200Rnd Mk330 EPR Orange Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Orange"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_200Rnd_65x39_cased_Box_T_IR : 200Rnd_65x39_cased_Box { author = QAUTHOR; displayName = "[Ghost] 200Rnd Mk330 EPR IR Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_IR"; initSpeed = 950; tracersEvery = 4; };
 
     // =========================================================
     // 6.5x39 — 2000Rnd_65x39_Belt
     // =========================================================
-    class FA_b_2000Rnd_65x39_Belt_T_Red : 2000Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 2000Rnd Mk330 EPR Red Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Red"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_2000Rnd_65x39_Belt_T_Yellow : 2000Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 2000Rnd Mk330 EPR Yellow Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Yellow"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_2000Rnd_65x39_Belt_T_Green : 2000Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 2000Rnd Mk330 EPR Green Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Green"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_2000Rnd_65x39_Belt_T_White : 2000Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 2000Rnd Mk330 EPR White Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_White"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_2000Rnd_65x39_Belt_T_Blue : 2000Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 2000Rnd Mk330 EPR Blue Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Blue"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_2000Rnd_65x39_Belt_T_Orange : 2000Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 2000Rnd Mk330 EPR Orange Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Orange"; initSpeed = 820; tracersEvery = 4; };
+    class FA_b_2000Rnd_65x39_Belt_T_Red : 2000Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 2000Rnd Mk330 EPR Red Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Red"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_2000Rnd_65x39_Belt_T_Yellow : 2000Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 2000Rnd Mk330 EPR Yellow Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Yellow"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_2000Rnd_65x39_Belt_T_Green : 2000Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 2000Rnd Mk330 EPR Green Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Green"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_2000Rnd_65x39_Belt_T_White : 2000Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 2000Rnd Mk330 EPR White Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_White"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_2000Rnd_65x39_Belt_T_Blue : 2000Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 2000Rnd Mk330 EPR Blue Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Blue"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_2000Rnd_65x39_Belt_T_Orange : 2000Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 2000Rnd Mk330 EPR Orange Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Orange"; initSpeed = 950; tracersEvery = 4; };
 
     // =========================================================
     // 6.5x39 — 1000Rnd_65x39_Belt
     // =========================================================
-    class FA_b_1000Rnd_65x39_Belt_T_Red : 1000Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 1000Rnd Mk330 EPR Red Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Red"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_1000Rnd_65x39_Belt_T_Yellow : 1000Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 1000Rnd Mk330 EPR Yellow Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Yellow"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_1000Rnd_65x39_Belt_T_Green : 1000Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 1000Rnd Mk330 EPR Green Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Green"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_1000Rnd_65x39_Belt_T_White : 1000Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 1000Rnd Mk330 EPR White Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_White"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_1000Rnd_65x39_Belt_T_Blue : 1000Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 1000Rnd Mk330 EPR Blue Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Blue"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_1000Rnd_65x39_Belt_T_Orange : 1000Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 1000Rnd Mk330 EPR Orange Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Orange"; initSpeed = 820; tracersEvery = 4; };
+    class FA_b_1000Rnd_65x39_Belt_T_Red : 1000Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 1000Rnd Mk330 EPR Red Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Red"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_1000Rnd_65x39_Belt_T_Yellow : 1000Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 1000Rnd Mk330 EPR Yellow Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Yellow"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_1000Rnd_65x39_Belt_T_Green : 1000Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 1000Rnd Mk330 EPR Green Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Green"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_1000Rnd_65x39_Belt_T_White : 1000Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 1000Rnd Mk330 EPR White Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_White"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_1000Rnd_65x39_Belt_T_Blue : 1000Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 1000Rnd Mk330 EPR Blue Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Blue"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_1000Rnd_65x39_Belt_T_Orange : 1000Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 1000Rnd Mk330 EPR Orange Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Orange"; initSpeed = 950; tracersEvery = 4; };
 
     // =========================================================
     // 6.5x39 — 200Rnd_65x39_Belt
     // =========================================================
-    class FA_b_200Rnd_65x39_Belt_T_Red : 200Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 200Rnd Mk330 EPR Red Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Red"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_200Rnd_65x39_Belt_T_Yellow : 200Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 200Rnd Mk330 EPR Yellow Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Yellow"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_200Rnd_65x39_Belt_T_Green : 200Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 200Rnd Mk330 EPR Green Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Green"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_200Rnd_65x39_Belt_T_White : 200Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 200Rnd Mk330 EPR White Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_White"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_200Rnd_65x39_Belt_T_Blue : 200Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 200Rnd Mk330 EPR Blue Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Blue"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_200Rnd_65x39_Belt_T_Orange : 200Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 200Rnd Mk330 EPR Orange Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Orange"; initSpeed = 820; tracersEvery = 4; };
+    class FA_b_200Rnd_65x39_Belt_T_Red : 200Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 200Rnd Mk330 EPR Red Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Red"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_200Rnd_65x39_Belt_T_Yellow : 200Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 200Rnd Mk330 EPR Yellow Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Yellow"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_200Rnd_65x39_Belt_T_Green : 200Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 200Rnd Mk330 EPR Green Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Green"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_200Rnd_65x39_Belt_T_White : 200Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 200Rnd Mk330 EPR White Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_White"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_200Rnd_65x39_Belt_T_Blue : 200Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 200Rnd Mk330 EPR Blue Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Blue"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_200Rnd_65x39_Belt_T_Orange : 200Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 200Rnd Mk330 EPR Orange Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Orange"; initSpeed = 950; tracersEvery = 4; };
 
 
     // =========================================================
     // 6.5x39 — 500Rnd_65x39_Belt
     // =========================================================
-    class FA_b_500Rnd_65x39_Belt_T_Red : 500Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 500Rnd Mk330 EPR Red Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Red"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_500Rnd_65x39_Belt_T_Yellow : 500Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 500Rnd Mk330 EPR Yellow Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Yellow"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_500Rnd_65x39_Belt_T_Green : 500Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 500Rnd Mk330 EPR Green Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Green"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_500Rnd_65x39_Belt_T_White : 500Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 500Rnd Mk330 EPR White Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_White"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_500Rnd_65x39_Belt_T_Blue : 500Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 500Rnd Mk330 EPR Blue Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Blue"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_500Rnd_65x39_Belt_T_Orange : 500Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 500Rnd Mk330 EPR Orange Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Orange"; initSpeed = 820; tracersEvery = 4; };
+    class FA_b_500Rnd_65x39_Belt_T_Red : 500Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 500Rnd Mk330 EPR Red Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Red"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_500Rnd_65x39_Belt_T_Yellow : 500Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 500Rnd Mk330 EPR Yellow Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Yellow"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_500Rnd_65x39_Belt_T_Green : 500Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 500Rnd Mk330 EPR Green Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Green"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_500Rnd_65x39_Belt_T_White : 500Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 500Rnd Mk330 EPR White Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_White"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_500Rnd_65x39_Belt_T_Blue : 500Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 500Rnd Mk330 EPR Blue Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Blue"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_500Rnd_65x39_Belt_T_Orange : 500Rnd_65x39_Belt { author = QAUTHOR; displayName = "[Ghost] 500Rnd Mk330 EPR Orange Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Orange"; initSpeed = 950; tracersEvery = 4; };
 
     // =========================================================
     // 6.5x39 — PylonWeapon_2000Rnd_65x39_belt
     // =========================================================
-    class FA_b_PylonWeapon_2000Rnd_65x39_belt_T_Red : PylonWeapon_2000Rnd_65x39_belt { author = QAUTHOR; displayName = "[Ghost] 2000Rnd Mk330 EPR Red Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Red"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_PylonWeapon_2000Rnd_65x39_belt_T_Yellow : PylonWeapon_2000Rnd_65x39_belt { author = QAUTHOR; displayName = "[Ghost] 2000Rnd Mk330 EPR Yellow Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Yellow"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_PylonWeapon_2000Rnd_65x39_belt_T_Green : PylonWeapon_2000Rnd_65x39_belt { author = QAUTHOR; displayName = "[Ghost] 2000Rnd Mk330 EPR Green Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Green"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_PylonWeapon_2000Rnd_65x39_belt_T_White : PylonWeapon_2000Rnd_65x39_belt { author = QAUTHOR; displayName = "[Ghost] 2000Rnd Mk330 EPR White Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_White"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_PylonWeapon_2000Rnd_65x39_belt_T_Blue : PylonWeapon_2000Rnd_65x39_belt { author = QAUTHOR; displayName = "[Ghost] 2000Rnd Mk330 EPR Blue Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Blue"; initSpeed = 820; tracersEvery = 4; };
-    class FA_b_PylonWeapon_2000Rnd_65x39_belt_T_Orange : PylonWeapon_2000Rnd_65x39_belt { author = QAUTHOR; displayName = "[Ghost] 2000Rnd Mk330 EPR Orange Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Orange"; initSpeed = 820; tracersEvery = 4; };
+    class FA_b_PylonWeapon_2000Rnd_65x39_belt_T_Red : PylonWeapon_2000Rnd_65x39_belt { author = QAUTHOR; displayName = "[Ghost] 2000Rnd Mk330 EPR Red Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Red"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_PylonWeapon_2000Rnd_65x39_belt_T_Yellow : PylonWeapon_2000Rnd_65x39_belt { author = QAUTHOR; displayName = "[Ghost] 2000Rnd Mk330 EPR Yellow Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Yellow"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_PylonWeapon_2000Rnd_65x39_belt_T_Green : PylonWeapon_2000Rnd_65x39_belt { author = QAUTHOR; displayName = "[Ghost] 2000Rnd Mk330 EPR Green Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Green"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_PylonWeapon_2000Rnd_65x39_belt_T_White : PylonWeapon_2000Rnd_65x39_belt { author = QAUTHOR; displayName = "[Ghost] 2000Rnd Mk330 EPR White Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_White"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_PylonWeapon_2000Rnd_65x39_belt_T_Blue : PylonWeapon_2000Rnd_65x39_belt { author = QAUTHOR; displayName = "[Ghost] 2000Rnd Mk330 EPR Blue Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Blue"; initSpeed = 950; tracersEvery = 4; };
+    class FA_b_PylonWeapon_2000Rnd_65x39_belt_T_Orange : PylonWeapon_2000Rnd_65x39_belt { author = QAUTHOR; displayName = "[Ghost] 2000Rnd Mk330 EPR Orange Tracer"; descriptionShort = "Mk330 EPR"; ammo = "FA_b_65_EPR_T_Orange"; initSpeed = 950; tracersEvery = 4; };
 
     // =========================================================
     // .338 LM — 10Rnd_338_Mag (vanilla MAR-10)
@@ -1711,7 +1711,7 @@ class CfgMagazines {
         displayName = "[Ghost] 30Rnd Type 41 EPR";
         descriptionShort = "Type 41 EPR";
         ammo = "FA_o_65_Type41_EPR";
-        initSpeed = 740;
+        initSpeed = 855;
         mass = 7;
     };
     class FA_o_30Rnd_65_Type41_EPR_T_Red: FA_o_30Rnd_65_Type41_EPR {
@@ -1761,7 +1761,7 @@ class CfgMagazines {
         displayName = "[Ghost] 30Rnd Type 42 CT";
         descriptionShort = "Type 42 CT";
         ammo = "FA_o_65_Type42_CT";
-        initSpeed = 745;
+        initSpeed = 873;
     };
     class FA_o_30Rnd_65_Type42_CT_T_Red: FA_o_30Rnd_65_Type42_CT {
         displayName = "[Ghost] 30Rnd Type 42 CT Red Tracer";
@@ -1810,7 +1810,7 @@ class CfgMagazines {
         displayName = "[Ghost] 30Rnd Type 43 AP";
         descriptionShort = "Type 43 AP";
         ammo = "FA_o_65_Type43_AP";
-        initSpeed = 730;
+        initSpeed = 851;
     };
     class FA_o_30Rnd_65_Type43_AP_T_Red: FA_o_30Rnd_65_Type43_AP {
         displayName = "[Ghost] 30Rnd Type 43 AP Red Tracer";

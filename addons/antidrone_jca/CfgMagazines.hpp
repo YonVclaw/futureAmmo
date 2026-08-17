@@ -188,4 +188,146 @@ class CfgMagazines {
     class FA_JCA_30Rnd_300BLK_sand_EMAG_Mk363_PAB_T_White: FA_JCA_30Rnd_300BLK_sand_EMAG_Mk363_PAB { ammo = "FA_b_300_Mk363_PAB_T_White"; displayName = "[Ghost] 30Rnd Mk363 PAB White Tracer"; descriptionShort = "Mk363 PAB"; tracersEvery = 4; lastRoundsTracer = 4; };
     class FA_JCA_30Rnd_300BLK_sand_EMAG_Mk363_PAB_T_Blue: FA_JCA_30Rnd_300BLK_sand_EMAG_Mk363_PAB { ammo = "FA_b_300_Mk363_PAB_T_Blue"; displayName = "[Ghost] 30Rnd Mk363 PAB Blue Tracer"; descriptionShort = "Mk363 PAB"; tracersEvery = 4; lastRoundsTracer = 4; };
     class FA_JCA_30Rnd_300BLK_sand_EMAG_Mk363_PAB_T_Orange: FA_JCA_30Rnd_300BLK_sand_EMAG_Mk363_PAB { ammo = "FA_b_300_Mk363_PAB_T_Orange"; displayName = "[Ghost] 30Rnd Mk363 PAB Orange Tracer"; descriptionShort = "Mk363 PAB"; tracersEvery = 4; lastRoundsTracer = 4; };
+
+    // =========================================================
+    // Mk368 AD — 5.56x45 Anti-Drone Buckshot (K short / L long)
+    // No tracer variants — the round splits at the muzzle.
+    // =========================================================
+    // 5.56 EMAG 30Rnd
+    class FA_JCA_30Rnd_556x45_EMAG_Mk368K_AD: JCA_30Rnd_556x45_EMAG {
+        author = QAUTHOR;
+        displayName = "[Ghost] 30Rnd Mk368K AD";
+        descriptionShort = "Mk368K AD 8-pellet shot, eff. 100 m";
+        ammo = "FA_b_556_Mk368K_AD";
+        initSpeed = 671;
+        tracersEvery = 0;
+        lastRoundsTracer = 0;
+    };
+    class FA_JCA_30Rnd_556x45_EMAG_Mk368L_AD: JCA_30Rnd_556x45_EMAG {
+        author = QAUTHOR;
+        displayName = "[Ghost] 30Rnd Mk368L AD";
+        descriptionShort = "Mk368L AD 5-pellet shot, eff. 200 m";
+        ammo = "FA_b_556_Mk368L_AD";
+        initSpeed = 671;
+        tracersEvery = 0;
+        lastRoundsTracer = 0;
+    };
+    // 5.56 EMAG Sand 30Rnd
+    class FA_JCA_30Rnd_556x45_sand_EMAG_Mk368K_AD: JCA_30Rnd_556x45_sand_EMAG {
+        author = QAUTHOR;
+        displayName = "[Ghost] 30Rnd Mk368K AD";
+        descriptionShort = "Mk368K AD 8-pellet shot, eff. 100 m";
+        ammo = "FA_b_556_Mk368K_AD";
+        initSpeed = 671;
+        tracersEvery = 0;
+        lastRoundsTracer = 0;
+    };
+    class FA_JCA_30Rnd_556x45_sand_EMAG_Mk368L_AD: JCA_30Rnd_556x45_sand_EMAG {
+        author = QAUTHOR;
+        displayName = "[Ghost] 30Rnd Mk368L AD";
+        descriptionShort = "Mk368L AD 5-pellet shot, eff. 200 m";
+        ammo = "FA_b_556_Mk368L_AD";
+        initSpeed = 671;
+        tracersEvery = 0;
+        lastRoundsTracer = 0;
+    };
+    // 5.56 PMAG 30Rnd
+    class FA_JCA_30Rnd_556x45_PMAG_Mk368K_AD: JCA_30Rnd_556x45_PMAG {
+        author = QAUTHOR;
+        displayName = "[Ghost] 30Rnd Mk368K AD";
+        descriptionShort = "Mk368K AD 8-pellet shot, eff. 100 m";
+        ammo = "FA_b_556_Mk368K_AD";
+        initSpeed = 671;
+        tracersEvery = 0;
+        lastRoundsTracer = 0;
+    };
+    class FA_JCA_30Rnd_556x45_PMAG_Mk368L_AD: JCA_30Rnd_556x45_PMAG {
+        author = QAUTHOR;
+        displayName = "[Ghost] 30Rnd Mk368L AD";
+        descriptionShort = "Mk368L AD 5-pellet shot, eff. 200 m";
+        ammo = "FA_b_556_Mk368L_AD";
+        initSpeed = 671;
+        tracersEvery = 0;
+        lastRoundsTracer = 0;
+    };
+    // 5.56 PMAG Sand 30Rnd
+    class FA_JCA_30Rnd_556x45_sand_PMAG_Mk368K_AD: JCA_30Rnd_556x45_sand_PMAG {
+        author = QAUTHOR;
+        displayName = "[Ghost] 30Rnd Mk368K AD";
+        descriptionShort = "Mk368K AD 8-pellet shot, eff. 100 m";
+        ammo = "FA_b_556_Mk368K_AD";
+        initSpeed = 671;
+        tracersEvery = 0;
+        lastRoundsTracer = 0;
+    };
+    class FA_JCA_30Rnd_556x45_sand_PMAG_Mk368L_AD: JCA_30Rnd_556x45_sand_PMAG {
+        author = QAUTHOR;
+        displayName = "[Ghost] 30Rnd Mk368L AD";
+        descriptionShort = "Mk368L AD 5-pellet shot, eff. 200 m";
+        ammo = "FA_b_556_Mk368L_AD";
+        initSpeed = 671;
+        tracersEvery = 0;
+        lastRoundsTracer = 0;
+    };
+    // 5.56 Green PMAG 30Rnd
+    class FA_JCA_30Rnd_556x45_Green_PMAG_Mk368K_AD: JCA_30Rnd_556x45_Green_PMAG {
+        author = QAUTHOR;
+        displayName = "[Ghost] 30Rnd Mk368K AD Green PMAG";
+        descriptionShort = "Mk368K AD 8-pellet shot, eff. 100 m";
+        ammo = "FA_b_556_Mk368K_AD";
+        initSpeed = 671;
+        tracersEvery = 0;
+        lastRoundsTracer = 0;
+    };
+    class FA_JCA_30Rnd_556x45_Green_PMAG_Mk368L_AD: JCA_30Rnd_556x45_Green_PMAG {
+        author = QAUTHOR;
+        displayName = "[Ghost] 30Rnd Mk368L AD Green PMAG";
+        descriptionShort = "Mk368L AD 5-pellet shot, eff. 200 m";
+        ammo = "FA_b_556_Mk368L_AD";
+        initSpeed = 671;
+        tracersEvery = 0;
+        lastRoundsTracer = 0;
+    };
+
+    // =========================================================
+    // Mk369 AD — 7.62x51 Anti-Drone Buckshot (K short / L long)
+    // =========================================================
+    // 7.62 PMAG 20Rnd
+    class FA_JCA_20Rnd_762x51_PMAG_Mk369K_AD: JCA_20Rnd_762x51_PMAG {
+        author = QAUTHOR;
+        displayName = "[Ghost] 20Rnd Mk369K AD";
+        descriptionShort = "Mk369K AD 12-pellet shot, eff. 150 m";
+        ammo = "FA_b_762_Mk369K_AD";
+        initSpeed = 640;
+        tracersEvery = 0;
+        lastRoundsTracer = 0;
+    };
+    class FA_JCA_20Rnd_762x51_PMAG_Mk369L_AD: JCA_20Rnd_762x51_PMAG {
+        author = QAUTHOR;
+        displayName = "[Ghost] 20Rnd Mk369L AD";
+        descriptionShort = "Mk369L AD 10-pellet shot, eff. 250 m";
+        ammo = "FA_b_762_Mk369L_AD";
+        initSpeed = 640;
+        tracersEvery = 0;
+        lastRoundsTracer = 0;
+    };
+    // 7.62 PMAG Sand 20Rnd
+    class FA_JCA_20Rnd_762x51_Sand_PMAG_Mk369K_AD: JCA_20Rnd_762x51_Sand_PMAG {
+        author = QAUTHOR;
+        displayName = "[Ghost] 20Rnd Mk369K AD Sand Mag";
+        descriptionShort = "Mk369K AD 12-pellet shot, eff. 150 m";
+        ammo = "FA_b_762_Mk369K_AD";
+        initSpeed = 640;
+        tracersEvery = 0;
+        lastRoundsTracer = 0;
+    };
+    class FA_JCA_20Rnd_762x51_Sand_PMAG_Mk369L_AD: JCA_20Rnd_762x51_Sand_PMAG {
+        author = QAUTHOR;
+        displayName = "[Ghost] 20Rnd Mk369L AD Sand Mag";
+        descriptionShort = "Mk369L AD 10-pellet shot, eff. 250 m";
+        ammo = "FA_b_762_Mk369L_AD";
+        initSpeed = 640;
+        tracersEvery = 0;
+        lastRoundsTracer = 0;
+    };
 };

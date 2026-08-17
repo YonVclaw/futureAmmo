@@ -1,8 +1,62 @@
+[h1]Balance — 6.5 mm now sits properly between 5.56 and 7.62[/h1]
+
+The 6.5x39 caseless family was never a real middle step. It hit for the same as 5.56 while carrying a 7.62-weight bullet, and its ballistic coefficients were flatter than 7.62 outright — so 6.5 reached further than the round it's meant to sit under. Penetration wandered in both directions too: Mk328 pierced like 5.56, while XM892 and XM893 out-pierced every 7.62 load in the pack.
+
+Every West 6.5 load is now pinned to the midpoint of its 5.56 and 7.62 counterpart — damage, penetration, muzzle velocity, drag, bullet weight and BC. In practice 6.5 now lands around 2.9-3.3 kJ at the muzzle, against 1.8-1.9 kJ for 5.56 and 3.9-4.2 kJ for 7.62: clearly better than the little round, clearly short of the big one.
+
+[list]
+[*][b]Mk330 EPR[/b] — the general-purpose load, dead centre of the band
+[*][b]Mk328 HV[/b] / [b]XM892 CTEP[/b] — the carbine loads
+[*][b]Mk329 LR[/b] / [b]XM893 CTEP[/b] — the 610 mm DMR and MG loads, top of the band
+[*][b]Mk331 AP[/b] — still the hardest-hitting on armour and the slowest of the six
+[/list]
+
+The four extra loads (Mk328, XM892, Mk329, XM893) also picked up the full ACE ballistics data the rest of the pack already had — velocity spread, atmosphere model and proper barrel-length curves instead of a single data point — so ACE Advanced Ballistics and ATragMX now read them the same way as everything else.
+
+CSAT's Type 41 / 42 / 43 keep their usual ~10% gap under the NATO equivalents, so the faction balance is unchanged. The 6.2 mm caseless line is untouched, and no magazine or ammo classes were added, renamed or removed — existing loadouts and missions keep working.
+
+[hr][/hr]
+
+[h1]Balance — 5.56 / 7.62 PAB fuze radii halved[/h1]
+
+Realism pass: the Mk361 (5.56) and Mk362 (7.62) proximity rounds now need a genuinely close pass — trigger/lethal radius drops to 0.875/0.625 m and 1/0.75 m. Damage and reach unchanged; bigger calibers untouched. If you want forgiving fuzes, that's what the 40mm Mk364 — or the new buckshot below — is for.
+
+[hr][/hr]
+
+[h1]New — Rifle anti-drone buckshot (Mk368 / Mk369 AD)[/h1]
+
+Buckshot out of your rifle: two new anti-drone shot families that need no fuze, no script and no dialing — just point at the drone and fire. Each round splits into a tight tungsten pellet cone at the muzzle, holding a one-foot pattern radius out to its effective range.
+
+[list]
+[*][b]5.56 Mk368K AD[/b] — 8 pellets, effective to 100 m (2,200 fps)
+[*][b]5.56 Mk368L AD[/b] — 5 heavier pellets, effective to 200 m
+[*][b]7.62 Mk369K AD[/b] — 12 pellets, effective to 150 m (2,100 fps)
+[*][b]7.62 Mk369L AD[/b] — 10 heavier pellets, effective to 250 m
+[/list]
+
+K is your close-in swarm answer; L trades pellet count for reach. They feed the standard STANAG 5.56 and 7.62 battle-rifle wells, and — with the JCA pack — all five JCA 5.56 mag bodies (EMAG, sand EMAG, PMAG, sand PMAG, Green PMAG) and both JCA 7.62 PMAGs. No tracer variants: the round splits at the muzzle. The JCA 5.56 and 7.62 range signs list the new loads (and the 7.62 board finally shows its Mk362 PAB row).
+
+[hr][/hr]
+
+[h1]Balance — Mk386 UGS sweeps every 12 s[/h1]
+
+The 40mm unattended ground sensor now refreshes its contact markers every 12 seconds instead of every 2. Contacts can slip past between sweeps and the map picture lags real movement, so the picket is early warning rather than a live tracker. Lifetime (30 min) and radius (150 m) unchanged.
+
+[hr][/hr]
+
+[h1]Balance — PAB anti-drone rounds toned down[/h1]
+
+The rifle and MG proximity-airburst rounds (Mk361/362/363/366/367/373, PABS slug, DBJ-25, 7N42, 7N62) were doing too much work: fuze radius and damage are both halved. You now need to shoot straighter and land more hits per drone. The [b]40mm Mk364 keeps its full envelope[/b] — if you want one-round drone kills, carry the dedicated payload. Launcher C-UAS rounds are unchanged, and the CBA difficulty sliders still work on top.
+
+[hr][/hr]
+
 [h1]Change — Class names now carry their faction[/h1]
 
 Magazine and ammo class names now start with their side — [b]FA_b_[/b] (BLUFOR), [b]FA_o_[/b] (OPFOR), [b]FA_i_[/b] (Independent) — and compat magazines carry their pack's tag (FA_jca_, FA_rf_, FA_lot_, ...). Easier to script against and to filter in the arsenal.
 
 [b]Nothing breaks:[/b] every old class name still works — saved loadouts, mission crates and scripts using the old names keep functioning, and both names are visible in the arsenal for this release.
+
+[b]Fixed since the rename:[/b] old-name magazines loaded into your inventory but no weapon would chamber them — the rename had moved the magazine wells over to the new names only, so an old mag from a saved loadout sat there dead. All 1,777 old names are back in every magazine well, weapon and vehicle turret alongside the new ones. Old and new mags both load everywhere again.
 
 [hr][/hr]
 
@@ -23,6 +77,22 @@ Each faction now fields its own base ammunition instead of borrowing NATO's. Sli
 [/list]
 
 All loads come plain plus all 7 tracer colours (Red / Yellow / Green / White / Blue / Orange / IR) — 112 new magazines.
+
+[hr][/hr]
+
+[h1]New — Range Signs[/h1]
+
+Five ammo reference boards for your training areas, in the mod's board style with the Ghost skeleton up top. Drop them on any User Texture object (2:1 picture boards fit best) or via script:
+
+[code]this setObjectTextureGlobal [0, "z\ghostfa\addons\main\data\fa_sign_65_mx.paa"];[/code]
+
+[list]
+[*][b]fa_sign_65_mx[/b] — the 6.5x39 caseless lineup for the MX family
+[*][b]fa_sign_jca_556[/b] — JCA M4A4 / HK433 5.56 loads
+[*][b]fa_sign_jca_762[/b] — JCA SR-10 7.62 loads
+[*][b]fa_sign_40mm[/b] — the 40mm smart payloads (PAB, buckshot, Mk380 carrier block)
+[*][b]fa_sign_nato_rockets[/b] — MAAWS Mk4 and Mk153 SMAW round racks side by side
+[/list]
 
 [hr][/hr]
 

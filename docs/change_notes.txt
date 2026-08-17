@@ -1,3 +1,115 @@
+== Balance: 6.5x39 caseless repositioned between 5.56 and 7.62 ==
+
+The 6.5 family never sat where an intermediate cartridge should. It hit for the
+same 8 as 5.56 while carrying a 7.62-class bullet, and its drag/BC figures were
+flatter than 7.62 outright (Mk329 BC 0.32, XM893 0.34 vs XM751's 0.245), so 6.5
+shot further than the round it is supposed to sit under. Penetration was
+scattered in both directions — Mk328 pierced like 5.56 (2.4) while XM892/XM893
+out-pierced every 7.62 load (4.2 / 4.6).
+
+Every West 6.5 stat is now the arithmetic midpoint of its 5.56 and 7.62 role
+peer (Mk327/M80A2 for GP, XM891/XM751 for CTEP), so the caliber reads as a true
+step between the two — ~2.9-3.3 kJ muzzle energy against 1.8-1.9 kJ (5.56) and
+3.9-4.2 kJ (7.62). No classes were added, renamed or removed.
+
+  hit / caliber / typicalSpeed / airFriction / BC / bullet mass g, old -> new:
+    Mk330 EPR   8/2.8/855/-0.00095/0.290/8.0   -> 11/2.7/950/-0.00104/0.190/6.4
+    Mk328 HV   11/2.4/810/-0.00055/0.28 /8.0   -> 11/2.8/965/-0.00101/0.196/6.4
+    XM892 CTEP 12/4.2/830/-0.00050/0.29 /7.8   -> 12/3.0/970/-0.00099/0.204/6.5
+    Mk331 AP    8/3.4/840/-0.00090/0.300/8.4   -> 11/3.3/945/-0.00100/0.201/6.6
+    Mk329 LR   13/2.6/860/-0.00045/0.32 /9.07  -> 12/2.9/960/-0.00095/0.212/6.8
+    XM893 CTEP 13/4.6/880/-0.00042/0.34 /8.9   -> 12/3.2/980/-0.00092/0.219/6.9
+
+Role spread inside the band: Mk331 AP keeps the +0.6 pen offset that 5.56's
+Mk332 carries over its GP round (2.7 -> 3.3) and stays the slowest load;
+Mk328/XM892 are the carbine loads (330/407/508 mm); Mk329 LR and XM893 CTEP are
+the 610 mm DMR/MG loads at the top of the band. deflecting now follows the
+tier its peers use (GP 15, CTEP 14, LR 13, AP 12) and tracerScale is 0.7
+throughout — midway between 5.56's 0.6 and 7.62's 0.8.
+
+The four matrix loads (Mk328/XM892/Mk329/XM893) also gained the ACE fields the
+rest of the small-arms line already carried and they were missing entirely:
+ACE_muzzleVelocityVariationSD, ACE_velocityBoundaries, ACE_standardAtmosphere,
+deflecting, tracerScale, and real multi-point ACE_muzzleVelocities /
+ACE_barrelLengths curves instead of a single 508 or 610 mm data point.
+
+CSAT's 6.5 trio keeps its documented x0.90 gradient against the rebalanced West
+peer (speed and pen scaled, geometry/BC copied from the parent), so the faction
+gap is unchanged:
+    Type 41 EPR  7/2.5/770 -> 10/2.4/855   (<- Mk330)
+    Type 42 CT  11/3.8/745 -> 11/2.7/873   (<- XM892)
+    Type 43 AP   7/3.1/755 -> 10/3.0/851   (<- Mk331)
+Type 42 also picks up the 3-point barrel curve its parent uses (was a single
+508 mm point).
+
+213 magazine initSpeed values across ammo/CfgMagazines.hpp, ammo/CfgMag65_matrix.hpp
+and ef/CfgMagazines.hpp were resynced to the new muzzle velocities.
+
+Untouched: the 6.2x40 caseless line (csat62 DBP-25/26/88B, DBJ-25 PAB) stays
+exactly where it was, and the Mk367 PAB keeps inheriting vanilla 6.5 ballistics
+and its balance-tuned fuze envelope.
+
+== Balance: 5.56 / 7.62 PAB fuze radii halved again ==
+
+Realism pass on the two smallest PAB rounds — a rifle-bullet frag sleeve
+shouldn't threaten a drone a full metre and a half away. Damage, effective
+range and every other caliber unchanged; the CBA sliders still scale on top.
+
+  trigger/lethal, old -> new:
+    Mk361 5.56: 1.75/1.25 -> 0.875/0.625
+    Mk362 7.62: 2/1.5     -> 1/0.75
+
+== New: rifle anti-drone buckshot — Mk368 / Mk369 AD (K/L) ==
+
+NEW — antidrone: rifle-cased tungsten buckshot for FPV/quad intercept with no
+fuze script — a pure config submunition burst at the muzzle (poisson-disc with
+a center pellet, same mechanism as the 12 ga Mk360 AD and 40mm Mk389 TBK).
+No tracer variants. Pattern holds a 1 ft radius at each variant's effective
+range (coneAngle = atan(0.3048 / range)):
+  - 5.56x45 Mk368K AD — 8 pellets,  eff. 100 m, 671 m/s (2200 fps)
+  - 5.56x45 Mk368L AD — 5 heavier pellets, eff. 200 m, 671 m/s
+  - 7.62x51 Mk369K AD — 12 pellets, eff. 150 m, 640 m/s (2100 fps)
+  - 7.62x51 Mk369L AD — 10 heavier pellets, eff. 250 m, 640 m/s
+Pellet drag is tuned so every variant keeps ~45-47% of muzzle velocity at its
+max effective range; past that the pattern goes soft fast. Mags feed the
+STANAG 5.56 (30Rnd) and M14 7.62 (20Rnd) wells; the caliber diary and the
+Counter-UAS map note list the new natures.
+
+Also on JCA bodies (antidrone_jca): Mk368K/L on all five JCA 5.56 mag bodies
+(EMAG / sand EMAG / PMAG / sand PMAG / Green PMAG), Mk369K/L on both JCA 7.62
+PMAG bodies — no tracer variants, the round splits at the muzzle. The JCA
+5.56 / 7.62 training-area signs gained the buckshot rows, and the 7.62 board
+now lists its Mk362 PAB row (was missing).
+
+== Balance: Mk386 UGS sweep rate 2s -> 12s ==
+
+The 40mm unattended ground sensor now refreshes its contact markers every 12
+seconds instead of every 2 - contacts can slip past between sweeps and the map
+picture lags real movement, making the picket an early-warning tool rather than
+a live tracker. Lifetime (30 min) and radius (150 m) unchanged.
+
+== Balance: bullet-type PAB anti-drone rounds halved ==
+
+All rifle/HMG proximity-airburst rounds lose half their fuze envelope and half
+their damage; lethal radius is halved with the trigger radius so the falloff
+proportions stay intact (leaving it would have made every burst a full-damage
+burst, cancelling most of the damage cut).
+
+  trigger/lethal/damage, old -> new:
+    Mk361 5.56 / Mk363 .300 / Mk367 6.5:  3.5/2.5/0.5 -> 1.75/1.25/0.25
+    Mk362 7.62:                           4/3/0.5     -> 2/1.5/0.25
+    Mk366 12.7x99:                        5/3.5/0.5   -> 2.5/1.75/0.25
+    Mk373 .338 / Mk363 PABS 12ga:         4.5/3/0.5   -> 2.25/1.5/0.25
+    DBJ-25 6.2 (csat62):                  4/3/0.5     -> 2/1.5/0.25
+    7N62 14.5 (extracal):                 6/5/0.7     -> 3/2.5/0.35
+    7N42 12.7x108 (vehicles):             6/5/0.6     -> 3/2.5/0.3
+
+Deliberately NOT touched: the 40mm Mk364 (dedicated C-UAS payload keeps its
+6/4.5/0.5 envelope), the RC40 40mm revolver rounds, and every launcher round
+(MAAWS ADM/HE448, Mk153 ADM/HEDP, RPG AB-32/AB-7, Vorona Oskol) — those are
+warheads, not bullets. Effective ranges unchanged. The CBA sliders
+(trigger/lethal/damage multipliers) still scale on top of the new baselines.
+
 == Change: side-prefixed class names (FA_b_/FA_o_/FA_i_) + addon prefixes, with aliases ==
 
 All 1806 small-arms classes in the core addons were renamed to carry their side in
@@ -13,6 +125,14 @@ Side is derived from the designation (Mk/XM/M = b; 7N/7U/DBP/DBJ/Type4x = o;
 AF-* = i), matching the side plan table. Already-conforming addons untouched:
 jca/sps/rhs/aegis/ef/e22raf (addon-tagged; config names are case-insensitive so
 FA_JCA_* == FA_jca_*), and the vehicle/mortar _O/_I suffix convention stays.
+
+FIX (post-rename): the rename had swapped the magazine wells and weapon
+magazines[] arrays over to the new names only, so an old-name mag from a saved
+loadout sat in the inventory but no weapon would chamber it ("mag with no
+ammo"). All 1777 old names are restored into every magazineWell ADDON[] list,
+CfgWeapons magazines[] and CfgVehicles turret array right beside their new
+names (ammo, antidrone, extracal, csat62, rf, lot, aegis, atlas, vehicles).
+Old and new mags now both load everywhere.
 
 Backwards compatibility: every old name still exists as a VISIBLE alias
 (`class OLD: NEW {};`) in per-addon CfgAmmo_compat.hpp / CfgMagazines_compat.hpp,

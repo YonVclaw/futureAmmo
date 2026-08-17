@@ -7,6 +7,8 @@ class CfgAmmo {
     class B_338_Mag: BulletBase {};
     class B_338_LM_Ball: B_338_Mag {};
     class B_65x39_Caseless;
+    class B_12Gauge_Pellets_Submunition;
+    class B_12Gauge_Pellets_Submunition_Cartridge;
 
     // =========================================================
     // Mk361 PAB — 5.56x45 Proximity AirBurst
@@ -182,6 +184,88 @@ class CfgAmmo {
     class FA_b_338_Mk373_PAB_T_White: FA_b_338_Mk373_PAB { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
     class FA_b_338_Mk373_PAB_T_Blue: FA_b_338_Mk373_PAB { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
     class FA_b_338_Mk373_PAB_T_Orange: FA_b_338_Mk373_PAB { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
+
+    // =========================================================
+    // Mk368 AD — 5.56x45 Anti-Drone Buckshot (K short / L long)
+    // Rifle-cased tungsten shot for FPV/quad intercept; muzzle
+    // submunition burst, config-only (no script, no tracers).
+    // Pattern radius 1 ft at each variant's effective range
+    // (coneAngle = atan(0.3048 / range)), same idea as the 12 ga
+    // Mk360 AD / 40mm Mk389 TBK dense spreads.
+    // =========================================================
+    // ---- Mk368K — 8 pellets, eff. 100 m, 671 m/s (2200 fps) ----
+    class FA_b_556_Mk368K_AD_Sub: B_12Gauge_Pellets_Submunition {
+        hit = 4.5;
+        caliber = 0.5;
+        airFriction = -0.0075;
+        typicalSpeed = 671;
+        airLock = 1;
+        timeToLive = 3;
+    };
+    class FA_b_556_Mk368K_AD: B_12Gauge_Pellets_Submunition_Cartridge {
+        displayName = "5.56mm Mk368K AD Shot";
+        triggerTime = 0;
+        submunitionAmmo = "FA_b_556_Mk368K_AD_Sub";
+        submunitionConeType[] = {"poissondisccenter", 8};
+        submunitionConeAngle = 0.175; // 1 ft pattern radius at 100 m
+        typicalSpeed = 671;
+    };
+    // ---- Mk368L — 5 heavier pellets, eff. 200 m, 671 m/s ----
+    class FA_b_556_Mk368L_AD_Sub: B_12Gauge_Pellets_Submunition {
+        hit = 6;
+        caliber = 0.6;
+        airFriction = -0.0040;
+        typicalSpeed = 671;
+        airLock = 1;
+        timeToLive = 3;
+    };
+    class FA_b_556_Mk368L_AD: B_12Gauge_Pellets_Submunition_Cartridge {
+        displayName = "5.56mm Mk368L AD Shot";
+        triggerTime = 0;
+        submunitionAmmo = "FA_b_556_Mk368L_AD_Sub";
+        submunitionConeType[] = {"poissondisccenter", 5};
+        submunitionConeAngle = 0.087; // 1 ft pattern radius at 200 m
+        typicalSpeed = 671;
+    };
+
+    // =========================================================
+    // Mk369 AD — 7.62x51 Anti-Drone Buckshot (K short / L long)
+    // Bigger case, denser pattern and more reach than the Mk368.
+    // =========================================================
+    // ---- Mk369K — 12 pellets, eff. 150 m, 640 m/s (2100 fps) ----
+    class FA_b_762_Mk369K_AD_Sub: B_12Gauge_Pellets_Submunition {
+        hit = 4.5;
+        caliber = 0.5;
+        airFriction = -0.0050;
+        typicalSpeed = 640;
+        airLock = 1;
+        timeToLive = 3;
+    };
+    class FA_b_762_Mk369K_AD: B_12Gauge_Pellets_Submunition_Cartridge {
+        displayName = "7.62mm Mk369K AD Shot";
+        triggerTime = 0;
+        submunitionAmmo = "FA_b_762_Mk369K_AD_Sub";
+        submunitionConeType[] = {"poissondisccenter", 12};
+        submunitionConeAngle = 0.116; // 1 ft pattern radius at 150 m
+        typicalSpeed = 640;
+    };
+    // ---- Mk369L — 10 heavier pellets, eff. 250 m, 640 m/s ----
+    class FA_b_762_Mk369L_AD_Sub: B_12Gauge_Pellets_Submunition {
+        hit = 5.5;
+        caliber = 0.55;
+        airFriction = -0.0030;
+        typicalSpeed = 640;
+        airLock = 1;
+        timeToLive = 3;
+    };
+    class FA_b_762_Mk369L_AD: B_12Gauge_Pellets_Submunition_Cartridge {
+        displayName = "7.62mm Mk369L AD Shot";
+        triggerTime = 0;
+        submunitionAmmo = "FA_b_762_Mk369L_AD_Sub";
+        submunitionConeType[] = {"poissondisccenter", 10};
+        submunitionConeAngle = 0.070; // 1 ft pattern radius at 250 m
+        typicalSpeed = 640;
+    };
 
     #include "CfgAmmo_compat.hpp"
 };

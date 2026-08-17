@@ -464,6 +464,8 @@ Total FA magazines: **3169**  ·  displayName = `[Ghost] <rounds> <designation> 
 | FA_JCA_20Rnd_762x51_PMAG_Mk362_PAB_T_Red | [Ghost] 20Rnd Mk362 PAB Red Tracer |
 | FA_JCA_20Rnd_762x51_PMAG_Mk362_PAB_T_White | [Ghost] 20Rnd Mk362 PAB White Tracer |
 | FA_JCA_20Rnd_762x51_PMAG_Mk362_PAB_T_Yellow | [Ghost] 20Rnd Mk362 PAB Yellow Tracer |
+| FA_JCA_20Rnd_762x51_PMAG_Mk369K_AD | [Ghost] 20Rnd Mk369K AD |
+| FA_JCA_20Rnd_762x51_PMAG_Mk369L_AD | [Ghost] 20Rnd Mk369L AD |
 | FA_JCA_20Rnd_762x51_PMAG_T_Blue | [Ghost] 20Rnd M80A2 HV Blue Tracer |
 | FA_JCA_20Rnd_762x51_PMAG_T_Green | [Ghost] 20Rnd M80A2 HV Green Tracer |
 | FA_JCA_20Rnd_762x51_PMAG_T_IR | [Ghost] 20Rnd M80A2 HV IR Tracer |
@@ -487,6 +489,8 @@ Total FA magazines: **3169**  ·  displayName = `[Ghost] <rounds> <designation> 
 | FA_JCA_20Rnd_762x51_Sand_PMAG_Mk362_PAB_T_Red | [Ghost] 20Rnd Mk362 PAB Sand Mag Red Tracer |
 | FA_JCA_20Rnd_762x51_Sand_PMAG_Mk362_PAB_T_White | [Ghost] 20Rnd Mk362 PAB Sand Mag White Tracer |
 | FA_JCA_20Rnd_762x51_Sand_PMAG_Mk362_PAB_T_Yellow | [Ghost] 20Rnd Mk362 PAB Sand Mag Yellow Tracer |
+| FA_JCA_20Rnd_762x51_Sand_PMAG_Mk369K_AD | [Ghost] 20Rnd Mk369K AD Sand Mag |
+| FA_JCA_20Rnd_762x51_Sand_PMAG_Mk369L_AD | [Ghost] 20Rnd Mk369L AD Sand Mag |
 | FA_JCA_20Rnd_762x51_Sand_PMAG_T_Blue | [Ghost] 20Rnd M80A2 HV Sand Mag Blue Tracer |
 | FA_JCA_20Rnd_762x51_Sand_PMAG_T_Green | [Ghost] 20Rnd M80A2 HV Sand Mag Green Tracer |
 | FA_JCA_20Rnd_762x51_Sand_PMAG_T_IR | [Ghost] 20Rnd M80A2 HV Sand Mag IR Tracer |
@@ -616,6 +620,8 @@ Total FA magazines: **3169**  ·  displayName = `[Ghost] <rounds> <designation> 
 | FA_JCA_30Rnd_556x45_EMAG_Mk361_PAB_T_Red | [Ghost] 30Rnd Mk361 PAB Red Tracer |
 | FA_JCA_30Rnd_556x45_EMAG_Mk361_PAB_T_White | [Ghost] 30Rnd Mk361 PAB White Tracer |
 | FA_JCA_30Rnd_556x45_EMAG_Mk361_PAB_T_Yellow | [Ghost] 30Rnd Mk361 PAB Yellow Tracer |
+| FA_JCA_30Rnd_556x45_EMAG_Mk368K_AD | [Ghost] 30Rnd Mk368K AD |
+| FA_JCA_30Rnd_556x45_EMAG_Mk368L_AD | [Ghost] 30Rnd Mk368L AD |
 | FA_JCA_30Rnd_556x45_EMAG_T_Blue | [Ghost] 30Rnd Mk327 HV Blue Tracer |
 | FA_JCA_30Rnd_556x45_EMAG_T_Green | [Ghost] 30Rnd Mk327 HV Green Tracer |
 | FA_JCA_30Rnd_556x45_EMAG_T_IR | [Ghost] 30Rnd Mk327 HV IR Tracer |
@@ -647,6 +653,8 @@ Total FA magazines: **3169**  ·  displayName = `[Ghost] <rounds> <designation> 
 | FA_JCA_30Rnd_556x45_Green_PMAG_Mk361_PAB_T_Red | [Ghost] 30Rnd Mk361 PAB Green PMAG Red Tracer |
 | FA_JCA_30Rnd_556x45_Green_PMAG_Mk361_PAB_T_White | [Ghost] 30Rnd Mk361 PAB Green PMAG White Tracer |
 | FA_JCA_30Rnd_556x45_Green_PMAG_Mk361_PAB_T_Yellow | [Ghost] 30Rnd Mk361 PAB Green PMAG Yellow Tracer |
+| FA_JCA_30Rnd_556x45_Green_PMAG_Mk368K_AD | [Ghost] 30Rnd Mk368K AD Green PMAG |
+| FA_JCA_30Rnd_556x45_Green_PMAG_Mk368L_AD | [Ghost] 30Rnd Mk368L AD Green PMAG |
 | FA_JCA_30Rnd_556x45_Green_PMAG_T_Blue | [Ghost] 30Rnd Mk327 HV Green PMAG Blue Tracer |
 | FA_JCA_30Rnd_556x45_Green_PMAG_T_Green | [Ghost] 30Rnd Mk327 HV Green PMAG Green Tracer |
 | FA_JCA_30Rnd_556x45_Green_PMAG_T_IR | [Ghost] 30Rnd Mk327 HV Green PMAG IR Tracer |
@@ -678,6 +686,8 @@ Total FA magazines: **3169**  ·  displayName = `[Ghost] <rounds> <designation> 
 | FA_JCA_30Rnd_556x45_PMAG_Mk361_PAB_T_Red | [Ghost] 30Rnd Mk361 PAB Red Tracer |
 | FA_JCA_30Rnd_556x45_PMAG_Mk361_PAB_T_White | [Ghost] 30Rnd Mk361 PAB White Tracer |
 | FA_JCA_30Rnd_556x45_PMAG_Mk361_PAB_T_Yellow | [Ghost] 30Rnd Mk361 PAB Yellow Tracer |
+| FA_JCA_30Rnd_556x45_PMAG_Mk368K_AD | [Ghost] 30Rnd Mk368K AD |
+| FA_JCA_30Rnd_556x45_PMAG_Mk368L_AD | [Ghost] 30Rnd Mk368L AD |
 | FA_JCA_30Rnd_556x45_PMAG_T_Blue | [Ghost] 30Rnd Mk327 HV Blue Tracer |
 | FA_JCA_30Rnd_556x45_PMAG_T_Green | [Ghost] 30Rnd Mk327 HV Green Tracer |
 | FA_JCA_30Rnd_556x45_PMAG_T_IR | [Ghost] 30Rnd Mk327 HV IR Tracer |
@@ -709,6 +719,8 @@ Total FA magazines: **3169**  ·  displayName = `[Ghost] <rounds> <designation> 
 | FA_JCA_30Rnd_556x45_sand_EMAG_Mk361_PAB_T_Red | [Ghost] 30Rnd Mk361 PAB Red Tracer |
 | FA_JCA_30Rnd_556x45_sand_EMAG_Mk361_PAB_T_White | [Ghost] 30Rnd Mk361 PAB White Tracer |
 | FA_JCA_30Rnd_556x45_sand_EMAG_Mk361_PAB_T_Yellow | [Ghost] 30Rnd Mk361 PAB Yellow Tracer |
+| FA_JCA_30Rnd_556x45_sand_EMAG_Mk368K_AD | [Ghost] 30Rnd Mk368K AD |
+| FA_JCA_30Rnd_556x45_sand_EMAG_Mk368L_AD | [Ghost] 30Rnd Mk368L AD |
 | FA_JCA_30Rnd_556x45_sand_EMAG_T_Blue | [Ghost] 30Rnd Mk327 HV Blue Tracer |
 | FA_JCA_30Rnd_556x45_sand_EMAG_T_Green | [Ghost] 30Rnd Mk327 HV Green Tracer |
 | FA_JCA_30Rnd_556x45_sand_EMAG_T_IR | [Ghost] 30Rnd Mk327 HV IR Tracer |
@@ -740,6 +752,8 @@ Total FA magazines: **3169**  ·  displayName = `[Ghost] <rounds> <designation> 
 | FA_JCA_30Rnd_556x45_sand_PMAG_Mk361_PAB_T_Red | [Ghost] 30Rnd Mk361 PAB Red Tracer |
 | FA_JCA_30Rnd_556x45_sand_PMAG_Mk361_PAB_T_White | [Ghost] 30Rnd Mk361 PAB White Tracer |
 | FA_JCA_30Rnd_556x45_sand_PMAG_Mk361_PAB_T_Yellow | [Ghost] 30Rnd Mk361 PAB Yellow Tracer |
+| FA_JCA_30Rnd_556x45_sand_PMAG_Mk368K_AD | [Ghost] 30Rnd Mk368K AD |
+| FA_JCA_30Rnd_556x45_sand_PMAG_Mk368L_AD | [Ghost] 30Rnd Mk368L AD |
 | FA_JCA_30Rnd_556x45_sand_PMAG_T_Blue | [Ghost] 30Rnd Mk327 HV Blue Tracer |
 | FA_JCA_30Rnd_556x45_sand_PMAG_T_Green | [Ghost] 30Rnd Mk327 HV Green Tracer |
 | FA_JCA_30Rnd_556x45_sand_PMAG_T_IR | [Ghost] 30Rnd Mk327 HV IR Tracer |
@@ -1501,6 +1515,8 @@ Total FA magazines: **3169**  ·  displayName = `[Ghost] <rounds> <designation> 
 | FA_b_20Rnd_762_Mk362_PAB_T_Red | [Ghost] 20Rnd Mk362 PAB Red Tracer |
 | FA_b_20Rnd_762_Mk362_PAB_T_White | [Ghost] 20Rnd Mk362 PAB White Tracer |
 | FA_b_20Rnd_762_Mk362_PAB_T_Yellow | [Ghost] 20Rnd Mk362 PAB Yellow Tracer |
+| FA_b_20Rnd_762_Mk369K_AD | [Ghost] 20Rnd Mk369K AD |
+| FA_b_20Rnd_762_Mk369L_AD | [Ghost] 20Rnd Mk369L AD |
 | FA_b_20Rnd_762_XM751_CTEP | [Ghost] 20Rnd XM751 CTEP |
 | FA_b_20Rnd_762_XM751_CTEP_T_Blue | [Ghost] 20Rnd XM751 CTEP Blue Tracer |
 | FA_b_20Rnd_762_XM751_CTEP_T_Green | [Ghost] 20Rnd XM751 CTEP Green Tracer |
@@ -1609,6 +1625,8 @@ Total FA magazines: **3169**  ·  displayName = `[Ghost] <rounds> <designation> 
 | FA_b_30Rnd_556_Mk361_PAB_T_Red | [Ghost] 30Rnd Mk361 PAB Red Tracer |
 | FA_b_30Rnd_556_Mk361_PAB_T_White | [Ghost] 30Rnd Mk361 PAB White Tracer |
 | FA_b_30Rnd_556_Mk361_PAB_T_Yellow | [Ghost] 30Rnd Mk361 PAB Yellow Tracer |
+| FA_b_30Rnd_556_Mk368K_AD | [Ghost] 30Rnd Mk368K AD |
+| FA_b_30Rnd_556_Mk368L_AD | [Ghost] 30Rnd Mk368L AD |
 | FA_b_30Rnd_556_XM891_CTEP | [Ghost] 30Rnd XM891 CTEP |
 | FA_b_30Rnd_556_XM891_CTEP_T_Blue | [Ghost] 30Rnd XM891 CTEP Blue Tracer |
 | FA_b_30Rnd_556_XM891_CTEP_T_Green | [Ghost] 30Rnd XM891 CTEP Green Tracer |

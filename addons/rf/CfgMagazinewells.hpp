@@ -5,11 +5,17 @@ class CfgMagazineWells {
     class CBA_127x55_ASh12 {
         ADDON[] += {
             "FA_rf_20Rnd_127x55_7N52",
+            "FA_20Rnd_127x55_7N52",
             "FA_rf_20Rnd_127x55_7U13",
+            "FA_20Rnd_127x55_7U13",
             "FA_rf_20Rnd_127x55_7U14",
+            "FA_20Rnd_127x55_7U14",
             "FA_rf_10Rnd_127x55_7N52",
+            "FA_10Rnd_127x55_7N52",
             "FA_rf_10Rnd_127x55_7U13",
-            "FA_rf_10Rnd_127x55_7U14"
+            "FA_10Rnd_127x55_7U13",
+            "FA_rf_10Rnd_127x55_7U14",
+            "FA_10Rnd_127x55_7U14"
         };
     };
 

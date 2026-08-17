@@ -584,24 +584,30 @@ class CfgAmmo {
     // Inherits vanilla caseless; gate to MX family via magazineWell.
     // =========================================================
 
-    // 6.5mm Caseless EPR (~2035) — caseless, ~75 kpsi (fictional), 120gr tungsten
+    // The whole West 6.5 family is pinned midway between the 5.56 and 7.62 lines:
+    // every stat below is the arithmetic midpoint of its 5.56 and 7.62 role peer
+    // (Mk327/M80A2 for GP, XM891/XM751 for CTEP), so 6.5 is a true intermediate —
+    // ~2.9 kJ muzzle energy against 1.8 kJ (5.56) and 3.9 kJ (7.62).
+
+    // 6.5mm Caseless EPR (~2035) — caseless, ~75 kpsi (fictional), 99gr tungsten
+    // GP tier: midpoint of Mk327 HV (5.56) and M80A2 HV (7.62).
     class FA_b_65_EPR: B_65x39_Caseless {
         displayName = "Mk330 EPR";
-        hit = 8;
-        caliber = 2.8;
-        typicalSpeed = 855;
-        airFriction = -0.00095;
-        deflecting = 12;
+        hit = 11;
+        caliber = 2.7;
+        typicalSpeed = 950;
+        airFriction = -0.00104;
+        deflecting = 15;
         tracerScale = 0.7;
         ACE_caliber = 6.71;
-        ACE_bulletLength = 30.0;
-        ACE_bulletMass = 8.0;
-        ACE_muzzleVelocityVariationSD = 0.15;
-        ACE_ballisticCoefficients[] = {0.290};
+        ACE_bulletLength = 26.1;
+        ACE_bulletMass = 6.4;
+        ACE_muzzleVelocityVariationSD = 0.16;
+        ACE_ballisticCoefficients[] = {0.190};
         ACE_velocityBoundaries[] = {};
         ACE_standardAtmosphere = "ICAO";
         ACE_dragModel = 7;
-        ACE_muzzleVelocities[] = {815, 855, 880};
+        ACE_muzzleVelocities[] = {910, 950, 985};
         ACE_barrelLengths[] = {330, 407, 508};
     };
     class FA_b_65_EPR_T_Red: FA_b_65_EPR { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
@@ -612,7 +618,9 @@ class CfgAmmo {
     class FA_b_65_EPR_T_Orange: FA_b_65_EPR { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
     class FA_b_65_EPR_T_IR: FA_b_65_EPR { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
     // Mk331 AP — caseless tungsten armor-piercing (metric, 2040)
-    class FA_b_65_Mk331_AP: B_65x39_Caseless { hit=8; caliber=3.4; typicalSpeed=840; airFriction=-0.00090; deflecting=10; displayName="Mk331 AP"; ACE_caliber=6.71; ACE_bulletLength=30.5; ACE_bulletMass=8.4; ACE_muzzleVelocityVariationSD=0.14; ACE_ballisticCoefficients[]={0.300}; ACE_velocityBoundaries[]={}; ACE_standardAtmosphere="ICAO"; ACE_dragModel=7; ACE_muzzleVelocities[]={800,840,865}; ACE_barrelLengths[]={330,407,508}; };
+    // AP tier: 5.56 Mk332 AP carries +0.6 pen over its GP round, so the 6.5 AP sits
+    // +0.6 over Mk330 (2.7 -> 3.3), between the 5.56 AP and a notional 7.62 AP.
+    class FA_b_65_Mk331_AP: B_65x39_Caseless { hit=11; caliber=3.3; typicalSpeed=945; airFriction=-0.00100; deflecting=12; tracerScale=0.7; displayName="Mk331 AP"; ACE_caliber=6.71; ACE_bulletLength=27.0; ACE_bulletMass=6.6; ACE_muzzleVelocityVariationSD=0.14; ACE_ballisticCoefficients[]={0.201}; ACE_velocityBoundaries[]={}; ACE_standardAtmosphere="ICAO"; ACE_dragModel=7; ACE_muzzleVelocities[]={905,945,980}; ACE_barrelLengths[]={330,407,508}; };
     class FA_b_65_Mk331_AP_T_Red: FA_b_65_Mk331_AP { tracer=1; tracerColor[]={1,0,0,1}; };
     class FA_b_65_Mk331_AP_T_Yellow: FA_b_65_Mk331_AP { tracer=1; tracerColor[]={1,1,0,1}; };
     class FA_b_65_Mk331_AP_T_Green: FA_b_65_Mk331_AP { tracer=1; tracerColor[]={0,1,0,1}; };
@@ -622,10 +630,13 @@ class CfgAmmo {
     class FA_b_65_Mk331_AP_T_IR: FA_b_65_Mk331_AP { tracer=1; nvgOnly=1; tracerColor[]={0.2,1,0.2,1}; };
 
     // ===== 6.5x39 caseless extra loads (Mk328/XM892/Mk329/XM893) =====
-    class FA_b_ammo_65g_Mk328: B_65x39_Caseless { displayName = "Mk328 HV"; caliber = 2.4; hit = 11; typicalSpeed = 810; airFriction = -0.00055; ACE_caliber = 6.71; ACE_bulletLength = 33.0; ACE_bulletMass = 8.0; ACE_dragModel = 7; ACE_ballisticCoefficients[] = {0.28}; ACE_muzzleVelocities[] = {810}; ACE_barrelLengths[] = {508}; };
-    class FA_b_ammo_65g_XM892: B_65x39_Caseless { displayName = "XM892 CTEP"; caliber = 4.2; hit = 12; typicalSpeed = 830; airFriction = -0.00050; ACE_caliber = 6.71; ACE_bulletLength = 34.0; ACE_bulletMass = 7.8; ACE_dragModel = 7; ACE_ballisticCoefficients[] = {0.29}; ACE_muzzleVelocities[] = {830}; ACE_barrelLengths[] = {508}; };
-    class FA_b_ammo_65cm_Mk329: B_65x39_Caseless { displayName = "Mk329 LR"; caliber = 2.6; hit = 13; typicalSpeed = 860; airFriction = -0.00045; ACE_caliber = 6.71; ACE_bulletLength = 36.0; ACE_bulletMass = 9.07; ACE_dragModel = 7; ACE_ballisticCoefficients[] = {0.32}; ACE_muzzleVelocities[] = {860}; ACE_barrelLengths[] = {610}; };
-    class FA_b_ammo_65cm_XM893: B_65x39_Caseless { displayName = "XM893 CTEP"; caliber = 4.6; hit = 13; typicalSpeed = 880; airFriction = -0.00042; ACE_caliber = 6.71; ACE_bulletLength = 37.0; ACE_bulletMass = 8.9; ACE_dragModel = 7; ACE_ballisticCoefficients[] = {0.34}; ACE_muzzleVelocities[] = {880}; ACE_barrelLengths[] = {610}; };
+    // Same 5.56<->7.62 midpoint band as Mk330/Mk331 above, spread by role:
+    // Mk328 hot GP, XM892 CTEP (both carbine, 330/407/508), then the two 610 mm
+    // DMR/MG loads Mk329 LR and XM893 CTEP at the top of the band.
+    class FA_b_ammo_65g_Mk328: B_65x39_Caseless { displayName = "Mk328 HV"; caliber = 2.8; hit = 11; typicalSpeed = 965; airFriction = -0.00101; deflecting = 14; tracerScale = 0.7; ACE_caliber = 6.71; ACE_bulletLength = 26.5; ACE_bulletMass = 6.4; ACE_muzzleVelocityVariationSD = 0.16; ACE_dragModel = 7; ACE_ballisticCoefficients[] = {0.196}; ACE_velocityBoundaries[] = {}; ACE_standardAtmosphere = "ICAO"; ACE_muzzleVelocities[] = {925, 965, 1000}; ACE_barrelLengths[] = {330, 407, 508}; };
+    class FA_b_ammo_65g_XM892: B_65x39_Caseless { displayName = "XM892 CTEP"; caliber = 3.0; hit = 12; typicalSpeed = 970; airFriction = -0.00099; deflecting = 14; tracerScale = 0.7; ACE_caliber = 6.71; ACE_bulletLength = 27.2; ACE_bulletMass = 6.5; ACE_muzzleVelocityVariationSD = 0.14; ACE_dragModel = 7; ACE_ballisticCoefficients[] = {0.204}; ACE_velocityBoundaries[] = {}; ACE_standardAtmosphere = "ICAO"; ACE_muzzleVelocities[] = {930, 970, 1005}; ACE_barrelLengths[] = {330, 407, 508}; };
+    class FA_b_ammo_65cm_Mk329: B_65x39_Caseless { displayName = "Mk329 LR"; caliber = 2.9; hit = 12; typicalSpeed = 960; airFriction = -0.00095; deflecting = 13; tracerScale = 0.7; ACE_caliber = 6.71; ACE_bulletLength = 28.0; ACE_bulletMass = 6.8; ACE_muzzleVelocityVariationSD = 0.12; ACE_dragModel = 7; ACE_ballisticCoefficients[] = {0.212}; ACE_velocityBoundaries[] = {}; ACE_standardAtmosphere = "ICAO"; ACE_muzzleVelocities[] = {925, 945, 960}; ACE_barrelLengths[] = {406, 508, 610}; };
+    class FA_b_ammo_65cm_XM893: B_65x39_Caseless { displayName = "XM893 CTEP"; caliber = 3.2; hit = 12; typicalSpeed = 980; airFriction = -0.00092; deflecting = 13; tracerScale = 0.7; ACE_caliber = 6.71; ACE_bulletLength = 28.6; ACE_bulletMass = 6.9; ACE_muzzleVelocityVariationSD = 0.12; ACE_dragModel = 7; ACE_ballisticCoefficients[] = {0.219}; ACE_velocityBoundaries[] = {}; ACE_standardAtmosphere = "ICAO"; ACE_muzzleVelocities[] = {945, 965, 980}; ACE_barrelLengths[] = {406, 508, 610}; };
 // 6.5 tracer ammo variants for the 4 caseless rifle loads (generated)
     class FA_b_ammo_65g_Mk328_T_Red: FA_b_ammo_65g_Mk328 { tracer=1; tracerColor[]={1,0,0,1}; };
     class FA_b_ammo_65g_Mk328_T_Yellow: FA_b_ammo_65g_Mk328 { tracer=1; tracerColor[]={1,1,0,1}; };
@@ -1525,23 +1536,25 @@ class CfgAmmo {
         nvgOnly = 1;
         tracerColor[] = {0.2, 1.0, 0.2, 1.0};
     };
+    // CSAT 6.5 keeps its x0.90 gradient on speed/pen against the rebalanced West
+    // peer (Mk330), geometry and BC copied from the parent as before.
     class FA_o_65_Type41_EPR: B_65x39_Caseless {
         displayName = "Type 41 EPR";
-        hit = 7;
-        caliber = 2.5;
-        typicalSpeed = 770;
-        airFriction = -0.00095;
-        deflecting = 12;
+        hit = 10;
+        caliber = 2.4;
+        typicalSpeed = 855;
+        airFriction = -0.00104;
+        deflecting = 15;
         tracerScale = 0.7;
         ACE_caliber = 6.71;
-        ACE_bulletLength = 30;
-        ACE_bulletMass = 8;
-        ACE_muzzleVelocityVariationSD = 0.15;
-        ACE_ballisticCoefficients[] = {0.290};
+        ACE_bulletLength = 26.1;
+        ACE_bulletMass = 6.4;
+        ACE_muzzleVelocityVariationSD = 0.16;
+        ACE_ballisticCoefficients[] = {0.190};
         ACE_velocityBoundaries[] = {};
         ACE_standardAtmosphere = "ICAO";
         ACE_dragModel = 7;
-        ACE_muzzleVelocities[] = {735, 770, 790};
+        ACE_muzzleVelocities[] = {820, 855, 887};
         ACE_barrelLengths[] = {330, 407, 508};
     };
     class FA_o_65_Type41_EPR_T_Red: FA_o_65_Type41_EPR {
@@ -1576,20 +1589,21 @@ class CfgAmmo {
     class FA_o_65_Type42_CT: B_65x39_Caseless {
         displayName = "Type 42 CT";
         hit = 11;
-        caliber = 3.8;
-        typicalSpeed = 745;
-        airFriction = -0.0005;
-        deflecting = 12;
+        caliber = 2.7;
+        typicalSpeed = 873;
+        airFriction = -0.00099;
+        deflecting = 14;
         tracerScale = 0.7;
         ACE_caliber = 6.71;
-        ACE_bulletLength = 34;
-        ACE_bulletMass = 7.8;
-        ACE_ballisticCoefficients[] = {0.29};
+        ACE_bulletLength = 27.2;
+        ACE_bulletMass = 6.5;
+        ACE_muzzleVelocityVariationSD = 0.14;
+        ACE_ballisticCoefficients[] = {0.204};
         ACE_velocityBoundaries[] = {};
         ACE_standardAtmosphere = "ICAO";
         ACE_dragModel = 7;
-        ACE_muzzleVelocities[] = {745};
-        ACE_barrelLengths[] = {508};
+        ACE_muzzleVelocities[] = {837, 873, 905};
+        ACE_barrelLengths[] = {330, 407, 508};
     };
     class FA_o_65_Type42_CT_T_Red: FA_o_65_Type42_CT {
         tracer = 1;
@@ -1622,21 +1636,21 @@ class CfgAmmo {
     };
     class FA_o_65_Type43_AP: B_65x39_Caseless {
         displayName = "Type 43 AP";
-        hit = 7;
-        caliber = 3.1;
-        typicalSpeed = 755;
-        airFriction = -0.0009;
-        deflecting = 10;
+        hit = 10;
+        caliber = 3.0;
+        typicalSpeed = 851;
+        airFriction = -0.00100;
+        deflecting = 12;
         tracerScale = 0.7;
         ACE_caliber = 6.71;
-        ACE_bulletLength = 30.5;
-        ACE_bulletMass = 8.4;
+        ACE_bulletLength = 27.0;
+        ACE_bulletMass = 6.6;
         ACE_muzzleVelocityVariationSD = 0.14;
-        ACE_ballisticCoefficients[] = {0.300};
+        ACE_ballisticCoefficients[] = {0.201};
         ACE_velocityBoundaries[] = {};
         ACE_standardAtmosphere = "ICAO";
         ACE_dragModel = 7;
-        ACE_muzzleVelocities[] = {720, 755, 780};
+        ACE_muzzleVelocities[] = {815, 851, 882};
         ACE_barrelLengths[] = {330, 407, 508};
     };
     class FA_o_65_Type43_AP_T_Red: FA_o_65_Type43_AP {

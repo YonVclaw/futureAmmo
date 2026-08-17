@@ -188,6 +188,42 @@ class CfgMagazines {
         lastRoundsTracer = 0;
     };
 
+    // =========================================================
+    // Mk368 AD — 5.56x45 Anti-Drone Buckshot (K short / L long)
+    // =========================================================
+    class FA_b_30Rnd_556_Mk368K_AD: 30Rnd_556x45_Stanag {
+        author = QAUTHOR;
+        displayName = "[Ghost] 30Rnd Mk368K AD";
+        descriptionShort = "Mk368K AD 8-pellet shot, eff. 100 m";
+        ammo = "FA_b_556_Mk368K_AD";
+        initSpeed = 671;
+    };
+    class FA_b_30Rnd_556_Mk368L_AD: 30Rnd_556x45_Stanag {
+        author = QAUTHOR;
+        displayName = "[Ghost] 30Rnd Mk368L AD";
+        descriptionShort = "Mk368L AD 5-pellet shot, eff. 200 m";
+        ammo = "FA_b_556_Mk368L_AD";
+        initSpeed = 671;
+    };
+
+    // =========================================================
+    // Mk369 AD — 7.62x51 Anti-Drone Buckshot (K short / L long)
+    // =========================================================
+    class FA_b_20Rnd_762_Mk369K_AD: 20Rnd_762x51_Mag {
+        author = QAUTHOR;
+        displayName = "[Ghost] 20Rnd Mk369K AD";
+        descriptionShort = "Mk369K AD 12-pellet shot, eff. 150 m";
+        ammo = "FA_b_762_Mk369K_AD";
+        initSpeed = 640;
+    };
+    class FA_b_20Rnd_762_Mk369L_AD: 20Rnd_762x51_Mag {
+        author = QAUTHOR;
+        displayName = "[Ghost] 20Rnd Mk369L AD";
+        descriptionShort = "Mk369L AD 10-pellet shot, eff. 250 m";
+        ammo = "FA_b_762_Mk369L_AD";
+        initSpeed = 640;
+    };
+
     // ===== PAB tracer mags (tracersEvery = 4) =====
     class FA_b_30Rnd_556_Mk361_PAB_T_Red: FA_b_30Rnd_556_Mk361_PAB { ammo = "FA_b_556_Mk361_PAB_T_Red"; displayName = "[Ghost] 30Rnd Mk361 PAB Red Tracer"; descriptionShort = "Mk361 PAB"; tracersEvery = 4; lastRoundsTracer = 4; };
     class FA_b_30Rnd_556_Mk361_PAB_T_Yellow: FA_b_30Rnd_556_Mk361_PAB { ammo = "FA_b_556_Mk361_PAB_T_Yellow"; displayName = "[Ghost] 30Rnd Mk361 PAB Yellow Tracer"; descriptionShort = "Mk361 PAB"; tracersEvery = 4; lastRoundsTracer = 4; };

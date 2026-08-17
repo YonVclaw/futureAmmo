@@ -12,25 +12,25 @@
 // =====================================================================
 
 #define FA_MAGS_762 \
-    "FA_b_200Rnd_762_M80A2_HV", \
-    "FA_b_200Rnd_762_M80A2_HV_T_Red", "FA_b_200Rnd_762_M80A2_HV_T_Yellow", "FA_b_200Rnd_762_M80A2_HV_T_Green", \
-    "FA_b_200Rnd_762_M80A2_HV_T_White", "FA_b_200Rnd_762_M80A2_HV_T_Blue", "FA_b_200Rnd_762_M80A2_HV_T_Orange", "FA_b_200Rnd_762_M80A2_HV_T_IR", \
-    "FA_b_200Rnd_762_XM751_CTEP", \
-    "FA_b_200Rnd_762_XM751_CTEP_T_Red", "FA_b_200Rnd_762_XM751_CTEP_T_Yellow", "FA_b_200Rnd_762_XM751_CTEP_T_Green", \
-    "FA_b_200Rnd_762_XM751_CTEP_T_White", "FA_b_200Rnd_762_XM751_CTEP_T_Blue", "FA_b_200Rnd_762_XM751_CTEP_T_Orange", "FA_b_200Rnd_762_XM751_CTEP_T_IR"
+    "FA_b_200Rnd_762_M80A2_HV", "FA_200Rnd_762_M80A2_HV", \
+    "FA_b_200Rnd_762_M80A2_HV_T_Red", "FA_200Rnd_762_M80A2_HV_T_Red", "FA_b_200Rnd_762_M80A2_HV_T_Yellow", "FA_200Rnd_762_M80A2_HV_T_Yellow", "FA_b_200Rnd_762_M80A2_HV_T_Green", "FA_200Rnd_762_M80A2_HV_T_Green", \
+    "FA_b_200Rnd_762_M80A2_HV_T_White", "FA_200Rnd_762_M80A2_HV_T_White", "FA_b_200Rnd_762_M80A2_HV_T_Blue", "FA_200Rnd_762_M80A2_HV_T_Blue", "FA_b_200Rnd_762_M80A2_HV_T_Orange", "FA_200Rnd_762_M80A2_HV_T_Orange", "FA_b_200Rnd_762_M80A2_HV_T_IR", "FA_200Rnd_762_M80A2_HV_T_IR", \
+    "FA_b_200Rnd_762_XM751_CTEP", "FA_200Rnd_762_XM751_CTEP", \
+    "FA_b_200Rnd_762_XM751_CTEP_T_Red", "FA_200Rnd_762_XM751_CTEP_T_Red", "FA_b_200Rnd_762_XM751_CTEP_T_Yellow", "FA_200Rnd_762_XM751_CTEP_T_Yellow", "FA_b_200Rnd_762_XM751_CTEP_T_Green", "FA_200Rnd_762_XM751_CTEP_T_Green", \
+    "FA_b_200Rnd_762_XM751_CTEP_T_White", "FA_200Rnd_762_XM751_CTEP_T_White", "FA_b_200Rnd_762_XM751_CTEP_T_Blue", "FA_200Rnd_762_XM751_CTEP_T_Blue", "FA_b_200Rnd_762_XM751_CTEP_T_Orange", "FA_200Rnd_762_XM751_CTEP_T_Orange", "FA_b_200Rnd_762_XM751_CTEP_T_IR", "FA_200Rnd_762_XM751_CTEP_T_IR"
 
 #define FA_MAGS_338 \
-    "FA_b_200Rnd_338_Mk372", \
-    "FA_b_200Rnd_338_Mk372_T_Red", "FA_b_200Rnd_338_Mk372_T_Yellow", "FA_b_200Rnd_338_Mk372_T_Green", \
-    "FA_b_200Rnd_338_Mk372_T_White", "FA_b_200Rnd_338_Mk372_T_Blue", "FA_b_200Rnd_338_Mk372_T_Orange", "FA_b_200Rnd_338_Mk372_T_IR"
+    "FA_b_200Rnd_338_Mk372", "FA_200Rnd_338_Mk372", \
+    "FA_b_200Rnd_338_Mk372_T_Red", "FA_200Rnd_338_Mk372_T_Red", "FA_b_200Rnd_338_Mk372_T_Yellow", "FA_200Rnd_338_Mk372_T_Yellow", "FA_b_200Rnd_338_Mk372_T_Green", "FA_200Rnd_338_Mk372_T_Green", \
+    "FA_b_200Rnd_338_Mk372_T_White", "FA_200Rnd_338_Mk372_T_White", "FA_b_200Rnd_338_Mk372_T_Blue", "FA_200Rnd_338_Mk372_T_Blue", "FA_b_200Rnd_338_Mk372_T_Orange", "FA_200Rnd_338_Mk372_T_Orange", "FA_b_200Rnd_338_Mk372_T_IR", "FA_200Rnd_338_Mk372_T_IR"
 
 #define FA_MAGS_50CAL \
-    "FA_b_200Rnd_127_Mk211Mod0", \
-    "FA_b_200Rnd_127_Mk211Mod0_T_Red", "FA_b_200Rnd_127_Mk211Mod0_T_Yellow", "FA_b_200Rnd_127_Mk211Mod0_T_Green", \
-    "FA_b_200Rnd_127_Mk211Mod0_T_White", "FA_b_200Rnd_127_Mk211Mod0_T_Blue", "FA_b_200Rnd_127_Mk211Mod0_T_Orange", "FA_b_200Rnd_127_Mk211Mod0_T_IR", \
-    "FA_b_200Rnd_127_Mk258", \
-    "FA_b_200Rnd_127_Mk258_T_Red", "FA_b_200Rnd_127_Mk258_T_Yellow", "FA_b_200Rnd_127_Mk258_T_Green", \
-    "FA_b_200Rnd_127_Mk258_T_White", "FA_b_200Rnd_127_Mk258_T_Blue", "FA_b_200Rnd_127_Mk258_T_Orange", "FA_b_200Rnd_127_Mk258_T_IR"
+    "FA_b_200Rnd_127_Mk211Mod0", "FA_200Rnd_127_Mk211Mod0", \
+    "FA_b_200Rnd_127_Mk211Mod0_T_Red", "FA_200Rnd_127_Mk211Mod0_T_Red", "FA_b_200Rnd_127_Mk211Mod0_T_Yellow", "FA_200Rnd_127_Mk211Mod0_T_Yellow", "FA_b_200Rnd_127_Mk211Mod0_T_Green", "FA_200Rnd_127_Mk211Mod0_T_Green", \
+    "FA_b_200Rnd_127_Mk211Mod0_T_White", "FA_200Rnd_127_Mk211Mod0_T_White", "FA_b_200Rnd_127_Mk211Mod0_T_Blue", "FA_200Rnd_127_Mk211Mod0_T_Blue", "FA_b_200Rnd_127_Mk211Mod0_T_Orange", "FA_200Rnd_127_Mk211Mod0_T_Orange", "FA_b_200Rnd_127_Mk211Mod0_T_IR", "FA_200Rnd_127_Mk211Mod0_T_IR", \
+    "FA_b_200Rnd_127_Mk258", "FA_200Rnd_127_Mk258", \
+    "FA_b_200Rnd_127_Mk258_T_Red", "FA_200Rnd_127_Mk258_T_Red", "FA_b_200Rnd_127_Mk258_T_Yellow", "FA_200Rnd_127_Mk258_T_Yellow", "FA_b_200Rnd_127_Mk258_T_Green", "FA_200Rnd_127_Mk258_T_Green", \
+    "FA_b_200Rnd_127_Mk258_T_White", "FA_200Rnd_127_Mk258_T_White", "FA_b_200Rnd_127_Mk258_T_Blue", "FA_200Rnd_127_Mk258_T_Blue", "FA_b_200Rnd_127_Mk258_T_Orange", "FA_200Rnd_127_Mk258_T_Orange", "FA_b_200Rnd_127_Mk258_T_IR", "FA_200Rnd_127_Mk258_T_IR"
 
 // Each shared weapon is reopened WITH its real parent named (and that parent
 // forward-declared). A parentless reopen (`class LMG_coax { ... };`) makes HEMTT
