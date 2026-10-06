@@ -177,5 +177,11 @@ class CfgMagazines {
     class FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_Orange: FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP { ammo = "FA_b_556_XM891_CTEP_T_Orange"; displayName = "[Ghost] 30Rnd XM891 CTEP Tan Orange Tracer"; descriptionShort = "XM891 CTEP"; tracersEvery = 4; };
     class FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_IR: FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP { ammo = "FA_b_556_XM891_CTEP_T_IR"; displayName = "[Ghost] 30Rnd XM891 CTEP Tan IR Tracer"; descriptionShort = "XM891 CTEP"; tracersEvery = 4; };
 
+    // ---- Glock 19X 9x19 (user, 2026-09-27) - loaded through ghost_fa_Glock19_RF, CfgWeapons.hpp ----
+    class 17Rnd_9x19_Mag_RF;
+    class 33Rnd_9x19_Mag_Tan_RF;
+    class FA_rf_17Rnd_9x19_Mk422_AP: 17Rnd_9x19_Mag_RF { author = QAUTHOR; ammo = "FA_rf_9x19_Mk422_AP"; displayName = "[Ghost] 17Rnd 9x19 Mk422 AP"; displayNameShort = "Mk422 AP"; descriptionShort = "9x19 Mk422 AP"; initSpeed = 400; };
+    class FA_rf_33Rnd_9x19_Mk422_AP: 33Rnd_9x19_Mag_Tan_RF { author = QAUTHOR; ammo = "FA_rf_9x19_Mk422_AP"; displayName = "[Ghost] 33Rnd 9x19 Mk422 AP"; displayNameShort = "Mk422 AP"; descriptionShort = "9x19 Mk422 AP"; initSpeed = 400; };
+
     #include "CfgMagazines_compat.hpp"
 };

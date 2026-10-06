@@ -135,5 +135,17 @@ class CfgAmmo {
         hit = 60; indirectHit = 14; indirectHitRange = 5;
     };
 
+    // Copied from ghost's fa_rf (user, 2026-10-04): the MPP pistols' FA magazines load this round.
+    // 9x19 Mk422 AP for the Glock 19X (user, 2026-09-27: "make mags for 17Rnd_9x19_Mag_RF, 33Rnd_9x19_Mag_Tan_RF").
+    // The Rearma Mk422's figures, on the base game's ball round so it loads without Rearma and is tiered.
+    class B_9x21_Ball;
+    class FA_rf_9x19_Mk422_AP: B_9x21_Ball {
+        displayName = "9x19 Mk422 AP";
+        caliber = 1.8; hit = 8; typicalSpeed = 400; airFriction = -0.0020; deflecting = 22;
+        ACE_caliber = 9.02; ACE_bulletLength = 15.2; ACE_bulletMass = 5.4;
+        ACE_dragModel = 1; ACE_ballisticCoefficients[] = {0.140};
+        ACE_muzzleVelocities[] = {400}; ACE_barrelLengths[] = {119};
+    };
+
     #include "CfgAmmo_compat.hpp"
 };

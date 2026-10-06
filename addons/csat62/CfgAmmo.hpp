@@ -5,7 +5,7 @@ class CfgAmmo {
     // DBP-25 : caseless standard
     // =========================================================
     class FA_o_ammo_62_DBP25: B_65x39_Caseless {
-        hit = 8; caliber = 2.7; typicalSpeed = 930; airFriction = -0.00110; deflecting = 14;
+        hit = 11; caliber = 2.7; typicalSpeed = 930; airFriction = -0.00110; deflecting = 14;
         ACE_caliber = 6.30; ACE_bulletLength = 26.0; ACE_bulletMass = 5.2;   // ~80 gr
         ACE_muzzleVelocityVariationSD = 0.16;
         ACE_ballisticCoefficients[] = {0.195}; ACE_velocityBoundaries[] = {};
@@ -25,7 +25,7 @@ class CfgAmmo {
     // DBP-26 AP : caseless tungsten AP
     // =========================================================
     class FA_o_ammo_62_DBP26_AP: B_65x39_Caseless {
-        hit = 8; caliber = 3.3; typicalSpeed = 900; airFriction = -0.00105; deflecting = 12;
+        hit = 11; caliber = 3.3; typicalSpeed = 900; airFriction = -0.00105; deflecting = 12;
         ACE_caliber = 6.30; ACE_bulletLength = 27.0; ACE_bulletMass = 5.5;   // tungsten core
         ACE_muzzleVelocityVariationSD = 0.15;
         ACE_ballisticCoefficients[] = {0.205}; ACE_velocityBoundaries[] = {};
@@ -45,7 +45,7 @@ class CfgAmmo {
     // DBP-88B : caseless heavy (DMR / GPMG)
     // =========================================================
     class FA_o_ammo_62_DBP88B: B_65x39_Caseless {
-        hit = 9; caliber = 3.1; typicalSpeed = 860; airFriction = -0.00092; deflecting = 11;
+        hit = 12; caliber = 3.1; typicalSpeed = 860; airFriction = -0.00092; deflecting = 11;
         ACE_caliber = 6.30; ACE_bulletLength = 30.0; ACE_bulletMass = 6.3;   // heavy load
         ACE_muzzleVelocityVariationSD = 0.14;
         ACE_ballisticCoefficients[] = {0.240}; ACE_velocityBoundaries[] = {};

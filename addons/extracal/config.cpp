@@ -20,7 +20,8 @@ class CfgPatches {
         ammo[] = {
             "FA_o_ammo_9x39_7U15", "FA_o_ammo_9x39_7U16",
             "FA_o_ammo_145_7N60", "FA_o_ammo_145_7N61", "FA_o_ammo_145_7N62",
-            "FA_b_ammo_57_Mk430", "FA_b_ammo_57_Mk431"
+            "FA_b_ammo_57_Mk430", "FA_b_ammo_57_Mk431",
+            "FA_b_68_Mk334_TC", "FA_b_6ARC_Mk333_LR", "FA_b_6ARC_XM895_CTEP", "FA_b_65x43_Mk331_EPR", "FA_b_65x43_XM894_CTEP"
         };
         magazines[] = {
             "FA_o_20Rnd_9x39_7U15", "FA_o_20Rnd_9x39_7U16",

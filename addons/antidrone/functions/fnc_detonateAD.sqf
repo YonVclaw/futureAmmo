@@ -15,6 +15,7 @@
  * 0: Projectile <OBJECT>
  * 1: Lethal radius in metres <NUMBER>
  * 2: Maximum damage at point blank (1.0 = guaranteed kill) <NUMBER>
+ * 3: Burst position ASL (optional, default: the projectile's own position) <ARRAY>
  *
  * Return Value:
  * None
@@ -23,12 +24,17 @@
  */
 
 params [
-    ["_proj",   objNull, [objNull]],
-    ["_lethal", 5,       [0]],
-    ["_dmg",    1.0,     [0]]
+    ["_proj",     objNull, [objNull]],
+    ["_lethal",   5,       [0]],
+    ["_dmg",      1.0,     [0]],
+    ["_burstPos", [],      [[]]]
 ];
 
-private _bpos = getPosVisual _proj;
+// Burst at the closest point of approach the tracker found (or the dialled
+// airburst range), not at wherever the round has flown on to by the time the
+// check fires - otherwise the falloff below returns zero on a fast round.
+if (count _burstPos < 3) then { _burstPos = getPosASL _proj; };
+private _bpos = ASLToAGL _burstPos;
 "SmallSecondary" createVehicle _bpos;
 
 if (missionNamespace getVariable ["ace_frag_enabled", true]) then {
@@ -36,7 +42,7 @@ if (missionNamespace getVariable ["ace_frag_enabled", true]) then {
 };
 
 {
-    private _f = 1 - ((_x distance _proj) / _lethal);
+    private _f = 1 - ((_burstPos distance (getPosASL _x)) / _lethal);
     if (_f > 0) then {
         private _newDmg = (damage _x) + (_f * _dmg);
         if (local _x) then {
@@ -45,6 +51,6 @@ if (missionNamespace getVariable ["ace_frag_enabled", true]) then {
             [_x, _newDmg] remoteExec ["setDamage", _x];
         };
     };
-} forEach ((_proj nearEntities [["Air", "UAV"], _lethal]) select { unitIsUAV _x });
+} forEach ((_bpos nearEntities [["Air", "UAV"], _lethal]) select { unitIsUAV _x });
 
 deleteVehicle _proj;

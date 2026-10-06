@@ -152,6 +152,45 @@ private _entries = [
     R("7U13 Molot-S") + "Subsonic AP, suppressed" + NL +
     R("7U14 Uragan") + "Subsonic expanding"],
 
+  ["Rearma - US",
+    H("M7 / RM277 / M250 / NX / KAC AMG / M27A5 / M28A5 / MP7A2 / M17 / M72A7 - rearma_us") +
+    U("Loads only with rearma's US weapons, on rearma's own mags (black and tan). The M320 and every rearma underbarrel launcher take the FA 40mm rounds; the M28A5 takes FA 7.62 20Rnd mags. PAB / PROX rounds are drone-killers - point at the UAV and the fuze bursts near it. The M72A7 comes as separate FA launchers, one per round.") +
+    R("Mk400 HV / Mk401 AP / Mk402 PAB (6.8x51)") + "General purpose / tungsten AP / proximity airburst" + NL +
+    R("Mk408 UW (6.8x51)") + "RM277 UW underwater dart" + NL +
+    R("Mk405 HV / Mk406 AP / Mk407 PAB (6x38)") + "NX family and KAC AMG" + NL +
+    R("Mk327 / XM891 / Mk332 / Mk361 / Mk368K-L (5.56)") + "M27A5 on rearma STANAG and PMAG bodies" + NL +
+    R("Mk432 AP / Mk433 SUB (4.6x30)") + "MP7A2 - tungsten penetrator / subsonic" + NL +
+    R("Mk422 AP / Mk423 SUB (9x19)") + "M17 / M18 - tungsten +P / 147 gr subsonic" + NL +
+    R("M72A10 TNDM / M72A11 TBX / M72A12 PROX") + "66mm tandem HEAT ~350 mm / thermobaric / C-UAS airburst"],
+
+  ["Rearma - Russia",
+    H("AK35 / RPK35 / ADS35 / RPL 35 / PKP / SVCh / MP-443 / KS-23 / RPG-26 / RShG-2 - rearma_rus") +
+    U("Loads only with rearma's Russian weapons, on rearma's own mags and belts (plain and camo). The 7N56 shot loads in the AK35 pellet mags. 7N55, Barrikada-AB and AB-26 are drone-killers - point at the UAV and the fuze bursts near it. The RPG-26 and RShG-2 come as separate FA launchers, one per round.") +
+    R("7N44 HP / 7N48 CT / 7U5 SubAP / 7N55 HEAB (5.45)") + "AK35 30 / 45Rnd, RPK35 drum, RPL 35 belt (no subsonic belt)" + NL +
+    R("7N56K / 7N56L AD (5.45)") + "Anti-drone shot, 7 pellets 90 m / 5 pellets 180 m" + NL +
+    R("PSP-2 UW (5.45)") + "ADS35 underwater dart" + NL +
+    R("Ball HV / 7N49 AP / 7U18 SUB (7.62x54R)") + "PKP belt (ball / AP), SVCh 10Rnd" + NL +
+    R("Mk371 250 / 285 / 300gr, Mk373 PAB (.338 LM)") + "SVCh / SV-98M 10Rnd" + NL +
+    R("7N53 AP / 7U17 SUB (9x19)") + "MP-443 tungsten core / MP-446 S subsonic" + NL +
+    R("Shrapnel-AD50 / AD100 (23mm)") + "KS-23 anti-drone shot, 50 m / 100 m" + NL +
+    R("Barrikada-AB (23mm)") + "KS-23 proximity airburst slug" + NL +
+    R("RPG-26M2 TNDM / RPG-26 AB PROX / RShG-2M2 TBX") + "72.5mm tandem ~600 mm / C-UAS airburst / thermobaric"],
+
+  ["Rearma - China",
+    H("QBZ-191 / QJS-201 / QBW-201 / QBU-201 / QBU-202 / QBS-09 / QCQ-171 / QLU-11 / QN-205 / PF-89 - rearma_cn") +
+    U("Loads only with rearma's Chinese weapons, on rearma's own mags (plain, transparent, AP-marked). The QLU-11 fires the whole FA 40mm lineup in 35mm at reduced power: DFK-135, DFP-135 and QN-205B airburst on the Mk364 dial, and the DFZ carriers deploy by chute at apex. The PF-89A and WPF-89 come as separate FA launchers, one per round.") +
+    R("5.8 Ball HV / DBP-39 CT / DBP-40 AP / DBJ-39 PAB") + "QBZ / QBU-191 30Rnd, QJS-201 belt" + NL +
+    R("DBS-39K / DBS-39L AD (5.8)") + "Anti-drone shot in the QBZ pellet mags, 8 pellets 110 m / 6 pellets 210 m" + NL +
+    R("DBP-41 / DBP-42 SubAP / DBJ-41 PAB (8.6x39)") + "QBW-201 supersonic / subsonic tungsten / airburst" + NL +
+    R("DBP-43 AP / DBP-44 SUB (9x21)") + "QCQ-171 and QSZ-92 - tungsten core / subsonic" + NL +
+    R("Mk371 250 / 285 / 300gr, Mk373 PAB (.338 LM)") + "QBU-202 5Rnd" + NL +
+    R("DBJ-127 PAB, Mk250, Mk211 Mod 2 (12.7x108)") + "QBU-201" + NL +
+    R("Mk350-353 / Mk360 AD / Mk363 PAB-S, buck / bird (12 ga)") + "QBS-09" + NL +
+    R("DFK-135 PAB / DFP-135 HE-P / DFJ-135 DP / DFB-135 TBK (35mm)") + "QLU-11 airburst / HE-P / dual-purpose / buckshot" + NL +
+    R("DFZ-130 NRP / 133 EMP / 134 MSmoke / 135 Decoy / 136 UGS / 138 Jammer") + "QLU-11 ISR / EW carriers, ~0.75x the 40mm effect" + NL +
+    R("QN-205T TNDM / QN-205B TBX / QN-205D C-UAS") + "Mini-missiles - tandem ~450 mm / thermobaric airburst / drone seeker" + NL +
+    R("PF-89C TNDM / PF-89K PROX / WPF-89C TBX") + "80mm tandem ~675 mm / C-UAS airburst / thermobaric"],
+
   ["40mm ISR / EW",
     H("Mk380 block - smart UGL support payloads") +
     "Inert carriers: pop a HuntIR-style chute at apex, deploy on landing." + NL +

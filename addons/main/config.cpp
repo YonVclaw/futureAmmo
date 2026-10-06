@@ -29,6 +29,11 @@ class CfgMods {
     };
 };
 
+// Root class that faction mods merge into to override FA's CBA settings.
+// See docs/faction_setting_overrides.md.
+class GhostFA_SettingOverrides {};
+
+#include "CfgEventHandlers.hpp"
 #include "CfgEden.hpp"
 #include "CfgModuleCategories.hpp"
 #include "DisplayEden.hpp"

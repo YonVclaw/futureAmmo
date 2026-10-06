@@ -4,7 +4,8 @@
     ["Anti-Drone Trigger Radius Multiplier", "Scales the proximity trigger radius of all PAB rounds. 1 = default."],
     COMPONENT_NAME,
     [0.25, 2, 1, 2],
-    true
+    true,
+    SETTING_OVERRIDE_HOOK
 ] call CBA_fnc_addSetting;
 
 [
@@ -13,7 +14,8 @@
     ["Anti-Drone Lethal Radius Multiplier", "Scales the lethal (blast) radius of all PAB rounds. 1 = default."],
     COMPONENT_NAME,
     [0.25, 2, 1, 2],
-    true
+    true,
+    SETTING_OVERRIDE_HOOK
 ] call CBA_fnc_addSetting;
 
 [
@@ -22,5 +24,6 @@
     ["Anti-Drone Damage Multiplier", "Scales the proximity-airburst damage applied to UAVs by all PAB rounds. 1 = default."],
     COMPONENT_NAME,
     [0.25, 2, 1, 2],
-    true
+    true,
+    SETTING_OVERRIDE_HOOK
 ] call CBA_fnc_addSetting;

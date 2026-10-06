@@ -9,9 +9,10 @@ A lore-driven projection of where ammunition goes next, for Arma 3 + ACE3. Built
 [*][b]MAAWS 2040[/b] — eight 84mm natures for the vanilla MAAWS Mk4: fire-and-forget top-attack HEAT (850mm RHA), confined-space tandem HEAT, programmable-airburst HE, laser-guided GM 841, three anti-drone rounds and a last-ditch VSHORAD missile (half the Titan envelope, by design).
 [*][b]Vorona + RPG 2040[/b] — lower launcher tiers under the MAAWS (RPG-7 < RPG-32 < Vorona): tandem SACLOS and thermobaric-airburst Vorona missiles plus an IR anti-air/anti-drone seeker with lock tone, and tandem / thermobaric / counter-drone rounds for the vanilla RPG-32 and RPG-7.
 [*][b]40mm ISR / EW (Mk380 block)[/b] — smart UGL support rounds: network relay, EMP soft-kill, multispectral smoke, decoy, ground sensor and area jammer. Chute-deployed, non-explosive carriers.
+[*][b]rearma compat[/b] — FA rounds on rearma's own magazines for its Chinese, Russian and US weapons: new 6.8×51, 6×38, 4.6×30, 9×19, 8.6×39, 9×21 and KS-23 23mm families, 5.45 / 5.8 counter-drone airburst and shot, a reduced-power 35mm set for the QLU-11, QN-205 missiles, and FA versions of the M72A7, RPG-26, RShG-2 and PF-89 disposables.
 [/list]
 
-All magazines are tagged [Ghost] in the Arsenal and feed compatible weapons through magazine wells. Compat addons for RHS, SPS, JCA, EF, Aegis, Atlas and LOT load only when the parent mod is present.
+All magazines are tagged [Ghost] in the Arsenal and feed compatible weapons through magazine wells. Compat addons for RHS, SPS, JCA, EF, Aegis, Atlas, LOT and rearma load only when the parent mod is present.
 
 [h2]Requirements[/h2]
 [list]

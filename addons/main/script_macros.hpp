@@ -24,6 +24,11 @@
 // GHOST macros
 #define IS_MOD_LOADED(modclass)     (isClass (configFile >> "CfgPatches" >> #modclass))
 
+// Pass as the _script argument of CBA_fnc_addSetting so a config-declared
+// faction override is re-asserted whenever CBA refreshes or a player edits the
+// setting in the CBA menu. See docs/faction_setting_overrides.md.
+#define SETTING_OVERRIDE_HOOK {if !(isNil QEFUNC(main,applySettingOverrides)) then {[true] call EFUNC(main,applySettingOverrides)}}
+
 // Extension macros
 #define EXT "Ghosts of Battle_mods"
 #define EXT_LOG "Ghosts of Battle_mods_log"

@@ -110,4 +110,9 @@ class CfgMagazineWells {
             "FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_IR"
         };
     };
+    // The Glock 19X's own well. RF is encrypted, so the wells its pistols name are unknown; a well of ours, added to
+    // hgun_Glock19_RF in CfgWeapons.hpp, reaches every Glock 19X variant (all descend from it - work/orbat dump).
+    class ghost_fa_Glock19_RF {
+        ADDON[] = {"FA_rf_17Rnd_9x19_Mk422_AP", "FA_rf_33Rnd_9x19_Mk422_AP"};
+    };
 };

@@ -69,7 +69,7 @@ params [
             private _candidates = (ASLToAGL _center) nearEntities [["LandVehicle", "Air", "Ship"], COPPERHEAD_SCAN_RADIUS];
             _candidates = _candidates select {
                 alive _x
-                && {_x != _unit}
+                && _x != _unit
                 && {[_side, side _x] call BIS_fnc_sideIsEnemy}
             };
             if (_candidates isNotEqualTo []) then {

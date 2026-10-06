@@ -49,21 +49,53 @@ private _origin = getPosASL _proj;
 
 [{
     params ["_args", "_h"];
-    _args params ["_proj", "_prox", "_lethal", "_dmg", "_origin", "_range"];
+    _args params ["_proj", "_prox", "_lethal", "_dmg", "_origin", "_range", "_lastPos"];
 
     if (isNull _proj) exitWith {
         _h call CBA_fnc_removePerFrameHandler;
     };
 
-    if ((_origin distance (getPosASL _proj)) > _range) exitWith {
+    private _curPos = getPosASL _proj;
+
+    if ((_origin distance _curPos) > _range) exitWith {
         _h call CBA_fnc_removePerFrameHandler;
     };
 
-    private _targets = (_proj nearEntities [["Air", "UAV", "CAManBase"], _prox]) select {
+    // Swept proximity test. These rounds fly at 1050-1176 m/s, so at 60 fps they
+    // cover ~18 m between frames while the trigger radius is only 10-12 m - a
+    // point-sphere check at the frame position steps clean over targets. Test the
+    // whole segment flown since the last frame, and burst at the closest point of
+    // approach rather than wherever the round sits when the check finally fires
+    // (which can be a frame's travel past the target, outside _lethal entirely).
+    private _seg = _curPos vectorDiff _lastPos;
+    private _segLen2 = _seg vectorDotProduct _seg;
+    private _mid = _lastPos vectorAdd (_seg vectorMultiply 0.5);
+    private _search = (sqrt _segLen2) / 2 + _prox;
+
+    private _best = -1;
+    private _burstPos = _curPos;
+
+    {
+        private _p = getPosASL _x;
+        private _t = if (_segLen2 > 0) then {
+            0 max ((((_p vectorDiff _lastPos) vectorDotProduct _seg) / _segLen2) min 1)
+        } else {
+            0
+        };
+        private _closest = _lastPos vectorAdd (_seg vectorMultiply _t);
+        private _d = _closest distance _p;
+        if (_d <= _prox && {_best < 0 || _d < _best}) then {
+            _best = _d;
+            _burstPos = _closest;
+        };
+    } forEach (((ASLToAGL _mid) nearEntities [["Air", "UAV", "CAManBase"], _search]) select {
         unitIsUAV _x || {_x isKindOf "CAManBase"}
-    };
-    if (_targets isNotEqualTo []) exitWith {
-        [_proj, _lethal, _dmg] call FUNC(detonateShell);
+    });
+
+    if (_best >= 0) exitWith {
+        [_proj, _lethal, _dmg, _burstPos] call FUNC(detonateShell);
         _h call CBA_fnc_removePerFrameHandler;
     };
-}, 0, [_proj, _prox, _lethal, _dmg, _origin, _range]] call CBA_fnc_addPerFrameHandler;
+
+    _args set [6, _curPos];
+}, 0, [_proj, _prox, _lethal, _dmg, _origin, _range, _origin]] call CBA_fnc_addPerFrameHandler;

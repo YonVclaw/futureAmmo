@@ -43,17 +43,27 @@ private _origin = getPosASL _proj;
 
 [{
     params ["_args", "_h"];
-    _args params ["_proj", "_prox", "_lethal", "_dmg", "_origin", "_range", "_burst"];
+    _args params ["_proj", "_prox", "_lethal", "_dmg", "_origin", "_range", "_burst", "_lastPos"];
 
     if (isNull _proj) exitWith {
         _h call CBA_fnc_removePerFrameHandler;
     };
 
-    private _travelled = _origin distance (getPosASL _proj);
+    private _curPos = getPosASL _proj;
+    private _travelled = _origin distance _curPos;
 
     // Programmed airburst: detonate at the dialled slant range, drone or not.
-    if (_burst > 0 && {_travelled >= _burst}) exitWith {
-        [_proj, _lethal, _dmg] call FUNC(detonateAD);
+    // Interpolate the exact point on this frame's segment so a fast round can't
+    // overshoot the dialled range by a frame's worth of travel.
+    if (_burst > 0 && _travelled >= _burst) exitWith {
+        private _burstPos = _curPos;
+        private _prev = _origin distance _lastPos;
+        private _span = _travelled - _prev;
+        if (_span > 0) then {
+            private _f = 0 max (((_burst - _prev) / _span) min 1);
+            _burstPos = _lastPos vectorAdd ((_curPos vectorDiff _lastPos) vectorMultiply _f);
+        };
+        [_proj, _lethal, _dmg, _burstPos] call FUNC(detonateAD);
         _h call CBA_fnc_removePerFrameHandler;
     };
 
@@ -61,9 +71,41 @@ private _origin = getPosASL _proj;
         _h call CBA_fnc_removePerFrameHandler;
     };
 
-    private _drones = (_proj nearEntities [["Air", "UAV"], _prox]) select { unitIsUAV _x };
-    if (_drones isNotEqualTo []) exitWith {
-        [_proj, _lethal, _dmg] call FUNC(detonateAD);
+    // Swept proximity test. These rounds fly at 1050-1176 m/s, so at 60 fps they
+    // cover ~18 m between frames while the trigger radius is only 10-12 m - a
+    // point-sphere check at the frame position steps clean over targets. Test the
+    // whole segment flown since the last frame, and burst at the closest point of
+    // approach rather than wherever the round sits when the check finally fires
+    // (which can be a frame's travel past the target, outside _lethal entirely).
+    private _seg = _curPos vectorDiff _lastPos;
+    private _segLen2 = _seg vectorDotProduct _seg;
+    private _mid = _lastPos vectorAdd (_seg vectorMultiply 0.5);
+    private _search = (sqrt _segLen2) / 2 + _prox;
+
+    private _best = -1;
+    private _burstPos = _curPos;
+
+    {
+        private _p = getPosASL _x;
+        private _t = if (_segLen2 > 0) then {
+            0 max ((((_p vectorDiff _lastPos) vectorDotProduct _seg) / _segLen2) min 1)
+        } else {
+            0
+        };
+        private _closest = _lastPos vectorAdd (_seg vectorMultiply _t);
+        private _d = _closest distance _p;
+        if (_d <= _prox && {_best < 0 || _d < _best}) then {
+            _best = _d;
+            _burstPos = _closest;
+        };
+    } forEach (((ASLToAGL _mid) nearEntities [["Air", "UAV"], _search]) select {
+        unitIsUAV _x
+    });
+
+    if (_best >= 0) exitWith {
+        [_proj, _lethal, _dmg, _burstPos] call FUNC(detonateAD);
         _h call CBA_fnc_removePerFrameHandler;
     };
-}, 0, [_proj, _prox, _lethal, _dmg, _origin, _range, _burst]] call CBA_fnc_addPerFrameHandler;
+
+    _args set [7, _curPos];
+}, 0, [_proj, _prox, _lethal, _dmg, _origin, _range, _burst, _origin]] call CBA_fnc_addPerFrameHandler;

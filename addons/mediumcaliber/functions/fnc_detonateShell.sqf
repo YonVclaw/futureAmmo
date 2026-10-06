@@ -10,6 +10,7 @@
  * 0: Projectile <OBJECT>
  * 1: Lethal radius in metres <NUMBER>
  * 2: Maximum damage at point blank (1.0 = guaranteed kill) <NUMBER>
+ * 3: Burst position ASL (optional, default: the projectile's own position) <ARRAY>
  *
  * Return Value:
  * None
@@ -18,16 +19,21 @@
  */
 
 params [
-    ["_proj",   objNull, [objNull]],
-    ["_lethal", 7,       [0]],
-    ["_dmg",    0.6,     [0]]
+    ["_proj",     objNull, [objNull]],
+    ["_lethal",   7,       [0]],
+    ["_dmg",      0.6,     [0]],
+    ["_burstPos", [],      [[]]]
 ];
 
-private _bpos = getPosVisual _proj;
+// The fuze bursts at the closest point of approach the tracker found, not at
+// wherever the round has flown on to. At 1050+ m/s those are up to ~18 m apart
+// - far enough that the falloff below would otherwise return zero damage.
+if (count _burstPos < 3) then { _burstPos = getPosASL _proj; };
+private _bpos = ASLToAGL _burstPos;
 "SmallSecondary" createVehicle _bpos;
 
 {
-    private _f = 1 - ((_x distance _proj) / _lethal);
+    private _f = 1 - ((_burstPos distance (getPosASL _x)) / _lethal);
     if (_f > 0) then {
         private _newDmg = (damage _x) + (_f * _dmg);
         if (local _x) then {
@@ -36,7 +42,7 @@ private _bpos = getPosVisual _proj;
             [_x, _newDmg] remoteExec ["setDamage", _x];
         };
     };
-} forEach ((_proj nearEntities [["Air", "UAV", "CAManBase"], _lethal]) select {
+} forEach ((_bpos nearEntities [["Air", "UAV", "CAManBase"], _lethal]) select {
     unitIsUAV _x || {_x isKindOf "CAManBase"}
 });
 

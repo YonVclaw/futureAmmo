@@ -1,3 +1,23 @@
+[h1]New — rearma compatibility[/h1]
+
+Three new compat addons wire Future Ammunition into rearma's Chinese, Russian and US weapon packs. They load only when rearma is running, and every magazine is built on rearma's own magazine models — black, tan, camo, transparent and AP-marked alike.
+
+[list]
+[*][b]FA rounds for rearma's weapons[/b] — the existing FA loads now come on rearma's own mags and belts: 5.56 for the M27A5, 5.45 for the AK35 family and RPL 35, 5.8 for the QBZ-191 / 192, QBU-191 and QJS-201, 7.62×54R for the PKP and SVCh, all three .338 Mk371 weights plus the Mk373 airburst for the SVCh and QBU-202, 12.7×108 for the QBU-201, and the full 12 ga specialty set (tungsten buckshot, flechette, AP slug, breaching, anti-drone shot and airburst slug) for the QBS-09.
+[*][b]New calibers[/b] — 6.8×51 (Mk400 HV, Mk401 AP, Mk402 PAB, Mk408 underwater), 6×38 (Mk405 HV, Mk406 AP, Mk407 PAB), 4.6×30 and 9×19 for the US; 7.62×54R AP and subsonic, 9×19 and a 5.45 underwater dart for Russia; 8.6×39 (DBP-41, DBP-42 SubAP, DBJ-41 PAB), 9×21 and a 12.7×108 airburst round for China.
+[*][b]Counter-drone[/b] — 5.45 and 5.8 get the full NATO treatment: a proximity-airburst round plus short- and long-range anti-drone shot in the AK35 and QBZ pellet mags. The KS-23 gets two anti-drone shot shells and a proximity-airburst slug.
+[*][b]QLU-11 35mm[/b] — every FA 40mm option in 35mm at reduced power: programmable airburst, HE-P, dual-purpose, tungsten buckshot and the six ISR / EW carriers.
+[*][b]QN-205[/b] — tandem top-attack, thermobaric airburst and an IR counter-drone missile.
+[*][b]Disposable launchers[/b] — the M72A7, RPG-26, RShG-2 and PF-89 can't be reloaded, so each FA round comes as its own launcher in the Arsenal: tandem HEAT, thermobaric and counter-drone variants.
+[*][b]rearma weapon fixes[/b] — the M28A5 now takes 7.62 20-round mags, the M250 and KAC AMG accept FA belts, the PF-89 no longer lists RPG-32 rockets as loadable, and every rearma underbarrel launcher takes FA 40mm.
+[/list]
+
+Also in this update: small clean-ups in the drone fuze, 30mm airburst, Copperhead targeting and faction setting-override scripts. No change in behaviour.
+
+Everything is documented in the map Notes tab under "Future Ammunition".
+
+[hr][/hr]
+
 [h1]Balance — 6.5 mm now sits properly between 5.56 and 7.62[/h1]
 
 The 6.5x39 caseless family was never a real middle step. It hit for the same as 5.56 while carrying a 7.62-weight bullet, and its ballistic coefficients were flatter than 7.62 outright — so 6.5 reached further than the round it's meant to sit under. Penetration wandered in both directions too: Mk328 pierced like 5.56, while XM892 and XM893 out-pierced every 7.62 load in the pack.

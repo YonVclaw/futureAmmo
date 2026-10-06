@@ -21,7 +21,7 @@ class CfgAmmo {
 
     // Release 1 (~2033) — Mk327 Mod 0 EPR-HV, hybrid case, ~83 kpsi, 70gr tungsten
     class FA_b_556_Mk327_HV: B_556x45_Ball {
-        hit = 8;
+        hit = 10;
         caliber = 2.4;
         typicalSpeed = 960;
         airFriction = -0.00126;
@@ -48,7 +48,7 @@ class CfgAmmo {
 
     // Release 2 (~2039) — XM891 CTEP, cased-telescoped composite, ~85 kpsi, 68gr 2-stage tungsten
     class FA_b_556_XM891_CTEP: B_556x45_Ball {
-        hit = 8;
+        hit = 11;
         caliber = 2.6;
         typicalSpeed = 980;
         airFriction = -0.00120;
@@ -75,7 +75,7 @@ class CfgAmmo {
 
     // Mk332 AP — caseless-era 5.56 tungsten armor-piercing (metric, 2040)
     class FA_b_556_Mk332_AP: B_556x45_Ball {
-        hit = 8; caliber = 3.0; typicalSpeed = 940; airFriction = -0.00118; deflecting = 12; tracerScale = 0.6;
+        hit = 10; caliber = 3.0; typicalSpeed = 940; airFriction = -0.00118; deflecting = 12; tracerScale = 0.6;
         ACE_caliber = 5.69; ACE_bulletLength = 24.5; ACE_bulletMass = 4.2; ACE_muzzleVelocityVariationSD = 0.15;
         ACE_ballisticCoefficients[] = {0.170}; ACE_velocityBoundaries[] = {}; ACE_standardAtmosphere = "ICAO"; ACE_dragModel = 7;
         ACE_muzzleVelocities[] = {880, 940, 980}; ACE_barrelLengths[] = {254, 368, 508};
@@ -1253,7 +1253,7 @@ class CfgAmmo {
     // =========================================================
     class FA_i_556_AF556_HV: B_556x45_Ball {
         displayName = "AF-556 HV";
-        hit = 8;
+        hit = 9;
         caliber = 2.3;
         typicalSpeed = 910;
         airFriction = -0.00126;
@@ -1301,7 +1301,7 @@ class CfgAmmo {
     };
     class FA_i_556_AF556C_CT: B_556x45_Ball {
         displayName = "AF-556C CT";
-        hit = 8;
+        hit = 10;
         caliber = 2.5;
         typicalSpeed = 930;
         airFriction = -0.0012;
@@ -1349,7 +1349,7 @@ class CfgAmmo {
     };
     class FA_i_556_AF556P_AP: B_556x45_Ball {
         displayName = "AF-556P AP";
-        hit = 8;
+        hit = 9;
         caliber = 2.85;
         typicalSpeed = 895;
         airFriction = -0.00118;

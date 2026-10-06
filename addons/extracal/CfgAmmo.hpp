@@ -5,6 +5,7 @@
 // Ballistics. Base ammo classes are vanilla PLACEHOLDERS — reparent to the
 // caliber's real mod ammo for correct visuals/model.
 class CfgAmmo {
+    class B_65x39_Case;      // 6.8 SPC / 6 ARC / 6.5x43 base
     class B_762x39_Ball_F;    // 9x39 placeholder base
     class B_127x99_Ball;    // 14.5x114 placeholder base
     class B_556x45_Ball;    // 5.7x28 placeholder base
@@ -77,6 +78,92 @@ class CfgAmmo {
 
     // 6.5x39 caseless loads (Mk328/XM892/Mk329/XM893) now live in ghostfa_ammo,
     // with the full colour/tracer matrix — removed from here.
+
+    // ===== 6.8 SPC, 6 ARC, 6.5x43 - for the MCC rifles (user, 2026-10-04) =====
+    // The rounds as specified (user, 2026-10-04): case, bullet, pressure and muzzle velocity from the spec.
+    // Placed between FA 5.56 (hit 10-11) and FA 7.62 (14), like the cartridges are.
+    // fa_mcc / ghostfa mcc put them in MCC's own magazines (tools/gen_fa_mcc.py).
+
+    // ----- 6.8x43 SPC - carbine -----
+    // Mk334 TC - brass, 7.1g tungsten-core ball, 58 kpsi - 800 m/s from 16in
+    class FA_b_68_Mk334_TC: B_65x39_Case {
+        displayName = "Mk334 TC";
+        hit = 12; caliber = 3.2; typicalSpeed = 800; airFriction = -0.00088; deflecting = 14; tracerScale = 0.7;
+        ACE_caliber = 7.04; ACE_bulletLength = 26.5; ACE_bulletMass = 7.1; ACE_muzzleVelocityVariationSD = 0.15;
+        ACE_ballisticCoefficients[] = {0.19}; ACE_velocityBoundaries[] = {}; ACE_standardAtmosphere = "ICAO"; ACE_dragModel = 7;
+        ACE_muzzleVelocities[] = {755, 800, 815}; ACE_barrelLengths[] = {318, 406, 457};
+    };
+    class FA_b_68_Mk334_TC_T_Red: FA_b_68_Mk334_TC { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
+    class FA_b_68_Mk334_TC_T_Yellow: FA_b_68_Mk334_TC { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
+    class FA_b_68_Mk334_TC_T_Green: FA_b_68_Mk334_TC { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
+    class FA_b_68_Mk334_TC_T_White: FA_b_68_Mk334_TC { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
+    class FA_b_68_Mk334_TC_T_Blue: FA_b_68_Mk334_TC { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
+    class FA_b_68_Mk334_TC_T_Orange: FA_b_68_Mk334_TC { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
+    class FA_b_68_Mk334_TC_T_IR: FA_b_68_Mk334_TC { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
+
+    // ----- 6x38 ARC - DMR, the long-range pair -----
+    // Mk333 LR - hybrid case, 7.0g tungsten EPR, high BC, 58 kpsi - 825 m/s from 18in
+    class FA_b_6ARC_Mk333_LR: B_65x39_Case {
+        displayName = "Mk333 LR";
+        hit = 11; caliber = 3.0; typicalSpeed = 825; airFriction = -0.00074; deflecting = 15; tracerScale = 0.7;
+        ACE_caliber = 6.18; ACE_bulletLength = 31.0; ACE_bulletMass = 7.0; ACE_muzzleVelocityVariationSD = 0.15;
+        ACE_ballisticCoefficients[] = {0.28}; ACE_velocityBoundaries[] = {}; ACE_standardAtmosphere = "ICAO"; ACE_dragModel = 7;
+        ACE_muzzleVelocities[] = {770, 805, 825}; ACE_barrelLengths[] = {305, 406, 457};
+    };
+    class FA_b_6ARC_Mk333_LR_T_Red: FA_b_6ARC_Mk333_LR { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
+    class FA_b_6ARC_Mk333_LR_T_Yellow: FA_b_6ARC_Mk333_LR { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
+    class FA_b_6ARC_Mk333_LR_T_Green: FA_b_6ARC_Mk333_LR { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
+    class FA_b_6ARC_Mk333_LR_T_White: FA_b_6ARC_Mk333_LR { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
+    class FA_b_6ARC_Mk333_LR_T_Blue: FA_b_6ARC_Mk333_LR { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
+    class FA_b_6ARC_Mk333_LR_T_Orange: FA_b_6ARC_Mk333_LR { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
+    class FA_b_6ARC_Mk333_LR_T_IR: FA_b_6ARC_Mk333_LR { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
+    // XM895 CTEP - cased-telescoped, 7.1g two-stage tungsten, 85 kpsi - 890 m/s from 18in
+    class FA_b_6ARC_XM895_CTEP: B_65x39_Case {
+        displayName = "XM895 CTEP";
+        hit = 12; caliber = 3.6; typicalSpeed = 890; airFriction = -0.00072; deflecting = 13; tracerScale = 0.7;
+        ACE_caliber = 6.18; ACE_bulletLength = 31.5; ACE_bulletMass = 7.1; ACE_muzzleVelocityVariationSD = 0.15;
+        ACE_ballisticCoefficients[] = {0.285}; ACE_velocityBoundaries[] = {}; ACE_standardAtmosphere = "ICAO"; ACE_dragModel = 7;
+        ACE_muzzleVelocities[] = {830, 870, 890}; ACE_barrelLengths[] = {305, 406, 457};
+    };
+    class FA_b_6ARC_XM895_CTEP_T_Red: FA_b_6ARC_XM895_CTEP { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
+    class FA_b_6ARC_XM895_CTEP_T_Yellow: FA_b_6ARC_XM895_CTEP { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
+    class FA_b_6ARC_XM895_CTEP_T_Green: FA_b_6ARC_XM895_CTEP { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
+    class FA_b_6ARC_XM895_CTEP_T_White: FA_b_6ARC_XM895_CTEP { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
+    class FA_b_6ARC_XM895_CTEP_T_Blue: FA_b_6ARC_XM895_CTEP { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
+    class FA_b_6ARC_XM895_CTEP_T_Orange: FA_b_6ARC_XM895_CTEP { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
+    class FA_b_6ARC_XM895_CTEP_T_IR: FA_b_6ARC_XM895_CTEP { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
+
+    // ----- 6.5x43 - rifle, carbine, DMR and LMG belt -----
+    // Mk331 EPR - steel two-piece case, 7.5g tungsten EPR, 70 kpsi - 860 m/s from 14.5in
+    class FA_b_65x43_Mk331_EPR: B_65x39_Case {
+        displayName = "Mk331 EPR";
+        hit = 12; caliber = 3.2; typicalSpeed = 860; airFriction = -0.00076; deflecting = 15; tracerScale = 0.7;
+        ACE_caliber = 6.71; ACE_bulletLength = 32.5; ACE_bulletMass = 7.5; ACE_muzzleVelocityVariationSD = 0.15;
+        ACE_ballisticCoefficients[] = {0.27}; ACE_velocityBoundaries[] = {}; ACE_standardAtmosphere = "ICAO"; ACE_dragModel = 7;
+        ACE_muzzleVelocities[] = {835, 860, 895}; ACE_barrelLengths[] = {318, 368, 508};
+    };
+    class FA_b_65x43_Mk331_EPR_T_Red: FA_b_65x43_Mk331_EPR { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
+    class FA_b_65x43_Mk331_EPR_T_Yellow: FA_b_65x43_Mk331_EPR { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
+    class FA_b_65x43_Mk331_EPR_T_Green: FA_b_65x43_Mk331_EPR { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
+    class FA_b_65x43_Mk331_EPR_T_White: FA_b_65x43_Mk331_EPR { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
+    class FA_b_65x43_Mk331_EPR_T_Blue: FA_b_65x43_Mk331_EPR { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
+    class FA_b_65x43_Mk331_EPR_T_Orange: FA_b_65x43_Mk331_EPR { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
+    class FA_b_65x43_Mk331_EPR_T_IR: FA_b_65x43_Mk331_EPR { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
+    // XM894 CTEP - cased-telescoped, 7.8g two-stage tungsten, 85 kpsi - 900 m/s from 14.5in
+    class FA_b_65x43_XM894_CTEP: B_65x39_Case {
+        displayName = "XM894 CTEP";
+        hit = 13; caliber = 3.7; typicalSpeed = 900; airFriction = -0.00074; deflecting = 13; tracerScale = 0.7;
+        ACE_caliber = 6.71; ACE_bulletLength = 33.5; ACE_bulletMass = 7.8; ACE_muzzleVelocityVariationSD = 0.15;
+        ACE_ballisticCoefficients[] = {0.29}; ACE_velocityBoundaries[] = {}; ACE_standardAtmosphere = "ICAO"; ACE_dragModel = 7;
+        ACE_muzzleVelocities[] = {870, 900, 935}; ACE_barrelLengths[] = {318, 368, 508};
+    };
+    class FA_b_65x43_XM894_CTEP_T_Red: FA_b_65x43_XM894_CTEP { tracer = 1; tracerColor[] = {1.0, 0.0, 0.0, 1.0}; };
+    class FA_b_65x43_XM894_CTEP_T_Yellow: FA_b_65x43_XM894_CTEP { tracer = 1; tracerColor[] = {1.0, 1.0, 0.0, 1.0}; };
+    class FA_b_65x43_XM894_CTEP_T_Green: FA_b_65x43_XM894_CTEP { tracer = 1; tracerColor[] = {0.0, 1.0, 0.0, 1.0}; };
+    class FA_b_65x43_XM894_CTEP_T_White: FA_b_65x43_XM894_CTEP { tracer = 1; tracerColor[] = {1.0, 1.0, 1.0, 1.0}; };
+    class FA_b_65x43_XM894_CTEP_T_Blue: FA_b_65x43_XM894_CTEP { tracer = 1; tracerColor[] = {0.0, 0.3, 1.0, 1.0}; };
+    class FA_b_65x43_XM894_CTEP_T_Orange: FA_b_65x43_XM894_CTEP { tracer = 1; tracerColor[] = {1.0, 0.4, 0.0, 1.0}; };
+    class FA_b_65x43_XM894_CTEP_T_IR: FA_b_65x43_XM894_CTEP { tracer = 1; nvgOnly = 1; tracerColor[] = {0.2, 1.0, 0.2, 1.0}; };
 
     #include "CfgAmmo_compat.hpp"
 };
